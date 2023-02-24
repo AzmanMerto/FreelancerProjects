@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */; };
-		3426EFA829A4403200CA1F0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA729A4403200CA1F0F /* ContentView.swift */; };
 		3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFA929A4403500CA1F0F /* Assets.xcassets */; };
 		3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */; };
+		3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFBC29A4403500CA1F0F /* ImageHelper.swift */; };
+		3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFBE29A4403500CA1F0F /* ImageHandler.swift */; };
+		3426EFC229A4403500CA1F0F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC129A4403500CA1F0F /* SplashView.swift */; };
+		3426EFC729A4403500CA1F0F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC629A4403500CA1F0F /* SplashViewModel.swift */; };
+		3426EFC929A4403500CA1F0F /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC829A4403500CA1F0F /* SplashRouter.swift */; };
+		3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCA29A4403500CA1F0F /* ColorHelper.swift */; };
+		3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCC29A4403500CA1F0F /* ColorHandler.swift */; };
+		3426EFD029A4403500CA1F0F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCF29A4403500CA1F0F /* OnboardingView.swift */; };
+		34ECC13229A80DB2006ACA3B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */; };
+		34ECC13429A80DBF006ACA3B /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */; };
+		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
+		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
+		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
+		34ECC14229A820D0006ACA3B /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3426EFA229A4403200CA1F0F /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
-		3426EFA729A4403200CA1F0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3426EFA929A4403500CA1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3426EFBC29A4403500CA1F0F /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		3426EFBE29A4403500CA1F0F /* ImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
+		3426EFC129A4403500CA1F0F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3426EFC629A4403500CA1F0F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		3426EFC829A4403500CA1F0F /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		3426EFCA29A4403500CA1F0F /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		3426EFCC29A4403500CA1F0F /* ColorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHandler.swift; sourceTree = "<group>"; };
+		3426EFCF29A4403500CA1F0F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
+		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
+		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */,
-				3426EFA729A4403200CA1F0F /* ContentView.swift */,
-				3426EFA929A4403500CA1F0F /* Assets.xcassets */,
+				3426EFB329A4403500CA1F0F /* Core */,
+				3426EFB429A4403500CA1F0F /* Service */,
+				3426EFB529A4403500CA1F0F /* Utils */,
 				3426EFAB29A4403500CA1F0F /* Preview Content */,
 			);
 			path = "TOOF Audio";
@@ -65,6 +92,154 @@
 				3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3426EFB329A4403500CA1F0F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFB829A4403500CA1F0F /* View */,
+				3426EFB729A4403500CA1F0F /* Component */,
+				3426EFB629A4403500CA1F0F /* Helper */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3426EFB429A4403500CA1F0F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3426EFB529A4403500CA1F0F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFA929A4403500CA1F0F /* Assets.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3426EFB629A4403500CA1F0F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFB929A4403500CA1F0F /* Instrument */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3426EFB729A4403500CA1F0F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC13729A80E27006ACA3B /* UISub */,
+				34ECC13829A80E31006ACA3B /* Button */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3426EFB829A4403500CA1F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFC029A4403500CA1F0F /* SplashView */,
+				3426EFCE29A4403500CA1F0F /* Onboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3426EFB929A4403500CA1F0F /* Instrument */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFBB29A4403500CA1F0F /* Image */,
+				3426EFBA29A4403500CA1F0F /* Color */,
+			);
+			path = Instrument;
+			sourceTree = "<group>";
+		};
+		3426EFBA29A4403500CA1F0F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFCA29A4403500CA1F0F /* ColorHelper.swift */,
+				3426EFCC29A4403500CA1F0F /* ColorHandler.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		3426EFBB29A4403500CA1F0F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFBC29A4403500CA1F0F /* ImageHelper.swift */,
+				3426EFBE29A4403500CA1F0F /* ImageHandler.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		3426EFC029A4403500CA1F0F /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFC129A4403500CA1F0F /* SplashView.swift */,
+				3426EFC629A4403500CA1F0F /* SplashViewModel.swift */,
+				3426EFC829A4403500CA1F0F /* SplashRouter.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		3426EFCE29A4403500CA1F0F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3426EFCF29A4403500CA1F0F /* OnboardingView.swift */,
+				34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */,
+				34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		34ECC13729A80E27006ACA3B /* UISub */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC13929A80E43006ACA3B /* Splash */,
+				34ECC13C29A80EA9006ACA3B /* Onboarding */,
+			);
+			path = UISub;
+			sourceTree = "<group>";
+		};
+		34ECC13829A80E31006ACA3B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC14329A820DF006ACA3B /* ButtonActive */,
+				34ECC14429A820EB006ACA3B /* ButtonStyle */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		34ECC13929A80E43006ACA3B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		34ECC13C29A80EA9006ACA3B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		34ECC14329A820DF006ACA3B /* ButtonActive */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */,
+			);
+			path = ButtonActive;
+			sourceTree = "<group>";
+		};
+		34ECC14429A820EB006ACA3B /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */,
+			);
+			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +312,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3426EFA829A4403200CA1F0F /* ContentView.swift in Sources */,
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
+				3426EFC929A4403500CA1F0F /* SplashRouter.swift in Sources */,
+				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
+				3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */,
+				34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */,
+				3426EFD029A4403500CA1F0F /* OnboardingView.swift in Sources */,
+				34ECC14229A820D0006ACA3B /* PrimaryButtonStyle.swift in Sources */,
+				3426EFC229A4403500CA1F0F /* SplashView.swift in Sources */,
+				34ECC13229A80DB2006ACA3B /* OnboardingViewModel.swift in Sources */,
+				3426EFC729A4403500CA1F0F /* SplashViewModel.swift in Sources */,
+				34ECC13429A80DBF006ACA3B /* OnboardingRouter.swift in Sources */,
+				3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */,
+				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
+				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
+				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
