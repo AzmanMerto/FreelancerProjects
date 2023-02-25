@@ -59,14 +59,16 @@ struct MainView: View {
                         }
                         
                         VStack(spacing: 20) {
-                            
+                            // MARK: - 2 - 2
                             TimerButton(action: {
-                                
+                                SoundManager().playSound(sound: .media11)
+                                SoundManager().player?.volume = 1
                             },
                                         text: "SAYAÇ 2-2",
                                         isDeactive: .constant(false),
                                         isActive: $isThatActive)
                             
+                            // MARK: - 2 - 1
                             TimerButton(action: {
                                 
                             },
