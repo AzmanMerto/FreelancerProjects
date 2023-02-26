@@ -6,9 +6,18 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
+import AppTrackingTransparency
 
 @main
 struct FT_TimesApp: App {
+    
+    init() {
+        ATTrackingManager.requestTrackingAuthorization { status in
+            GADMobileAds.sharedInstance().start(completionHandler: nil)
+        }
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainView()

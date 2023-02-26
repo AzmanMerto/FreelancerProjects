@@ -82,3 +82,4 @@ struct InterstitialAdView: UIViewControllerRepresentable {
         }
     }
 }
+

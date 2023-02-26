@@ -14,6 +14,8 @@
 		3442521E29AAE1D1009D332C /* FullScreenModi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521929AAE1D1009D332C /* FullScreenModi.swift */; };
 		3442521F29AAE1D1009D332C /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521A29AAE1D1009D332C /* RewardedAd.swift */; };
 		3442522629AAEB78009D332C /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 3442522529AAEB78009D332C /* GoogleMobileAds */; };
+		3442522829AAFA85009D332C /* NetworkCheckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522729AAFA85009D332C /* NetworkCheckManager.swift */; };
+		3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522929AB19B5009D332C /* MainViewModel.swift */; };
 		34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */; };
 		34ECC16E29A8C32E006ACA3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16D29A8C32E006ACA3B /* MainView.swift */; };
 		34ECC17029A8C330006ACA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ECC16F29A8C330006ACA3B /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		3442521929AAE1D1009D332C /* FullScreenModi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenModi.swift; sourceTree = "<group>"; };
 		3442521A29AAE1D1009D332C /* RewardedAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
 		3442522329AAE3E3009D332C /* FT-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FT-Times-Info.plist"; path = "FT Times/FT-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3442522729AAFA85009D332C /* NetworkCheckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheckManager.swift; sourceTree = "<group>"; };
+		3442522929AB19B5009D332C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		34ECC16829A8C32E006ACA3B /* FT Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FT Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FT_TimesApp.swift; sourceTree = "<group>"; };
 		34ECC16D29A8C32E006ACA3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			children = (
 				3442521529AAE1C4009D332C /* Ad */,
 				3430F9E229A90193008A72E1 /* SoundManager.swift */,
+				3442522729AAFA85009D332C /* NetworkCheckManager.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */,
+				3442522929AB19B5009D332C /* MainViewModel.swift */,
 				34ECC16D29A8C32E006ACA3B /* MainView.swift */,
 				34ECC17929A8CB3F006ACA3B /* UISub */,
 				3430F9E129A90186008A72E1 /* Unit */,
@@ -211,12 +217,14 @@
 				3442521B29AAE1D1009D332C /* BannerAd.swift in Sources */,
 				34ECC17C29A8CB65006ACA3B /* OpenOtherButton.swift in Sources */,
 				3442521D29AAE1D1009D332C /* InterstitialAd.swift in Sources */,
+				3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */,
 				34ECC17E29A8DDBE006ACA3B /* PookaTakeTimeButton.swift in Sources */,
 				34ECC18229A8E054006ACA3B /* TimerButton.swift in Sources */,
 				34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */,
 				3442521F29AAE1D1009D332C /* RewardedAd.swift in Sources */,
 				3430F9E329A90193008A72E1 /* SoundManager.swift in Sources */,
 				3442521E29AAE1D1009D332C /* FullScreenModi.swift in Sources */,
+				3442522829AAFA85009D332C /* NetworkCheckManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

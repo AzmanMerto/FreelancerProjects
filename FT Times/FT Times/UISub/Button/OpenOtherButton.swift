@@ -9,12 +9,12 @@ import SwiftUI
 
 struct OpenOtherButton: View {
     
+    var active: () -> ()
     @Binding var isActive : Bool
     
     var body: some View {
         Button {
-            // Start timer
-            isActive.toggle()
+            active()
         } label: {
             Text(isActive ? "ÇALIŞAN SÜRE: 1-1" : "SAYAÇLARI AÇ")
         }
@@ -41,7 +41,9 @@ private struct OpenOtherButtonStyle: ButtonStyle {
 
 struct OpenOtherButton_Previews: PreviewProvider {
     static var previews: some View {
-        OpenOtherButton(isActive: .constant(false))
+        OpenOtherButton(active: {
+            
+        }, isActive: .constant(false))
     }
 }
 

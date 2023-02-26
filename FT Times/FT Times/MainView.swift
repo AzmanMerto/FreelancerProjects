@@ -9,9 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var isThatActive : Bool = false
-    @State var isActiveAd = false
-    
+    @ObservedObject var viewModel : MainViewModel = .init()
+  
     var body: some View {
         ZStack {
             Color.blue
@@ -27,7 +26,10 @@ struct MainView: View {
                     .padding(.bottom)
                 
                 // MARK: Start Button
-               OpenOtherButton(isActive: $isThatActive)
+                OpenOtherButton(active: {
+                    viewModel.startRewardAd()
+                    
+                }, isActive: $viewModel.isThatActive)
                     
                 // MARK: Description
                 Text("Pooka respawn oldugunda pooka süresi alabilirsiniz.")
@@ -42,7 +44,7 @@ struct MainView: View {
                         
                     },
                                         text: "POOKA SÜRE AL",
-                                        isActive: $isThatActive)
+                                        isActive: $viewModel.isThatActive)
                     HStack {
                         
                         VStack(spacing: 20) {
@@ -51,14 +53,14 @@ struct MainView: View {
                             },
                                         text: "SAYAÇ 1-2",
                                         isDeactive: .constant(false),
-                                        isActive: $isThatActive)
+                                        isActive: $viewModel.isThatActive)
                             
                             TimerButton(action: {
                                 
                             },
                                         text: "SAYAÇ 1-1",
                                         isDeactive: .constant(false),
-                                        isActive: $isThatActive)
+                                        isActive: $viewModel.isThatActive)
                         }
                         
                         VStack(spacing: 20) {
@@ -69,7 +71,7 @@ struct MainView: View {
                             },
                                         text: "SAYAÇ 2-2",
                                         isDeactive: .constant(false),
-                                        isActive: $isThatActive)
+                                        isActive: $viewModel.isThatActive)
                             
                             // MARK: - 2 - 1
                             TimerButton(action: {
@@ -77,12 +79,12 @@ struct MainView: View {
                             },
                                         text: "SAYAÇ 2-1",
                                         isDeactive: .constant(false),
-                                        isActive: $isThatActive)
+                                        isActive: $viewModel.isThatActive)
                          
                         }
                     }
                 }
-                .disabled(isThatActive != true)
+                .disabled(viewModel.isThatActive != true)
                 
                 // MARK: Web link
                 Link(destination: URL(string: "https://ahmeters.blogspot.com/2022/04/fttimes-knight-online.html")!) {
@@ -98,8 +100,16 @@ struct MainView: View {
                 Spacer()
                 BannerAd(adUnitId: MobileAdsID.BannerId)
             }
-            .presentInterstitialAd(isPresented: $isActiveAd,
-                                   adUnitId: MobileAdsID.InterstitialId)
+        }
+        // MARK: - Interstitial Ad
+        .presentInterstitialAd(isPresented: $viewModel.isActiveInterstitialAd,
+                               adUnitId: MobileAdsID.InterstitialId)
+        // MARK: - Rewarded Ad
+        .presentRewardedAd(isPresented: $viewModel.isActiveRewardAd, adUnitId: MobileAdsID.RewardedId) {
+            print("Reward Granted")
+            if viewModel.isActiveRewardAd {
+                viewModel.startInterstitialAd()
+            }
         }
     }
 }
@@ -109,3 +119,5 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+
+
