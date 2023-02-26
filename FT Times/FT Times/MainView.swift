@@ -10,12 +10,15 @@ import SwiftUI
 struct MainView: View {
     
     @State var isThatActive : Bool = false
+    @State var isActiveAd = false
     
     var body: some View {
         ZStack {
             Color.blue
                 .ignoresSafeArea()
             VStack(spacing: 20) {
+                
+                Spacer()
                 
                 Image("icon")
                     .resizable()
@@ -92,7 +95,11 @@ struct MainView: View {
                     .padding(.horizontal)
                     .multilineTextAlignment(.center)
                 }
+                Spacer()
+                BannerAd(adUnitId: MobileAdsID.BannerId)
             }
+            .presentInterstitialAd(isPresented: $isActiveAd,
+                                   adUnitId: MobileAdsID.InterstitialId)
         }
     }
 }
