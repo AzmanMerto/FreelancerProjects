@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var viewModel : MainViewModel = .init()
-  
+    
     var body: some View {
         ZStack {
             Color.blue
@@ -24,67 +24,71 @@ struct MainView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 100)
                     .padding(.bottom)
-                
                 // MARK: Start Button
-                OpenOtherButton(active: {
-                    viewModel.startRewardAd()
-                    
-                }, isActive: $viewModel.isThatActive)
-                    
+                
+                OpenOtherButton(string: "", action: {
+                    viewModel.isActiveRewardAd.toggle()
+                })
+                
                 // MARK: Description
-                Text("Pooka respawn oldugunda pooka süresi alabilirsiniz.")
+                Text("Pooka respawn oldugunda pooka \nsüresi alabilirsiniz.")
                     .foregroundColor(.white)
-                    .font(.system(.subheadline, weight: .black))
+                    .scaledToFill()
+                    .font(.system(.subheadline,
+                                  weight: .black))
                     .padding(.horizontal)
                     .multilineTextAlignment(.center)
-                
                 // MARK: Active Sound Buttons
-                VStack(spacing: 20) {
-                    PookaTakeTimeButton(action: {
-                        
-                    },
-                                        text: "POOKA SÜRE AL",
-                                        isActive: $viewModel.isThatActive)
+                VStack(spacing: 10) {
+                    PookaTakeTimeButton()
                     HStack {
                         
                         VStack(spacing: 20) {
-                            TimerButton(action: {
-                                
-                            },
-                                        text: "SAYAÇ 1-2",
-                                        isDeactive: .constant(false),
-                                        isActive: $viewModel.isThatActive)
+                            TimerButton(text: "Sayaç 1-2",
+                                        isThatChanged: $viewModel.isButtonColored2) {
+                                viewModel.againColorButton(Button1: false,
+                                                           Button2: true,
+                                                           Button3: false,
+                                                           Button4: false)
+                            }
                             
-                            TimerButton(action: {
+                            TimerButton(text: "Sayaç 1-1",
+                                        isThatChanged: $viewModel.isButtonColored1) {
+                                viewModel.againColorButton(Button1: true,
+                                                           Button2: false,
+                                                           Button3: false,
+                                                           Button4: false)
+                            }
+                            
+                            SecJumpButton(text: "- ms", isActive: .constant(false)) {
                                 
-                            },
-                                        text: "SAYAÇ 1-1",
-                                        isDeactive: .constant(false),
-                                        isActive: $viewModel.isThatActive)
+                            }
                         }
                         
                         VStack(spacing: 20) {
-                            // MARK: - 2 - 2
-                            TimerButton(action: {
-                                SoundManager().playSound(sound: .media11)
-                                SoundManager().player?.volume = 1
-                            },
-                                        text: "SAYAÇ 2-2",
-                                        isDeactive: .constant(false),
-                                        isActive: $viewModel.isThatActive)
+                            TimerButton(text: "Sayaç 2-2",
+                                        isThatChanged: $viewModel.isButtonColored4) {
+                                viewModel.againColorButton(Button1: false,
+                                                           Button2: false,
+                                                           Button3: false,
+                                                           Button4: true)
+                            }
                             
-                            // MARK: - 2 - 1
-                            TimerButton(action: {
+                            TimerButton(text: "Sayaç 2-1",
+                                        isThatChanged: $viewModel.isButtonColored3 ) {
+                                viewModel.againColorButton(Button1: false,
+                                                           Button2: false,
+                                                           Button3: true,
+                                                           Button4: false)
+                            }
+                            
+                            SecJumpButton(text: "+ ms", isActive: .constant(false)) {
                                 
-                            },
-                                        text: "SAYAÇ 2-1",
-                                        isDeactive: .constant(false),
-                                        isActive: $viewModel.isThatActive)
-                         
+                            }
                         }
                     }
                 }
-                .disabled(viewModel.isThatActive != true)
+                .opacity(viewModel.isOtherButtonsReady ? 0.6 : 1)
                 
                 // MARK: Web link
                 Link(destination: URL(string: "https://ahmeters.blogspot.com/2022/04/fttimes-knight-online.html")!) {
@@ -97,7 +101,10 @@ struct MainView: View {
                     .padding(.horizontal)
                     .multilineTextAlignment(.center)
                 }
+                .padding(.vertical)
+                
                 Spacer()
+                
                 BannerAd(adUnitId: MobileAdsID.BannerId)
             }
         }
@@ -106,10 +113,10 @@ struct MainView: View {
                                adUnitId: MobileAdsID.InterstitialId)
         // MARK: - Rewarded Ad
         .presentRewardedAd(isPresented: $viewModel.isActiveRewardAd, adUnitId: MobileAdsID.RewardedId) {
-            print("Reward Granted")
-            if viewModel.isActiveRewardAd {
-                viewModel.startInterstitialAd()
-            }
+            viewModel.startInterstitialAd()
+        }
+        .onAppear{
+            viewModel.ReadyApp()
         }
     }
 }

@@ -21,12 +21,14 @@ class SoundManager {
         case media22 = "media22"
     }
     
-    func playSound(sound: SoundCase) {
+    func playSound(sound: SoundCase, Volume : Float) {
         
         guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
+        player?.volume = Volume
         
         do {
             try player = AVAudioPlayer(contentsOf: url)
+            player?.play()
         } catch let error {
             print("error massage : \(error.localizedDescription)")
         }

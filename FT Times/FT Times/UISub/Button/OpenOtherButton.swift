@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct OpenOtherButton: View {
+
+    @State var isPressed = false
+    @State var string : String
     
-    var active: () -> ()
-    @Binding var isActive : Bool
+    var action : () -> Void
     
     var body: some View {
         Button {
-            active()
+            action()
+            isPressed = true
         } label: {
-            Text(isActive ? "ÇALIŞAN SÜRE: 1-1" : "SAYAÇLARI AÇ")
+            Text(isPressed ? "ÇALIŞAN SÜRE: \(string)" : "SAYAÇLARI AÇ")
+                .opacity(isPressed ? 0.5 : 1)
         }
-        .compositingGroup()
+        .disabled(isPressed)
         .buttonStyle(OpenOtherButtonStyle())
-        .disabled(isActive != false)
-        .opacity(isActive ? 0.5 : 1)
     }
 }
 
@@ -34,16 +36,15 @@ private struct OpenOtherButtonStyle: ButtonStyle {
             .background {
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(.orange)
-                    
             }
     }
 }
 
 struct OpenOtherButton_Previews: PreviewProvider {
     static var previews: some View {
-        OpenOtherButton(active: {
+        OpenOtherButton(string: "1-1") {
             
-        }, isActive: .constant(false))
+        }
     }
 }
 

@@ -9,26 +9,22 @@ import SwiftUI
 
 struct PookaTakeTimeButton: View {
     
-    var action : () -> ()
-    var text : String
-    @Binding var isActive : Bool
+    @State var isPressed = false
     
     var body: some View {
         Button {
-            action()
+            isPressed = true
         } label: {
-            Text(text)
-                .opacity(isActive ? 1 : 0.6)
+            Text(isPressed ? "POOKA SÜRESİ ALINDI" : "POOKA SÜRESİ AL")
         }
+        .disabled(isPressed)
         .buttonStyle(PookaTakeTimeButtonStyle())
     }
 }
 
 struct PookaTakeTimeButton_Previews: PreviewProvider {
     static var previews: some View {
-        PookaTakeTimeButton(action: {
-            
-        }, text: "", isActive: .constant(false))
+        PookaTakeTimeButton()
     }
 }
 

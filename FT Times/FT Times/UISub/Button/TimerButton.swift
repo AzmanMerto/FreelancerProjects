@@ -9,23 +9,18 @@ import SwiftUI
 import AVFoundation
 
 struct TimerButton: View {
-    
-    var action : () -> ()
+  
     var text : String
+    @Binding var isThatChanged : Bool
+    var action : () -> ()
     
-    @Binding var isDeactive : Bool
-    @Binding var isActive : Bool
-    @State var isThatChanged = false
-    @State var audioPlayer: AVAudioPlayer!
     
     var body: some View {
         Button {
-            isThatChanged = true
-            
             action()
+            isThatChanged.toggle()
         } label: {
             Text(text)
-                .opacity(isActive ? 1 : 0.6 )
         }
         .buttonStyle(TimerButtonStyle(isChanged: $isThatChanged))
     }
@@ -34,13 +29,9 @@ struct TimerButton: View {
 
 struct TimerButton_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton(action: {
+        TimerButton(text: "", isThatChanged: .constant(false)) {
             
-        },
-                    text: "SAYAÇ 1-2",
-                    isDeactive: .constant(false),
-                    isActive: .constant(true),
-                    isThatChanged: false)
+        }
     }
 }
 
@@ -60,7 +51,6 @@ struct TimerButtonStyle: ButtonStyle {
                         Color(isChanged ? .systemGreen : .systemPurple)
                             .cornerRadius(20)
                     }
-                    
             }
     }
 }
