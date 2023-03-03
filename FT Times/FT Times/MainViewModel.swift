@@ -6,63 +6,81 @@
 //
 
 import Foundation
+import AVKit
 
 class MainViewModel: ObservableObject {
     @Published var isActiveInterstitialAd : Bool
     @Published var isActiveRewardAd : Bool
     @Published var isAppReady: Bool
-    @Published var isUserSkipToAd: Bool
-    @Published var isOtherButtonsReady: Bool
+    @Published var isUserPressToMainButton: Bool
     
-    @Published var isButtonColored1: Bool
-    @Published var isButtonColored2: Bool
-    @Published var isButtonColored3: Bool
-    @Published var isButtonColored4: Bool
+    @Published var isActiveButton1: Bool
+    @Published var isActiveButton2: Bool
+    @Published var isActiveButton3: Bool
+    @Published var isActiveButton4: Bool
+    
+    @Published var text : String
     
     init(isActiveInterstitialAd: Bool = false,
          isActiveRewardAd: Bool = false,
          isAppReady: Bool = false,
-         isUserSkipToAd: Bool = false,
-         isOtherButtonsReady: Bool = true,
-         isButtonColored1: Bool = false,
-         isButtonColored2: Bool = false,
-         isButtonColored3: Bool = false,
-         isButtonColored4: Bool = false) {
+         isUserPressToMainButton: Bool = false,
+         isActiveButton1: Bool = false,
+         isActiveButton2: Bool = false,
+         isActiveButton3: Bool = false,
+         isActiveButton4: Bool = false,
+         text: String = "1-1") {
         self.isActiveInterstitialAd = isActiveInterstitialAd
         self.isActiveRewardAd = isActiveRewardAd
         self.isAppReady = isAppReady
-        self.isUserSkipToAd = isUserSkipToAd
-        self.isOtherButtonsReady = isOtherButtonsReady
-        self.isButtonColored1 = isButtonColored1
-        self.isButtonColored2 = isButtonColored2
-        self.isButtonColored3 = isButtonColored3
-        self.isButtonColored4 = isButtonColored4
+        self.isUserPressToMainButton = isUserPressToMainButton
+        self.isActiveButton1 = isActiveButton1
+        self.isActiveButton2 = isActiveButton2
+        self.isActiveButton3 = isActiveButton3
+        self.isActiveButton4 = isActiveButton4
+        self.text = text
     }
     
-    func ReadyApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.isAppReady = true
-            print("APP IS READY")
-        }
-    }
-    
-    func startInterstitialAd() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-            self.isActiveInterstitialAd.toggle()
-            self.isOtherButtonsReady.toggle()
-        }
-    }
-    
-    func playAudio() {
+    func startAd() {
+        self.isActiveInterstitialAd = true
         
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            if self.isActiveInterstitialAd {
+                self.isUserPressToMainButton.toggle()
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            self.isActiveRewardAd.toggle()
+        }
     }
     
-    func againColorButton(Button1: Bool, Button2: Bool, Button3: Bool, Button4: Bool) {
+    func startSound() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            Media11.share.playMedia(volume: 1)
+            Media12.share.playMedia(volume: 0)
+            Media12.share.playMedia(volume: 0)
+            Media22.share.playMedia(volume: 0)
+        }
+    }
+    
+    func setSound(Media1: Float, Media2: Float, Media3: Float, Media4: Float) {
+        Media11.share.player?.volume = Media1
+        Media12.share.player?.volume = Media2
+        Media21.share.player?.volume = Media3
+        Media22.share.player?.volume = Media4
+    }
+    
+    func seekSound() {
+        Media11.share.player?.currentTime = 100.0
+    }
+    
+    func actionButtons(Button1: Bool, Button2: Bool, Button3: Bool, Button4: Bool) {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            self.isButtonColored1 = Button1
-            self.isButtonColored2 = Button2
-            self.isButtonColored3 = Button3
-            self.isButtonColored4 = Button4
+            self.isActiveButton1 = Button1
+            self.isActiveButton2 = Button2
+            self.isActiveButton3 = Button3
+            self.isActiveButton4 = Button4
         }
     }
 }

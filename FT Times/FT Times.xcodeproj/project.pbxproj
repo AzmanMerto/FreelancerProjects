@@ -16,11 +16,11 @@
 		3442522629AAEB78009D332C /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 3442522529AAEB78009D332C /* GoogleMobileAds */; };
 		3442522829AAFA85009D332C /* NetworkCheckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522729AAFA85009D332C /* NetworkCheckManager.swift */; };
 		3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522929AB19B5009D332C /* MainViewModel.swift */; };
+		34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841ACF29B2406900E6BFDC /* media12.mp3 */; };
+		34841AD429B2406A00E6BFDC /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD029B2406A00E6BFDC /* media11.mp3 */; };
+		34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD129B2406A00E6BFDC /* media22.mp3 */; };
+		34841AD629B2406A00E6BFDC /* media21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD229B2406A00E6BFDC /* media21.mp3 */; };
 		34D54BC529AC7B5200377BE9 /* SecJumpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */; };
-		34D54BCF29ADEDB600377BE9 /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BCB29ADEDB500377BE9 /* media11.mp3 */; };
-		34D54BD029ADEDB600377BE9 /* media21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BCC29ADEDB600377BE9 /* media21.mp3 */; };
-		34D54BD129ADEDB600377BE9 /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BCD29ADEDB600377BE9 /* media22.mp3 */; };
-		34D54BD229ADEDB600377BE9 /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34D54BCE29ADEDB600377BE9 /* media12.mp3 */; };
 		34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */; };
 		34ECC16E29A8C32E006ACA3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16D29A8C32E006ACA3B /* MainView.swift */; };
 		34ECC17029A8C330006ACA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ECC16F29A8C330006ACA3B /* Assets.xcassets */; };
@@ -40,11 +40,11 @@
 		3442522329AAE3E3009D332C /* FT-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FT-Times-Info.plist"; path = "FT Times/FT-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3442522729AAFA85009D332C /* NetworkCheckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheckManager.swift; sourceTree = "<group>"; };
 		3442522929AB19B5009D332C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		34841ACF29B2406900E6BFDC /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
+		34841AD029B2406A00E6BFDC /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
+		34841AD129B2406A00E6BFDC /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
+		34841AD229B2406A00E6BFDC /* media21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media21.mp3; sourceTree = "<group>"; };
 		34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecJumpButton.swift; sourceTree = "<group>"; };
-		34D54BCB29ADEDB500377BE9 /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
-		34D54BCC29ADEDB600377BE9 /* media21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media21.mp3; sourceTree = "<group>"; };
-		34D54BCD29ADEDB600377BE9 /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
-		34D54BCE29ADEDB600377BE9 /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
 		34ECC16829A8C32E006ACA3B /* FT Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FT Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FT_TimesApp.swift; sourceTree = "<group>"; };
 		34ECC16D29A8C32E006ACA3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -93,10 +93,10 @@
 		34D54B9329AC3F0600377BE9 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				34D54BCB29ADEDB500377BE9 /* media11.mp3 */,
-				34D54BCE29ADEDB600377BE9 /* media12.mp3 */,
-				34D54BCC29ADEDB600377BE9 /* media21.mp3 */,
-				34D54BCD29ADEDB600377BE9 /* media22.mp3 */,
+				34841AD029B2406A00E6BFDC /* media11.mp3 */,
+				34841ACF29B2406900E6BFDC /* media12.mp3 */,
+				34841AD229B2406A00E6BFDC /* media21.mp3 */,
+				34841AD129B2406A00E6BFDC /* media22.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -223,12 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D54BD029ADEDB600377BE9 /* media21.mp3 in Resources */,
 				34ECC17329A8C330006ACA3B /* Preview Assets.xcassets in Resources */,
-				34D54BD229ADEDB600377BE9 /* media12.mp3 in Resources */,
 				34ECC17029A8C330006ACA3B /* Assets.xcassets in Resources */,
-				34D54BD129ADEDB600377BE9 /* media22.mp3 in Resources */,
-				34D54BCF29ADEDB600377BE9 /* media11.mp3 in Resources */,
+				34841AD629B2406A00E6BFDC /* media21.mp3 in Resources */,
+				34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */,
+				34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */,
+				34841AD429B2406A00E6BFDC /* media11.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

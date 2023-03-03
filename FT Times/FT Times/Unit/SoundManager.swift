@@ -8,27 +8,78 @@
 import Foundation
 import AVKit
 
-class SoundManager {
+class Media11 {
     
-    static let share = SoundManager()
+    static let share = Media11()
     
     var player : AVAudioPlayer?
     
-    enum SoundCase: String {
-        case media11 = "media11"
-        case media12 = "media12"
-        case media21 = "media21"
-        case media22 = "media22"
-    }
-    
-    func playSound(sound: SoundCase, Volume : Float) {
-        
-        guard let url = Bundle.main.url(forResource: sound.rawValue, withExtension: ".mp3") else { return }
-        player?.volume = Volume
+    func playMedia(volume: Float) {
+        guard let url = Bundle.main.url(forResource: "media11", withExtension: ".mp3") else { return }
         
         do {
-            try player = AVAudioPlayer(contentsOf: url)
+            player = try AVAudioPlayer(contentsOf: url)
             player?.play()
+            player?.volume = volume
+        } catch let error {
+            print("error massage : \(error.localizedDescription)")
+        }
+    }
+}
+
+class Media12 {
+    
+    static let share = Media12()
+    
+    var player : AVAudioPlayer?
+    
+    func playMedia(volume: Float) {
+        guard let url = Bundle.main.url(forResource: "media12", withExtension: ".mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            player?.volume = volume
+        } catch let error {
+            print("error massage : \(error.localizedDescription)")
+        }
+    }
+}
+
+
+class Media21 {
+    
+    static let share = Media21()
+    
+    var player : AVAudioPlayer?
+    
+    func playMedia(volume: Float) {
+        guard let url = Bundle.main.url(forResource: "media21", withExtension: ".mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            player?.volume = volume
+        } catch let error {
+            print("error massage : \(error.localizedDescription)")
+        }
+    }
+}
+
+
+class Media22 {
+    
+    static let share = Media22()
+    
+    var player : AVAudioPlayer?
+    
+    func playMedia(volume: Float) {
+        guard let url = Bundle.main.url(forResource: "media22", withExtension: ".mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            player?.volume = volume
         } catch let error {
             print("error massage : \(error.localizedDescription)")
         }

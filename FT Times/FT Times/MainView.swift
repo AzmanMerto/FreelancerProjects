@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var viewModel : MainViewModel = .init()
+    @State var isWaiting = true
     
     var body: some View {
         ZStack {
@@ -26,8 +27,10 @@ struct MainView: View {
                     .padding(.bottom)
                 // MARK: Start Button
                 
-                OpenOtherButton(string: "", action: {
-                    viewModel.isActiveRewardAd.toggle()
+                OpenOtherButton(isPressed: $viewModel.isUserPressToMainButton,
+                                text: $viewModel.text,
+                                action: {
+                        viewModel.startAd()
                 })
                 
                 // MARK: Description
@@ -40,55 +43,78 @@ struct MainView: View {
                     .multilineTextAlignment(.center)
                 // MARK: Active Sound Buttons
                 VStack(spacing: 10) {
-                    PookaTakeTimeButton()
-                    HStack {
+                    PookaTakeTimeButton {
                         
+                    }
+
+                    HStack {
                         VStack(spacing: 20) {
                             TimerButton(text: "Sayaç 1-2",
-                                        isThatChanged: $viewModel.isButtonColored2) {
-                                viewModel.againColorButton(Button1: false,
+                                        isThatChanged: $viewModel.isActiveButton2) {
+                                viewModel.actionButtons(Button1: false,
                                                            Button2: true,
                                                            Button3: false,
                                                            Button4: false)
+                                viewModel.text = "1-2"
+                                viewModel.setSound(Media1: 0,
+                                                   Media2: 1,
+                                                   Media3: 0,
+                                                   Media4: 0)
                             }
                             
                             TimerButton(text: "Sayaç 1-1",
-                                        isThatChanged: $viewModel.isButtonColored1) {
-                                viewModel.againColorButton(Button1: true,
+                                        isThatChanged: $viewModel.isActiveButton1) {
+                                viewModel.actionButtons(Button1: true,
                                                            Button2: false,
                                                            Button3: false,
                                                            Button4: false)
+                                viewModel.text = "1-1"
+                                viewModel.setSound(Media1: 1,
+                                                   Media2: 0,
+                                                   Media3: 0,
+                                                   Media4: 0)
                             }
                             
-                            SecJumpButton(text: "- ms", isActive: .constant(false)) {
-                                
+                            SecJumpButton(text: "- ms") {
+                                    
                             }
                         }
                         
                         VStack(spacing: 20) {
                             TimerButton(text: "Sayaç 2-2",
-                                        isThatChanged: $viewModel.isButtonColored4) {
-                                viewModel.againColorButton(Button1: false,
+                                        isThatChanged: $viewModel.isActiveButton4) {
+                                viewModel.actionButtons(Button1: false,
                                                            Button2: false,
                                                            Button3: false,
                                                            Button4: true)
+                                viewModel.text = "2-2"
+                                viewModel.setSound(Media1: 0,
+                                                   Media2: 0,
+                                                   Media3: 0,
+                                                   Media4: 1)
                             }
                             
                             TimerButton(text: "Sayaç 2-1",
-                                        isThatChanged: $viewModel.isButtonColored3 ) {
-                                viewModel.againColorButton(Button1: false,
+                                        isThatChanged: $viewModel.isActiveButton3 ) {
+                                viewModel.actionButtons(Button1: false,
                                                            Button2: false,
                                                            Button3: true,
                                                            Button4: false)
+                                viewModel.text = "2-1"
+                                viewModel.setSound(Media1: 0,
+                                                   Media2: 0,
+                                                   Media3: 1,
+                                                   Media4: 0)
                             }
                             
-                            SecJumpButton(text: "+ ms", isActive: .constant(false)) {
+                            SecJumpButton(text: "+ ms") {
                                 
                             }
                         }
                     }
                 }
-                .opacity(viewModel.isOtherButtonsReady ? 0.6 : 1)
+                .disabled(viewModel.isAppReady != true)
+                .opacity(viewModel.isAppReady ? 1 : 0.6)
                 
                 // MARK: Web link
                 Link(destination: URL(string: "https://ahmeters.blogspot.com/2022/04/fttimes-knight-online.html")!) {
@@ -108,15 +134,19 @@ struct MainView: View {
                 BannerAd(adUnitId: MobileAdsID.BannerId)
             }
         }
+        .disabled(isWaiting)
+        .onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                isWaiting.toggle()
+            }
+        }
         // MARK: - Interstitial Ad
         .presentInterstitialAd(isPresented: $viewModel.isActiveInterstitialAd,
                                adUnitId: MobileAdsID.InterstitialId)
         // MARK: - Rewarded Ad
         .presentRewardedAd(isPresented: $viewModel.isActiveRewardAd, adUnitId: MobileAdsID.RewardedId) {
-            viewModel.startInterstitialAd()
-        }
-        .onAppear{
-            viewModel.ReadyApp()
+            viewModel.isAppReady = true
+            viewModel.startSound()
         }
     }
 }

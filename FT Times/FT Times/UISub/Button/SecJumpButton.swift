@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct SecJumpButton: View {
+    
     var text : String
-    @Binding var isActive : Bool
     var action : () -> Void
+    
     var body: some View {
         Button {
             action()
         } label: {
             Text(text)
         }
-        .opacity(isActive ? 1 : 0.6)
-        .disabled(isActive == true)
         .buttonStyle(SecJumpButtonStyle())
     }
 }
 
-
 struct SecJumpButton_Previews: PreviewProvider {
     static var previews: some View {
-        SecJumpButton(text: "- ms",isActive: .constant(false), action: {})
+        SecJumpButton(text: "- ms", action: {})
     }
 }
-
 
 private struct SecJumpButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {

@@ -9,17 +9,16 @@ import SwiftUI
 
 struct OpenOtherButton: View {
 
-    @State var isPressed = false
-    @State var string : String
+    @Binding var isPressed : Bool
+    @Binding var text : String
     
     var action : () -> Void
     
     var body: some View {
         Button {
             action()
-            isPressed = true
         } label: {
-            Text(isPressed ? "ÇALIŞAN SÜRE: \(string)" : "SAYAÇLARI AÇ")
+            Text(isPressed ? "ÇALIŞAN SÜRE: \(text)" : "SAYAÇLARI AÇ")
                 .opacity(isPressed ? 0.5 : 1)
         }
         .disabled(isPressed)
@@ -42,7 +41,7 @@ private struct OpenOtherButtonStyle: ButtonStyle {
 
 struct OpenOtherButton_Previews: PreviewProvider {
     static var previews: some View {
-        OpenOtherButton(string: "1-1") {
+        OpenOtherButton(isPressed: .constant(false),text: .constant("1-1")) {
             
         }
     }
