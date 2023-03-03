@@ -30,7 +30,7 @@ private struct OpenOtherButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(.white)
-            .font(.system(.largeTitle,weight: .bold))
+            .font(.system(.largeTitle).bold())
             .padding(.all)
             .background {
                 RoundedRectangle(cornerRadius: 10)

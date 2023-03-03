@@ -22,7 +22,17 @@ struct TimerButton: View {
         } label: {
             Text(text)
         }
-        .buttonStyle(TimerButtonStyle(isChanged: $isThatChanged))
+        .foregroundColor(.white)
+        .font(.system(.headline).bold())
+        .padding(.all,20)
+        .background {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(lineWidth: 1)
+                .background {
+                    Color(isThatChanged ? .systemGreen : .systemPurple)
+                        .cornerRadius(20)
+                }
+        }
     }
     
 }
@@ -35,24 +45,5 @@ struct TimerButton_Previews: PreviewProvider {
     }
 }
 
-struct TimerButtonStyle: ButtonStyle {
-    
-    @Binding var isChanged : Bool
-    
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundColor(.white)
-            .font(.system(.headline,weight: .bold))
-            .padding(.all,20)
-            .background {
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(lineWidth: 1)
-                    .background {
-                        Color(isChanged ? .systemGreen : .systemPurple)
-                            .cornerRadius(20)
-                    }
-            }
-    }
-}
 
 

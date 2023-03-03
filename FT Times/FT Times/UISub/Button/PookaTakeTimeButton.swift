@@ -14,11 +14,13 @@ struct PookaTakeTimeButton: View {
     
     var body: some View {
         Button {
+            action()
             isPressed = true
         } label: {
             Text(isPressed ? "POOKA SÜRESİ ALINDI" : "POOKA SÜRESİ AL")
                 .minimumScaleFactor(0.9)
         }
+        .opacity(isPressed ? 0.6 : 1)
         .disabled(isPressed)
         .buttonStyle(PookaTakeTimeButtonStyle())
     }
@@ -36,7 +38,7 @@ private struct PookaTakeTimeButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(.white)
-            .font(.system(.title,weight: .bold))
+            .font(.system(.title).bold())
             .padding(.all)
             .background {
                 RoundedRectangle(cornerRadius: 10)

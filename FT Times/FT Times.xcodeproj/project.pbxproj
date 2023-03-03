@@ -14,12 +14,13 @@
 		3442521E29AAE1D1009D332C /* FullScreenModi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521929AAE1D1009D332C /* FullScreenModi.swift */; };
 		3442521F29AAE1D1009D332C /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521A29AAE1D1009D332C /* RewardedAd.swift */; };
 		3442522629AAEB78009D332C /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 3442522529AAEB78009D332C /* GoogleMobileAds */; };
-		3442522829AAFA85009D332C /* NetworkCheckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522729AAFA85009D332C /* NetworkCheckManager.swift */; };
 		3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522929AB19B5009D332C /* MainViewModel.swift */; };
 		34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841ACF29B2406900E6BFDC /* media12.mp3 */; };
-		34841AD429B2406A00E6BFDC /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD029B2406A00E6BFDC /* media11.mp3 */; };
 		34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD129B2406A00E6BFDC /* media22.mp3 */; };
 		34841AD629B2406A00E6BFDC /* media21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD229B2406A00E6BFDC /* media21.mp3 */; };
+		34841ADB29B24DDD00E6BFDC /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34841ADA29B24DDD00E6BFDC /* AlertView.swift */; };
+		34841ADD29B2602C00E6BFDC /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841ADC29B2602C00E6BFDC /* media11.mp3 */; };
+		34841ADF29B2658F00E6BFDC /* Geomerty+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */; };
 		34D54BC529AC7B5200377BE9 /* SecJumpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */; };
 		34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */; };
 		34ECC16E29A8C32E006ACA3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16D29A8C32E006ACA3B /* MainView.swift */; };
@@ -38,12 +39,13 @@
 		3442521929AAE1D1009D332C /* FullScreenModi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenModi.swift; sourceTree = "<group>"; };
 		3442521A29AAE1D1009D332C /* RewardedAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
 		3442522329AAE3E3009D332C /* FT-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FT-Times-Info.plist"; path = "FT Times/FT-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
-		3442522729AAFA85009D332C /* NetworkCheckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheckManager.swift; sourceTree = "<group>"; };
 		3442522929AB19B5009D332C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		34841ACF29B2406900E6BFDC /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
-		34841AD029B2406A00E6BFDC /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
 		34841AD129B2406A00E6BFDC /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
 		34841AD229B2406A00E6BFDC /* media21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media21.mp3; sourceTree = "<group>"; };
+		34841ADA29B24DDD00E6BFDC /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		34841ADC29B2602C00E6BFDC /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
+		34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geomerty+Extension.swift"; sourceTree = "<group>"; };
 		34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecJumpButton.swift; sourceTree = "<group>"; };
 		34ECC16829A8C32E006ACA3B /* FT Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FT Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FT_TimesApp.swift; sourceTree = "<group>"; };
@@ -70,10 +72,10 @@
 		3430F9E129A90186008A72E1 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				34841AE129B265B200E6BFDC /* Extension */,
+				34841AE029B2659B00E6BFDC /* Manager */,
 				34D54B9329AC3F0600377BE9 /* Sound */,
 				3442521529AAE1C4009D332C /* Ad */,
-				3430F9E229A90193008A72E1 /* SoundManager.swift */,
-				3442522729AAFA85009D332C /* NetworkCheckManager.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -90,10 +92,34 @@
 			path = Ad;
 			sourceTree = "<group>";
 		};
+		34841AD929B24DC100E6BFDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34841ADA29B24DDD00E6BFDC /* AlertView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34841AE029B2659B00E6BFDC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3430F9E229A90193008A72E1 /* SoundManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		34841AE129B265B200E6BFDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		34D54B9329AC3F0600377BE9 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				34841AD029B2406A00E6BFDC /* media11.mp3 */,
+				34841ADC29B2602C00E6BFDC /* media11.mp3 */,
 				34841ACF29B2406900E6BFDC /* media12.mp3 */,
 				34841AD229B2406A00E6BFDC /* media21.mp3 */,
 				34841AD129B2406A00E6BFDC /* media22.mp3 */,
@@ -143,6 +169,7 @@
 		34ECC17929A8CB3F006ACA3B /* UISub */ = {
 			isa = PBXGroup;
 			children = (
+				34841AD929B24DC100E6BFDC /* View */,
 				34ECC17A29A8CB4A006ACA3B /* Button */,
 			);
 			path = UISub;
@@ -228,7 +255,7 @@
 				34841AD629B2406A00E6BFDC /* media21.mp3 in Resources */,
 				34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */,
 				34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */,
-				34841AD429B2406A00E6BFDC /* media11.mp3 in Resources */,
+				34841ADD29B2602C00E6BFDC /* media11.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,13 +273,14 @@
 				34D54BC529AC7B5200377BE9 /* SecJumpButton.swift in Sources */,
 				3442521D29AAE1D1009D332C /* InterstitialAd.swift in Sources */,
 				3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */,
+				34841ADF29B2658F00E6BFDC /* Geomerty+Extension.swift in Sources */,
 				34ECC17E29A8DDBE006ACA3B /* PookaTakeTimeButton.swift in Sources */,
 				34ECC18229A8E054006ACA3B /* TimerButton.swift in Sources */,
 				34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */,
+				34841ADB29B24DDD00E6BFDC /* AlertView.swift in Sources */,
 				3442521F29AAE1D1009D332C /* RewardedAd.swift in Sources */,
 				3430F9E329A90193008A72E1 /* SoundManager.swift in Sources */,
 				3442521E29AAE1D1009D332C /* FullScreenModi.swift in Sources */,
-				3442522829AAFA85009D332C /* NetworkCheckManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -363,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

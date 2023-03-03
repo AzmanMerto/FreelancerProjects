@@ -14,6 +14,9 @@ class MainViewModel: ObservableObject {
     @Published var isAppReady: Bool
     @Published var isUserPressToMainButton: Bool
     
+    @Published var isPlus: Bool
+    @Published var isShowAlert: Bool
+    
     @Published var isActiveButton1: Bool
     @Published var isActiveButton2: Bool
     @Published var isActiveButton3: Bool
@@ -25,6 +28,8 @@ class MainViewModel: ObservableObject {
          isActiveRewardAd: Bool = false,
          isAppReady: Bool = false,
          isUserPressToMainButton: Bool = false,
+         isPlus: Bool = false,
+         isShowAlert: Bool = false,
          isActiveButton1: Bool = false,
          isActiveButton2: Bool = false,
          isActiveButton3: Bool = false,
@@ -34,6 +39,8 @@ class MainViewModel: ObservableObject {
         self.isActiveRewardAd = isActiveRewardAd
         self.isAppReady = isAppReady
         self.isUserPressToMainButton = isUserPressToMainButton
+        self.isPlus = isPlus
+        self.isShowAlert = isShowAlert
         self.isActiveButton1 = isActiveButton1
         self.isActiveButton2 = isActiveButton2
         self.isActiveButton3 = isActiveButton3
@@ -56,7 +63,7 @@ class MainViewModel: ObservableObject {
     }
     
     func startSound() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
             Media11.share.playMedia(volume: 1)
             Media12.share.playMedia(volume: 0)
             Media12.share.playMedia(volume: 0)
@@ -71,8 +78,18 @@ class MainViewModel: ObservableObject {
         Media22.share.player?.volume = Media4
     }
     
-    func seekSound() {
-        Media11.share.player?.currentTime = 100.0
+    func forwardSound(Media1: Double, Media2: Double, Media3: Double, Media4: Double ) {
+        Media11.share.player?.currentTime += Media1
+        Media12.share.player?.currentTime += Media2
+        Media21.share.player?.currentTime += Media3
+        Media22.share.player?.currentTime += Media4
+    }
+    
+    func backwardSound(Media1: Double, Media2: Double, Media3: Double, Media4: Double ) {
+        Media11.share.player?.currentTime -= Media1
+        Media12.share.player?.currentTime -= Media2
+        Media21.share.player?.currentTime -= Media3
+        Media22.share.player?.currentTime -= Media4
     }
     
     func actionButtons(Button1: Bool, Button2: Bool, Button3: Bool, Button4: Bool) {
