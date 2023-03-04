@@ -18,6 +18,9 @@
 		34AACD9729B284AE006E29FE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9629B284AE006E29FE /* FirebaseAuth */; };
 		34AACD9929B284AE006E29FE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9829B284AE006E29FE /* FirebaseFirestore */; };
 		34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9A29B284AE006E29FE /* FirebaseStorage */; };
+		34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBA29B3220B006E29FE /* CustomTextField.swift */; };
+		34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBC29B324DD006E29FE /* LoginView.swift */; };
+		34AACDC029B32F74006E29FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,10 @@
 		349CF62A29962650005B9150 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		349CF62D29962B53005B9150 /* Image+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extensions.swift"; sourceTree = "<group>"; };
 		349CF62F29962CB6005B9150 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		34AACDBA29B3220B006E29FE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		34AACDBC29B324DD006E29FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34AACDC129B32F83006E29FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +72,11 @@
 		349CF60E299614ED005B9150 /* Shigo */ = {
 			isa = PBXGroup;
 			children = (
+				34AACDC129B32F83006E29FE /* Info.plist */,
 				349CF60F299614ED005B9150 /* ShigoApp.swift */,
 				349CF627299624AB005B9150 /* Core */,
 				349CF628299624BC005B9150 /* Service */,
+				34AACDBE29B32F65006E29FE /* Resoruce */,
 				349CF62C29962B3A005B9150 /* Extensions */,
 				349CF629299624C0005B9150 /* Utils */,
 				349CF615299614F0005B9150 /* Preview Content */,
@@ -86,8 +95,8 @@
 		349CF61D29962122005B9150 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				349CF63129962E50005B9150 /* Router */,
 				349CF6262996248D005B9150 /* Splash */,
+				34AACD9C29B29B45006E29FE /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				349CF61D29962122005B9150 /* View */,
-				349CF61E29962432005B9150 /* Instruments */,
+				34AACDB829B321CC006E29FE /* UISub */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -142,11 +151,37 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		349CF63129962E50005B9150 /* Router */ = {
+		34AACD9C29B29B45006E29FE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				34AACDBC29B324DD006E29FE /* LoginView.swift */,
 			);
-			path = Router;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		34AACDB829B321CC006E29FE /* UISub */ = {
+			isa = PBXGroup;
+			children = (
+				34AACDB929B321E1006E29FE /* TextField */,
+				349CF61E29962432005B9150 /* Instruments */,
+			);
+			path = UISub;
+			sourceTree = "<group>";
+		};
+		34AACDB929B321E1006E29FE /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				34AACDBA29B3220B006E29FE /* CustomTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		34AACDBE29B32F65006E29FE /* Resoruce */ = {
+			isa = PBXGroup;
+			children = (
+				34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */,
+			);
+			path = Resoruce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +252,7 @@
 			files = (
 				349CF617299614F0005B9150 /* Preview Assets.xcassets in Resources */,
 				349CF614299614F0005B9150 /* Assets.xcassets in Resources */,
+				34AACDC029B32F74006E29FE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */,
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
 				349CF62E29962B53005B9150 /* Image+Extensions.swift in Sources */,
 				349CF62B29962650005B9150 /* Image.swift in Sources */,
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				349CF610299614ED005B9150 /* ShigoApp.swift in Sources */,
+				34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */,
 				349CF6222996246F005B9150 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +402,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Shigo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -393,7 +431,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Shigo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -11,6 +11,6 @@ extension Image {
     func SplashViewLines() -> some View {
         self
             .resizable()
-            .frame(height: UIScreen.main.bounds.height * 0.2)
+            .frame(width: UIScreen.main.bounds.width * 2 ,height: UIScreen.main.bounds.height * 0.3)
     }
 }

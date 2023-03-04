@@ -13,30 +13,41 @@ struct SplashView: View {
     
     var body: some View {
         if vm.isSplashed {
-            
+            LoginView()
         } else {
             ZStack {
                 Image(Imagements.Splash.SplashBackground.rawValue)
-                VStack(spacing: 10) {
-                    Spacer() // Spacer
+                VStack(spacing: 100) {
+                    
+                    Spacer()
                     
                     Image(Imagements.Splash.TopCategoryLine.rawValue)
                         .SplashViewLines()
                     
+                    Spacer()
+                    
+                    Image(Imagements.Splash.BottomCategoryLine.rawValue)
+                        .SplashViewLines()
+                    
+                    Spacer()
+                    
+                }
+                VStack(spacing: 10) {
+                    
+                    Spacer() // Spacer
+
                     Image(Imagements.Splash.Logo.rawValue)
                         .resizable()
                         .frame(width: UIScreen.main.bounds.width * 0.7,
                                height: UIScreen.main.bounds.height * 0.4)
                         .padding(.vertical)
-                    
-                    Image(Imagements.Splash.BottomCategoryLine.rawValue)
-                        .SplashViewLines()
-                    
+     
                     Spacer() // Spacer
+                    
                 }
             }.onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-//                    vm.isSplashed = true
+                    vm.isSplashed = true
                 }
             }
         }
