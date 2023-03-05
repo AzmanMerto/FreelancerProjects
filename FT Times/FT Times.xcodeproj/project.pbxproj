@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341ECA0D29B404F20035E77A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 341ECA0C29B404F20035E77A /* FirebaseAnalytics */; };
+		341ECA0F29B405070035E77A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA0E29B405070035E77A /* AppDelegate.swift */; };
+		341ECA1129B40B7D0035E77A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 341ECA1029B40B7D0035E77A /* GoogleService-Info.plist */; };
 		3430F9E329A90193008A72E1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430F9E229A90193008A72E1 /* SoundManager.swift */; };
 		3442521B29AAE1D1009D332C /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521629AAE1D1009D332C /* BannerAd.swift */; };
 		3442521C29AAE1D1009D332C /* MobileAdsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521729AAE1D1009D332C /* MobileAdsID.swift */; };
 		3442521D29AAE1D1009D332C /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521829AAE1D1009D332C /* InterstitialAd.swift */; };
 		3442521E29AAE1D1009D332C /* FullScreenModi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521929AAE1D1009D332C /* FullScreenModi.swift */; };
 		3442521F29AAE1D1009D332C /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521A29AAE1D1009D332C /* RewardedAd.swift */; };
-		3442522629AAEB78009D332C /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 3442522529AAEB78009D332C /* GoogleMobileAds */; };
 		3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522929AB19B5009D332C /* MainViewModel.swift */; };
 		34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841ACF29B2406900E6BFDC /* media12.mp3 */; };
 		34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841AD129B2406A00E6BFDC /* media22.mp3 */; };
@@ -22,6 +24,7 @@
 		34841ADD29B2602C00E6BFDC /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34841ADC29B2602C00E6BFDC /* media11.mp3 */; };
 		34841ADF29B2658F00E6BFDC /* Geomerty+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */; };
 		34D54BC529AC7B5200377BE9 /* SecJumpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */; };
+		34DE5CDE29B3F9A800A25DFD /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 34DE5CDD29B3F9A800A25DFD /* GoogleMobileAds */; };
 		34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */; };
 		34ECC16E29A8C32E006ACA3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16D29A8C32E006ACA3B /* MainView.swift */; };
 		34ECC17029A8C330006ACA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34ECC16F29A8C330006ACA3B /* Assets.xcassets */; };
@@ -32,13 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341ECA0E29B405070035E77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		341ECA1029B40B7D0035E77A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3430F9E229A90193008A72E1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		3442521629AAE1D1009D332C /* BannerAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		3442521729AAE1D1009D332C /* MobileAdsID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAdsID.swift; sourceTree = "<group>"; };
 		3442521829AAE1D1009D332C /* InterstitialAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
 		3442521929AAE1D1009D332C /* FullScreenModi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenModi.swift; sourceTree = "<group>"; };
 		3442521A29AAE1D1009D332C /* RewardedAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
-		3442522329AAE3E3009D332C /* FT-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FT-Times-Info.plist"; path = "FT Times/FT-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3442522329AAE3E3009D332C /* FT-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FT-Times-Info.plist"; path = "FT Times/Resource/FT-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3442522929AB19B5009D332C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		34841ACF29B2406900E6BFDC /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
 		34841AD129B2406A00E6BFDC /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
@@ -62,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3442522629AAEB78009D332C /* GoogleMobileAds in Frameworks */,
+				341ECA0D29B404F20035E77A /* FirebaseAnalytics in Frameworks */,
+				34DE5CDE29B3F9A800A25DFD /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +133,42 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		34DE5CD829B3D7E800A25DFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA1029B40B7D0035E77A /* GoogleService-Info.plist */,
+				34ECC16F29A8C330006ACA3B /* Assets.xcassets */,
+				3442522329AAE3E3009D332C /* FT-Times-Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		34DE5CD929B3D84100A25DFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */,
+				341ECA0E29B405070035E77A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		34DE5CDA29B3D84900A25DFD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				34DE5CDB29B3D85000A25DFD /* Main */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		34DE5CDB29B3D85000A25DFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3442522929AB19B5009D332C /* MainViewModel.swift */,
+				34ECC16D29A8C32E006ACA3B /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		34ECC15F29A8C32E006ACA3B = {
 			isa = PBXGroup;
 			children = (
@@ -146,13 +188,11 @@
 		34ECC16A29A8C32E006ACA3B /* FT Times */ = {
 			isa = PBXGroup;
 			children = (
-				34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */,
-				3442522929AB19B5009D332C /* MainViewModel.swift */,
-				34ECC16D29A8C32E006ACA3B /* MainView.swift */,
+				34DE5CD929B3D84100A25DFD /* App */,
+				34DE5CDA29B3D84900A25DFD /* Core */,
 				34ECC17929A8CB3F006ACA3B /* UISub */,
 				3430F9E129A90186008A72E1 /* Unit */,
-				3442522329AAE3E3009D332C /* FT-Times-Info.plist */,
-				34ECC16F29A8C330006ACA3B /* Assets.xcassets */,
+				34DE5CD829B3D7E800A25DFD /* Resource */,
 				34ECC17129A8C330006ACA3B /* Preview Content */,
 			);
 			path = "FT Times";
@@ -203,7 +243,8 @@
 			);
 			name = "FT Times";
 			packageProductDependencies = (
-				3442522529AAEB78009D332C /* GoogleMobileAds */,
+				34DE5CDD29B3F9A800A25DFD /* GoogleMobileAds */,
+				341ECA0C29B404F20035E77A /* FirebaseAnalytics */,
 			);
 			productName = "FT Times";
 			productReference = 34ECC16829A8C32E006ACA3B /* FT Times.app */;
@@ -234,7 +275,8 @@
 			);
 			mainGroup = 34ECC15F29A8C32E006ACA3B;
 			packageReferences = (
-				3442522429AAEB78009D332C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				34DE5CDC29B3F9A800A25DFD /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				341ECA0B29B404F20035E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 34ECC16929A8C32E006ACA3B /* Products */;
 			projectDirPath = "";
@@ -256,6 +298,7 @@
 				34841AD329B2406A00E6BFDC /* media12.mp3 in Resources */,
 				34841AD529B2406A00E6BFDC /* media22.mp3 in Resources */,
 				34841ADD29B2602C00E6BFDC /* media11.mp3 in Resources */,
+				341ECA1129B40B7D0035E77A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +317,7 @@
 				3442521D29AAE1D1009D332C /* InterstitialAd.swift in Sources */,
 				3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */,
 				34841ADF29B2658F00E6BFDC /* Geomerty+Extension.swift in Sources */,
+				341ECA0F29B405070035E77A /* AppDelegate.swift in Sources */,
 				34ECC17E29A8DDBE006ACA3B /* PookaTakeTimeButton.swift in Sources */,
 				34ECC18229A8E054006ACA3B /* TimerButton.swift in Sources */,
 				34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */,
@@ -412,7 +456,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FT Times/FT-Times-Info.plist";
+				INFOPLIST_FILE = "FT Times/Resource/FT-Times-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,7 +490,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FT Times/FT-Times-Info.plist";
+				INFOPLIST_FILE = "FT Times/Resource/FT-Times-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,7 +537,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3442522429AAEB78009D332C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+		341ECA0B29B404F20035E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		34DE5CDC29B3F9A800A25DFD /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
 			requirement = {
@@ -504,9 +556,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3442522529AAEB78009D332C /* GoogleMobileAds */ = {
+		341ECA0C29B404F20035E77A /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3442522429AAEB78009D332C /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			package = 341ECA0B29B404F20035E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		34DE5CDD29B3F9A800A25DFD /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34DE5CDC29B3F9A800A25DFD /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */

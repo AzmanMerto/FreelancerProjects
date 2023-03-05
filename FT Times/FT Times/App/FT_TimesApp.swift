@@ -5,19 +5,14 @@
 //  Created by NomoteteS on 24.02.2023.
 //
 
+import Foundation
 import SwiftUI
-import GoogleMobileAds
-import AppTrackingTransparency
 
 @main
 struct FT_TimesApp: App {
     
-    init() {
-        ATTrackingManager.requestTrackingAuthorization { status in
-            GADMobileAds.sharedInstance().start(completionHandler: nil)
-        }
-    }
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
             MainView()
