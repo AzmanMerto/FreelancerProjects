@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
+		341ECA1629B41A230035E77A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1529B41A230035E77A /* UserInfo.swift */; };
+		341ECA1B29B41D4E0035E77A /* LoginViewBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */; };
+		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
+		341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1F29B41DF70035E77A /* PrimaryButton.swift */; };
+		341ECA2229B422330035E77A /* LoginPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2129B422330035E77A /* LoginPlace.swift */; };
 		349CF610299614ED005B9150 /* ShigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF60F299614ED005B9150 /* ShigoApp.swift */; };
 		349CF612299614ED005B9150 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF611299614ED005B9150 /* SplashView.swift */; };
 		349CF614299614F0005B9150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF613299614F0005B9150 /* Assets.xcassets */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341ECA1229B419CB0035E77A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		341ECA1529B41A230035E77A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBackgroundColor.swift; sourceTree = "<group>"; };
+		341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAndCountryName.swift; sourceTree = "<group>"; };
+		341ECA1F29B41DF70035E77A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		341ECA2129B422330035E77A /* LoginPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlace.swift; sourceTree = "<group>"; };
 		349CF60C299614ED005B9150 /* Shigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349CF60F299614ED005B9150 /* ShigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShigoApp.swift; sourceTree = "<group>"; };
 		349CF611299614ED005B9150 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -53,6 +65,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341ECA1429B41A0A0035E77A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA1529B41A230035E77A /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		341ECA1729B41D280035E77A /* ViewSub */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA1829B41D330035E77A /* Splash */,
+				341ECA1929B41D370035E77A /* Login */,
+			);
+			path = ViewSub;
+			sourceTree = "<group>";
+		};
+		341ECA1829B41D330035E77A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		341ECA1929B41D370035E77A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */,
+				341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */,
+				341ECA2129B422330035E77A /* LoginPlace.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		341ECA1E29B41DE10035E77A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA1F29B41DF70035E77A /* PrimaryButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		349CF603299614ED005B9150 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +129,7 @@
 				34AACDC129B32F83006E29FE /* Info.plist */,
 				349CF60F299614ED005B9150 /* ShigoApp.swift */,
 				349CF627299624AB005B9150 /* Core */,
+				341ECA1429B41A0A0035E77A /* Model */,
 				349CF628299624BC005B9150 /* Service */,
 				34AACDBE29B32F65006E29FE /* Resoruce */,
 				349CF62C29962B3A005B9150 /* Extensions */,
@@ -138,7 +193,6 @@
 		349CF629299624C0005B9150 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				349CF613299614F0005B9150 /* Assets.xcassets */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +208,7 @@
 		34AACD9C29B29B45006E29FE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				341ECA1229B419CB0035E77A /* LoginViewModel.swift */,
 				34AACDBC29B324DD006E29FE /* LoginView.swift */,
 			);
 			path = Login;
@@ -162,7 +217,9 @@
 		34AACDB829B321CC006E29FE /* UISub */ = {
 			isa = PBXGroup;
 			children = (
+				341ECA1729B41D280035E77A /* ViewSub */,
 				34AACDB929B321E1006E29FE /* TextField */,
+				341ECA1E29B41DE10035E77A /* Button */,
 				349CF61E29962432005B9150 /* Instruments */,
 			);
 			path = UISub;
@@ -179,6 +236,7 @@
 		34AACDBE29B32F65006E29FE /* Resoruce */ = {
 			isa = PBXGroup;
 			children = (
+				349CF613299614F0005B9150 /* Assets.xcassets */,
 				34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */,
 			);
 			path = Resoruce;
@@ -265,12 +323,18 @@
 			files = (
 				34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */,
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
+				341ECA1B29B41D4E0035E77A /* LoginViewBackgroundColor.swift in Sources */,
 				349CF62E29962B53005B9150 /* Image+Extensions.swift in Sources */,
 				349CF62B29962650005B9150 /* Image.swift in Sources */,
+				341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */,
+				341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */,
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				349CF610299614ED005B9150 /* ShigoApp.swift in Sources */,
 				34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */,
 				349CF6222996246F005B9150 /* Color.swift in Sources */,
+				341ECA1629B41A230035E77A /* UserInfo.swift in Sources */,
+				341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */,
+				341ECA2229B422330035E77A /* LoginPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

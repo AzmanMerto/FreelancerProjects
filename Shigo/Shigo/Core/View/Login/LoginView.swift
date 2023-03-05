@@ -8,26 +8,25 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @StateObject var viewModel : LoginViewModel = .init()
+    
     var body: some View {
         ZStack {
             //MARK: LoginView - Background Color
             LoginViewBackgroundColor()
-            
             VStack {
-                //MARK: LoginView - Flag & Desciption
-                HStack {
-                    
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.shigoPurple)
-                            .frame(height: 50)
-                        Text("Termin - Görüşme")
-                            .font(.largeTitle.bold())
-                            .foregroundColor(.white)
-                            
-                    }
-                }
                 
+                //MARK: LoginView - Flag & Desciption
+                FlagAndCountryName()
+                    .padding(.top)
+                
+                Spacer()
+                
+                LoginPlace(email: $viewModel.email,
+                           password: $viewModel.password)
+                
+                Spacer()
                 
             }
         }
@@ -37,17 +36,12 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
-    }
-}
-
-struct LoginViewBackgroundColor: View {
-    var body: some View {
-        VStack {
-            Rectangle()
-                .foregroundColor(.white)
-            Rectangle()
-                .foregroundColor(.shigoPurple)
-        }
-        .ignoresSafeArea()
+            .previewDevice("iPhone 14")
+        
+        LoginView()
+            .previewDevice("iPhone 12")
+        
+        LoginView()
+            .previewDevice("iPhone 11")
     }
 }

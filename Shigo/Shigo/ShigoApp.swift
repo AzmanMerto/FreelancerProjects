@@ -12,6 +12,7 @@ struct ShigoApp: App {
     var body: some Scene {
         WindowGroup {
             SplashView()
+                .preferredColorScheme(.light)
         }
     }
 }

@@ -14,6 +14,11 @@ struct Imagements {
         case TopCategoryLine = "topCategoryLine"
         case BottomCategoryLine = "bottomCategoryLine"
     }
+    
+    enum Flag : String {
+        case turkey = "turkeyFlag"
+        case german = "germanFlag"
+    }
 }
     
 

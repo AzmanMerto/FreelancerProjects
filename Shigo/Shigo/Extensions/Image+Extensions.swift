@@ -13,4 +13,10 @@ extension Image {
             .resizable()
             .frame(width: UIScreen.main.bounds.width * 2 ,height: UIScreen.main.bounds.height * 0.3)
     }
+    
+    func flag() -> some View {
+        self
+            .resizable()
+            .frame(width: 100, height: 80)
+    }
 }
