@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
 		341ECA1629B41A230035E77A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1529B41A230035E77A /* UserInfo.swift */; };
-		341ECA1B29B41D4E0035E77A /* LoginViewBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */; };
+		341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */; };
 		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
 		341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1F29B41DF70035E77A /* PrimaryButton.swift */; };
 		341ECA2229B422330035E77A /* LoginPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2129B422330035E77A /* LoginPlace.swift */; };
+		341ECA2629B423A30035E77A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2529B423A30035E77A /* RegisterView.swift */; };
+		341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2729B423AB0035E77A /* RegisterViewModel.swift */; };
+		341ECA2A29B424BE0035E77A /* PrimaryChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2929B424BE0035E77A /* PrimaryChangeView.swift */; };
+		341ECA2D29B426390035E77A /* PrimaryCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2C29B426390035E77A /* PrimaryCoordinatorView.swift */; };
 		349CF610299614ED005B9150 /* ShigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF60F299614ED005B9150 /* ShigoApp.swift */; };
 		349CF612299614ED005B9150 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF611299614ED005B9150 /* SplashView.swift */; };
 		349CF614299614F0005B9150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF613299614F0005B9150 /* Assets.xcassets */; };
@@ -32,10 +36,14 @@
 /* Begin PBXFileReference section */
 		341ECA1229B419CB0035E77A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		341ECA1529B41A230035E77A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBackgroundColor.swift; sourceTree = "<group>"; };
+		341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBackground.swift; sourceTree = "<group>"; };
 		341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAndCountryName.swift; sourceTree = "<group>"; };
 		341ECA1F29B41DF70035E77A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		341ECA2129B422330035E77A /* LoginPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPlace.swift; sourceTree = "<group>"; };
+		341ECA2529B423A30035E77A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		341ECA2729B423AB0035E77A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		341ECA2929B424BE0035E77A /* PrimaryChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryChangeView.swift; sourceTree = "<group>"; };
+		341ECA2C29B426390035E77A /* PrimaryCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCoordinatorView.swift; sourceTree = "<group>"; };
 		349CF60C299614ED005B9150 /* Shigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349CF60F299614ED005B9150 /* ShigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShigoApp.swift; sourceTree = "<group>"; };
 		349CF611299614ED005B9150 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -76,27 +84,29 @@
 		341ECA1729B41D280035E77A /* ViewSub */ = {
 			isa = PBXGroup;
 			children = (
-				341ECA1829B41D330035E77A /* Splash */,
-				341ECA1929B41D370035E77A /* Login */,
+				341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */,
+				341ECA2929B424BE0035E77A /* PrimaryChangeView.swift */,
+				341ECA1829B41D330035E77A /* SplashSub */,
+				341ECA1929B41D370035E77A /* LoginSub */,
+				341ECA2329B423150035E77A /* RegisterSub */,
 			);
 			path = ViewSub;
 			sourceTree = "<group>";
 		};
-		341ECA1829B41D330035E77A /* Splash */ = {
+		341ECA1829B41D330035E77A /* SplashSub */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Splash;
+			path = SplashSub;
 			sourceTree = "<group>";
 		};
-		341ECA1929B41D370035E77A /* Login */ = {
+		341ECA1929B41D370035E77A /* LoginSub */ = {
 			isa = PBXGroup;
 			children = (
-				341ECA1A29B41D4E0035E77A /* LoginViewBackgroundColor.swift */,
 				341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */,
 				341ECA2129B422330035E77A /* LoginPlace.swift */,
 			);
-			path = Login;
+			path = LoginSub;
 			sourceTree = "<group>";
 		};
 		341ECA1E29B41DE10035E77A /* Button */ = {
@@ -105,6 +115,30 @@
 				341ECA1F29B41DF70035E77A /* PrimaryButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		341ECA2329B423150035E77A /* RegisterSub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegisterSub;
+			sourceTree = "<group>";
+		};
+		341ECA2429B423570035E77A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA2729B423AB0035E77A /* RegisterViewModel.swift */,
+				341ECA2529B423A30035E77A /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		341ECA2B29B425F40035E77A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				341ECA2C29B426390035E77A /* PrimaryCoordinatorView.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		349CF603299614ED005B9150 = {
@@ -150,8 +184,10 @@
 		349CF61D29962122005B9150 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				341ECA2B29B425F40035E77A /* Coordinator */,
 				349CF6262996248D005B9150 /* Splash */,
 				34AACD9C29B29B45006E29FE /* Login */,
+				341ECA2429B423570035E77A /* Register */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,10 +359,14 @@
 			files = (
 				34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */,
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
-				341ECA1B29B41D4E0035E77A /* LoginViewBackgroundColor.swift in Sources */,
+				341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */,
+				341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */,
+				341ECA2A29B424BE0035E77A /* PrimaryChangeView.swift in Sources */,
 				349CF62E29962B53005B9150 /* Image+Extensions.swift in Sources */,
 				349CF62B29962650005B9150 /* Image.swift in Sources */,
 				341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */,
+				341ECA2629B423A30035E77A /* RegisterView.swift in Sources */,
+				341ECA2D29B426390035E77A /* PrimaryCoordinatorView.swift in Sources */,
 				341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */,
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				349CF610299614ED005B9150 /* ShigoApp.swift in Sources */,

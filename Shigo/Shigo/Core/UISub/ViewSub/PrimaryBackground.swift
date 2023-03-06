@@ -1,5 +1,5 @@
 //
-//  LoginViewBackgroundColor.swift
+//  PrimaryBackground.swift
 //  Shigo
 //
 //  Created by NomoteteS on 5.03.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginViewBackgroundColor: View {
+struct PrimaryBackground: View {
     var body: some View {
         VStack {
             Rectangle()
@@ -21,6 +21,6 @@ struct LoginViewBackgroundColor: View {
 
 struct LoginViewBackgroundColor_Previews: PreviewProvider {
     static var previews: some View {
-        LoginViewBackgroundColor()
+        PrimaryBackground()
     }
 }

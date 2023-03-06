@@ -10,10 +10,12 @@ import SwiftUI
 struct SplashView: View {
     
     @ObservedObject var vm : SplashViewModel = .init()
+    @EnvironmentObject private var coordinator : PrimaryCoordinator
     
     var body: some View {
         if vm.isSplashed {
-            LoginView()
+            coordinator.build(page: .loginView)
+                .navigationBarBackButtonHidden(true)
         } else {
             ZStack {
                 Image(Imagements.Splash.SplashBackground.rawValue)
