@@ -11,4 +11,5 @@ enum ImageHelper : String {
     case appLogo = "appLogo"
     case toofLogo = "toofLogo"
     case onboardingImage = "onboardingImage"
+    case authBackground = "authBackground"
 }

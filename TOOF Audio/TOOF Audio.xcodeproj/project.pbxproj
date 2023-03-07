@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92D329B7B4BC00B3127E /* FontHelper.swift */; };
+		340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92D529B7B4C200B3127E /* FontHandler.swift */; };
+		340F92D929B7B89E00B3127E /* AuthRooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92D829B7B89E00B3127E /* AuthRooter.swift */; };
+		340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92DA29B7B8A600B3127E /* AuthViewModel.swift */; };
+		340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92DC29B7B8B400B3127E /* AuthLoginView.swift */; };
+		340F92DF29B7B8BB00B3127E /* AuthRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92DE29B7B8BB00B3127E /* AuthRegisterView.swift */; };
+		340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E029B7B8C900B3127E /* AuthResetPasswordView.swift */; };
+		340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E229B7B95300B3127E /* AuthCodeView.swift */; };
+		340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E429B7B96B00B3127E /* AuthChangePasswordView.swift */; };
+		340F92E829B7B9FE00B3127E /* DeviceFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */; };
+		340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */; };
+		340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */; };
+		340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */; };
+		340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */; };
+		340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92F329B7BB3F00B3127E /* EntryTextField.swift */; };
+		340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92F529B7BB8F00B3127E /* EntryHeader.swift */; };
 		3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */; };
 		3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFA929A4403500CA1F0F /* Assets.xcassets */; };
 		3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */; };
@@ -23,10 +39,25 @@
 		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
 		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
 		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
-		34ECC14229A820D0006ACA3B /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340F92D329B7B4BC00B3127E /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		340F92D529B7B4C200B3127E /* FontHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHandler.swift; sourceTree = "<group>"; };
+		340F92D829B7B89E00B3127E /* AuthRooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRooter.swift; sourceTree = "<group>"; };
+		340F92DA29B7B8A600B3127E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		340F92DC29B7B8B400B3127E /* AuthLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginView.swift; sourceTree = "<group>"; };
+		340F92DE29B7B8BB00B3127E /* AuthRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRegisterView.swift; sourceTree = "<group>"; };
+		340F92E029B7B8C900B3127E /* AuthResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResetPasswordView.swift; sourceTree = "<group>"; };
+		340F92E229B7B95300B3127E /* AuthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCodeView.swift; sourceTree = "<group>"; };
+		340F92E429B7B96B00B3127E /* AuthChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChangePasswordView.swift; sourceTree = "<group>"; };
+		340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderRouter.swift; sourceTree = "<group>"; };
+		340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderViewModel.swift; sourceTree = "<group>"; };
+		340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderAddView.swift; sourceTree = "<group>"; };
+		340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderConnectView.swift; sourceTree = "<group>"; };
+		340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNotFoundView.swift; sourceTree = "<group>"; };
+		340F92F329B7BB3F00B3127E /* EntryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTextField.swift; sourceTree = "<group>"; };
+		340F92F529B7BB8F00B3127E /* EntryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeader.swift; sourceTree = "<group>"; };
 		3426EFA229A4403200CA1F0F /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
 		3426EFA929A4403500CA1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,7 +75,6 @@
 		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
 		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
 		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340F92D129B7B4A900B3127E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				340F92D329B7B4BC00B3127E /* FontHelper.swift */,
+				340F92D529B7B4C200B3127E /* FontHandler.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		340F92D729B7B86100B3127E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				340F92D829B7B89E00B3127E /* AuthRooter.swift */,
+				340F92DA29B7B8A600B3127E /* AuthViewModel.swift */,
+				340F92DC29B7B8B400B3127E /* AuthLoginView.swift */,
+				340F92DE29B7B8BB00B3127E /* AuthRegisterView.swift */,
+				340F92E029B7B8C900B3127E /* AuthResetPasswordView.swift */,
+				340F92E229B7B95300B3127E /* AuthCodeView.swift */,
+				340F92E429B7B96B00B3127E /* AuthChangePasswordView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		340F92E629B7B9C000B3127E /* DeviceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */,
+				340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */,
+				340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */,
+				340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */,
+				340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */,
+			);
+			path = DeviceFinder;
+			sourceTree = "<group>";
+		};
+		340F92F129B7BAA600B3127E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				340F92F529B7BB8F00B3127E /* EntryHeader.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		340F92F229B7BAB200B3127E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				340F92F329B7BB3F00B3127E /* EntryTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		3426EF9929A4403200CA1F0F = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +213,7 @@
 			children = (
 				34ECC13729A80E27006ACA3B /* UISub */,
 				34ECC13829A80E31006ACA3B /* Button */,
+				340F92F229B7BAB200B3127E /* TextField */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -139,8 +221,10 @@
 		3426EFB829A4403500CA1F0F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3426EFC029A4403500CA1F0F /* SplashView */,
+				3426EFC029A4403500CA1F0F /* Splash */,
 				3426EFCE29A4403500CA1F0F /* Onboarding */,
+				340F92D729B7B86100B3127E /* Auth */,
+				340F92E629B7B9C000B3127E /* DeviceFinder */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +232,7 @@
 		3426EFB929A4403500CA1F0F /* Instrument */ = {
 			isa = PBXGroup;
 			children = (
+				340F92D129B7B4A900B3127E /* Font */,
 				3426EFBB29A4403500CA1F0F /* Image */,
 				3426EFBA29A4403500CA1F0F /* Color */,
 			);
@@ -172,22 +257,22 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		3426EFC029A4403500CA1F0F /* SplashView */ = {
+		3426EFC029A4403500CA1F0F /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				3426EFC129A4403500CA1F0F /* SplashView.swift */,
-				3426EFC629A4403500CA1F0F /* SplashViewModel.swift */,
 				3426EFC829A4403500CA1F0F /* SplashRouter.swift */,
+				3426EFC629A4403500CA1F0F /* SplashViewModel.swift */,
+				3426EFC129A4403500CA1F0F /* SplashView.swift */,
 			);
-			path = SplashView;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		3426EFCE29A4403500CA1F0F /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				3426EFCF29A4403500CA1F0F /* OnboardingView.swift */,
-				34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */,
 				34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */,
+				34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */,
+				3426EFCF29A4403500CA1F0F /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -197,6 +282,7 @@
 			children = (
 				34ECC13929A80E43006ACA3B /* Splash */,
 				34ECC13C29A80EA9006ACA3B /* Onboarding */,
+				340F92F129B7BAA600B3127E /* Auth */,
 			);
 			path = UISub;
 			sourceTree = "<group>";
@@ -205,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				34ECC14329A820DF006ACA3B /* ButtonActive */,
-				34ECC14429A820EB006ACA3B /* ButtonStyle */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -232,14 +317,6 @@
 				34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */,
 			);
 			path = ButtonActive;
-			sourceTree = "<group>";
-		};
-		34ECC14429A820EB006ACA3B /* ButtonStyle */ = {
-			isa = PBXGroup;
-			children = (
-				34ECC14129A820D0006ACA3B /* PrimaryButtonStyle.swift */,
-			);
-			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,20 +390,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
+				340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */,
+				340F92D929B7B89E00B3127E /* AuthRooter.swift in Sources */,
+				340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */,
+				340F92DF29B7B8BB00B3127E /* AuthRegisterView.swift in Sources */,
+				340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */,
+				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
 				3426EFC929A4403500CA1F0F /* SplashRouter.swift in Sources */,
+				340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */,
 				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
+				340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */,
 				3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */,
+				340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */,
 				34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */,
 				3426EFD029A4403500CA1F0F /* OnboardingView.swift in Sources */,
-				34ECC14229A820D0006ACA3B /* PrimaryButtonStyle.swift in Sources */,
+				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
+				340F92E829B7B9FE00B3127E /* DeviceFinderRouter.swift in Sources */,
+				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
+				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
+				340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */,
 				3426EFC229A4403500CA1F0F /* SplashView.swift in Sources */,
 				34ECC13229A80DB2006ACA3B /* OnboardingViewModel.swift in Sources */,
 				3426EFC729A4403500CA1F0F /* SplashViewModel.swift in Sources */,
 				34ECC13429A80DBF006ACA3B /* OnboardingRouter.swift in Sources */,
+				340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */,
 				3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */,
 				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
 				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
+				340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

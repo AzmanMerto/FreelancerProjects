@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Color {
+    // MARK: Color - Master Colors
     static let ToofPrimaryColor : Color = Color(ColorHelper.primaryColor.rawValue)
     static let ToofPrimaryColorAlt : Color = Color(ColorHelper.primaryColorAlt.rawValue)
     static let ToofButtonColor : Color = Color(ColorHelper.buttonColor.rawValue)
@@ -15,6 +16,7 @@ extension Color {
     static let ToofTextColor : Color = Color(ColorHelper.textColor.rawValue)
     static let ToofTextSoftColor : Color = Color(ColorHelper.textSoftColor.rawValue)
     
+    // MARK: Color - Background Colors
     static let ToofBackgroundColor : Color = Color(ColorHelper.backgroundColor.rawValue)
     static let ToofBackgroundPlayerColor : Color = Color(ColorHelper.backgroundPlayerColor.rawValue)
 }

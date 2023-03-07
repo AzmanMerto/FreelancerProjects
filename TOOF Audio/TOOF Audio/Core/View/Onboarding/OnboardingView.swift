@@ -37,11 +37,14 @@ struct OnboardingView: View {
                         .padding(EdgeInsets.init(top: 30, leading: 120, bottom: 0, trailing: 120))
                         .foregroundColor(.white)
 
-                    PrimaryButton(action: {
-
-                    }, text: "")
+                   
                 }
                 Spacer()
+                PrimaryButton(text: "HADİ BAŞLAYALIM", size: CGSize(width: 156,
+                                                     height: 48)) {
+                    
+                }
+                                                     .padding(.bottom)
             }
         }
     }

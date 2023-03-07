@@ -11,4 +11,5 @@ extension Image {
     static let AppLogo : Image = Image(ImageHelper.appLogo.rawValue)
     static let ToofLogo : Image = Image(ImageHelper.toofLogo.rawValue)
     static let OnboardingImage : Image = Image(ImageHelper.onboardingImage.rawValue)
+    static let AuthBackground : Image = Image(ImageHelper.authBackground.rawValue)
 }

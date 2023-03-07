@@ -8,25 +8,43 @@
 import SwiftUI
 
 struct PrimaryButton: View {
+    @State var text : String
+    @State var size : CGSize
     var action : () -> ()
-    var text : String
     
     var body: some View {
         Button {
             action()
         } label: {
             Text(text)
-                .foregroundColor(.white)
-                .font(.system(.headline,weight: .bold))
         }
-        .buttonStyle(PrimaryButtonStyle())
+        .buttonStyle(PrimaryButtonStyle(size: size))
     }
 }
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryButton(action: {
+        PrimaryButton(text: "Custom Button", size: CGSize(width: 156,
+                                             height: 48)) {
             
-        }, text: "")
+        }
+    }
+}
+
+
+struct PrimaryButtonStyle: ButtonStyle {
+    
+    @State var size: CGSize
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundColor(.white)
+            .font(.boldRounded14)
+            .background{
+                RoundedRectangle(cornerRadius: 12)
+                    .frame(width: size.width,
+                           height: size.height)
+                    .foregroundColor(.ToofButtonColor)
+            }
     }
 }
