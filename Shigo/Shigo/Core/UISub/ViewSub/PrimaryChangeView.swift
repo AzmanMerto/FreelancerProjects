@@ -10,6 +10,8 @@ import SwiftUI
 struct PrimaryChangeView: View {
     
     var text: String
+    var color: Color?
+    var textColor: Color?
     var action: () -> ()
     
     var body: some View {
@@ -19,9 +21,9 @@ struct PrimaryChangeView: View {
             ZStack {
                 Rectangle()
                     .frame(height: 40)
-                    .foregroundColor(.white)
+                    .foregroundColor(color ?? .white)
                 Text(text)
-                    .foregroundColor(.black)
+                    .foregroundColor(textColor ?? .black)
                     .font(.title.bold())
             }
         }

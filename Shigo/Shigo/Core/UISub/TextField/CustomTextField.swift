@@ -17,12 +17,16 @@ struct CustomTextField: View {
             RoundedRectangle(cornerRadius: 2)
                 .frame(height: 50)
                 .padding(.horizontal)
-                .foregroundColor(.gray.opacity(0.4))
+                .foregroundColor(.shigoTextGray)
             HStack {
-                TextField(text, text: $textField)
+                Group{
+                    Text(text)
+                    TextField("", text: $textField)
+                }
+                .foregroundColor(.black)
+                .padding(.horizontal)
                 Spacer()
             }
-            .padding(.horizontal)
             .padding(.horizontal)
         }
     }

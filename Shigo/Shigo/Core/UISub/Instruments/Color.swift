@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Color {
-   static let shigoPurple = Color("4E4B67")
+    static let shigoBackground = Color("Background")
+    static let shigoPurple = Color("4E4B67")
+    static let shigoTextGray = Color("E5E6E7")
 }
 

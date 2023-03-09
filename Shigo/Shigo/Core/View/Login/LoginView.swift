@@ -17,24 +17,17 @@ struct LoginView: View {
             //MARK: LoginView - Background Color
             PrimaryBackground()
             VStack {
-                
                 //MARK: LoginView - Flag & Desciption
                 FlagAndCountryName()
                     .padding(.top)
-                
                 Spacer()
-                
                 LoginPlace(email: $viewModel.email,
                            password: $viewModel.password)
-                
                 Spacer()
-                
                 PrimaryChangeView(text: "ÜYE OL") {
                         coordinator.push(.registerView)
                 }
-                
                 Spacer()
-                
             }
         }
     }
@@ -44,12 +37,6 @@ struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
             .previewDevice("iPhone 14")
-        
-        LoginView()
-            .previewDevice("iPhone 12")
-        
-        LoginView()
-            .previewDevice("iPhone 11")
     }
 }
 

@@ -11,7 +11,7 @@ struct PrimaryBackground: View {
     var body: some View {
         VStack {
             Rectangle()
-                .foregroundColor(.white)
+                .foregroundColor(.shigoBackground)
             Rectangle()
                 .foregroundColor(.shigoPurple)
         }

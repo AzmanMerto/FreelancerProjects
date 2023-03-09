@@ -18,28 +18,20 @@ struct LoginPlace: View {
                 .foregroundColor(.white)
                 .padding(.all)
                 .frame(height: 400)
-                .background{
-                    Color.black
-                }
-            
+                .background{    Color.black     }
             VStack {
-                
                 VStack {
                     CustomTextField(text: "Email",
                                     textField: $email)
-                    
                     CustomTextField(text: "Password",
                                     textField: $password)
                 }
                 .padding(.bottom)
-                
                 PrimaryButton(text: "Giriş Yap") {
-                    
+
                 }
                 .padding(.horizontal)
-                
                 HStack {
-                    
                 }
             }
             .padding(.horizontal)
@@ -47,7 +39,6 @@ struct LoginPlace: View {
         .padding(.all,30)
     }
 }
-
 
 struct LoginPlace_Previews: PreviewProvider {
     static var previews: some View {
