@@ -1,5 +1,5 @@
 //
-//  PrimaryChangeView.swift
+//  AuthChangeButton.swift
 //  Shigo
 //
 //  Created by NomoteteS on 5.03.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PrimaryChangeView: View {
+struct AuthChangeButton: View {
     
     var text: String
     var color: Color?
@@ -33,7 +33,7 @@ struct PrimaryChangeView: View {
 
 struct PrimaryChangeView_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryChangeView(text: "") {
+        AuthChangeButton(text: "") {
             
         }
     }

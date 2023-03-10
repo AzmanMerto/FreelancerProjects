@@ -10,7 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     
     @StateObject var viewModel: RegisterViewModel = .init()
-    @EnvironmentObject var coordinator : PrimaryCoordinator
+    @EnvironmentObject var coordinator : AuthCoordinator
     
     var body: some View {
 
@@ -31,8 +31,6 @@ struct RegisterView: View {
                 }
                 .frame(width: 96,height: 96)
                 .padding(.top,50)
-
-               
                 //MARK: RegisterView - Textfield space
                 ZStack {
                     Rectangle()
@@ -53,7 +51,7 @@ struct RegisterView: View {
                                             textField: $viewModel.againPassword)
                         }
                         .padding(.all)
-                        PrimaryChangeView(text: "ÜYE OL",
+                        AuthChangeButton(text: "ÜYE OL",
                                           color: .shigoPurple,
                                           textColor: .white) {
                             
@@ -63,10 +61,10 @@ struct RegisterView: View {
                     }
                     
                 }
-                .padding(EdgeInsets.init(top: 50, leading: 20, bottom: 50, trailing: 20))
+                .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
                 
-                PrimaryChangeView(text: "GİRİŞ YAP") {
-                    coordinator.pop()
+                AuthChangeButton(text: "GİRİŞ YAP") {
+                    coordinator.push(.loginView)
                 }
             }
         }

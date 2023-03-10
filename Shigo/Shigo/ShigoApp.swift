@@ -11,7 +11,7 @@ import SwiftUI
 struct ShigoApp: App {
     var body: some Scene {
         WindowGroup {
-            PrimaryCoordinatorView()
+            SplashView()
                 .preferredColorScheme(.light)
         }
     }

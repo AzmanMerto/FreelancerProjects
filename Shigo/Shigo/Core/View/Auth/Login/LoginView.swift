@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
     
     @StateObject var viewModel : LoginViewModel = .init()
-    @EnvironmentObject var coordinator : PrimaryCoordinator
+    @EnvironmentObject var coordinator : AuthCoordinator
     
     var body: some View {
         ZStack {
@@ -24,7 +24,7 @@ struct LoginView: View {
                 LoginPlace(email: $viewModel.email,
                            password: $viewModel.password)
                 Spacer()
-                PrimaryChangeView(text: "ÜYE OL") {
+                AuthChangeButton(text: "ÜYE OL") {
                         coordinator.push(.registerView)
                 }
                 Spacer()
