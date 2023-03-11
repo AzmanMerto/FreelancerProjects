@@ -1,5 +1,5 @@
 //
-//  Image.swift
+//  Imagements.swift
 //  Shigo
 //
 //  Created by NomoteteS on 10.02.2023.
@@ -15,9 +15,13 @@ struct Imagements {
         case BottomCategoryLine = "bottomCategoryLine"
     }
     
-    enum Flag : String {
+    enum Auth : String {
         case turkey = "turkeyFlag"
         case german = "germanFlag"
+    }
+    
+    enum Main: String {
+        case mainTab = "mainTab"
     }
 }
     

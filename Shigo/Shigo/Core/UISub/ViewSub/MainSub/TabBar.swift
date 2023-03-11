@@ -9,31 +9,46 @@ import SwiftUI
 
 
 struct TabBar: View {
+    
+    @State var isHomeChanged = true
+    @State var isMagnifyChanged = false
+    @State var isBasketChanged = false
+    @State var isPersonChanged = false
+
+    func changeIconColor(t1 type1: Bool, t2 type2: Bool, t3 type3: Bool, t4 type4: Bool) {
+        self.isHomeChanged = type1
+        self.isMagnifyChanged = type2
+        self.isBasketChanged = type3
+        self.isPersonChanged = type4
+    }
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 40)
                 .foregroundColor(.shigoTextGray)
             HStack {
                 Spacer()
-                TabButton(isChanged: .constant(false), systemImage: "house") {
-                    
+                TabButton(isChanged: $isHomeChanged, systemImage: "house") {
+                    changeIconColor(t1: true, t2: false, t3: false, t4: false)
                 }
+                
                 Spacer()
                 TabButton(isChanged: .constant(false), systemImage: "magnifyingglass") {
                     
                 }
-                Spacer()
-                Button {
-                    
-                } label: {
-                    Image("")
+                ZStack {
+                    Button {
+                        
+                    } label: {
+                        Image(Imagements.Main.mainTab.rawValue)
+                            .resizable()
+                            .frame(width: 60,height: 50)
+                    }
                 }
-
-                Spacer()
+                .padding(.horizontal,40)
                 TabButton(isChanged: .constant(false), systemImage: "basket") {
                     
                 }
-                
                 Spacer()
                 TabButton(isChanged: .constant(false), systemImage: "person.circle") {
                     

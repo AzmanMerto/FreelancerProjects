@@ -11,10 +11,10 @@ struct FlagAndCountryName: View {
     var body: some View {
         VStack {
             HStack(spacing: 50) {
-                Image(Imagements.Flag.german.rawValue)
+                Image(Imagements.Auth.german.rawValue)
                     .flag()
                 
-                Image(Imagements.Flag.turkey.rawValue)
+                Image(Imagements.Auth.turkey.rawValue)
                     .flag()
             }
             ZStack {
