@@ -23,16 +23,15 @@ struct LoginPlace: View {
                 VStack {
                     CustomTextField(text: "Email",
                                     textField: $email)
-                    CustomTextField(text: "Password",
-                                    textField: $password)
+                    SecureCustomTextField(text: "Password", textField: $password)
                 }
                 .padding(.bottom)
                 PrimaryButton(text: "Giriş Yap") {
 
                 }
                 .padding(.horizontal)
-                HStack {
-                }
+                LoginWithApp(isActive: .constant(false))
+                    .padding(.top)
             }
             .padding(.horizontal)
         }

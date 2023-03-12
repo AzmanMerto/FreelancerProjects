@@ -11,7 +11,17 @@ struct HomeView: View {
         
     var body: some View {
         ZStack {
+            Image(Imagements.Main.homeView.rawValue)
+                .resizable()
+                .scaledToFit()
             
+            Rectangle()
+                .ignoresSafeArea()
+                .opacity(0.5)
+            
+            Text("Not Ready Sorry For that")
+                .font(.largeTitle.bold())
+                .foregroundColor(.white)
         }
     }
 }

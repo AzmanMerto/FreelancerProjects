@@ -18,10 +18,17 @@ struct Imagements {
     enum Auth : String {
         case turkey = "turkeyFlag"
         case german = "germanFlag"
+        case instagramIcon = "instagramIcon"
+        case appleIcon = "appleIcon"
+        case googleIcon = "googleIcon"
+        case tiktokIcon = "tiktokIcon"
     }
     
     enum Main: String {
         case mainTab = "mainTab"
+        case homeView = "homeView"
+        case orderView = "orderView"
+        case searchView = "searchView"
     }
 }
     

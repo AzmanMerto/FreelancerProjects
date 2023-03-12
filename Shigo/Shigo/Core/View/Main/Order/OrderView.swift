@@ -9,7 +9,19 @@ import SwiftUI
 
 struct OrderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image(Imagements.Main.orderView.rawValue)
+                .resizable()
+                .scaledToFit()
+            
+            Rectangle()
+                .ignoresSafeArea()
+                .opacity(0.5)
+            
+            Text("Not Ready Sorry For that")
+                .font(.largeTitle.bold())
+                .foregroundColor(.white)
+        }
     }
 }
 

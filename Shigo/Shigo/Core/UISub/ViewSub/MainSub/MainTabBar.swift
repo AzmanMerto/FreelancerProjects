@@ -45,6 +45,9 @@ struct MainTabBar : View {
                     Image(systemName: "person")
                 }
         }
+        .background{
+            
+        }
         .tint(.shigoOrange)
     }
 }

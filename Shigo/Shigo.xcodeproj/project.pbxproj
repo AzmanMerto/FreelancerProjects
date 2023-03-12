@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
-		341ECA1629B41A230035E77A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1529B41A230035E77A /* UserInfo.swift */; };
 		341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */; };
 		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
 		341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1F29B41DF70035E77A /* PrimaryButton.swift */; };
@@ -17,6 +16,9 @@
 		341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2729B423AB0035E77A /* RegisterViewModel.swift */; };
 		341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2929B424BE0035E77A /* AuthChangeButton.swift */; };
 		341ECA2D29B426390035E77A /* AuthCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2C29B426390035E77A /* AuthCoordinatorView.swift */; };
+		34932C3129BD18B200C113B8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3029BD18B200C113B8 /* ImagePicker.swift */; };
+		34932C3329BD281900C113B8 /* ShiMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3229BD281900C113B8 /* ShiMoney.swift */; };
+		34932C3829BD39E500C113B8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */; };
 		349CF610299614ED005B9150 /* ShigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF60F299614ED005B9150 /* ShigoApp.swift */; };
 		349CF612299614ED005B9150 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF611299614ED005B9150 /* SplashView.swift */; };
 		349CF614299614F0005B9150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF613299614F0005B9150 /* Assets.xcassets */; };
@@ -36,19 +38,23 @@
 		34A42E4729BBAF210020DC1E /* BuyShiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E4629BBAF210020DC1E /* BuyShiView.swift */; };
 		34A42E4929BBAF2A0020DC1E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E4829BBAF2A0020DC1E /* ProfileViewModel.swift */; };
 		34A42E4B29BBAF330020DC1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E4A29BBAF330020DC1E /* ProfileView.swift */; };
-		34A42E5529BBB0800020DC1E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5429BBB0800020DC1E /* TabBar.swift */; };
-		34A42E5729BC88E30020DC1E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5629BC88E30020DC1E /* MainTabBar.swift */; };
+		34A42E5529BBB0800020DC1E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5429BBB0800020DC1E /* MainTabBar.swift */; };
+		34A42E5A29BCA3C30020DC1E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5929BCA3C30020DC1E /* AuthManager.swift */; };
+		34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5B29BCA4650020DC1E /* Constant.swift */; };
+		34A42E5F29BCA56B0020DC1E /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5E29BCA56B0020DC1E /* ImageUploader.swift */; };
+		34A42E6129BCAF790020DC1E /* LoginWithApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E6029BCAF790020DC1E /* LoginWithApp.swift */; };
 		34AACD9729B284AE006E29FE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9629B284AE006E29FE /* FirebaseAuth */; };
 		34AACD9929B284AE006E29FE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9829B284AE006E29FE /* FirebaseFirestore */; };
 		34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9A29B284AE006E29FE /* FirebaseStorage */; };
 		34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBA29B3220B006E29FE /* CustomTextField.swift */; };
 		34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBC29B324DD006E29FE /* LoginView.swift */; };
 		34AACDC029B32F74006E29FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */; };
+		34B6A57B29BD936700975EF3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6A57A29BD936700975EF3 /* UserData.swift */; };
+		34DF82AB29BDF48B00BF7ADD /* SecureCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		341ECA1229B419CB0035E77A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		341ECA1529B41A230035E77A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBackground.swift; sourceTree = "<group>"; };
 		341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAndCountryName.swift; sourceTree = "<group>"; };
 		341ECA1F29B41DF70035E77A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 		341ECA2729B423AB0035E77A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		341ECA2929B424BE0035E77A /* AuthChangeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChangeButton.swift; sourceTree = "<group>"; };
 		341ECA2C29B426390035E77A /* AuthCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorView.swift; sourceTree = "<group>"; };
+		3436859529BD4A5900582B33 /* Shigo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shigo.entitlements; sourceTree = "<group>"; };
+		34932C3029BD18B200C113B8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		34932C3229BD281900C113B8 /* ShiMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiMoney.swift; sourceTree = "<group>"; };
 		349CF60C299614ED005B9150 /* Shigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349CF60F299614ED005B9150 /* ShigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShigoApp.swift; sourceTree = "<group>"; };
 		349CF611299614ED005B9150 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -77,12 +86,17 @@
 		34A42E4629BBAF210020DC1E /* BuyShiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyShiView.swift; sourceTree = "<group>"; };
 		34A42E4829BBAF2A0020DC1E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		34A42E4A29BBAF330020DC1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		34A42E5429BBB0800020DC1E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		34A42E5629BC88E30020DC1E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		34A42E5429BBB0800020DC1E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		34A42E5929BCA3C30020DC1E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		34A42E5B29BCA4650020DC1E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		34A42E5E29BCA56B0020DC1E /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		34A42E6029BCAF790020DC1E /* LoginWithApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithApp.swift; sourceTree = "<group>"; };
 		34AACDBA29B3220B006E29FE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		34AACDBC29B324DD006E29FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34AACDC129B32F83006E29FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		34B6A57A29BD936700975EF3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 				34AACD9729B284AE006E29FE /* FirebaseAuth in Frameworks */,
 				34AACD9929B284AE006E29FE /* FirebaseFirestore in Frameworks */,
 				34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */,
+				34932C3829BD39E500C113B8 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +117,7 @@
 		341ECA1429B41A0A0035E77A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				341ECA1529B41A230035E77A /* UserInfo.swift */,
+				34B6A57A29BD936700975EF3 /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			children = (
 				341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */,
 				341ECA2129B422330035E77A /* LoginPlace.swift */,
+				34A42E6029BCAF790020DC1E /* LoginWithApp.swift */,
 			);
 			path = LoginSub;
 			sourceTree = "<group>";
@@ -158,11 +174,19 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		34932C3629BD39E500C113B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		349CF603299614ED005B9150 = {
 			isa = PBXGroup;
 			children = (
 				349CF60E299614ED005B9150 /* Shigo */,
 				349CF60D299614ED005B9150 /* Products */,
+				34932C3629BD39E500C113B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +201,7 @@
 		349CF60E299614ED005B9150 /* Shigo */ = {
 			isa = PBXGroup;
 			children = (
+				3436859529BD4A5900582B33 /* Shigo.entitlements */,
 				34AACDC129B32F83006E29FE /* Info.plist */,
 				349CF60F299614ED005B9150 /* ShigoApp.swift */,
 				349CF627299624AB005B9150 /* Core */,
@@ -238,6 +263,8 @@
 		349CF628299624BC005B9150 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				34A42E5D29BCA55E0020DC1E /* Helper */,
+				34A42E5829BCA3A70020DC1E /* Firebase */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -245,6 +272,7 @@
 		349CF629299624C0005B9150 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				34A42E5B29BCA4650020DC1E /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,8 +371,7 @@
 				34A42E5129BBB04E0020DC1E /* SearchSub */,
 				34A42E5029BBB0490020DC1E /* BuyShiSub */,
 				34A42E4F29BBB03F0020DC1E /* ProfileSub */,
-				34A42E5429BBB0800020DC1E /* TabBar.swift */,
-				34A42E5629BC88E30020DC1E /* MainTabBar.swift */,
+				34A42E5429BBB0800020DC1E /* MainTabBar.swift */,
 			);
 			path = MainSub;
 			sourceTree = "<group>";
@@ -366,6 +393,7 @@
 		34A42E5029BBB0490020DC1E /* BuyShiSub */ = {
 			isa = PBXGroup;
 			children = (
+				34932C3229BD281900C113B8 /* ShiMoney.swift */,
 			);
 			path = BuyShiSub;
 			sourceTree = "<group>";
@@ -382,6 +410,23 @@
 			children = (
 			);
 			path = OrderSub;
+			sourceTree = "<group>";
+		};
+		34A42E5829BCA3A70020DC1E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				34A42E5929BCA3C30020DC1E /* AuthManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		34A42E5D29BCA55E0020DC1E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				34A42E5E29BCA56B0020DC1E /* ImageUploader.swift */,
+				34932C3029BD18B200C113B8 /* ImagePicker.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		34AACD9C29B29B45006E29FE /* Login */ = {
@@ -408,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				34AACDBA29B3220B006E29FE /* CustomTextField.swift */,
+				34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -441,6 +487,7 @@
 				34AACD9629B284AE006E29FE /* FirebaseAuth */,
 				34AACD9829B284AE006E29FE /* FirebaseFirestore */,
 				34AACD9A29B284AE006E29FE /* FirebaseStorage */,
+				34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */,
 			);
 			productName = Shigo;
 			productReference = 349CF60C299614ED005B9150 /* Shigo.app */;
@@ -505,19 +552,24 @@
 				34A42E3D29BBAEF20020DC1E /* OrderViewModel.swift in Sources */,
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
 				341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */,
-				34A42E5729BC88E30020DC1E /* MainTabBar.swift in Sources */,
 				34A42E3929BBAEE10020DC1E /* HomeViewModel.swift in Sources */,
 				34A42E4929BBAF2A0020DC1E /* ProfileViewModel.swift in Sources */,
+				34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */,
 				341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */,
 				341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */,
-				34A42E5529BBB0800020DC1E /* TabBar.swift in Sources */,
+				34A42E5529BBB0800020DC1E /* MainTabBar.swift in Sources */,
 				349CF62E29962B53005B9150 /* Image+Extensions.swift in Sources */,
+				34DF82AB29BDF48B00BF7ADD /* SecureCustomTextField.swift in Sources */,
 				349CF62B29962650005B9150 /* Imagements.swift in Sources */,
+				34A42E6129BCAF790020DC1E /* LoginWithApp.swift in Sources */,
 				34A42E4B29BBAF330020DC1E /* ProfileView.swift in Sources */,
 				341ECA2029B41DF70035E77A /* PrimaryButton.swift in Sources */,
 				341ECA2629B423A30035E77A /* RegisterView.swift in Sources */,
 				34A42E3F29BBAEFA0020DC1E /* OrderView.swift in Sources */,
 				341ECA2D29B426390035E77A /* AuthCoordinatorView.swift in Sources */,
+				34A42E5F29BCA56B0020DC1E /* ImageUploader.swift in Sources */,
+				34932C3129BD18B200C113B8 /* ImagePicker.swift in Sources */,
+				34932C3329BD281900C113B8 /* ShiMoney.swift in Sources */,
 				341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */,
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				34A42E4329BBAF0E0020DC1E /* SearchView.swift in Sources */,
@@ -525,8 +577,9 @@
 				34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */,
 				34A42E3B29BBAEE70020DC1E /* HomeView.swift in Sources */,
 				34A42E4129BBAF070020DC1E /* SearchViewModel.swift in Sources */,
+				34A42E5A29BCA3C30020DC1E /* AuthManager.swift in Sources */,
+				34B6A57B29BD936700975EF3 /* UserData.swift in Sources */,
 				349CF6222996246F005B9150 /* Colorments.swift in Sources */,
-				341ECA1629B41A230035E77A /* UserInfo.swift in Sources */,
 				34A42E4529BBAF190020DC1E /* BuyShiViewModel.swift in Sources */,
 				341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */,
 				34A42E3529BBAE340020DC1E /* MainCoordinatorView.swift in Sources */,
@@ -656,6 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shigo/Shigo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shigo/Preview Content\"";
@@ -688,6 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shigo/Shigo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shigo/Preview Content\"";
@@ -750,6 +805,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		34AACD9629B284AE006E29FE /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

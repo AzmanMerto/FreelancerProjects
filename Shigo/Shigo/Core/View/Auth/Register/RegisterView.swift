@@ -14,59 +14,93 @@ struct RegisterView: View {
     
     var body: some View {
 
-        ZStack {
-            PrimaryBackground()
-            VStack {
-                
+        NavigationView {
+            ZStack {
+                PrimaryBackground()
+                VStack {
                     
-                ZStack(alignment: .center) {
-                    RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.shigoPurple)
-                    .frame(width: 96,height: 96)
-                    
-                    Text("+")
-                        .font(.system(size: 100))
-                        .foregroundColor(.white)
-                        .padding(.bottom)
-                }
-                .frame(width: 96,height: 96)
-                .padding(.top,50)
-                //MARK: RegisterView - Textfield space
-                ZStack {
-                    Rectangle()
                         
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(.white)
-                        .padding()
-                    //MARK: RegisterView - TextFields
                     VStack {
-                        VStack(spacing: 25) {
-                            CustomTextField(text: "E-Mail",
-                                            textField: $viewModel.email)
-                            CustomTextField(text: "İsminiz",
-                                            textField: $viewModel.name)
-                            CustomTextField(text: "Password",
-                                            textField: $viewModel.password)
-                            CustomTextField(text: "Again Password",
-                                            textField: $viewModel.againPassword)
+                        if let image = viewModel.image {
+                            image
+                                .resizable()
+                        }else {
+                            Button {
+                                viewModel.isImagePickerSelected.toggle()
+                            } label: {
+                                ZStack(alignment: .center) {
+                                    RoundedRectangle(cornerRadius: 20)
+                                    .foregroundColor(.shigoPurple)
+                                    .frame(width: 96,height: 96)
+                                    
+                                    Text("+")
+                                        .font(.system(size: 100))
+                                        .foregroundColor(.white)
+                                        .padding(.bottom)
+                                }
+                            }
                         }
-                        .padding(.all)
-                        AuthChangeButton(text: "ÜYE OL",
-                                          color: .shigoPurple,
-                                          textColor: .white) {
-                            
-                        }
-                                          .padding(.horizontal)
-                                          .padding(.all)
                     }
+                    .frame(width: 126,height: 126)
+                    .clipShape(Circle())
+                    .padding(.top,50)
                     
-                }
-                .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
-                
-                AuthChangeButton(text: "GİRİŞ YAP") {
-                    coordinator.push(.loginView)
+                    .sheet(isPresented: $viewModel.isImagePickerSelected,
+                           onDismiss: viewModel.loadedImage) {
+                        ImagePicker(image: $viewModel.uiImager)
+                    }
+
+                    //MARK: RegisterView - Textfield space
+                    ZStack {
+                        Rectangle()
+                            
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(.white)
+                            .padding()
+                        //MARK: RegisterView - TextFields
+                        VStack {
+                            VStack(spacing: 25) {
+                                CustomTextField(text: "E-Mail",
+                                                textField: $viewModel.email)
+                                .keyboardType(.emailAddress)
+                                CustomTextField(text: "İsminiz",
+                                                textField: $viewModel.name)
+                                .keyboardType(.default)
+                                CustomTextField(text: "Şifreniz",
+                                                textField: $viewModel.password)
+                                CustomTextField(text: "Tekrar şifreniz",
+                                                textField: $viewModel.againPassword)
+                            }
+                            .padding(.all)
+                            let status = (viewModel.password.count == viewModel.againPassword.count)
+                            AuthChangeButton(text: "ÜYE OL",
+                                              color: .shigoPurple,
+                                              textColor: .white) {
+                                if status {
+                                   
+                                    AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: ""))!)
+                                    
+                                    if AuthManager.shared.correctAuth {
+                                        viewModel.isSkiptoPage.toggle()
+                                    }
+                                }
+                            }
+                                              .padding(.horizontal)
+                                              .padding(.all)
+                        }
+                        
+                    }
+                    .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
+                    
+                    AuthChangeButton(text: "GİRİŞ YAP") {
+                        coordinator.push(.loginView)
+                    }
                 }
             }
+        }
+        .navigationDestination(isPresented: $viewModel.isSkiptoPage) {
+            MainTabBar()
+                .navigationBarBackButtonHidden()
         }
     }
 }

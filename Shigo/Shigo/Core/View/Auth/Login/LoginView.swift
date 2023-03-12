@@ -24,10 +24,23 @@ struct LoginView: View {
                 LoginPlace(email: $viewModel.email,
                            password: $viewModel.password)
                 Spacer()
+                //MARK: LoginView - With Normal Login
+                let status = ((viewModel.email.count > 0) && (viewModel.password.count > 0))
                 AuthChangeButton(text: "ÜYE OL") {
                         coordinator.push(.registerView)
+                    if status {
+                        viewModel.isLoggedIn.toggle()
+                    }
                 }
                 Spacer()
+                //MARK: LoginView - With App Login
+                LoginWithApp(isActive: $viewModel.isLoggedIn)
+            }
+        }
+        .onAppear{
+            if viewModel.isLoggedIn {
+                AuthManager.shared.login(email: viewModel.email,
+                                         password: viewModel.password)
             }
         }
     }
@@ -36,8 +49,5 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
-            .previewDevice("iPhone 14")
     }
 }
-
-

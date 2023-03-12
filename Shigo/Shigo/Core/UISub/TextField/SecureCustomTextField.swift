@@ -1,13 +1,13 @@
 //
-//  CustomTextField.swift
+//  SecureCustomTextField.swift
 //  Shigo
 //
-//  Created by NomoteteS on 4.03.2023.
+//  Created by NomoteteS on 12.03.2023.
 //
 
 import SwiftUI
 
-struct CustomTextField: View {
+struct SecureCustomTextField: View {
     
     var text : String
     @Binding var textField: String
@@ -19,7 +19,7 @@ struct CustomTextField: View {
                 .padding(.horizontal)
                 .foregroundColor(.shigoTextGray)
             HStack {
-                TextField(text, text: $textField)
+                SecureField(text, text: $textField)
                 .foregroundColor(.black)
                 .padding(.horizontal)
                 Spacer()
@@ -29,8 +29,8 @@ struct CustomTextField: View {
     }
 }
 
-struct CustomTextField_Previews: PreviewProvider {
+struct SecureCustomTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextField(text: "Email",textField: .constant(""))
+        SecureCustomTextField(text: "", textField: .constant(""))
     }
 }
