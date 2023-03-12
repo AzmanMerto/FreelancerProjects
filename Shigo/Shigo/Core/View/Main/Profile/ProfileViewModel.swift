@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class ProfileViewModel: ObservableObject {
+    var userFullName: String?
+    var userJobTitle: String?
+    var userJob: String?
+}

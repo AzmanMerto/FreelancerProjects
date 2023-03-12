@@ -14,5 +14,6 @@ extension Color {
     static let shigoTextGray = Color("E5E6E7")
     static let shigoDarkTextGray = Color("B6B6B6")
     static let shigoOrange = Color("D64C31")
+    static let shigoLightDark = Color("231F20")
 }
 

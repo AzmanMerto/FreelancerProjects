@@ -51,6 +51,7 @@
 		34AACDC029B32F74006E29FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */; };
 		34B6A57B29BD936700975EF3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6A57A29BD936700975EF3 /* UserData.swift */; };
 		34DF82AB29BDF48B00BF7ADD /* SecureCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */; };
+		34DF82AD29BE341B00BF7ADD /* UserAppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		34AACDC129B32F83006E29FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34B6A57A29BD936700975EF3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCustomTextField.swift; sourceTree = "<group>"; };
+		34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAppStates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +388,7 @@
 		34A42E4F29BBB03F0020DC1E /* ProfileSub */ = {
 			isa = PBXGroup;
 			children = (
+				34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */,
 			);
 			path = ProfileSub;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				34B6A57B29BD936700975EF3 /* UserData.swift in Sources */,
 				349CF6222996246F005B9150 /* Colorments.swift in Sources */,
 				34A42E4529BBAF190020DC1E /* BuyShiViewModel.swift in Sources */,
+				34DF82AD29BE341B00BF7ADD /* UserAppStates.swift in Sources */,
 				341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */,
 				34A42E3529BBAE340020DC1E /* MainCoordinatorView.swift in Sources */,
 				341ECA2229B422330035E77A /* LoginPlace.swift in Sources */,
