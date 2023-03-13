@@ -52,6 +52,7 @@
 		34B6A57B29BD936700975EF3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6A57A29BD936700975EF3 /* UserData.swift */; };
 		34DF82AB29BDF48B00BF7ADD /* SecureCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */; };
 		34DF82AD29BE341B00BF7ADD /* UserAppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */; };
+		34DF82B029BE4A2000BF7ADD /* AppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AF29BE4A2000BF7ADD /* AppPurchase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		34B6A57A29BD936700975EF3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCustomTextField.swift; sourceTree = "<group>"; };
 		34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAppStates.swift; sourceTree = "<group>"; };
+		34DF82AF29BE4A2000BF7ADD /* AppPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPurchase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,8 +267,9 @@
 		349CF628299624BC005B9150 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				34A42E5D29BCA55E0020DC1E /* Helper */,
+				34DF82AE29BE4A0500BF7ADD /* Apple */,
 				34A42E5829BCA3A70020DC1E /* Firebase */,
+				34A42E5D29BCA55E0020DC1E /* Helper */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -292,8 +295,8 @@
 			children = (
 				34A42E3429BBAE340020DC1E /* MainCoordinatorView.swift */,
 				34A42E2F29BBA7530020DC1E /* Home */,
-				34A42E3329BBA7910020DC1E /* Order */,
 				34A42E3229BBA7810020DC1E /* Search */,
+				34A42E3329BBA7910020DC1E /* Order */,
 				34A42E3129BBA7600020DC1E /* BuyShi */,
 				34A42E3029BBA7580020DC1E /* Profile */,
 			);
@@ -470,6 +473,14 @@
 			path = Resoruce;
 			sourceTree = "<group>";
 		};
+		34DF82AE29BE4A0500BF7ADD /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				34DF82AF29BE4A2000BF7ADD /* AppPurchase.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,6 +567,7 @@
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
 				341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */,
 				34A42E3929BBAEE10020DC1E /* HomeViewModel.swift in Sources */,
+				34DF82B029BE4A2000BF7ADD /* AppPurchase.swift in Sources */,
 				34A42E4929BBAF2A0020DC1E /* ProfileViewModel.swift in Sources */,
 				34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */,
 				341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */,

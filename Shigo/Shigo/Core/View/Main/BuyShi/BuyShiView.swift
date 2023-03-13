@@ -13,6 +13,21 @@ struct BuyShiView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("BAKİYE")
+                    .bold()
+                
+                Spacer()
+                
+                Text("")
+                    .background {
+                        Rectangle()
+                            .padding(.all,-10)
+                            .foregroundColor(.shigoTextGray)
+                    }
+            }
+            .padding(.all,30)
+            
             ZStack {
                 Rectangle()
                     .foregroundColor(.shigoTextGray)
@@ -25,6 +40,8 @@ struct BuyShiView: View {
                 ShiMoney(shiText: item.shiText, moneyText: item.moneyText)
                     .padding(.vertical)
             }
+            
+            Spacer()
         }
     }
 }

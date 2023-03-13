@@ -15,45 +15,42 @@ enum tabs{
 struct MainTabBar : View {
     
     @State var selectionTab : tabs = .home
+    @StateObject var authManager = AuthManager()
     
     var body: some View {
         
-        TabView(selection: $selectionTab) {
-            HomeView()
-                .tag(tabs.home)
-                .tabItem {
-                    Image(systemName: "house")
-                }
-            OrderView()
-                .tag(tabs.order)
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                }
-            SearchView()
-                .tag(tabs.search)
-                .tabItem {
-                    Image(Imagements.Main.mainTab.rawValue)
-                }
-            BuyShiView()
-                .tag(tabs.buy)
-                .tabItem {
-                    Image(systemName: "basket")
-                }
-            ProfileView()
-                .tag(tabs.profile)
-                .tabItem {
-                    Image(systemName: "person")
-                }
-        }
-        .background{
-            
-        }
+            TabView(selection: $selectionTab) {
+                HomeView()
+                    .tag(tabs.home)
+                    .tabItem {
+                        Image(systemName: "house")
+                    }
+                OrderView()
+                    .tag(tabs.order)
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                    }
+                SearchView()
+                    .tag(tabs.search)
+                    .tabItem {
+                        Image(Imagements.Main.mainTab.rawValue)
+                    }
+                BuyShiView()
+                    .tag(tabs.buy)
+                    .tabItem {
+                        Image(systemName: "basket")
+                    }
+                ProfileView()
+                    .tag(tabs.profile)
+                    .tabItem {
+                        Image(systemName: "person")
+                    }
+            }
+            .environmentObject(authManager)
+            .background{
+                
+            }
         .tint(.shigoOrange)
     }
 }
 
-struct MainTabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabBar()
-    }
-}

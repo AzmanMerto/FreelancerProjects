@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @ObservedObject var viewModel: ProfileViewModel = .init()
+    @ObservedObject var viewModel = ProfileViewModel()
     
     var body: some View {
         ZStack {
@@ -19,12 +19,14 @@ struct ProfileView: View {
                 Spacer()
                 
                 VStack {
-                    Text(viewModel.userFullName!)
-                        .font(.largeTitle.bold())
-                    Text(viewModel.userJobTitle ?? "unknown Job Title")
-                        .foregroundColor(.shigoOrange)
-                        .font(.title3)
-                    Text(viewModel.userJob ?? "unknown Job")
+                    ForEach(viewModel.user) { user in
+                        Text(user.fullname)
+                            .font(.largeTitle.bold())
+                        Text(user.jobTitle ?? "unknown title")
+                            .foregroundColor(.shigoOrange)
+                            .font(.title3)
+                        Text(user.job ?? "unknown job")
+                    }
                 }
                 .foregroundColor(Color.shigoLightDark)
                 
@@ -59,12 +61,15 @@ struct ProfileView: View {
             }
             .multilineTextAlignment(.center)
         }
+        .onAppear{
+            viewModel.fetchUser()
+        }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
-}
+//struct ProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileView()
+//    }
+//}
 

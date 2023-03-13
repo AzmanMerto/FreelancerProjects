@@ -33,8 +33,6 @@ struct LoginView: View {
                     }
                 }
                 Spacer()
-                //MARK: LoginView - With App Login
-                LoginWithApp(isActive: $viewModel.isLoggedIn)
             }
         }
         .onAppear{

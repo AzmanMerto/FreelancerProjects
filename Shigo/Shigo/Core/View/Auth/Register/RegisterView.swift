@@ -13,13 +13,10 @@ struct RegisterView: View {
     @EnvironmentObject var coordinator : AuthCoordinator
     
     var body: some View {
-
         NavigationView {
             ZStack {
                 PrimaryBackground()
                 VStack {
-                    
-                        
                     VStack {
                         if let image = viewModel.image {
                             image
@@ -66,9 +63,9 @@ struct RegisterView: View {
                                 CustomTextField(text: "İsminiz",
                                                 textField: $viewModel.name)
                                 .keyboardType(.default)
-                                CustomTextField(text: "Şifreniz",
+                                SecureCustomTextField(text: "Şifreniz",
                                                 textField: $viewModel.password)
-                                CustomTextField(text: "Tekrar şifreniz",
+                                SecureCustomTextField(text: "Tekrar şifreniz",
                                                 textField: $viewModel.againPassword)
                             }
                             .padding(.all)
@@ -78,7 +75,7 @@ struct RegisterView: View {
                                               textColor: .white) {
                                 if status {
                                    
-                                    AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: ""))!)
+                                    AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: "unknownImage"))!)
                                     
                                     if AuthManager.shared.correctAuth {
                                         viewModel.isSkiptoPage.toggle()
@@ -91,7 +88,6 @@ struct RegisterView: View {
                         
                     }
                     .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
-                    
                     AuthChangeButton(text: "GİRİŞ YAP") {
                         coordinator.push(.loginView)
                     }
@@ -105,8 +101,8 @@ struct RegisterView: View {
     }
 }
 
-struct RegisterView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterView()
-    }
-}
+//struct RegisterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RegisterView()
+//    }
+//}

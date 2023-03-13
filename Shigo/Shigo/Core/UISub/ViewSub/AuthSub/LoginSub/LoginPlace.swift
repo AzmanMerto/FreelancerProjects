@@ -30,6 +30,7 @@ struct LoginPlace: View {
 
                 }
                 .padding(.horizontal)
+                //MARK: LoginView - With App Login
                 LoginWithApp(isActive: .constant(false))
                     .padding(.top)
             }

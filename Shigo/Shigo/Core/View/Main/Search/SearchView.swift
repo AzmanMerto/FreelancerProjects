@@ -15,7 +15,7 @@ struct SearchView: View {
                 .scaledToFit()
             
             Rectangle()
-                .ignoresSafeArea()
+                .frame(height: 200)
                 .opacity(0.5)
             
             Text("Not Ready Sorry For that")

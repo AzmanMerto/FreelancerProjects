@@ -20,6 +20,7 @@ struct ShigoApp: App {
                     .preferredColorScheme(.light)
             } else {
                 MainTabBar()
+                    .environmentObject(AuthManager())
                     .preferredColorScheme(.light)
             }
         }

@@ -10,7 +10,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseFirestore
 
-class AuthManager: ObservableObject {
+@MainActor class AuthManager: ObservableObject {
     
     static let shared = AuthManager()
     
@@ -21,7 +21,7 @@ class AuthManager: ObservableObject {
     
     init() {
         self.userCheck = Auth.auth().currentUser
-        
+        self.fetchUser()
     }
     
     func login(email: String, password: String) {
@@ -31,6 +31,7 @@ class AuthManager: ObservableObject {
             }else {
                 guard let user = result?.user else { return }
                 self.userCheck = user
+                self.fetchUser()
             }
         }
     }
@@ -39,7 +40,7 @@ class AuthManager: ObservableObject {
         ImageUploader.uploadImage(image: image) { imageUrl in
             Auth.auth().createUser(withEmail: email, password: password) { result, err in
                 if err != nil {
-                    print("err")
+                    print(err?.localizedDescription ?? "Error")
                     return
                 } else {
                     guard let user = result?.user else { return }
@@ -54,9 +55,24 @@ class AuthManager: ObservableObject {
                         if let err = err {
                             print("FIXto: \(err.localizedDescription)")
                         }
+                        self.userCheck = user
+                        self.fetchUser()
                     }
                 }
             }
         }        
+    }
+    
+    func fetchUser() {
+        guard let uid = userCheck?.uid else { return }
+        COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
+                guard let userData = try? snapshot?.data(as: UserData.self) else { return }
+            self.userData = userData
+        }
+    }
+    
+    func signOut() {
+        self.userCheck = nil
+        try? Auth.auth().signOut()
     }
 }

@@ -10,18 +10,26 @@ import SwiftUI
 struct HomeView: View {
         
     var body: some View {
-        ZStack {
-            Image(Imagements.Main.homeView.rawValue)
-                .resizable()
-                .scaledToFit()
-            
-            Rectangle()
-                .ignoresSafeArea()
-                .opacity(0.5)
-            
-            Text("Not Ready Sorry For that")
-                .font(.largeTitle.bold())
-                .foregroundColor(.white)
+        VStack {
+            Button {
+                AuthManager.shared.signOut()
+            } label: {
+                Text("Sign Out")
+            }
+
+            ZStack {
+                Image(Imagements.Main.homeView.rawValue)
+                    .resizable()
+                    .scaledToFit()
+                
+                Rectangle()
+                    .frame(height: 200)
+                    .opacity(0.5)
+                
+                Text("Not Ready Sorry For that")
+                    .font(.largeTitle.bold())
+                    .foregroundColor(.white)
+            }
         }
     }
 }
