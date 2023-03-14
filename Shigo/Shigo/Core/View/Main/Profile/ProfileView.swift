@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileView: View {
     
-    @ObservedObject var viewModel = ProfileViewModel()
+    @ObservedObject var viewModel = AuthManager()
     
     var body: some View {
         ZStack {
@@ -17,21 +18,18 @@ struct ProfileView: View {
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                
                 VStack {
-                    ForEach(viewModel.user) { user in
-                        Text(user.fullname)
-                            .font(.largeTitle.bold())
-                        Text(user.jobTitle ?? "unknown title")
-                            .foregroundColor(.shigoOrange)
-                            .font(.title3)
-                        Text(user.job ?? "unknown job")
-                    }
+                    Text(viewModel.userData!.fullname)
+                        .font(.largeTitle.bold())
+                    Text("unknown title")
+                        .foregroundColor(.shigoOrange)
+                        .font(.title3)
+                    Text("unknown job")
                 }
                 .foregroundColor(Color.shigoLightDark)
                 
                 Group {
-                    Image("devImage")
+                    KFImage(URL(string: viewModel.userData!.profileImageUrl))
                         .resizable()
                         .clipShape(Circle())
                         .scaledToFit()
@@ -52,7 +50,7 @@ struct ProfileView: View {
                         .foregroundColor(.white)
                 }
                 .frame(height: 40)
-                    
+                
                 Spacer()
                 UserAppStates()
                 
@@ -60,9 +58,6 @@ struct ProfileView: View {
                 Spacer()
             }
             .multilineTextAlignment(.center)
-        }
-        .onAppear{
-            viewModel.fetchUser()
         }
     }
 }

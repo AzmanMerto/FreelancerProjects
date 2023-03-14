@@ -10,15 +10,14 @@ import SwiftUI
 struct BuyShiView: View {
     
     @ObservedObject var viewModel: BuyShiViewModel = .init()
+    @StateObject var storeKit = StoreKitManager()
     
     var body: some View {
         VStack {
             HStack {
                 Text("BAKİYE")
                     .bold()
-                
                 Spacer()
-                
                 Text("")
                     .background {
                         Rectangle()
@@ -36,9 +35,13 @@ struct BuyShiView: View {
             }
             .frame(height: 200)
             
-            ForEach(viewModel.shiItems,id: \.self) { item in
-                ShiMoney(shiText: item.shiText, moneyText: item.moneyText)
-                    .padding(.vertical)
+            ForEach(storeKit.storeProducts) { item in
+                ShiMoney(shiText: item.displayName,
+                         moneyText: item.displayPrice) {
+                    Task {
+                        try await storeKit.purchase(item)
+                    }
+                }
             }
             
             Spacer()

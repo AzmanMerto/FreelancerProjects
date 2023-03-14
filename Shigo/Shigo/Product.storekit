@@ -1,0 +1,128 @@
+{
+  "identifier" : "15A7B7F4",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.5",
+      "familyShareable" : false,
+      "internalID" : "17C530EA",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "50 Shi",
+          "displayName" : "50 Shi",
+          "locale" : "de"
+        }
+      ],
+      "productID" : "com.temporary.50Shi",
+      "referenceName" : "50 Shi",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1",
+      "familyShareable" : false,
+      "internalID" : "FA5F3FA4",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "100 Shi",
+          "displayName" : "100 Shi",
+          "locale" : "de"
+        }
+      ],
+      "productID" : "com.temporary.100Shi",
+      "referenceName" : "100 Shi copy",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2",
+      "familyShareable" : false,
+      "internalID" : "D91762C2",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "200 Shi",
+          "displayName" : "200 Shi",
+          "locale" : "de"
+        }
+      ],
+      "productID" : "com.temporary.200Shi",
+      "referenceName" : "200 Shi",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "5",
+      "familyShareable" : false,
+      "internalID" : "4F69EA36",
+      "localizations" : [
+        {
+          "description" : "500 Shi",
+          "displayName" : "500 Shi",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "500 Shi",
+          "displayName" : "500 Shi",
+          "locale" : "de"
+        },
+        {
+          "description" : "500 Shi",
+          "displayName" : "500 Shi",
+          "locale" : "tr"
+        }
+      ],
+      "productID" : "com.temporary.50Shi.copy-3",
+      "referenceName" : "500 Shi copy 3",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "10",
+      "familyShareable" : false,
+      "internalID" : "E72C300A",
+      "localizations" : [
+        {
+          "description" : "500 Shi",
+          "displayName" : "500 Shi",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "1000 Shi",
+          "displayName" : "1000 Shi",
+          "locale" : "de"
+        },
+        {
+          "description" : "1000 Shi",
+          "displayName" : "1000 Shi",
+          "locale" : "tr"
+        }
+      ],
+      "productID" : "com.temporary.50Shi.copy-4",
+      "referenceName" : "1000 Shi copy 4",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

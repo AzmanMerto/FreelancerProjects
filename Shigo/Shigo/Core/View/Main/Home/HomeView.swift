@@ -9,27 +9,34 @@ import SwiftUI
 
 struct HomeView: View {
         
+    @ObservedObject var viewModel : HomeViewModel = .init()
+    
     var body: some View {
-        VStack {
-            Button {
-                AuthManager.shared.signOut()
-            } label: {
-                Text("Sign Out")
+        NavigationView {
+            VStack {
+                Button {
+                    AuthManager.shared.signOut()
+                    viewModel.isSignOut.toggle()
+                } label: {
+                    Text("Sign Out")
+                }
+                ZStack {
+                    Image(Imagements.Main.homeView.rawValue)
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Rectangle()
+                        .frame(height: 200)
+                        .opacity(0.5)
+                    
+                    Text("Not Ready Sorry For that")
+                        .font(.largeTitle.bold())
+                        .foregroundColor(.white)
+                }
             }
-
-            ZStack {
-                Image(Imagements.Main.homeView.rawValue)
-                    .resizable()
-                    .scaledToFit()
-                
-                Rectangle()
-                    .frame(height: 200)
-                    .opacity(0.5)
-                
-                Text("Not Ready Sorry For that")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(.white)
-            }
+        }
+        .navigationDestination(isPresented: $viewModel.isSignOut) {
+            AuthCoordinatorView()
         }
     }
 }

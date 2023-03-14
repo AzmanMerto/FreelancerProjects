@@ -11,6 +11,7 @@ struct ShiMoney: View {
     
     var shiText: String
     var moneyText: String
+    var action: () -> ()
     
     var body: some View {
         HStack {
@@ -20,10 +21,10 @@ struct ShiMoney: View {
                 .font(.title3.bold())
             Spacer()
             Button {
-                
+                action()
             } label: {
                 ZStack {
-                    Text("£\(moneyText)")
+                    Text(moneyText)
                         .font(.title3.bold())
                         .padding(.horizontal)
                 }
@@ -42,6 +43,6 @@ struct ShiMoney: View {
 
 struct ShiMoney_Previews: PreviewProvider {
     static var previews: some View {
-        ShiMoney(shiText: "50", moneyText: "0.50")
+        ShiMoney(shiText: "50", moneyText: "0.50") { }
     }
 }

@@ -13,19 +13,6 @@ class ProfileViewModel: ObservableObject {
     
     private var db = Firestore.firestore()
     
-    func fetchUser() {
-        db.collection("users").addSnapshotListener { snapShot, err in
-            guard let documents = snapShot?.documents else { return }
-            
-            self.user = documents.map({ snapiShot -> UserData in
-                
-                let data = snapiShot.data()
-                
-                let fullname = data[""]
-                
-                return UserData(fullname: <#T##String#>, email: <#T##String#>, profileImageUrl: <#T##String#>)
-            })
-        }
-    }
+    
    
 }

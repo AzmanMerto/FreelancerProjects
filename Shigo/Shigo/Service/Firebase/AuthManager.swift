@@ -65,9 +65,18 @@ import FirebaseFirestore
     
     func fetchUser() {
         guard let uid = userCheck?.uid else { return }
-        COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
-                guard let userData = try? snapshot?.data(as: UserData.self) else { return }
-            self.userData = userData
+        COLLECTION_USERS.document(uid).getDocument { snapShot, err in
+            if err != nil {
+                print ("FIXto: \(err?.localizedDescription ?? "ERROR")")
+            }
+            
+            guard let data = snapShot?.data() else { return }
+            
+            let uid = data["id"] as? String ?? ""
+            let fullname = data["name"] as? String ?? ""
+            let imageUrl = data["imageUrl"] as? String ?? ""
+            
+            self.userData = UserData(uid: uid, fullname: fullname, profileImageUrl: imageUrl)
         }
     }
     

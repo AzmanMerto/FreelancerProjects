@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class HomeViewModel: ObservableObject {
+    
+    @Published var isSignOut: Bool
+    
+    init(isSignOut: Bool = false) {
+        self.isSignOut = isSignOut
+    }
+}

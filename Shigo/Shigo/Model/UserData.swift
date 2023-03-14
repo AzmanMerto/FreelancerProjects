@@ -9,11 +9,9 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 struct UserData: Identifiable,Codable {
+    var uid: String
     var fullname: String
-    var email: String
     var profileImageUrl: String
-    var jobTitle: String?
-    var job: String?
     
     @DocumentID var id: String?
 }
