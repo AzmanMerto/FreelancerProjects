@@ -2,7 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>50Shi</key>
+	<key>50 Shi</key>
 	<string>com.temporary.50Shi</string>
+	<key>100 Shi</key>
+	<string>com.temporary.100Shi</string>
+	<key>200 Shi</key>
+	<string>com.temporary.200Shi</string>
+	<key>500 Shi</key>
+	<string>com.temporary.500Shi</string>
+	<key>1000 Shi</key>
+	<string>com.temporary.1000Shi</string>
 </dict>
 </plist>

@@ -77,8 +77,10 @@ struct RegisterView: View {
                                    
                                     AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: "unknownImage"))!)
                                     
-                                    if AuthManager.shared.correctAuth {
-                                        viewModel.isSkiptoPage.toggle()
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                        if AuthManager.shared.correctAuth {
+                                            viewModel.isSkiptoPage.toggle()
+                                        }
                                     }
                                 }
                             }

@@ -34,10 +34,10 @@ struct BuyShiView: View {
                     .font(.system(size: 60).bold())
             }
             .frame(height: 200)
-            
             ForEach(storeKit.storeProducts) { item in
-                ShiMoney(shiText: item.displayName,
-                         moneyText: item.displayPrice) {
+                ShiMoney(shiText: item.description,
+                         moneyText: item.displayPrice)
+                {
                     Task {
                         try await storeKit.purchase(item)
                     }

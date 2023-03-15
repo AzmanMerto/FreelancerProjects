@@ -17,7 +17,7 @@ struct ShiMoney: View {
         HStack {
             Image(Imagements.Main.mainTab.rawValue)
                 .font(.body)
-            Text("\(shiText) Shi")
+            Text("\(shiText)")
                 .font(.title3.bold())
             Spacer()
             Button {
@@ -36,6 +36,7 @@ struct ShiMoney: View {
             }
             .tint(.white)
         }
+        .padding(.vertical)
         .padding(.horizontal,30)
     }
 }
@@ -43,6 +44,6 @@ struct ShiMoney: View {
 
 struct ShiMoney_Previews: PreviewProvider {
     static var previews: some View {
-        ShiMoney(shiText: "50", moneyText: "0.50") { }
+        ShiMoney(shiText: "50 Shi", moneyText: "0.50") { }
     }
 }

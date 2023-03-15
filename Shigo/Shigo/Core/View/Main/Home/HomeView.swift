@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct HomeView: View {
         
@@ -14,12 +15,20 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Button {
-                    AuthManager.shared.signOut()
-                    viewModel.isSignOut.toggle()
+                NavigationLink {
+                    SplashView()
+                        .navigationBarBackButtonHidden(true)
+                        .toolbar(.hidden, for: .tabBar)
                 } label: {
                     Text("Sign Out")
                 }
+                .onTapGesture {
+                    AuthManager.shared.signOut()
+                    AuthManager.shared.userCheck = nil
+                }
+
+                
+                
                 ZStack {
                     Image(Imagements.Main.homeView.rawValue)
                         .resizable()
@@ -29,7 +38,7 @@ struct HomeView: View {
                         .frame(height: 200)
                         .opacity(0.5)
                     
-                    Text("Not Ready Sorry For that")
+                    Text("Bakım aşamasında 🚧")
                         .font(.largeTitle.bold())
                         .foregroundColor(.white)
                 }

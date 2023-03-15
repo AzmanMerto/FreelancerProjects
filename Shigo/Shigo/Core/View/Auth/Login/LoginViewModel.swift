@@ -8,8 +8,8 @@
 import Foundation
 
 class LoginViewModel: ObservableObject {
-    var email : String
-    var password : String
+    @Published var email : String
+    @Published var password : String
     var isLoggedIn: Bool
     
     init(email: String = "",

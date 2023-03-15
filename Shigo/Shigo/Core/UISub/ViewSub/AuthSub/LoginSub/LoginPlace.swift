@@ -11,6 +11,7 @@ struct LoginPlace: View {
     
     @Binding var email: String
     @Binding var password: String
+    var action: () -> ()
     
     var body: some View {
         ZStack {
@@ -27,7 +28,7 @@ struct LoginPlace: View {
                 }
                 .padding(.bottom)
                 PrimaryButton(text: "Giriş Yap") {
-
+                    
                 }
                 .padding(.horizontal)
                 //MARK: LoginView - With App Login
@@ -43,6 +44,8 @@ struct LoginPlace: View {
 struct LoginPlace_Previews: PreviewProvider {
     static var previews: some View {
         LoginPlace(email: .constant(""),
-                   password: .constant(""))
+                   password: .constant("")) {
+            
+        }
     }
 }

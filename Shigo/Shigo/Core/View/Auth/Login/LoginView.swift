@@ -13,33 +13,36 @@ struct LoginView: View {
     @EnvironmentObject var coordinator : AuthCoordinator
     
     var body: some View {
-        ZStack {
-            //MARK: LoginView - Background Color
-            PrimaryBackground()
-            VStack {
-                //MARK: LoginView - Flag & Desciption
-                FlagAndCountryName()
-                    .padding(.top)
-                Spacer()
-                LoginPlace(email: $viewModel.email,
-                           password: $viewModel.password)
-                Spacer()
-                //MARK: LoginView - With Normal Login
-                let status = ((viewModel.email.count > 0) && (viewModel.password.count > 0))
-                AuthChangeButton(text: "ÜYE OL") {
-                        coordinator.push(.registerView)
-                    if status {
-                        viewModel.isLoggedIn.toggle()
+        NavigationView {
+            ZStack {
+                //MARK: LoginView - Background Color
+                PrimaryBackground()
+                VStack {
+                    //MARK: LoginView - Flag & Desciption
+                    FlagAndCountryName()
+                        .padding(.top)
+                    Spacer()
+                    LoginPlace(email: $viewModel.email,
+                               password: $viewModel.password) {
+                        AuthManager.shared.login(email: viewModel.email,
+                                                 password: viewModel.password)
                     }
+                    Spacer()
+                    //MARK: LoginView - With Normal Login
+                    AuthChangeButton(text: "ÜYE OL") {
+                        coordinator.push(.registerView)
+                    }
+                    Spacer()
                 }
-                Spacer()
+            }
+            .onAppear{
+                if AuthManager.shared.correctAuth {
+                        viewModel.isLoggedIn = true
+                }
             }
         }
-        .onAppear{
-            if viewModel.isLoggedIn {
-                AuthManager.shared.login(email: viewModel.email,
-                                         password: viewModel.password)
-            }
+        .navigationDestination(isPresented: $viewModel.isLoggedIn) {
+            MainTabBar()
         }
     }
 }

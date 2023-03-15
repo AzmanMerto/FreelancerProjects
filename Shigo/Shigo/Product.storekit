@@ -5,14 +5,19 @@
   ],
   "products" : [
     {
-      "displayPrice" : "0.5",
+      "displayPrice" : "0.50",
       "familyShareable" : false,
-      "internalID" : "17C530EA",
+      "internalID" : "3CC44C99",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "50 Shi",
+          "displayName" : "50 Shi",
           "locale" : "en_US"
+        },
+        {
+          "description" : "50 Shi",
+          "displayName" : "50 Shi",
+          "locale" : "tr"
         },
         {
           "description" : "50 Shi",
@@ -22,17 +27,22 @@
       ],
       "productID" : "com.temporary.50Shi",
       "referenceName" : "50 Shi",
-      "type" : "NonConsumable"
+      "type" : "Consumable"
     },
     {
-      "displayPrice" : "1",
+      "displayPrice" : "1.00",
       "familyShareable" : false,
-      "internalID" : "FA5F3FA4",
+      "internalID" : "498D3322",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "100 Shi",
+          "displayName" : "100 Shi",
           "locale" : "en_US"
+        },
+        {
+          "description" : "100 Shi",
+          "displayName" : "100 Shi",
+          "locale" : "tr"
         },
         {
           "description" : "100 Shi",
@@ -41,33 +51,38 @@
         }
       ],
       "productID" : "com.temporary.100Shi",
-      "referenceName" : "100 Shi copy",
-      "type" : "NonConsumable"
+      "referenceName" : "100 Shi",
+      "type" : "Consumable"
     },
     {
-      "displayPrice" : "2",
+      "displayPrice" : "2.00",
       "familyShareable" : false,
-      "internalID" : "D91762C2",
+      "internalID" : "94120C1D",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "200 Shi",
+          "displayName" : "200 Shi",
           "locale" : "en_US"
         },
         {
           "description" : "200 Shi",
           "displayName" : "200 Shi",
           "locale" : "de"
+        },
+        {
+          "description" : "200 Shi",
+          "displayName" : "200 Shi",
+          "locale" : "tr"
         }
       ],
       "productID" : "com.temporary.200Shi",
       "referenceName" : "200 Shi",
-      "type" : "NonConsumable"
+      "type" : "Consumable"
     },
     {
-      "displayPrice" : "5",
+      "displayPrice" : "5.00",
       "familyShareable" : false,
-      "internalID" : "4F69EA36",
+      "internalID" : "4ABADF42",
       "localizations" : [
         {
           "description" : "500 Shi",
@@ -77,42 +92,42 @@
         {
           "description" : "500 Shi",
           "displayName" : "500 Shi",
-          "locale" : "de"
+          "locale" : "tr"
         },
         {
           "description" : "500 Shi",
           "displayName" : "500 Shi",
-          "locale" : "tr"
+          "locale" : "de"
         }
       ],
-      "productID" : "com.temporary.50Shi.copy-3",
-      "referenceName" : "500 Shi copy 3",
-      "type" : "NonConsumable"
+      "productID" : "com.temporary.500Shi",
+      "referenceName" : "500 Shi",
+      "type" : "Consumable"
     },
     {
-      "displayPrice" : "10",
+      "displayPrice" : "10.00",
       "familyShareable" : false,
-      "internalID" : "E72C300A",
+      "internalID" : "0BB4556E",
       "localizations" : [
         {
-          "description" : "500 Shi",
-          "displayName" : "500 Shi",
+          "description" : "1000 Shi",
+          "displayName" : "1000 Shi",
           "locale" : "en_US"
         },
         {
           "description" : "1000 Shi",
           "displayName" : "1000 Shi",
-          "locale" : "de"
+          "locale" : "tr"
         },
         {
           "description" : "1000 Shi",
           "displayName" : "1000 Shi",
-          "locale" : "tr"
+          "locale" : "de"
         }
       ],
-      "productID" : "com.temporary.50Shi.copy-4",
-      "referenceName" : "1000 Shi copy 4",
-      "type" : "NonConsumable"
+      "productID" : "com.temporary.1000Shi",
+      "referenceName" : "1000 Shi",
+      "type" : "Consumable"
     }
   ],
   "settings" : {
