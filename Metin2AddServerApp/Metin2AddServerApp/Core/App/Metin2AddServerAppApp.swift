@@ -11,7 +11,7 @@ import SwiftUI
 struct Metin2AddServerAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
