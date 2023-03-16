@@ -16,13 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     GADMobileAds.sharedInstance().start(completionHandler: nil)
-      
     FirebaseApp.configure()
-
-    return true
-      
+    return true      
   }
-    
     override init() {
         ATTrackingManager.requestTrackingAuthorization { status in
             GADMobileAds.sharedInstance().start(completionHandler: nil)
