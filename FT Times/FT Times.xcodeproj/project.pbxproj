@@ -10,10 +10,6 @@
 		341ECA0D29B404F20035E77A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 341ECA0C29B404F20035E77A /* FirebaseAnalytics */; };
 		341ECA0F29B405070035E77A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA0E29B405070035E77A /* AppDelegate.swift */; };
 		341ECA1129B40B7D0035E77A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 341ECA1029B40B7D0035E77A /* GoogleService-Info.plist */; };
-		3420946C29C33654009AF8BC /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3420946829C33654009AF8BC /* media12.mp3 */; };
-		3420946D29C33654009AF8BC /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3420946929C33654009AF8BC /* media22.mp3 */; };
-		3420946E29C33654009AF8BC /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3420946A29C33654009AF8BC /* media11.mp3 */; };
-		3420946F29C33654009AF8BC /* media21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3420946B29C33654009AF8BC /* media21.mp3 */; };
 		3430F9E329A90193008A72E1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430F9E229A90193008A72E1 /* SoundManager.swift */; };
 		3442521B29AAE1D1009D332C /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521629AAE1D1009D332C /* BannerAd.swift */; };
 		3442521C29AAE1D1009D332C /* MobileAdsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442521729AAE1D1009D332C /* MobileAdsID.swift */; };
@@ -23,6 +19,10 @@
 		3442522A29AB19B5009D332C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3442522929AB19B5009D332C /* MainViewModel.swift */; };
 		34841ADB29B24DDD00E6BFDC /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34841ADA29B24DDD00E6BFDC /* AlertView.swift */; };
 		34841ADF29B2658F00E6BFDC /* Geomerty+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */; };
+		34B8893829C3C7F5005145AB /* media12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34B8893429C3C7F4005145AB /* media12.mp3 */; };
+		34B8893929C3C7F5005145AB /* media21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34B8893529C3C7F4005145AB /* media21.mp3 */; };
+		34B8893A29C3C7F5005145AB /* media22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34B8893629C3C7F5005145AB /* media22.mp3 */; };
+		34B8893B29C3C7F5005145AB /* media11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34B8893729C3C7F5005145AB /* media11.mp3 */; };
 		34D54BC529AC7B5200377BE9 /* SecJumpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */; };
 		34DE5CDE29B3F9A800A25DFD /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 34DE5CDD29B3F9A800A25DFD /* GoogleMobileAds */; };
 		34ECC16C29A8C32E006ACA3B /* FT_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */; };
@@ -37,10 +37,6 @@
 /* Begin PBXFileReference section */
 		341ECA0E29B405070035E77A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		341ECA1029B40B7D0035E77A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3420946829C33654009AF8BC /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
-		3420946929C33654009AF8BC /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
-		3420946A29C33654009AF8BC /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
-		3420946B29C33654009AF8BC /* media21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media21.mp3; sourceTree = "<group>"; };
 		3430F9E229A90193008A72E1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		3442521629AAE1D1009D332C /* BannerAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		3442521729AAE1D1009D332C /* MobileAdsID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAdsID.swift; sourceTree = "<group>"; };
@@ -51,6 +47,10 @@
 		3442522929AB19B5009D332C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		34841ADA29B24DDD00E6BFDC /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		34841ADE29B2658F00E6BFDC /* Geomerty+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geomerty+Extension.swift"; sourceTree = "<group>"; };
+		34B8893429C3C7F4005145AB /* media12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media12.mp3; sourceTree = "<group>"; };
+		34B8893529C3C7F4005145AB /* media21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media21.mp3; sourceTree = "<group>"; };
+		34B8893629C3C7F5005145AB /* media22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media22.mp3; sourceTree = "<group>"; };
+		34B8893729C3C7F5005145AB /* media11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = media11.mp3; sourceTree = "<group>"; };
 		34D54BC429AC7B5200377BE9 /* SecJumpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecJumpButton.swift; sourceTree = "<group>"; };
 		34ECC16829A8C32E006ACA3B /* FT Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FT Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34ECC16B29A8C32E006ACA3B /* FT_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FT_TimesApp.swift; sourceTree = "<group>"; };
@@ -125,10 +125,10 @@
 		34D54B9329AC3F0600377BE9 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				3420946A29C33654009AF8BC /* media11.mp3 */,
-				3420946829C33654009AF8BC /* media12.mp3 */,
-				3420946B29C33654009AF8BC /* media21.mp3 */,
-				3420946929C33654009AF8BC /* media22.mp3 */,
+				34B8893729C3C7F5005145AB /* media11.mp3 */,
+				34B8893429C3C7F4005145AB /* media12.mp3 */,
+				34B8893529C3C7F4005145AB /* media21.mp3 */,
+				34B8893629C3C7F5005145AB /* media22.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -292,13 +292,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3420946C29C33654009AF8BC /* media12.mp3 in Resources */,
+				34B8893829C3C7F5005145AB /* media12.mp3 in Resources */,
 				34ECC17329A8C330006ACA3B /* Preview Assets.xcassets in Resources */,
 				34ECC17029A8C330006ACA3B /* Assets.xcassets in Resources */,
-				3420946D29C33654009AF8BC /* media22.mp3 in Resources */,
 				341ECA1129B40B7D0035E77A /* GoogleService-Info.plist in Resources */,
-				3420946E29C33654009AF8BC /* media11.mp3 in Resources */,
-				3420946F29C33654009AF8BC /* media21.mp3 in Resources */,
+				34B8893929C3C7F5005145AB /* media21.mp3 in Resources */,
+				34B8893B29C3C7F5005145AB /* media11.mp3 in Resources */,
+				34B8893A29C3C7F5005145AB /* media22.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

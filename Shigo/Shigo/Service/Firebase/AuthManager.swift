@@ -30,7 +30,7 @@ import FirebaseFirestore
                 print("FIXto: \(err?.localizedDescription ?? "UNKNOWN ERROR")")
             }else {
                 guard let user = result?.user else { return }
-                self.correctAuth.toggle()
+                self.correctAuth = true
                 self.userCheck = user
                 self.fetchUser()
             }
@@ -45,7 +45,7 @@ import FirebaseFirestore
                     return
                 } else {
                     guard let user = result?.user else { return }
-                    self.correctAuth.toggle()
+                    self.correctAuth = true
                     let data = ["id" : user.uid,
                                 "imageUrl" : imageUrl,
                                 "email" : email,

@@ -41,16 +41,13 @@ struct RegisterView: View {
                     .frame(width: 126,height: 126)
                     .clipShape(Circle())
                     .padding(.top,50)
-                    
                     .sheet(isPresented: $viewModel.isImagePickerSelected,
                            onDismiss: viewModel.loadedImage) {
                         ImagePicker(image: $viewModel.uiImager)
                     }
-
                     //MARK: RegisterView - Textfield space
                     ZStack {
                         Rectangle()
-                            
                         RoundedRectangle(cornerRadius: 10)
                             .foregroundColor(.white)
                             .padding()
@@ -69,14 +66,13 @@ struct RegisterView: View {
                                                 textField: $viewModel.againPassword)
                             }
                             .padding(.all)
+                            //MARK: RegisterView - Button
                             let status = (viewModel.password.count == viewModel.againPassword.count)
                             AuthChangeButton(text: "ÜYE OL",
                                               color: .shigoPurple,
                                               textColor: .white) {
                                 if status {
-                                   
-                                    AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: "unknownImage"))!)
-                                    
+                                    AuthManager.shared.regitser(email: viewModel.email, password: viewModel.password, name: viewModel.name,image: (viewModel.uiImager ?? UIImage(named: "unknownImage"))!)                                    
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                         if AuthManager.shared.correctAuth {
                                             viewModel.isSkiptoPage.toggle()
@@ -90,6 +86,7 @@ struct RegisterView: View {
                         
                     }
                     .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
+                    //MARK: RegisterView - Switch View Button
                     AuthChangeButton(text: "GİRİŞ YAP") {
                         coordinator.push(.loginView)
                     }

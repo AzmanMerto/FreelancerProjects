@@ -26,6 +26,12 @@ struct LoginView: View {
                                password: $viewModel.password) {
                         AuthManager.shared.login(email: viewModel.email,
                                                  password: viewModel.password)
+                        print("Login Button is Workin & ID: \(String(describing: AuthManager.shared.userCheck))")
+                        if AuthManager.shared.userCheck != nil{
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                                viewModel.isLoggedIn = true
+                            }
+                        }
                     }
                     Spacer()
                     //MARK: LoginView - With Normal Login
@@ -35,14 +41,11 @@ struct LoginView: View {
                     Spacer()
                 }
             }
-            .onAppear{
-                if AuthManager.shared.correctAuth {
-                        viewModel.isLoggedIn = true
-                }
-            }
+            
         }
         .navigationDestination(isPresented: $viewModel.isLoggedIn) {
             MainTabBar()
+                .navigationBarBackButtonHidden(true)
         }
     }
 }

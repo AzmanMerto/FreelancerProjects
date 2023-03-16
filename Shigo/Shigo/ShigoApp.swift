@@ -15,13 +15,21 @@ struct ShigoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if AuthManager.shared.userCheck == nil {
-                SplashView()
-                    .preferredColorScheme(.light)
-            } else {
-                MainTabBar()
-                    .environmentObject(AuthManager())
-                    .preferredColorScheme(.light)
+            ZStack{
+                if AuthManager.shared.userCheck == nil {
+                    SplashView()
+                        .preferredColorScheme(.light)
+                } else {
+                    MainTabBar()
+                        .environmentObject(AuthManager())
+                        .preferredColorScheme(.light)
+                }
+            }
+            .onAppear{
+                AuthManager.shared.correctAuth = false
+                AuthManager.shared.userData = nil
+                AuthManager.shared.userCheck = nil
+                print("ID: \(String(describing: AuthManager.shared.userCheck))")
             }
         }
     }

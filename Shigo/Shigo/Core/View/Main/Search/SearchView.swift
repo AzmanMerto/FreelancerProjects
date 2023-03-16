@@ -18,7 +18,7 @@ struct SearchView: View {
                 .frame(height: 200)
                 .opacity(0.5)
             
-            Text("Not Ready Sorry For that")
+            Text("Bakım aşamasında 🚧")
                 .font(.largeTitle.bold())
                 .foregroundColor(.white)
         }

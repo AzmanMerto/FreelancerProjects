@@ -28,7 +28,7 @@ struct LoginPlace: View {
                 }
                 .padding(.bottom)
                 PrimaryButton(text: "Giriş Yap") {
-                    
+                    action()
                 }
                 .padding(.horizontal)
                 //MARK: LoginView - With App Login

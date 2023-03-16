@@ -25,19 +25,17 @@ struct HomeView: View {
                 .onTapGesture {
                     AuthManager.shared.signOut()
                     AuthManager.shared.userCheck = nil
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+                        print("ID: \(String(describing: AuthManager.shared.userCheck))")
+                    }
                 }
-
-                
-                
                 ZStack {
                     Image(Imagements.Main.homeView.rawValue)
                         .resizable()
                         .scaledToFit()
-                    
                     Rectangle()
                         .frame(height: 200)
                         .opacity(0.5)
-                    
                     Text("Bakım aşamasında 🚧")
                         .font(.largeTitle.bold())
                         .foregroundColor(.white)

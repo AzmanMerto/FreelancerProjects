@@ -298,6 +298,7 @@
 		34A42E2D29BBA6F20020DC1E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				34A42E5429BBB0800020DC1E /* MainTabBar.swift */,
 				34A42E2F29BBA7530020DC1E /* Home */,
 				34A42E3229BBA7810020DC1E /* Search */,
 				34A42E3329BBA7910020DC1E /* Order */,
@@ -380,7 +381,6 @@
 				34A42E5129BBB04E0020DC1E /* SearchSub */,
 				34A42E5029BBB0490020DC1E /* BuyShiSub */,
 				34A42E4F29BBB03F0020DC1E /* ProfileSub */,
-				34A42E5429BBB0800020DC1E /* MainTabBar.swift */,
 			);
 			path = MainSub;
 			sourceTree = "<group>";
