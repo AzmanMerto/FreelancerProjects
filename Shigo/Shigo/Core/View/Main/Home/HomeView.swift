@@ -15,19 +15,15 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink {
-                    SplashView()
-                        .navigationBarBackButtonHidden(true)
-                        .toolbar(.hidden, for: .tabBar)
-                } label: {
-                    Text("Sign Out")
-                }
-                .onTapGesture {
+                Button {
+                    viewModel.isSignOut = true
                     AuthManager.shared.signOut()
                     AuthManager.shared.userCheck = nil
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3){
                         print("ID: \(String(describing: AuthManager.shared.userCheck))")
                     }
+                } label: {
+                    Text("Sign Out")
                 }
                 ZStack {
                     Image(Imagements.Main.homeView.rawValue)
@@ -43,7 +39,9 @@ struct HomeView: View {
             }
         }
         .navigationDestination(isPresented: $viewModel.isSignOut) {
-            AuthCoordinatorView()
+            SplashView()
+                .navigationBarBackButtonHidden(true)
+                .toolbar(.hidden, for: .tabBar)
         }
     }
 }

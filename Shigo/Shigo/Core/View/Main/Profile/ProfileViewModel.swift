@@ -12,7 +12,5 @@ class ProfileViewModel: ObservableObject {
     var user = [UserData]()
     
     private var db = Firestore.firestore()
-    
-    
-   
+
 }

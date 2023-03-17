@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AED435185E7D68EACFD8415 /* libPods-Shigo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C1F1093B43FC464E815C1 /* libPods-Shigo.a */; };
 		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
 		341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */; };
 		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
@@ -103,6 +104,9 @@
 		34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCustomTextField.swift; sourceTree = "<group>"; };
 		34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAppStates.swift; sourceTree = "<group>"; };
 		34DF82AF29BE4A2000BF7ADD /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shigo.debug.xcconfig"; path = "Target Support Files/Pods-Shigo/Pods-Shigo.debug.xcconfig"; sourceTree = "<group>"; };
+		798C1F1093B43FC464E815C1 /* libPods-Shigo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shigo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shigo.release.xcconfig"; path = "Target Support Files/Pods-Shigo/Pods-Shigo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +119,23 @@
 				34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */,
 				34932C3829BD39E500C113B8 /* FirebaseFirestoreSwift in Frameworks */,
 				3429D01B29BF374B00E88684 /* Kingfisher in Frameworks */,
+				0AED435185E7D68EACFD8415 /* libPods-Shigo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		283BBC7E529DCE2D8B398B3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */,
+				8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		341ECA1429B41A0A0035E77A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,19 +196,13 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		34932C3629BD39E500C113B8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		349CF603299614ED005B9150 = {
 			isa = PBXGroup;
 			children = (
 				349CF60E299614ED005B9150 /* Shigo */,
 				349CF60D299614ED005B9150 /* Products */,
-				34932C3629BD39E500C113B8 /* Frameworks */,
+				283BBC7E529DCE2D8B398B3E /* Pods */,
+				EBE17DCE9E2F7C6BBA9636A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -485,6 +494,14 @@
 			path = Apple;
 			sourceTree = "<group>";
 		};
+		EBE17DCE9E2F7C6BBA9636A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798C1F1093B43FC464E815C1 /* libPods-Shigo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -492,9 +509,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349CF61A299614F0005B9150 /* Build configuration list for PBXNativeTarget "Shigo" */;
 			buildPhases = (
+				9C76A2B691E14D91B50330FD /* [CP] Check Pods Manifest.lock */,
 				349CF608299614ED005B9150 /* Sources */,
 				349CF609299614ED005B9150 /* Frameworks */,
 				349CF60A299614ED005B9150 /* Resources */,
+				0A7932FA047626DDC5E289A3 /* [CP] Embed Pods Frameworks */,
+				8390B5A68587FF2398263BE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -562,6 +582,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A7932FA047626DDC5E289A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8390B5A68587FF2398263BE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C76A2B691E14D91B50330FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shigo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		349CF608299614ED005B9150 /* Sources */ = {
@@ -728,6 +807,7 @@
 		};
 		349CF61B299614F0005B9150 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -761,6 +841,7 @@
 		};
 		349CF61C299614F0005B9150 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

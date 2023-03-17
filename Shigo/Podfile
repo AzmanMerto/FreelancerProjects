@@ -1,0 +1,6 @@
+target 'Shigo' do
+
+pod 'FBSDKLoginKit'
+pod 'GoogleSignIn'
+
+end
