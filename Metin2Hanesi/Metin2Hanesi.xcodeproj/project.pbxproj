@@ -18,7 +18,8 @@
 		3420945C29C2FEB0009AF8BC /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945B29C2FEB0009AF8BC /* ChatButton.swift */; };
 		3420946729C32C94009AF8BC /* ButtonActivesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420946629C32C94009AF8BC /* ButtonActivesModel.swift */; };
 		3420947229C341F7009AF8BC /* PresentedSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420947129C341F7009AF8BC /* PresentedSheetsView.swift */; };
-		ECFAAE9D6B65233EAE86FD47 /* Pods_Metin2Hanesi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */; };
+		3465595B29C6123F005A3C17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3465595A29C6123F005A3C17 /* FirebaseFirestore */; };
+		3465595D29C6123F005A3C17 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3465595C29C6123F005A3C17 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +35,6 @@
 		3420945B29C2FEB0009AF8BC /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		3420946629C32C94009AF8BC /* ButtonActivesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActivesModel.swift; sourceTree = "<group>"; };
 		3420947129C341F7009AF8BC /* PresentedSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheetsView.swift; sourceTree = "<group>"; };
-		4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2Hanesi.debug.xcconfig"; path = "Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi.debug.xcconfig"; sourceTree = "<group>"; };
-		5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2Hanesi.release.xcconfig"; path = "Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi.release.xcconfig"; sourceTree = "<group>"; };
-		FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metin2Hanesi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECFAAE9D6B65233EAE86FD47 /* Pods_Metin2Hanesi.framework in Frameworks */,
+				3465595B29C6123F005A3C17 /* FirebaseFirestore in Frameworks */,
+				3465595D29C6123F005A3C17 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +55,6 @@
 			children = (
 				3420943329C24D02009AF8BC /* Metin2Hanesi */,
 				3420943229C24D02009AF8BC /* Products */,
-				36831B5F416CAD952EFFAB9A /* Pods */,
-				3E6DD77A194F8637150CC3E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,24 +212,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		36831B5F416CAD952EFFAB9A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */,
-				5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		3E6DD77A194F8637150CC3E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,17 +219,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2Hanesi" */;
 			buildPhases = (
-				0ADBE2761133D05ABE798919 /* [CP] Check Pods Manifest.lock */,
 				3420942D29C24D02009AF8BC /* Sources */,
 				3420942E29C24D02009AF8BC /* Frameworks */,
 				3420942F29C24D02009AF8BC /* Resources */,
-				B5FD19C7F76E55603A0EC41A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Metin2Hanesi;
+			packageProductDependencies = (
+				3465595A29C6123F005A3C17 /* FirebaseFirestore */,
+				3465595C29C6123F005A3C17 /* FirebaseFirestoreSwift */,
+			);
 			productName = Metin2AddServerApp;
 			productReference = 3420943129C24D02009AF8BC /* Metin2Hanesi.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 3420942829C24D02009AF8BC;
+			packageReferences = (
+				3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3420943229C24D02009AF8BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,48 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0ADBE2761133D05ABE798919 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Metin2Hanesi-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5FD19C7F76E55603A0EC41A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3420942D29C24D02009AF8BC /* Sources */ = {
@@ -478,7 +420,6 @@
 		};
 		3420944029C24D04009AF8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,7 +452,6 @@
 		};
 		3420944129C24D04009AF8BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -564,6 +504,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3465595A29C6123F005A3C17 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3465595C29C6123F005A3C17 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3420942929C24D02009AF8BC /* Project object */;
 }
