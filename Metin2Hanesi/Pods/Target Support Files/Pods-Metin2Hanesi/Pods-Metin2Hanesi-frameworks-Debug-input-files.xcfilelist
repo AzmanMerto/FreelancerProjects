@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework

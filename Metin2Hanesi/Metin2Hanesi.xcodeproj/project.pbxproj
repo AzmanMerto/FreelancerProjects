@@ -18,10 +18,11 @@
 		3420945C29C2FEB0009AF8BC /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945B29C2FEB0009AF8BC /* ChatButton.swift */; };
 		3420946729C32C94009AF8BC /* ButtonActivesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420946629C32C94009AF8BC /* ButtonActivesModel.swift */; };
 		3420947229C341F7009AF8BC /* PresentedSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420947129C341F7009AF8BC /* PresentedSheetsView.swift */; };
+		ECFAAE9D6B65233EAE86FD47 /* Pods_Metin2Hanesi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3420943129C24D02009AF8BC /* Metin2AddServerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metin2AddServerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3420943129C24D02009AF8BC /* Metin2Hanesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metin2Hanesi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3420943429C24D02009AF8BC /* Metin2AddServerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metin2AddServerAppApp.swift; sourceTree = "<group>"; };
 		3420943829C24D04009AF8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3420943B29C24D04009AF8BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 		3420945B29C2FEB0009AF8BC /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		3420946629C32C94009AF8BC /* ButtonActivesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActivesModel.swift; sourceTree = "<group>"; };
 		3420947129C341F7009AF8BC /* PresentedSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheetsView.swift; sourceTree = "<group>"; };
+		4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2Hanesi.debug.xcconfig"; path = "Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi.debug.xcconfig"; sourceTree = "<group>"; };
+		5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2Hanesi.release.xcconfig"; path = "Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi.release.xcconfig"; sourceTree = "<group>"; };
+		FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metin2Hanesi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFAAE9D6B65233EAE86FD47 /* Pods_Metin2Hanesi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,20 +54,22 @@
 		3420942829C24D02009AF8BC = {
 			isa = PBXGroup;
 			children = (
-				3420943329C24D02009AF8BC /* Metin2AddServerApp */,
+				3420943329C24D02009AF8BC /* Metin2Hanesi */,
 				3420943229C24D02009AF8BC /* Products */,
+				36831B5F416CAD952EFFAB9A /* Pods */,
+				3E6DD77A194F8637150CC3E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		3420943229C24D02009AF8BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3420943129C24D02009AF8BC /* Metin2AddServerApp.app */,
+				3420943129C24D02009AF8BC /* Metin2Hanesi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3420943329C24D02009AF8BC /* Metin2AddServerApp */ = {
+		3420943329C24D02009AF8BC /* Metin2Hanesi */ = {
 			isa = PBXGroup;
 			children = (
 				3420944229C2E9F8009AF8BC /* Core */,
@@ -71,7 +78,7 @@
 				3420944529C2EA0E009AF8BC /* Utils */,
 				3420943A29C24D04009AF8BC /* Preview Content */,
 			);
-			path = Metin2AddServerApp;
+			path = Metin2Hanesi;
 			sourceTree = "<group>";
 		};
 		3420943A29C24D04009AF8BC /* Preview Content */ = {
@@ -208,24 +215,44 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		36831B5F416CAD952EFFAB9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */,
+				5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3E6DD77A194F8637150CC3E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA06708B23C0753F5938FB23 /* Pods_Metin2Hanesi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3420943029C24D02009AF8BC /* Metin2AddServerApp */ = {
+		3420943029C24D02009AF8BC /* Metin2Hanesi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2AddServerApp" */;
+			buildConfigurationList = 3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2Hanesi" */;
 			buildPhases = (
+				0ADBE2761133D05ABE798919 /* [CP] Check Pods Manifest.lock */,
 				3420942D29C24D02009AF8BC /* Sources */,
 				3420942E29C24D02009AF8BC /* Frameworks */,
 				3420942F29C24D02009AF8BC /* Resources */,
+				B5FD19C7F76E55603A0EC41A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Metin2AddServerApp;
+			name = Metin2Hanesi;
 			productName = Metin2AddServerApp;
-			productReference = 3420943129C24D02009AF8BC /* Metin2AddServerApp.app */;
+			productReference = 3420943129C24D02009AF8BC /* Metin2Hanesi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3420942C29C24D02009AF8BC /* Build configuration list for PBXProject "Metin2AddServerApp" */;
+			buildConfigurationList = 3420942C29C24D02009AF8BC /* Build configuration list for PBXProject "Metin2Hanesi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,7 +283,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3420943029C24D02009AF8BC /* Metin2AddServerApp */,
+				3420943029C24D02009AF8BC /* Metin2Hanesi */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +299,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ADBE2761133D05ABE798919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metin2Hanesi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FD19C7F76E55603A0EC41A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metin2Hanesi/Pods-Metin2Hanesi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3420942D29C24D02009AF8BC /* Sources */ = {
@@ -409,6 +478,7 @@
 		};
 		3420944029C24D04009AF8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C8CDA59970164B4F5C3E256 /* Pods-Metin2Hanesi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Metin2AddServerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Metin2Hanesi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -441,6 +511,7 @@
 		};
 		3420944129C24D04009AF8BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E990C69A53B61E5750B81E4 /* Pods-Metin2Hanesi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Metin2AddServerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = NomoSiOS.Metin2Hanesi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -474,7 +545,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3420942C29C24D02009AF8BC /* Build configuration list for PBXProject "Metin2AddServerApp" */ = {
+		3420942C29C24D02009AF8BC /* Build configuration list for PBXProject "Metin2Hanesi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3420943D29C24D04009AF8BC /* Debug */,
@@ -483,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2AddServerApp" */ = {
+		3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2Hanesi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3420944029C24D04009AF8BC /* Debug */,

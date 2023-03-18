@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Metin2AddServerAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Metin2AddServerAppVersionString[];
+FOUNDATION_EXPORT double Pods_Metin2HanesiVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Metin2HanesiVersionString[];
 

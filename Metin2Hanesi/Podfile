@@ -1,0 +1,8 @@
+target 'Metin2Hanesi' do
+
+use_frameworks!
+pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+
+end
