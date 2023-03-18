@@ -18,7 +18,6 @@
 		3420945C29C2FEB0009AF8BC /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945B29C2FEB0009AF8BC /* ChatButton.swift */; };
 		3420946729C32C94009AF8BC /* ButtonActivesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420946629C32C94009AF8BC /* ButtonActivesModel.swift */; };
 		3420947229C341F7009AF8BC /* PresentedSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420947129C341F7009AF8BC /* PresentedSheetsView.swift */; };
-		8C9D12DD6B2067CDCFEF2123 /* Pods_Metin2AddServerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7290F1750D8C2DA54810BC89 /* Pods_Metin2AddServerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +33,6 @@
 		3420945B29C2FEB0009AF8BC /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		3420946629C32C94009AF8BC /* ButtonActivesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonActivesModel.swift; sourceTree = "<group>"; };
 		3420947129C341F7009AF8BC /* PresentedSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheetsView.swift; sourceTree = "<group>"; };
-		4AAF2CBFDC266BB7FB444F64 /* Pods-Metin2AddServerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2AddServerApp.debug.xcconfig"; path = "Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp.debug.xcconfig"; sourceTree = "<group>"; };
-		7290F1750D8C2DA54810BC89 /* Pods_Metin2AddServerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metin2AddServerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78D6E6254A36BF7346572792 /* Pods-Metin2AddServerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metin2AddServerApp.release.xcconfig"; path = "Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9D12DD6B2067CDCFEF2123 /* Pods_Metin2AddServerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +51,6 @@
 			children = (
 				3420943329C24D02009AF8BC /* Metin2AddServerApp */,
 				3420943229C24D02009AF8BC /* Products */,
-				7FD42EB3F534DAC0E99CB2A2 /* Pods */,
-				7C3E0F4628F3C20D5EFC2C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,24 +208,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		7C3E0F4628F3C20D5EFC2C30 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7290F1750D8C2DA54810BC89 /* Pods_Metin2AddServerApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7FD42EB3F534DAC0E99CB2A2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4AAF2CBFDC266BB7FB444F64 /* Pods-Metin2AddServerApp.debug.xcconfig */,
-				78D6E6254A36BF7346572792 /* Pods-Metin2AddServerApp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,11 +215,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3420943F29C24D04009AF8BC /* Build configuration list for PBXNativeTarget "Metin2AddServerApp" */;
 			buildPhases = (
-				8AA65D0C1812A0A5F7E7E02F /* [CP] Check Pods Manifest.lock */,
 				3420942D29C24D02009AF8BC /* Sources */,
 				3420942E29C24D02009AF8BC /* Frameworks */,
 				3420942F29C24D02009AF8BC /* Resources */,
-				66CC7CA62FBBEA94DD3977C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,48 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		66CC7CA62FBBEA94DD3977C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metin2AddServerApp/Pods-Metin2AddServerApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AA65D0C1812A0A5F7E7E02F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Metin2AddServerApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3420942D29C24D02009AF8BC /* Sources */ = {
@@ -478,7 +409,6 @@
 		};
 		3420944029C24D04009AF8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AAF2CBFDC266BB7FB444F64 /* Pods-Metin2AddServerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,7 +441,6 @@
 		};
 		3420944129C24D04009AF8BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78D6E6254A36BF7346572792 /* Pods-Metin2AddServerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
