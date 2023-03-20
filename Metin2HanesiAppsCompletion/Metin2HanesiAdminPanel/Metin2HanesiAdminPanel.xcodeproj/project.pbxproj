@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		3465597D29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465597C29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift */; };
-		3465597F29C72A40005A3C17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465597E29C72A40005A3C17 /* ContentView.swift */; };
+		3465597F29C72A40005A3C17 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465597E29C72A40005A3C17 /* AdminView.swift */; };
 		3465598129C72A42005A3C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3465598029C72A42005A3C17 /* Assets.xcassets */; };
 		3465598429C72A42005A3C17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3465598329C72A42005A3C17 /* Preview Assets.xcassets */; };
 		3465599129C72B98005A3C17 /* Colorments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465599029C72B98005A3C17 /* Colorments.swift */; };
 		3465599529C72D1E005A3C17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3465599429C72D1E005A3C17 /* FirebaseFirestore */; };
 		3465599729C72D1E005A3C17 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3465599629C72D1E005A3C17 /* FirebaseFirestoreSwift */; };
 		3465599929C72D1E005A3C17 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3465599829C72D1E005A3C17 /* FirebaseStorage */; };
+		3465599C29C72DAE005A3C17 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465599B29C72DAE005A3C17 /* ImageUploader.swift */; };
+		3465599E29C72DD7005A3C17 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465599D29C72DD7005A3C17 /* Constant.swift */; };
+		346559A029C72EBD005A3C17 /* DataSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465599F29C72EBD005A3C17 /* DataSetter.swift */; };
+		346559A429C7505C005A3C17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 346559A329C7505C005A3C17 /* GoogleService-Info.plist */; };
+		346559A629C751D1005A3C17 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559A529C751D1005A3C17 /* AdminViewModel.swift */; };
+		346559A829C751F5005A3C17 /* AddDataServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559A729C751F5005A3C17 /* AddDataServerModel.swift */; };
+		346559AE29C7535E005A3C17 /* NewViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559AD29C7535E005A3C17 /* NewViewButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3465597929C72A40005A3C17 /* Metin2HanesiAdminPanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metin2HanesiAdminPanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3465597C29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metin2HanesiAdminPanelApp.swift; sourceTree = "<group>"; };
-		3465597E29C72A40005A3C17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3465597E29C72A40005A3C17 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
 		3465598029C72A42005A3C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3465598329C72A42005A3C17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3465599029C72B98005A3C17 /* Colorments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorments.swift; sourceTree = "<group>"; };
+		3465599B29C72DAE005A3C17 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		3465599D29C72DD7005A3C17 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3465599F29C72EBD005A3C17 /* DataSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetter.swift; sourceTree = "<group>"; };
+		346559A329C7505C005A3C17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		346559A529C751D1005A3C17 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
+		346559A729C751F5005A3C17 /* AddDataServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataServerModel.swift; sourceTree = "<group>"; };
+		346559AD29C7535E005A3C17 /* NewViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +77,6 @@
 				3465598B29C72B48005A3C17 /* Model */,
 				3465598C29C72B5B005A3C17 /* Service */,
 				3465599229C72BC5005A3C17 /* Utils */,
-				3465597C29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift */,
-				3465597E29C72A40005A3C17 /* ContentView.swift */,
 				3465598229C72A42005A3C17 /* Preview Content */,
 			);
 			path = Metin2HanesiAdminPanel;
@@ -81,6 +93,7 @@
 		3465598A29C72B44005A3C17 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				346559A129C7424C005A3C17 /* App */,
 				3465598D29C72B65005A3C17 /* View */,
 				3465598E29C72B68005A3C17 /* ViewSub */,
 				3465598F29C72B73005A3C17 /* Helper */,
@@ -91,6 +104,8 @@
 		3465598B29C72B48005A3C17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3465599D29C72DD7005A3C17 /* Constant.swift */,
+				346559A729C751F5005A3C17 /* AddDataServerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +113,7 @@
 		3465598C29C72B5B005A3C17 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3465599A29C72DA0005A3C17 /* Firebase */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -105,6 +121,7 @@
 		3465598D29C72B65005A3C17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				346559A229C74D80005A3C17 /* CoordinatorView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +129,8 @@
 		3465598E29C72B68005A3C17 /* ViewSub */ = {
 			isa = PBXGroup;
 			children = (
+				346559AB29C75329005A3C17 /* view */,
+				346559AC29C75336005A3C17 /* button */,
 			);
 			path = ViewSub;
 			sourceTree = "<group>";
@@ -127,9 +146,51 @@
 		3465599229C72BC5005A3C17 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				346559A329C7505C005A3C17 /* GoogleService-Info.plist */,
 				3465598029C72A42005A3C17 /* Assets.xcassets */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3465599A29C72DA0005A3C17 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3465599B29C72DAE005A3C17 /* ImageUploader.swift */,
+				3465599F29C72EBD005A3C17 /* DataSetter.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		346559A129C7424C005A3C17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3465597C29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		346559A229C74D80005A3C17 /* CoordinatorView */ = {
+			isa = PBXGroup;
+			children = (
+				346559A529C751D1005A3C17 /* AdminViewModel.swift */,
+				3465597E29C72A40005A3C17 /* AdminView.swift */,
+			);
+			path = CoordinatorView;
+			sourceTree = "<group>";
+		};
+		346559AB29C75329005A3C17 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		346559AC29C75336005A3C17 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				346559AD29C7535E005A3C17 /* NewViewButton.swift */,
+			);
+			path = button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +261,7 @@
 			files = (
 				3465598429C72A42005A3C17 /* Preview Assets.xcassets in Resources */,
 				3465598129C72A42005A3C17 /* Assets.xcassets in Resources */,
+				346559A429C7505C005A3C17 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3465597F29C72A40005A3C17 /* ContentView.swift in Sources */,
+				346559A029C72EBD005A3C17 /* DataSetter.swift in Sources */,
+				346559A629C751D1005A3C17 /* AdminViewModel.swift in Sources */,
+				3465597F29C72A40005A3C17 /* AdminView.swift in Sources */,
 				3465597D29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift in Sources */,
+				3465599E29C72DD7005A3C17 /* Constant.swift in Sources */,
 				3465599129C72B98005A3C17 /* Colorments.swift in Sources */,
+				346559A829C751F5005A3C17 /* AddDataServerModel.swift in Sources */,
+				346559AE29C7535E005A3C17 /* NewViewButton.swift in Sources */,
+				3465599C29C72DAE005A3C17 /* ImageUploader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
