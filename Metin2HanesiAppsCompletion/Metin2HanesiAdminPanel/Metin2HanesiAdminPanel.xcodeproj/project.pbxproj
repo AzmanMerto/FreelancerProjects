@@ -22,6 +22,8 @@
 		346559A629C751D1005A3C17 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559A529C751D1005A3C17 /* AdminViewModel.swift */; };
 		346559A829C751F5005A3C17 /* AddDataServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559A729C751F5005A3C17 /* AddDataServerModel.swift */; };
 		346559AE29C7535E005A3C17 /* NewViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346559AD29C7535E005A3C17 /* NewViewButton.swift */; };
+		349889FF29CACABB0087F9D7 /* AdminViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349889FE29CACABB0087F9D7 /* AdminViewHeader.swift */; };
+		34988A0229CB12B10087F9D7 /* AddDataTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34988A0129CB12B10087F9D7 /* AddDataTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		346559A529C751D1005A3C17 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
 		346559A729C751F5005A3C17 /* AddDataServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataServerModel.swift; sourceTree = "<group>"; };
 		346559AD29C7535E005A3C17 /* NewViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewButton.swift; sourceTree = "<group>"; };
+		349889FE29CACABB0087F9D7 /* AdminViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewHeader.swift; sourceTree = "<group>"; };
+		34988A0129CB12B10087F9D7 /* AddDataTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,6 @@
 		3465598B29C72B48005A3C17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3465599D29C72DD7005A3C17 /* Constant.swift */,
 				346559A729C751F5005A3C17 /* AddDataServerModel.swift */,
 			);
 			path = Model;
@@ -121,7 +124,7 @@
 		3465598D29C72B65005A3C17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				346559A229C74D80005A3C17 /* CoordinatorView */,
+				346559A229C74D80005A3C17 /* admin */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 		3465599229C72BC5005A3C17 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3465599D29C72DD7005A3C17 /* Constant.swift */,
 				346559A329C7505C005A3C17 /* GoogleService-Info.plist */,
 				3465598029C72A42005A3C17 /* Assets.xcassets */,
 			);
@@ -169,18 +173,20 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		346559A229C74D80005A3C17 /* CoordinatorView */ = {
+		346559A229C74D80005A3C17 /* admin */ = {
 			isa = PBXGroup;
 			children = (
 				346559A529C751D1005A3C17 /* AdminViewModel.swift */,
 				3465597E29C72A40005A3C17 /* AdminView.swift */,
 			);
-			path = CoordinatorView;
+			path = admin;
 			sourceTree = "<group>";
 		};
 		346559AB29C75329005A3C17 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				34988A0029CB127E0087F9D7 /* textfield */,
+				349889FD29CACA860087F9D7 /* admin */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -191,6 +197,22 @@
 				346559AD29C7535E005A3C17 /* NewViewButton.swift */,
 			);
 			path = button;
+			sourceTree = "<group>";
+		};
+		349889FD29CACA860087F9D7 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				349889FE29CACABB0087F9D7 /* AdminViewHeader.swift */,
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
+		34988A0029CB127E0087F9D7 /* textfield */ = {
+			isa = PBXGroup;
+			children = (
+				34988A0129CB12B10087F9D7 /* AddDataTextfield.swift */,
+			);
+			path = textfield;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,10 +299,12 @@
 				3465597F29C72A40005A3C17 /* AdminView.swift in Sources */,
 				3465597D29C72A40005A3C17 /* Metin2HanesiAdminPanelApp.swift in Sources */,
 				3465599E29C72DD7005A3C17 /* Constant.swift in Sources */,
+				349889FF29CACABB0087F9D7 /* AdminViewHeader.swift in Sources */,
 				3465599129C72B98005A3C17 /* Colorments.swift in Sources */,
 				346559A829C751F5005A3C17 /* AddDataServerModel.swift in Sources */,
 				346559AE29C7535E005A3C17 /* NewViewButton.swift in Sources */,
 				3465599C29C72DAE005A3C17 /* ImageUploader.swift in Sources */,
+				34988A0229CB12B10087F9D7 /* AddDataTextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

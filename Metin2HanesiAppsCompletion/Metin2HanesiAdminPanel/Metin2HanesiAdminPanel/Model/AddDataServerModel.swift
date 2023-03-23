@@ -8,5 +8,9 @@
 import Foundation
 
 struct AddDataServerModel: Equatable {
+    static func == (lhs: AddDataServerModel, rhs: AddDataServerModel) -> Bool {
+        true
+    }
     let buttonTitle: String
+    let funcAction: () -> Void
 }
