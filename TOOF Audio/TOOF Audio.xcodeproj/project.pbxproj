@@ -27,6 +27,8 @@
 		3412413C29D113E7001B9D3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413B29D113E7001B9D3B /* FirebaseAuth */; };
 		3412413E29D113E7001B9D3B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413D29D113E7001B9D3B /* FirebaseFirestore */; };
 		3412414029D113E7001B9D3B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413F29D113E7001B9D3B /* FirebaseFirestoreSwift */; };
+		3412414629D113E7001B9D3B /* Turkish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412414829D113E7001B9D3B /* Turkish.strings */; };
+		3412414929D113E7001B9D3B /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412414B29D113E7001B9D3B /* English.strings */; };
 		3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */; };
 		3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFA929A4403500CA1F0F /* Assets.xcassets */; };
 		3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNotFoundView.swift; sourceTree = "<group>"; };
 		340F92F329B7BB3F00B3127E /* EntryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTextField.swift; sourceTree = "<group>"; };
 		340F92F529B7BB8F00B3127E /* EntryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeader.swift; sourceTree = "<group>"; };
+		3412414729D113E7001B9D3B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Turkish.strings; sourceTree = "<group>"; };
+		3412414A29D113E7001B9D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
 		3426EFA229A4403200CA1F0F /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
 		3426EFA929A4403500CA1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +151,15 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		3412414129D113E7001B9D3B /* StringFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3412414B29D113E7001B9D3B /* English.strings */,
+				3412414829D113E7001B9D3B /* Turkish.strings */,
+			);
+			path = StringFiles;
+			sourceTree = "<group>";
+		};
 		3426EF9929A4403200CA1F0F = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +216,7 @@
 		3426EFB529A4403500CA1F0F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3412414129D113E7001B9D3B /* StringFiles */,
 				3426EFA929A4403500CA1F0F /* Assets.xcassets */,
 			);
 			path = Utils;
@@ -395,7 +409,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */,
+				3412414629D113E7001B9D3B /* Turkish.strings in Resources */,
 				3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */,
+				3412414929D113E7001B9D3B /* English.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3412414829D113E7001B9D3B /* Turkish.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3412414729D113E7001B9D3B /* tr */,
+			);
+			name = Turkish.strings;
+			sourceTree = "<group>";
+		};
+		3412414B29D113E7001B9D3B /* English.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3412414A29D113E7001B9D3B /* en */,
+			);
+			name = English.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3426EFAE29A4403500CA1F0F /* Debug */ = {
