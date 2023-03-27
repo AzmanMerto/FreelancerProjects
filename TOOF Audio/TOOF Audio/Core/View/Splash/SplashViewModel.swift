@@ -2,28 +2,27 @@
 //  SplashViewModel.swift
 //  TOOF Audio
 //
-//  Created by NomoteteS on 14.02.2023.
+//  Created by NomoteteS on 27.03.2023.
 //
 
-import SwiftUI
+import Foundation
 
-typealias splashRouter = SplashRouter
-
-class SplashViewModel : ObservableObject {
+class SplashViewModel: ObservableObject {
     
-    var router = SplashRouter()
+    var coordinator : splashCoordinator = .init()
+    @Published var isAppActive : Bool
     
-    var isAppReady : Bool
-    
-    init(router: SplashRouter = SplashRouter(),
-         isAppReady: Bool = false) {
-        self.router = router
-        self.isAppReady = isAppReady
+    init(coordinator: splashCoordinator = .init(),
+        isAppActive: Bool = false) {
+        self.coordinator = coordinator
+        self.isAppActive = isAppActive
+        self.activeApp()
     }
     
-    func fakeReady() {
+    func activeApp() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.isAppReady = true
+            self.isAppActive = true
         }
     }
+    
 }

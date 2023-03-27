@@ -16,7 +16,7 @@ struct PrimaryButton: View {
         Button {
             action()
         } label: {
-            Text(text)
+            Text(text.locale())
         }
         .buttonStyle(PrimaryButtonStyle(size: size))
     }

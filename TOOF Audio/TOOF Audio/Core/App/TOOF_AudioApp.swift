@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
 
 @main
 struct TOOF_AudioApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            SplashCoordinator()
         }
     }
 }

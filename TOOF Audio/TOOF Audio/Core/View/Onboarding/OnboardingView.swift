@@ -20,8 +20,7 @@ struct OnboardingView: View {
             VStack {
                 Image.OnboardingImage
                     .resizable()
-                    .frame(width: .infinity,
-                           height: UIScreen.main.bounds.height / 2)
+                    .frame(height: UIScreen.main.bounds.height / 2)
                     .ignoresSafeArea()
                 VStack {
                     Image.ToofLogo
@@ -30,17 +29,21 @@ struct OnboardingView: View {
                         .frame(width: 200,
                                height: 60)
 
-                    Text("Evinizi kontrol etmenin en iyi yolu")
+                    Text(TextHandler.onboarding.appSlogan.rawValue.locale())
                         .padding(.top)
                         .font(.system(.headline, weight: .black))
                         .multilineTextAlignment(.center)
-                        .padding(EdgeInsets.init(top: 30, leading: 120, bottom: 0, trailing: 120))
+                        .padding(EdgeInsets.init(top: 30,
+                                                 leading: 120,
+                                                 bottom: 0,
+                                                 trailing: 120))
                         .foregroundColor(.white)
 
                    
                 }
                 Spacer()
-                PrimaryButton(text: "HADİ BAŞLAYALIM", size: CGSize(width: 156,
+                PrimaryButton(text: TextHandler.onboarding.onboardingStartButton.rawValue ,
+                              size: CGSize(width: 156,
                                                      height: 48)) {
                     
                 }

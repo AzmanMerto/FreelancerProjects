@@ -9,9 +9,13 @@ import Foundation
 
 
 class OnboardingViewModel: ObservableObject {
+    
+    var coordinator : onboardingCoordinator
     @Published var isPressed : Bool
     
-    init(isPressed: Bool = false) {
+    init(coordinator : onboardingCoordinator = .init(),
+        isPressed: Bool = false) {
+        self.coordinator = coordinator
         self.isPressed = isPressed
     }
 }

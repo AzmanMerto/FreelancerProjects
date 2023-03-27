@@ -27,21 +27,25 @@
 		3412413C29D113E7001B9D3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413B29D113E7001B9D3B /* FirebaseAuth */; };
 		3412413E29D113E7001B9D3B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413D29D113E7001B9D3B /* FirebaseFirestore */; };
 		3412414029D113E7001B9D3B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3412413F29D113E7001B9D3B /* FirebaseFirestoreSwift */; };
-		3412414629D113E7001B9D3B /* Turkish.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412414829D113E7001B9D3B /* Turkish.strings */; };
-		3412414929D113E7001B9D3B /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412414B29D113E7001B9D3B /* English.strings */; };
+		3412414E29D116C4001B9D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412414D29D116C4001B9D3B /* AppDelegate.swift */; };
+		3412415029D12170001B9D3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3412414F29D12170001B9D3B /* GoogleService-Info.plist */; };
+		3412415829D19210001B9D3B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412415729D19210001B9D3B /* String+Extension.swift */; };
+		3412415B29D192C1001B9D3B /* TextHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412415A29D192C1001B9D3B /* TextHandler.swift */; };
+		3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412415C29D192C9001B9D3B /* TextHelper.swift */; };
+		3412416229D221B1001B9D3B /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412416129D221B1001B9D3B /* SplashCoordinator.swift */; };
+		3412416429D222EF001B9D3B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412416329D222EF001B9D3B /* SplashViewModel.swift */; };
+		3412416629D22327001B9D3B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412416529D22327001B9D3B /* SplashView.swift */; };
+		3412416729D22745001B9D3B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412416929D22745001B9D3B /* Localizable.strings */; };
 		3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */; };
 		3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFA929A4403500CA1F0F /* Assets.xcassets */; };
 		3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */; };
 		3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFBC29A4403500CA1F0F /* ImageHelper.swift */; };
 		3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFBE29A4403500CA1F0F /* ImageHandler.swift */; };
-		3426EFC229A4403500CA1F0F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC129A4403500CA1F0F /* SplashView.swift */; };
-		3426EFC729A4403500CA1F0F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC629A4403500CA1F0F /* SplashViewModel.swift */; };
-		3426EFC929A4403500CA1F0F /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFC829A4403500CA1F0F /* SplashRouter.swift */; };
 		3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCA29A4403500CA1F0F /* ColorHelper.swift */; };
 		3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCC29A4403500CA1F0F /* ColorHandler.swift */; };
 		3426EFD029A4403500CA1F0F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCF29A4403500CA1F0F /* OnboardingView.swift */; };
 		34ECC13229A80DB2006ACA3B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */; };
-		34ECC13429A80DBF006ACA3B /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */; };
+		34ECC13429A80DBF006ACA3B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13329A80DBF006ACA3B /* OnboardingCoordinator.swift */; };
 		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
 		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
 		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
@@ -64,22 +68,28 @@
 		340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNotFoundView.swift; sourceTree = "<group>"; };
 		340F92F329B7BB3F00B3127E /* EntryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTextField.swift; sourceTree = "<group>"; };
 		340F92F529B7BB8F00B3127E /* EntryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeader.swift; sourceTree = "<group>"; };
-		3412414729D113E7001B9D3B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Turkish.strings; sourceTree = "<group>"; };
-		3412414A29D113E7001B9D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/English.strings; sourceTree = "<group>"; };
+		3412414D29D116C4001B9D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3412414F29D12170001B9D3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3412415129D12185001B9D3B /* TOOF-Audio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TOOF-Audio-Info.plist"; path = "TOOF Audio/Utils/TOOF-Audio-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3412415729D19210001B9D3B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3412415A29D192C1001B9D3B /* TextHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHandler.swift; sourceTree = "<group>"; };
+		3412415C29D192C9001B9D3B /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
+		3412416129D221B1001B9D3B /* SplashCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		3412416329D222EF001B9D3B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		3412416529D22327001B9D3B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3412416829D22745001B9D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3412416A29D22749001B9D3B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3426EFA229A4403200CA1F0F /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
 		3426EFA929A4403500CA1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3426EFBC29A4403500CA1F0F /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		3426EFBE29A4403500CA1F0F /* ImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
-		3426EFC129A4403500CA1F0F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		3426EFC629A4403500CA1F0F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		3426EFC829A4403500CA1F0F /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		3426EFCA29A4403500CA1F0F /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		3426EFCC29A4403500CA1F0F /* ColorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHandler.swift; sourceTree = "<group>"; };
 		3426EFCF29A4403500CA1F0F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		34ECC13329A80DBF006ACA3B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
 		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
 		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -151,13 +161,30 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
-		3412414129D113E7001B9D3B /* StringFiles */ = {
+		3412414C29D1169E001B9D3B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				3412414B29D113E7001B9D3B /* English.strings */,
-				3412414829D113E7001B9D3B /* Turkish.strings */,
+				3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */,
+				3412414D29D116C4001B9D3B /* AppDelegate.swift */,
 			);
-			path = StringFiles;
+			path = App;
+			sourceTree = "<group>";
+		};
+		3412415629D191F7001B9D3B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3412415729D19210001B9D3B /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3412415929D19297001B9D3B /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				3412415C29D192C9001B9D3B /* TextHelper.swift */,
+				3412415A29D192C1001B9D3B /* TextHandler.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		3426EF9929A4403200CA1F0F = {
@@ -179,9 +206,9 @@
 		3426EFA429A4403200CA1F0F /* TOOF Audio */ = {
 			isa = PBXGroup;
 			children = (
-				3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */,
 				3426EFB329A4403500CA1F0F /* Core */,
 				3426EFB429A4403500CA1F0F /* Service */,
+				3412415629D191F7001B9D3B /* Extension */,
 				3426EFB529A4403500CA1F0F /* Utils */,
 				3426EFAB29A4403500CA1F0F /* Preview Content */,
 			);
@@ -199,6 +226,7 @@
 		3426EFB329A4403500CA1F0F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3412414C29D1169E001B9D3B /* App */,
 				3426EFB829A4403500CA1F0F /* View */,
 				3426EFB729A4403500CA1F0F /* Component */,
 				3426EFB629A4403500CA1F0F /* Helper */,
@@ -216,8 +244,10 @@
 		3426EFB529A4403500CA1F0F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3412414129D113E7001B9D3B /* StringFiles */,
+				3412415129D12185001B9D3B /* TOOF-Audio-Info.plist */,
+				3412414F29D12170001B9D3B /* GoogleService-Info.plist */,
 				3426EFA929A4403500CA1F0F /* Assets.xcassets */,
+				3412416929D22745001B9D3B /* Localizable.strings */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -254,6 +284,7 @@
 		3426EFB929A4403500CA1F0F /* Instrument */ = {
 			isa = PBXGroup;
 			children = (
+				3412415929D19297001B9D3B /* Text */,
 				340F92D129B7B4A900B3127E /* Font */,
 				3426EFBB29A4403500CA1F0F /* Image */,
 				3426EFBA29A4403500CA1F0F /* Color */,
@@ -282,9 +313,9 @@
 		3426EFC029A4403500CA1F0F /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				3426EFC829A4403500CA1F0F /* SplashRouter.swift */,
-				3426EFC629A4403500CA1F0F /* SplashViewModel.swift */,
-				3426EFC129A4403500CA1F0F /* SplashView.swift */,
+				3412416129D221B1001B9D3B /* SplashCoordinator.swift */,
+				3412416329D222EF001B9D3B /* SplashViewModel.swift */,
+				3412416529D22327001B9D3B /* SplashView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -292,7 +323,7 @@
 		3426EFCE29A4403500CA1F0F /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				34ECC13329A80DBF006ACA3B /* OnboardingRouter.swift */,
+				34ECC13329A80DBF006ACA3B /* OnboardingCoordinator.swift */,
 				34ECC13129A80DB2006ACA3B /* OnboardingViewModel.swift */,
 				3426EFCF29A4403500CA1F0F /* OnboardingView.swift */,
 			);
@@ -408,10 +439,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3412416729D22745001B9D3B /* Localizable.strings in Resources */,
 				3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */,
-				3412414629D113E7001B9D3B /* Turkish.strings in Resources */,
+				3412415029D12170001B9D3B /* GoogleService-Info.plist in Resources */,
 				3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */,
-				3412414929D113E7001B9D3B /* English.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,13 +454,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
+				3412416229D221B1001B9D3B /* SplashCoordinator.swift in Sources */,
 				340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */,
 				340F92D929B7B89E00B3127E /* AuthRooter.swift in Sources */,
 				340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */,
 				340F92DF29B7B8BB00B3127E /* AuthRegisterView.swift in Sources */,
 				340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */,
 				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
-				3426EFC929A4403500CA1F0F /* SplashRouter.swift in Sources */,
 				340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */,
 				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
 				340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */,
@@ -437,20 +468,24 @@
 				340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */,
 				34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */,
 				3426EFD029A4403500CA1F0F /* OnboardingView.swift in Sources */,
+				3412416429D222EF001B9D3B /* SplashViewModel.swift in Sources */,
+				3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */,
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
 				340F92E829B7B9FE00B3127E /* DeviceFinderRouter.swift in Sources */,
+				3412416629D22327001B9D3B /* SplashView.swift in Sources */,
 				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
 				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
 				340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */,
-				3426EFC229A4403500CA1F0F /* SplashView.swift in Sources */,
 				34ECC13229A80DB2006ACA3B /* OnboardingViewModel.swift in Sources */,
-				3426EFC729A4403500CA1F0F /* SplashViewModel.swift in Sources */,
-				34ECC13429A80DBF006ACA3B /* OnboardingRouter.swift in Sources */,
+				3412414E29D116C4001B9D3B /* AppDelegate.swift in Sources */,
+				3412415B29D192C1001B9D3B /* TextHandler.swift in Sources */,
+				34ECC13429A80DBF006ACA3B /* OnboardingCoordinator.swift in Sources */,
 				340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */,
 				3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */,
 				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
 				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
+				3412415829D19210001B9D3B /* String+Extension.swift in Sources */,
 				340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,20 +493,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3412414829D113E7001B9D3B /* Turkish.strings */ = {
+		3412416929D22745001B9D3B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3412414729D113E7001B9D3B /* tr */,
+				3412416829D22745001B9D3B /* en */,
+				3412416A29D22749001B9D3B /* tr */,
 			);
-			name = Turkish.strings;
-			sourceTree = "<group>";
-		};
-		3412414B29D113E7001B9D3B /* English.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3412414A29D113E7001B9D3B /* en */,
-			);
-			name = English.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -602,7 +630,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "TOOF Audio/Utils/TOOF-Audio-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -633,7 +661,7 @@
 				DEVELOPMENT_TEAM = MW2482B7WH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "TOOF Audio/Utils/TOOF-Audio-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

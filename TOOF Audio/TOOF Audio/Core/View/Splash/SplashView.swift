@@ -2,7 +2,7 @@
 //  SplashView.swift
 //  TOOF Audio
 //
-//  Created by NomoteteS on 14.02.2023.
+//  Created by NomoteteS on 27.03.2023.
 //
 
 import SwiftUI
@@ -12,10 +12,13 @@ struct SplashView: View {
     @ObservedObject var viewModel : SplashViewModel = .init()
     
     var body: some View {
-        if viewModel.isAppReady {
-            viewModel.router.goToOnboarding()
+        ZStack {
+            if viewModel.isAppActive {
+                viewModel.coordinator.build(page: .NextCoordinator)
+            } else {
+                SplashUISubView()
+            }
         }
-        SplashUISubView()
     }
 }
 
