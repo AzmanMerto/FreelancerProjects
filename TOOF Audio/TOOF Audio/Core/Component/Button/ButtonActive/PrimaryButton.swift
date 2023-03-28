@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PrimaryButton: View {
+    
     @State var text : String
     @State var size : CGSize
     var action : () -> ()
@@ -18,6 +19,7 @@ struct PrimaryButton: View {
         } label: {
             Text(text.locale())
         }
+        .frame(height: 48)
         .buttonStyle(PrimaryButtonStyle(size: size))
     }
 }

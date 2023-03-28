@@ -14,7 +14,7 @@ struct SplashUISubView: View {
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                Image.AppLogo
+                Image(ImageHelper.app.appLogo.rawValue)
                     .resizable()
                     .frame(width: 244, height: 109)
                 Spacer()

@@ -7,9 +7,19 @@
 
 import Foundation
 
-enum ImageHelper : String {
-    case appLogo = "appLogo"
-    case toofLogo = "toofLogo"
-    case onboardingImage = "onboardingImage"
-    case authBackground = "authBackground"
+struct ImageHelper {
+    
+    //MARK: ImageHelper - App Images
+    enum app: String {
+        case appLogo = "appLogo"
+        case toofLogo = "toofLogo"
+    }
+    //MARK: ImageHelper - Start Views Images
+    enum start: String {
+        case onboardingImage = "onboardingImage"
+    }
+    //MARK: ImageHelper - Auth Views Images
+    enum auth: String {
+        case authBackground = "authBackground"
+    }
 }

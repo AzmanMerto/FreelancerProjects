@@ -6,5 +6,31 @@
   
 */
 
+//MARK: Turkish String - Onboarding
 "APP_SLOGAN" = "Evinizi Kontrol Etmenin En İyi Yolu";
 "ONBOARDING_START_BUTTON" = "HADİ BAŞLAYALIM";
+
+//MARK: Turkish String - Auth
+"AUTH_LOGIN_TITLE" = "GİRİŞ YAPIN";
+"AUTH_LOGIN_DESCRIPTION" = "Hadi hemen giriş yapalım.";
+"AUTH_LOGIN_BUTTON" = "GİRİŞ";
+"AUTH_RESET_PASSWORD" = "Şifre sıfırlamak için tıklayınız";
+"AUTH_LETS_REGISTER" = "HESABINIZ YOK MU?";
+"AUTH_LETS_REGISTER_CLICK" = "KAYIT OLUN";
+
+"AUTH_REGISTER_TITLE" = "KAYIT OLUN";
+"AUTH_REGISTER_DESCRIPTION" = "Hesabınız yok gibi görünüyor. Sizin için yeni bir hesap oluşturalım.";
+"AUTH_REGISTER_BUTTON" = "HESABINI OLUŞTUR";
+"AUTH_PRIVACY_AND_POLICY" = "Aşağıda Hesap Oluştur'u seçerek Hizmet Şartları ve Gizlilik Politikasını kabul ediyorsunuz.";
+"AUTH_LETS_LOGIN" = "HESABINIZ VAR MI?";
+"AUTH_LETS_LOGIN_CLICK" = "GİRİŞ YAPIN";
+
+"AUTH_RESET_PASSWORD_TITLE" = "ŞİFRENİZİ YENİLEYİN";
+"AUTH_RESET_PASSWORD_DESCRIPTOIN" = "Parolanızı mı unuttunuz? Endişelenmeyin, mevcut şifrenizi sıfırlamak için e-postanızı girin.";
+
+"AUTH_MAIL_TEXTFIELD_PLACEHOLDER" = "Mailiniz";
+"AUTH_PASSWORD_TEXTFIELD_PLACEHOLDER" = "Şifreniz";
+"AUTH_NAME_TEXTFIELD_PLACEHOLDER" = "isminiz";
+"AUTH_ENTRYCODE_TEXTFIELD_PLACEHOLDER" = "Kodu Giriniz";
+"AUTH_CHANGEPASSWORD_TEXTFIELD_PLACEHOLDER" = "Şifreyi Değiştir";
+"AUTH_CONFIRMPASSOWRD_TEXTFIELD_PLACEHOLDER" = "Şifreyi Onayla";

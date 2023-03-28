@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct AuthResetPasswordView: View {
+    
+    @ObservedObject var viewModel : AuthViewModel = .init()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.ToofBackgroundColor
+                .ignoresSafeArea()
+            VStack {
+                Spacer()
+                //MARK: AuthResetPasswordView - Header
+                EntryHeader(title: TextHelper.auth.authResetPasswordTitle.rawValue,
+                            description: TextHelper.auth.authResetPasswordDescription.rawValue)
+                //MARK: AuthResetPasswordView - Textfield
+                EntryTextField(isSecure: false,
+                               isActive: false,
+                               placeholderText: TextHelper.auth.authMailTextFieldPlaceholder.rawValue,
+                               bindingText: $viewModel.mail)
+                .padding(.vertical)
+                Spacer()
+                PrimaryButton(text: TextHelper.auth.authResetPasswordButton.rawValue, size: CGSize(width: 280, height: 48)) {
+                    
+                }
+                Spacer()
+            }
+        }
     }
 }
 

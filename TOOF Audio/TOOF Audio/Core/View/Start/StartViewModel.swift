@@ -1,5 +1,5 @@
 //
-//  SplashViewModel.swift
+//  StartViewModel.swift
 //  TOOF Audio
 //
 //  Created by NomoteteS on 27.03.2023.
@@ -7,15 +7,15 @@
 
 import Foundation
 
-class SplashViewModel: ObservableObject {
+class StartViewModel: ObservableObject {
     
-    var coordinator : splashCoordinator = .init()
     @Published var isAppActive : Bool
+    @Published var isPressedforAuth : Bool
     
-    init(coordinator: splashCoordinator = .init(),
-        isAppActive: Bool = false) {
-        self.coordinator = coordinator
+    init(isAppActive: Bool = false,
+         isPressedforAuth: Bool = false) {
         self.isAppActive = isAppActive
+        self.isPressedforAuth = isPressedforAuth
         self.activeApp()
     }
     
