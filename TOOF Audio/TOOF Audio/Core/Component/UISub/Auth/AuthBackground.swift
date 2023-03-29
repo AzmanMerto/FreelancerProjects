@@ -9,8 +9,11 @@ import SwiftUI
 
 struct AuthBackground: View {
     var body: some View {
-        Image(ImageHelper.auth.authBackground.rawValue)
-            .ignoresSafeArea()
+        ZStack {
+            Image(ImageHelper.auth.authBackground.rawValue)
+                .ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width * 1)
+        }
     }
 }
 

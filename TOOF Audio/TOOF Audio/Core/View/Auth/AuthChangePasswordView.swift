@@ -8,8 +8,45 @@
 import SwiftUI
 
 struct AuthChangePasswordView: View {
+    
+    @ObservedObject var viewModel : AuthViewModel = .init()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            AuthBackground()
+            VStack {
+                CustomBackButton()
+                    .padding(.top,90)
+                EntryHeader(title: TextHelper.auth.authChangePasswordTitle.rawValue ,
+                            description: TextHelper.auth.authChangePasswordDescription.rawValue)
+                
+                EntryTextField(isSecure: false,
+                               isActive: false,
+                               placeholderText: TextHelper.auth.authChangePasswordTextfieldPlaceholder.rawValue,
+                               bindingText: $viewModel.password)
+                .padding(.vertical)
+                
+                EntryTextField(isSecure: false,
+                               isActive: false,
+                               placeholderText: TextHelper.auth.authConfirmPasswordTextfieldPlaceholder.rawValue,
+                               bindingText: $viewModel.password)
+                HStack {
+                    Text("En az 8 karakter.")
+                        .font(.boldRounded14)
+                        .foregroundColor(.ToofTextColor)
+                    
+                    Spacer()
+                }
+                .padding(.leading)
+                
+                PrimaryButton(text: TextHelper.auth.authEntryCodeTextfieldPlaceholder.rawValue) {
+                    
+                }
+                .padding(.top,30)
+                
+                Spacer()
+            }
+        }
     }
 }
 

@@ -33,9 +33,34 @@
 "AUTH_SEND_VERIFICATION_CODE_DESCRIPTION" = "E-postanıza bir kimlik doğrulama kodu gönderildi";
 "AUTH_VERIFICATION_BUTTON" = "DOĞRULAYINIZ";
 
+"AUTH_CHANGE_PASSWORD_TITLE" = "ŞİFRE DEĞİŞTİR";
+"AUTH_CHANGE_PASSWORD_DESCRIPTION" = "Daha önce kullanmadığımız yeni, güçlü bir parola olsun";
+"AUTH_CHANGE_PASSWORD_TEXTFIELD" = "En az 8 karakter";
+
 "AUTH_MAIL_TEXTFIELD_PLACEHOLDER" = "Mailiniz";
 "AUTH_PASSWORD_TEXTFIELD_PLACEHOLDER" = "Şifreniz";
 "AUTH_NAME_TEXTFIELD_PLACEHOLDER" = "isminiz";
 "AUTH_ENTRYCODE_TEXTFIELD_PLACEHOLDER" = "Kodu Giriniz";
 "AUTH_CHANGEPASSWORD_TEXTFIELD_PLACEHOLDER" = "Şifreyi Değiştir";
 "AUTH_CONFIRMPASSOWRD_TEXTFIELD_PLACEHOLDER" = "Şifreyi Onayla";
+//MARK: Turkish String - Device Finder
+"DEVICE_FINDER_ADD_DEVICE_TITLE" = "Cihaz aranıyor...";
+"DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Cihazınızın açık olduğundan ve akıllı telefonunuzla aynı ağa bağlı olduğundan emin olun. henüz ayarlamadıysanız, başlamak için aşağıdaki düğmeye dokunun";
+"DEVICE_FINDER_ADD_DEVICE_BUTTON" = "CİHAZ EKLE";
+
+"DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "Cihazınızın göstergesi yanıp sönüyor mu ?";
+"DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION" = "Cihazınızın üzerinde bulunun ışık sensöründe bağlandıya göstergesi olarak ışığın yavaşca yanıp söndüğünü kontrol ediniz";
+"DEVICE_FINDER_CONNECT_DEVICE_BUTTON" = "Cihaz yanıp sönüyor";
+
+"DEVICE_FINDER_NEAR_DEVICE_TITLE" = "Cihazınızı yakın tutun";
+"DEVICE_FINDER_NEAR_DEVICE_DESCRIPTION" = "Telefonuz ile cihazınız bağlanması için yanınınızda olduğuna emin olunuz";
+"DEVICE_FINDER_NEAR_DEVICE_SEARCH" = "FARKLI BİR YÖNTEM DENEYELİM";
+"DEVICE_FINDER_NEAR_DEVICE_CANCEL" = "ARAMAYI İPTAL ET";
+
+"DEVICE_FINDER_SEARCH_HELP_TITLE" = "ŞİMDİ BU MOBİL CİHAZI HOPARLÖR TARAFINDAN OLUŞTURULAN GEÇİCİ BİR KALBOSUZ AĞA BAĞLAYIN";
+"DEVICE_FINDER_SEARCH_HELP_BUTTON" = "TAMAMDIR TEKRAR DENEYELİM";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_ONE" = "Telefonunuzun ayarlarını açınız";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_TWO" = "Wifi sekmesine gidiniz";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_THREE" = "Cihazınıza bağlanın";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_FOUR" = "Tekrardan arayalım";
+

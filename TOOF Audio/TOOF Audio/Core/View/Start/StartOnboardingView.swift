@@ -12,7 +12,7 @@ struct StartOnboardingView: View {
     @ObservedObject var viewModel: StartViewModel = .init()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [Color.white,Color.ToofBackgroundColor]),
                                startPoint: .top,
@@ -40,15 +40,12 @@ struct StartOnboardingView: View {
                             .foregroundColor(.white)
                     }
                     Spacer()
-                    PrimaryButton(text: TextHelper.onboarding.onboardingStartButton.rawValue ,
-                                  size: CGSize(width: 156,height: 48)) {
-                        viewModel.isPressedforAuth.toggle()
-                        print("Navigate RESPONSE: Navigate to Login")
-                    }.padding(.bottom)
-                }
-                .navigationDestination(isPresented: $viewModel.isPressedforAuth) {
-                    AuthLoginView()
-                        .navigationBarBackButtonHidden(true)
+                    NavigationLink {
+                        AuthLoginView()
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        Text("asdasdas")
+                    }
                 }
             }
         }

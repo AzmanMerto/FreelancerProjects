@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AuthRegisterView: View {
     
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel: AuthViewModel = .init()
     
     var body: some View {
         ZStack {
-            Color.ToofBackgroundColor
-                .ignoresSafeArea()
+            AuthBackground()
+                .frame(width: UIScreen.main.bounds.width * 1)
             VStack {
                 Spacer()
                 //MARK: AuthRegisterView - Header
@@ -47,16 +48,18 @@ struct AuthRegisterView: View {
                     
                 }.padding(.vertical)
                 Spacer()
+                //MARK: AuthLoginView - Roll to LoginView
                 HStack {
                     Text(TextHelper.auth.authLetsLogin.rawValue.locale())
                         .foregroundColor(.ToofTextColor)
                     Text(TextHelper.auth.authLetsLoginClick.rawValue.locale())
                         .foregroundColor(.ToofButtonColor)
                         .onTapGesture {
-                            print("RESPONSE: Navigate to Register")
-                            coordinator.pop()
+                            dismiss()
                         }
                 }
+                .padding(.bottom)
+                .font(.boldRounded14.bold())
                 Spacer()
             }
         }
@@ -68,3 +71,5 @@ struct AuthRegisterView_Previews: PreviewProvider {
         AuthRegisterView()
     }
 }
+
+

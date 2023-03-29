@@ -40,6 +40,9 @@ struct AuthLoginView: View {
                                 .font(.boldRounded14)
                                 .foregroundColor(.ToofTextColor)
                         }
+                        .onTapGesture {
+                            viewModel.isResetPassword.toggle()
+                        }
                         .padding(.trailing)
                     }
                     .padding(.all)
@@ -60,11 +63,16 @@ struct AuthLoginView: View {
                                 viewModel.isPressedForRegister.toggle()
                             }
                     }
+                    .font(.boldRounded14.bold())
                     .padding(.bottom)
                     Spacer()
                 }
+                .fullScreenCover(isPresented: $viewModel.isResetPassword) {
+                    AuthResetPasswordView()
+                }
                 .navigationDestination(isPresented: $viewModel.isPressedForRegister) {
                     AuthRegisterView()
+                        .navigationBarBackButtonHidden(true)
                 }
             }
         }

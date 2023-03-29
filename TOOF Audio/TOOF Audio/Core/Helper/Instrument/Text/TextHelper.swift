@@ -14,7 +14,6 @@ struct TextHelper {
     }
     
     enum auth: String {
-        
         // Login View
         case authLoginTitle = "AUTH_LOGIN_TITLE"
         case authLoginDescription = "AUTH_LOGIN_DESCRIPTION"
@@ -41,6 +40,10 @@ struct TextHelper {
         case authSendVerificationCodeDescription = "AUTH_SEND_VERIFICATION_CODE_DESCRIPTION"
         case authVerifactionButton = "AUTH_VERIFICATION_BUTTON"
         
+        // Change password view
+        case authChangePasswordTitle = "AUTH_CHANGE_PASSWORD_TITLE"
+        case authChangePasswordDescription = "AUTH_CHANGE_PASSWORD_DESCRIPTION"
+        
         // Placeholder
         case authMailTextFieldPlaceholder = "AUTH_MAIL_TEXTFIELD_PLACEHOLDER"
         case authPasswordTextfieldPlaceholder = "AUTH_PASSWORD_TEXTFIELD_PLACEHOLDER"
@@ -49,4 +52,28 @@ struct TextHelper {
         case authChangePasswordTextfieldPlaceholder = "AUTH_CHANGEPASSWORD_TEXTFIELD_PLACEHOLDER"
         case authConfirmPasswordTextfieldPlaceholder = "AUTH_CONFIRMPASSOWRD_TEXTFIELD_PLACEHOLDER"
     }
+    
+    enum deviceFinder: String {
+        // Device Finder Add view
+        case deviceFinderAddDeviceTitle = "DEVICE_FINDER_ADD_DEVICE_TITLE"
+        case deviceFinderAddDeviceDescription = "DEVICE_FINDER_ADD_DEVICE_DESCRIPTION"
+        case deviceFinderAddDeviceButton = "DEVICE_FINDER_ADD_DEVICE_BUTTON"
+        // Device Finder Connect Device view
+        case deviceFinderConnectDeviceTitle = "DEVICE_FINDER_CONNECT_DEVICE_TITLE"
+        case deviceFinderConnectDeviceDescription = "DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION"
+        case deviceFinderConnectDeviceButton = "DEVICE_FINDER_CONNECT_DEVICE_BUTTON"
+        // Device Finder Near Device view
+        case deviceFinderNearDeviceTitle = "DEVICE_FINDER_NEAR_DEVICE_TITLE"
+        case deviceFinderNearDeviceDescription = "DEVICE_FINDER_NEAR_DEVICE_DESCRIPTION"
+        case deviceFinderNearDeviceSearch = "DEVICE_FINDER_NEAR_DEVICE_SEARCH"
+        case deviceFinderNearDeviceCancel = "DEVICE_FINDER_NEAR_DEVICE_CANCEL"
+        // Device Finder Search Help view
+        case deviceFinderSearchHelpTitle = "DEVICE_FINDER_SEARCH_HELP_TITLE"
+        case deviceFinderSearchHelpButton = "DEVICE_FINDER_SEARCH_HELP_BUTTON"
+        case deviceFinderSearchHelpSectionOne = "DEVICE_FINDER_SEARCH_HELP_SECTION_ONE"
+        case deviceFinderSearchHelpSectionTwo = "DEVICE_FINDER_SEARCH_HELP_SECTION_TWO"
+        case deviceFinderSearchHelpSectionThree = "DEVICE_FINDER_SEARCH_HELP_SECTION_THREE"
+        case deviceFinderSearchHelpSectionFour = "DEVICE_FINDER_SEARCH_HELP_SECTION_FOUR"
+    }
 }
+

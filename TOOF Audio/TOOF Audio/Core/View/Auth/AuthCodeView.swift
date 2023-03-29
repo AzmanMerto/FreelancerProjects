@@ -13,22 +13,26 @@ struct AuthCodeView: View {
     
     var body: some View {
         ZStack {
-            Color.ToofBackgroundColor
-                .ignoresSafeArea()
+            AuthBackground()
             VStack {
-                HStack {
-                    Button {
-                        
-                    } label: {
-                        Image("")
-                    }
-
-                }
+                CustomBackButton()
+                    .padding(.top,90)
+                Spacer()
+                //MARK: AuthCodeView - Header
                 EntryHeader(title: TextHelper.auth.authSendVerificationCodeTitle.rawValue,
                             description: TextHelper.auth.authSendVerificationCodeDescription.rawValue)
-                
+                .padding(.bottom)
+                //MARK: AuthCodeView - Textfield
                 EntryTextField(isSecure: false, isActive: false, placeholderText: TextHelper.auth.authEntryCodeTextfieldPlaceholder.rawValue,
                                bindingText: $viewModel.code)
+                .padding(.vertical)
+                //MARK: AuthCodeView - Button
+                PrimaryButton(text: TextHelper.auth.authVerifactionButton.rawValue) {
+                    
+                }
+                .padding(.top)
+                Spacer()
+                Spacer()
             }
         }
     }

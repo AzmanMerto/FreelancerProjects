@@ -10,7 +10,7 @@ import SwiftUI
 struct PrimaryButton: View {
     
     @State var text : String
-    @State var size : CGSize
+    @State var size : CGSize?
     var action : () -> ()
     
     var body: some View {
@@ -20,7 +20,7 @@ struct PrimaryButton: View {
             Text(text.locale())
         }
         .frame(height: 48)
-        .buttonStyle(PrimaryButtonStyle(size: size))
+        .buttonStyle(PrimaryButtonStyle(size: size ?? CGSize(width: 280, height: 50)))
     }
 }
 

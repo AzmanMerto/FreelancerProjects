@@ -13,6 +13,7 @@ struct ImageHelper {
     enum app: String {
         case appLogo = "appLogo"
         case toofLogo = "toofLogo"
+        case customBack = "customBack"
     }
     //MARK: ImageHelper - Start Views Images
     enum start: String {
@@ -21,5 +22,11 @@ struct ImageHelper {
     //MARK: ImageHelper - Auth Views Images
     enum auth: String {
         case authBackground = "authBackground"
+    }
+    
+    enum deviceFinder: String {
+        case magnifyingGlass = "magnifyingGlass"
+        case searchWithWheel = "searchinWithWheel"
+        case threePoint = "threePoint"
     }
 }

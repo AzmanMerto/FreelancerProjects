@@ -15,7 +15,6 @@
 		340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E029B7B8C900B3127E /* AuthResetPasswordView.swift */; };
 		340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E229B7B95300B3127E /* AuthCodeView.swift */; };
 		340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E429B7B96B00B3127E /* AuthChangePasswordView.swift */; };
-		340F92E829B7B9FE00B3127E /* DeviceFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */; };
 		340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */; };
 		340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */; };
 		340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */; };
@@ -43,6 +42,9 @@
 		3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCC29A4403500CA1F0F /* ColorHandler.swift */; };
 		3426EFD029A4403500CA1F0F /* StartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */; };
 		3481770029D3121C006803A1 /* AuthBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348176FF29D3121C006803A1 /* AuthBackground.swift */; };
+		3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770229D320E4006803A1 /* CustomBackButton.swift */; };
+		3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770429D353A3006803A1 /* DeviceFinderNearView.swift */; };
+		3481770829D3A34F006803A1 /* DeviceFinderHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770729D3A34F006803A1 /* DeviceFinderHeader.swift */; };
 		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
 		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
 		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
@@ -57,7 +59,6 @@
 		340F92E029B7B8C900B3127E /* AuthResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResetPasswordView.swift; sourceTree = "<group>"; };
 		340F92E229B7B95300B3127E /* AuthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCodeView.swift; sourceTree = "<group>"; };
 		340F92E429B7B96B00B3127E /* AuthChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChangePasswordView.swift; sourceTree = "<group>"; };
-		340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderRouter.swift; sourceTree = "<group>"; };
 		340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderViewModel.swift; sourceTree = "<group>"; };
 		340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderAddView.swift; sourceTree = "<group>"; };
 		340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderConnectView.swift; sourceTree = "<group>"; };
@@ -84,6 +85,9 @@
 		3426EFCC29A4403500CA1F0F /* ColorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHandler.swift; sourceTree = "<group>"; };
 		3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOnboardingView.swift; sourceTree = "<group>"; };
 		348176FF29D3121C006803A1 /* AuthBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackground.swift; sourceTree = "<group>"; };
+		3481770229D320E4006803A1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		3481770429D353A3006803A1 /* DeviceFinderNearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNearView.swift; sourceTree = "<group>"; };
+		3481770729D3A34F006803A1 /* DeviceFinderHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderHeader.swift; sourceTree = "<group>"; };
 		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
 		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
 		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -129,10 +133,10 @@
 		340F92E629B7B9C000B3127E /* DeviceFinder */ = {
 			isa = PBXGroup;
 			children = (
-				340F92E729B7B9FE00B3127E /* DeviceFinderRouter.swift */,
 				340F92E929B7BA0D00B3127E /* DeviceFinderViewModel.swift */,
 				340F92EB29B7BA1F00B3127E /* DeviceFinderAddView.swift */,
 				340F92ED29B7BA4400B3127E /* DeviceFinderConnectView.swift */,
+				3481770429D353A3006803A1 /* DeviceFinderNearView.swift */,
 				340F92EF29B7BA7500B3127E /* DeviceFinderNotFoundView.swift */,
 			);
 			path = DeviceFinder;
@@ -321,12 +325,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3481770629D3A334006803A1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				3481770729D3A34F006803A1 /* DeviceFinderHeader.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 		34ECC13729A80E27006ACA3B /* UISub */ = {
 			isa = PBXGroup;
 			children = (
+				3481770229D320E4006803A1 /* CustomBackButton.swift */,
 				34ECC13929A80E43006ACA3B /* Splash */,
 				34ECC13C29A80EA9006ACA3B /* Onboarding */,
 				340F92F129B7BAA600B3127E /* Auth */,
+				3481770629D3A334006803A1 /* Device */,
 			);
 			path = UISub;
 			sourceTree = "<group>";
@@ -452,6 +466,7 @@
 				340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */,
 				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
 				340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */,
+				3481770829D3A34F006803A1 /* DeviceFinderHeader.swift in Sources */,
 				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
 				340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */,
 				3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */,
@@ -461,7 +476,6 @@
 				3412416429D222EF001B9D3B /* StartViewModel.swift in Sources */,
 				3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */,
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
-				340F92E829B7B9FE00B3127E /* DeviceFinderRouter.swift in Sources */,
 				3412416629D22327001B9D3B /* StartSplashView.swift in Sources */,
 				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
 				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
@@ -469,11 +483,13 @@
 				3412414E29D116C4001B9D3B /* AppDelegate.swift in Sources */,
 				3412415B29D192C1001B9D3B /* TextHandler.swift in Sources */,
 				340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */,
+				3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */,
 				3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */,
 				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
 				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
 				3412415829D19210001B9D3B /* String+Extension.swift in Sources */,
+				3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */,
 				340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

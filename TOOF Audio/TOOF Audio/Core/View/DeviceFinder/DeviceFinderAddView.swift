@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct DeviceFinderAddView: View {
+    
+    @ObservedObject var viewModel: DeviceFinderViewModel = .init()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Color.ToofBackgroundColor
+                    .ignoresSafeArea()
+                VStack {
+                    Spacer()
+                    //MARK: DeviceFinderAddView - Image
+                    Image(ImageHelper.deviceFinder.searchWithWheel.rawValue)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 273)
+                    //MARK: DeviceFinderAddView - Header
+                    DeviceFinderHeader(title: TextHelper.deviceFinder.deviceFinderAddDeviceTitle.rawValue,
+                                       description: TextHelper.deviceFinder.deviceFinderAddDeviceDescription.rawValue)
+                    .padding(.top)
+                    Spacer()
+                   //MARK: DeviceFinderAddView - Button
+                    PrimaryButton(text: TextHelper.deviceFinder.deviceFinderAddDeviceButton.rawValue) {
+                        viewModel.isAddedDevice.toggle()
+                        //TODO: will add device find button
+                    }
+                    Spacer()
+                }
+            }
+            .navigationDestination(isPresented: $viewModel.isAddedDevice) {
+                DeviceFinderConnectView()
+                    .navigationBarBackButtonHidden(true)
+            }
+        }
     }
 }
 

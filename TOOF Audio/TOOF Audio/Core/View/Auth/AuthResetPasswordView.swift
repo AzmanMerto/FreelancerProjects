@@ -13,9 +13,10 @@ struct AuthResetPasswordView: View {
     
     var body: some View {
         ZStack {
-            Color.ToofBackgroundColor
-                .ignoresSafeArea()
+            AuthBackground()
             VStack {
+                CustomBackButton()
+                    .padding(.top,90)
                 Spacer()
                 //MARK: AuthResetPasswordView - Header
                 EntryHeader(title: TextHelper.auth.authResetPasswordTitle.rawValue,
