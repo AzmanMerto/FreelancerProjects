@@ -13,13 +13,16 @@ class MainViewModel: ObservableObject {
     @Published var isPressedToConnectSection: Bool
     @Published var connectInt: Int
     //Device
+    @Published var isNavigateToDetails: Bool
     @Published var isPlaying: Bool
     @Published var atNowPlayingItem : String
     @Published var deviceVolume: Float
     
+    
     init(isPressedToConnectSection: Bool = false,
          connectInt: Int = 0,
          
+         isNavigateToDetails: Bool = false,
          isPlaying : Bool = false,
          atNowPlayingItem : String = "",
          deviceVolume: Float = 50) {
@@ -27,6 +30,7 @@ class MainViewModel: ObservableObject {
         self.isPressedToConnectSection = isPressedToConnectSection
         self.connectInt = connectInt
         //Device
+        self.isNavigateToDetails = isNavigateToDetails
         self.isPlaying = isPlaying
         self.atNowPlayingItem = atNowPlayingItem
         self.deviceVolume = deviceVolume
@@ -48,5 +52,13 @@ class MainViewModel: ObservableObject {
         MusicServicesModel(imageString:ImageHelper.main.serviceDeezer.rawValue),
         MusicServicesModel(imageString:ImageHelper.main.serviceSpotify.rawValue),
         MusicServicesModel(imageString:ImageHelper.main.serviceTidal.rawValue)
+    ]
+    
+    let DetailServiceButtonItems: [DetailServiceButton] = [
+        DetailServiceButton(id: "Renamed", image: ImageHelper.main.renameIcon.rawValue , text: TextHelper.main.mainDeviceSettingsRenameDevice.rawValue),
+        DetailServiceButton(id: "Info", image: ImageHelper.main.infoIcon.rawValue , text: TextHelper.main.mainDeviceSettingsInfoDevice.rawValue),
+        DetailServiceButton(id: "Alarm", image: ImageHelper.main.alarmIcon.rawValue , text: TextHelper.main.mainDeviceSettingsAlarm.rawValue),
+        DetailServiceButton(id: "EQ", image: ImageHelper.main.equalizerIcon.rawValue , text: TextHelper.main.mainDeviceSettingsEQ.rawValue),
+        DetailServiceButton(id: "Custom", image: ImageHelper.main.contentIcon.rawValue , text: TextHelper.main.mainDeviceSettingsCustomContent.rawValue)
     ]
 }

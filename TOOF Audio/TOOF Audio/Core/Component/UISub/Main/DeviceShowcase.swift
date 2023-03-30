@@ -13,6 +13,7 @@ struct DeviceShowcase: View {
     @Binding var deviceVolume: Float
     var deviceTitle: String
     var musicName: String
+    var action: () -> ()
     
     var body: some View {
         VStack {
@@ -25,15 +26,14 @@ struct DeviceShowcase: View {
                     //MARK: DeviceShowcase - Playing String
                     HStack {
                         Text(isPlaying ? TextHelper.main.mainDevicePlaying.rawValue.locale() : TextHelper.main.mainDeviceNotPlaying.rawValue.locale())
-                        
                         Text(musicName)
                             .foregroundColor(.ToofButtonColor)
                     }
                 }
                 Spacer()
                 //MARK: DeviceShowcase - Device Settings
-                NavigationLink {
-                    
+                Button {
+                    action()
                 } label: {
                     Image(ImageHelper.main.wheel.rawValue)
                         .resizable()
@@ -73,7 +73,9 @@ struct DeviceShowcase_Previews: PreviewProvider {
         ZStack {
             Color.ToofBackgroundColor
                 .ignoresSafeArea()
-            DeviceShowcase(isPlaying: .constant(false), deviceVolume: .constant(20), deviceTitle: "kjkj", musicName: "")
+            DeviceShowcase(isPlaying: .constant(false), deviceVolume: .constant(20), deviceTitle: "kjkj", musicName: "") {
+                
+            }
         }
     }
 }

@@ -58,6 +58,8 @@
 		34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */; };
 		34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193C29D5151C001B6C8E /* MyMusicView.swift */; };
 		34E0194129D5DAD3001B6C8E /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */; };
+		34E0194329D5DD52001B6C8E /* DeviceSettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194229D5DD52001B6C8E /* DeviceSettingsList.swift */; };
+		34E0194529D63BF0001B6C8E /* DetailServiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194429D63BF0001B6C8E /* DetailServiceButton.swift */; };
 		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
 		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
 		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
@@ -116,6 +118,8 @@
 		34E0193E29D5BED1001B6C8E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34E0193F29D5BED9001B6C8E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsView.swift; sourceTree = "<group>"; };
+		34E0194229D5DD52001B6C8E /* DeviceSettingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsList.swift; sourceTree = "<group>"; };
+		34E0194429D63BF0001B6C8E /* DetailServiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailServiceButton.swift; sourceTree = "<group>"; };
 		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
 		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
 		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 				3481772129D4A48A006803A1 /* DeviceModel.swift */,
 				3481772529D4FF9B006803A1 /* ConnectModel.swift */,
 				34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */,
+				34E0194429D63BF0001B6C8E /* DetailServiceButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -419,6 +424,7 @@
 			children = (
 				3481771529D3BC5B006803A1 /* MainTitleAndBack.swift */,
 				3481772329D4E143006803A1 /* DeviceShowcase.swift */,
+				34E0194229D5DD52001B6C8E /* DeviceSettingsList.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -568,12 +574,14 @@
 				340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */,
 				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
 				340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */,
+				34E0194329D5DD52001B6C8E /* DeviceSettingsList.swift in Sources */,
 				3481770829D3A34F006803A1 /* DeviceFinderHeader.swift in Sources */,
 				3481770B29D3BAF0006803A1 /* MainTabView.swift in Sources */,
 				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
 				340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */,
 				3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */,
 				340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */,
+				34E0194529D63BF0001B6C8E /* DetailServiceButton.swift in Sources */,
 				34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */,
 				3481771A29D3CB33006803A1 /* DeviceView.swift in Sources */,
 				34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */,

@@ -85,7 +85,7 @@ struct TextHelper {
         case mainDeviceSettingsInfoDevice = "MAIN_DEVICE_SETTINGS_INFO_DEVICE"
         case mainDeviceSettingsAlarm = "MAIN_DEVICE_SETTINGS_ALARM"
         case mainDeviceSettingsEQ = "MAIN_DEVICE_SETTINGS_EQ"
-        case mainDeviceSettingsCUstomContent = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT"
+        case mainDeviceSettingsCustomContent = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT"
         case mainDeviceSettingsRenameRenamed = "MAIN_DEVICE_SETTINGS_RENAME_RENAMED"
         case mainDeviceSettingsRenameButton = "MAIN_DEVICE_SETTINGS_RENAME_BUTTON"
         case mainDeviceSettingsInfoDeviceEthernetStatus = "MAIN_DEVICE_SETTINGS_INFO_DEVICE_ETHERNET_STATUS"

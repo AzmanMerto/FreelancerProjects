@@ -28,7 +28,9 @@ struct DeviceView: View {
                     DeviceShowcase(isPlaying: $viewModel.isPlaying,
                                    deviceVolume: $viewModel.deviceVolume,
                                    deviceTitle: device.deviceGivenName,
-                                   musicName: viewModel.atNowPlayingItem)
+                                   musicName: viewModel.atNowPlayingItem) {
+                        
+                    }
                 }
                 //MARK: DeviceView - Button
                 PrimaryButton(text: TextHelper.main.mainDeviceAddNewdevice.rawValue,

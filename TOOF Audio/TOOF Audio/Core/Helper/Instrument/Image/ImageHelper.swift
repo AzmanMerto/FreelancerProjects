@@ -39,5 +39,13 @@ struct ImageHelper {
         case serviceSpotify = "serviceSpotify"
         case serviceTidal = "serviceTidal"
         case myMusic = "myMusic"
+        
+        case alarmIcon = "alarmIcon"
+        case alarmObject = "alarmObject"
+        case contentIcon = "contentIcon"
+        case equalizerIcon = "equalizerIcon"
+        case infoIcon = "infoIcon"
+        case renameIcon = "renameIcon"
+        case rightArrow = "rightArrow"
     }
 }
