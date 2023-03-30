@@ -1,0 +1,115 @@
+/* 
+  Localizable.strings
+  TOOF Audio
+
+  Created by NomoteteS on 27.03.2023.
+  
+*/
+
+//MARK: турецкая строка — подключение
+"APP_SLOGAN" = "Лучший способ управлять своим домом";
+"ONBOARDING_START_BUTTON" = "НАЧНЕМ";
+
+//MARK: турецкая строка – аутентификация
+//Авторизоваться
+"AUTH_LOGIN_TITLE" = "ВХОД";
+"AUTH_LOGIN_DESCRIPTION" = "Давайте авторизуемся сейчас.";
+"AUTH_LOGIN_BUTTON" = "ВХОД";
+"AUTH_RESET_PASSWORD" = "Нажмите, чтобы сбросить пароль";
+"AUTH_LETS_REGISTER" = "У НЕТ УЧЕТНОЙ ЗАПИСИ?";
+"AUTH_LETS_REGISTER_CLICK" = "РЕГИСТРАЦИЯ";
+//регистр
+"AUTH_REGISTER_TITLE" = "РЕГИСТРАЦИЯ";
+"AUTH_REGISTER_DESCRIPTION" = "Похоже, у вас нет учетной записи. Давайте создадим для вас новую.";
+"AUTH_REGISTER_BUTTON" = "СОЗДАТЬ АККАУНТ";
+"AUTH_PRIVACY_AND_POLICY" = "Выбирая «Создать учетную запись» ниже, вы соглашаетесь с Условиями обслуживания и Политикой конфиденциальности.»";
+"AUTH_LETS_LOGIN" = "У ВАС ЕСТЬ АККАУНТ?";
+"AUTH_LETS_LOGIN_CLICK" = "ВХОД";
+//Сброс пароля
+"AUTH_RESET_PASSWORD_TITLE" = "ОБНОВИТЬ ПАРОЛЬ";
+"AUTH_RESET_PASSWORD_DESCRIPTOIN" = "Забыли пароль? Не волнуйтесь, введите адрес электронной почты, чтобы сбросить текущий пароль.";
+"AUTH_RESET_PASSWORD_BUTTON" = "ОТПРАВИТЬ";
+//Отправить подтверждение
+"AUTH_SEND_VERIFICATION_CODE_TITLE" = "КОД ПРОВЕРКИ";
+"AUTH_SEND_VERIFICATION_CODE_DESCRIPTION" = "Код аутентификации отправлен на ваш адрес электронной почты";
+"AUTH_VERIFICATION_BUTTON" = "ПРОВЕРИТЬ";
+//Изменить пароль
+"AUTH_CHANGE_PASSWORD_TITLE" = "СМЕНИТЬ ПАРОЛЬ";
+"AUTH_CHANGE_PASSWORD_DESCRIPTION" = "Получите новый надежный пароль, который мы раньше не использовали";
+"AUTH_CHANGE_PASSWORD_TEXTFIELD" = "Не менее 8 символов";
+//Кнопка
+"AUTH_MAIL_TEXTFIELD_PLACEHOLDER" = "Ваша почта";
+"AUTH_PASSWORD_TEXTFIELD_PLACEHOLDER" = "Ваш пароль";
+"AUTH_NAME_TEXTFIELD_PLACEHOLDER" = "ваше имя";
+"AUTH_ENTRYCODE_TEXTFIELD_PLACEHOLDER" = "Введите код";
+"AUTH_CHANGEPASSWORD_TEXTFIELD_PLACEHOLDER" = "Изменить пароль";
+"AUTH_CONFIRMPASSOWRD_TEXTFIELD_PLACEHOLDER" = "Подтвердите пароль";
+//MARK: турецкая строка — поиск устройств
+//Добавлять
+"DEVICE_FINDER_ADD_DEVICE_TITLE" = "Поиск устройства...";
+"DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Убедитесь, что ваше устройство включено и подключено к той же сети, что и смартфон. Если вы еще не настроили его, нажмите кнопку ниже, чтобы начать";
+"DEVICE_FINDER_ADD_DEVICE_BUTTON" = "ДОБАВИТЬ УСТРОЙСТВО";
+//Соединять
+"DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "Мигает ли индикатор вашего устройства?";
+"DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION" = "Убедитесь, что индикатор датчика освещенности на вашем устройстве медленно мигает, как индикатор подключенного устройства";
+"DEVICE_FINDER_CONNECT_DEVICE_BUTTON" = "Устройство мигает";
+//около
+"DEVICE_FINDER_NEAR_DEVICE_TITLE" = "Держите устройство рядом";
+"DEVICE_FINDER_NEAR_DEVICE_DESCRIPTION" = "Убедитесь, что у вас есть телефон и устройство для подключения";
+"DEVICE_FINDER_NEAR_DEVICE_SEARCH" = "ПОПРОБУЕМ ДРУГОЙ СПОСОБ";
+"DEVICE_FINDER_NEAR_DEVICE_CANCEL" = "ОТМЕНИТЬ ПОИСК";
+//помощь
+"DEVICE_FINDER_SEARCH_HELP_TITLE" = "СЕЙЧАС ПОДКЛЮЧИТЕ ЭТО МОБИЛЬНОЕ УСТРОЙСТВО К ВРЕМЕННОЙ СЕТИ, СОЗДАННОЙ ДИНАМИКОМ";
+"DEVICE_FINDER_SEARCH_HELP_BUTTON" = "ОК, ПОПРОБУЕМ ЕЩЕ РАЗ";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_ONE" = "Откройте настройки телефона";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_TWO" = "Перейти на вкладку Wi-Fi";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_THREE" = "Подключитесь к своему устройству";
+"DEVICE_FINDER_SEARCH_HELP_SECTION_FOUR" = "Выполним поиск снова";
+//MARK: турецкая струна - основная
+//Просматривать
+"MAIN_BROWSE_TITLE" = "Обзор";
+"MAIN_BROWSE_MUSIC_SERVICE" = "Музыкальные сервисы";
+"MAIN_BROWSE_MY_LIBRARY" = "Моя библиотека";
+"MAIN_BROWSE_MY_MUSICS" = "Моя музыка";
+//устройство
+"MAIN_DEVICE_TITLE" = "Устройства";
+"MAIN_DEVICE_PLAYING" = "Воспроизведение:";
+"MAIN_DEVICE_NOT_PLAYING" = "Нет звука";
+"MAIN_DEVICE_ADD_NEW_DEVICE" = "ДОБАВИТЬ НОВОЕ УСТРОЙСТВО";
+"MAIN_DEVICE_SETTINGS_RENAME_DEVICE" = "Переименовать";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE" = "Информация об устройстве";
+"MAIN_DEVICE_SETTINGS_ALARM" = "Будильник";
+"MAIN_DEVICE_SETTINGS_EQ" = "Эквалайзер";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT" = "Установить содержимое";
+"MAIN_DEVICE_SETTINGS_RENAME_RENAMED" = "Введите имя";
+"MAIN_DEVICE_SETTINGS_RENAME_BUTTON" = "Я установил имя";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_ETHERNET_STATUS" = "Интернет-статус";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_ETHERNET_STATUS_IP" = "IP";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_ETHERNET_STATUS_MAC" = "MAC";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS" = "Статус точки доступа";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_SSID" = "SSID";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_HOTSPOT_OPEN" = "Включить точку доступа";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_OTHER_STATUS" = "Другие состояния";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_SPEARKER_NAME" = "Имя динамика";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_FIRMWARE_VERSION" = "Версия прошивки";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_BEEN_DATE" = "Дата конфигурации";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_UUID" = "UUID";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_DEVICE_LANGUAGE" = "Язык устройства";
+"MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_RESET_DEVICE" = "Сброс к заводским настройкам";
+//Поиск
+"MAIN_SEARCH_SEARCHBAR" = "Найдите свою песню в моей музыке...";
+"MAIN_SEARCH_ARTISTS" = "Исполнители";
+"MAIN_SEARCH_SONGS" = "Песни";
+"MAIN_SEARCH_ALBUMS" = "Альбомы";
+"MAIN_SEARCH_PLAYLIST" = "Плейлист";
+//Настройки
+"MAIN_SETTINGS_TITLE" = "НАСТРОЙКИ";
+"MAIN_SETTINGS_ACC_TITLE" = "Настройки учетной записи";
+"MAIN_SETTINGS_ACC_BUTTON" = "СОХРАНИТЬ";
+"MAIN_SETTINGS_SUB_TITLE" = "Поддержка";
+"MAIN_SETTINGS_SUB_DESCRIPTION" = "Если у вас возникла проблема с приложением или устройством. Свяжитесь с нами";
+"MAIN_SETTINGS_SUB_MAIL_TITLE" = "Наш почтовый адрес";
+"MAIN_SETTINGS_SUB_MAIL_EXAMPLE" = "nomotetes.onetrue@icloud.com";
+"MAIN_SETTINGS_SUB_PHONE_TITLE" = "Наш номер телефона";
+"MAIN_SETTINGS_SUB_PHONE_EXAMPLE" = "+90 539 246 95 51";
+"MAIN_SETTINGS_LOGOUT" = "Выйти";

@@ -59,10 +59,9 @@ struct DeviceShowcase: View {
                     .scaledToFit()
                     .frame(height: 20)
                 
-                Slider(value: .constant(2), in: 0...100)
-                    
+                Slider(value: $deviceVolume, in: 0...100)
+                    .tint(.ToofButtonColor)
             }
-            .foregroundColor(.red)
             .padding(.horizontal)
         }
     }
@@ -74,7 +73,7 @@ struct DeviceShowcase_Previews: PreviewProvider {
         ZStack {
             Color.ToofBackgroundColor
                 .ignoresSafeArea()
-            DeviceShowcase(isPlaying: .constant(false), deviceVolume: .constant(0), deviceTitle: "kjkj", musicName: "")
+            DeviceShowcase(isPlaying: .constant(false), deviceVolume: .constant(20), deviceTitle: "kjkj", musicName: "")
         }
     }
 }

@@ -15,17 +15,21 @@ class MainViewModel: ObservableObject {
     //Device
     @Published var isPlaying: Bool
     @Published var atNowPlayingItem : String
+    @Published var deviceVolume: Float
     
     init(isPressedToConnectSection: Bool = false,
          connectInt: Int = 0,
+         
          isPlaying : Bool = false,
-         atNowPlayingItem : String = "") {
+         atNowPlayingItem : String = "",
+         deviceVolume: Float = 50) {
         //Browse
         self.isPressedToConnectSection = isPressedToConnectSection
         self.connectInt = connectInt
         //Device
         self.isPlaying = isPlaying
         self.atNowPlayingItem = atNowPlayingItem
+        self.deviceVolume = deviceVolume
     }
     
     let deviceModelItems: [DeviceModel] = [

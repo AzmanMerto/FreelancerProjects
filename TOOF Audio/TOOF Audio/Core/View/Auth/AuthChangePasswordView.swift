@@ -19,13 +19,11 @@ struct AuthChangePasswordView: View {
                     .padding(.top,90)
                 EntryHeader(title: TextHelper.auth.authChangePasswordTitle.rawValue ,
                             description: TextHelper.auth.authChangePasswordDescription.rawValue)
-                
                 EntryTextField(isSecure: false,
                                isActive: false,
                                placeholderText: TextHelper.auth.authChangePasswordTextfieldPlaceholder.rawValue,
                                bindingText: $viewModel.password)
                 .padding(.vertical)
-                
                 EntryTextField(isSecure: false,
                                isActive: false,
                                placeholderText: TextHelper.auth.authConfirmPasswordTextfieldPlaceholder.rawValue,
@@ -38,12 +36,9 @@ struct AuthChangePasswordView: View {
                     Spacer()
                 }
                 .padding(.leading)
-                
                 PrimaryButton(text: TextHelper.auth.authEntryCodeTextfieldPlaceholder.rawValue) {
-                    
                 }
                 .padding(.top,30)
-                
                 Spacer()
             }
         }

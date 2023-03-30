@@ -17,7 +17,7 @@ struct DeviceView: View {
                 .ignoresSafeArea()
             VStack {
                 //MARK: DeviceView - Title
-                MainTitleAndBack(isBackButtonShowing: true,title: TextHelper.main.mainDeviceTitle.rawValue)
+                MainTitleAndBack(title: TextHelper.main.mainDeviceTitle.rawValue)
                     .padding(.vertical,30)
                 //MARK: DeviceView - Devices
                 ForEach(viewModel.deviceModelItems ,id: \.deviceGivenName) { device in
@@ -26,10 +26,9 @@ struct DeviceView: View {
                         .frame(height: 1)
                         .padding(.horizontal)
                     DeviceShowcase(isPlaying: $viewModel.isPlaying,
-                                   deviceVolume: .constant(0),
+                                   deviceVolume: $viewModel.deviceVolume,
                                    deviceTitle: device.deviceGivenName,
                                    musicName: viewModel.atNowPlayingItem)
-                  
                 }
                 //MARK: DeviceView - Button
                 PrimaryButton(text: TextHelper.main.mainDeviceAddNewdevice.rawValue,
