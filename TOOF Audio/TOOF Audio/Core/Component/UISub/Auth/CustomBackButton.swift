@@ -16,7 +16,7 @@ struct CustomBackButton: View {
             Button {
                 dismiss()
             } label: {
-                Image("customBack")
+                Image(ImageHelper.auth.customBack.rawValue)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 20)

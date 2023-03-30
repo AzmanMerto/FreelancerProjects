@@ -10,7 +10,9 @@ import SwiftUI
 struct PrimaryButton: View {
     
     @State var text : String
-    @State var size : CGSize?
+    @State var size: CGSize?
+    @State var textColor: Color?
+    @State var backgroundColor: Color?
     var action : () -> ()
     
     var body: some View {
@@ -20,9 +22,12 @@ struct PrimaryButton: View {
             Text(text.locale())
         }
         .frame(height: 48)
-        .buttonStyle(PrimaryButtonStyle(size: size ?? CGSize(width: 280, height: 50)))
+        .buttonStyle(PrimaryButtonStyle(size: size ?? CGSize(width: 280,height: 50),
+                                        textColor: textColor ?? .ToofTextColor,
+                                        buttonColor: backgroundColor ?? .ToofButtonColor))
     }
 }
+
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
@@ -37,16 +42,18 @@ struct CustomButton_Previews: PreviewProvider {
 struct PrimaryButtonStyle: ButtonStyle {
     
     @State var size: CGSize
+    @State var textColor: Color
+    @State var buttonColor: Color
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .foregroundColor(.white)
+            .foregroundColor(textColor)
             .font(.boldRounded14)
             .background{
                 RoundedRectangle(cornerRadius: 12)
                     .frame(width: size.width,
                            height: size.height)
-                    .foregroundColor(.ToofButtonColor)
+                    .foregroundColor(buttonColor)
             }
     }
 }

@@ -21,7 +21,6 @@ struct TextHelper {
         case authLetsRegisterClick = "AUTH_LETS_REGISTER_CLICK"
         case authResetPassword = "AUTH_RESET_PASSWORD"
         case authLoginButton = "AUTH_LOGIN_BUTTON"
-        
         // Register View
         case authRegisterTitle = "AUTH_REGISTER_TITLE"
         case authRegisterDescription = "AUTH_REGISTER_DESCRIPTION"
@@ -29,21 +28,17 @@ struct TextHelper {
         case authLetsLogin = "AUTH_LETS_LOGIN"
         case authLetsLoginClick = "AUTH_LETS_LOGIN_CLICK"
         case authPrivacyAndPolicy = "AUTH_PRIVACY_AND_POLICY"
-        
         // ResetPassword View
         case authResetPasswordTitle = "AUTH_RESET_PASSWORD_TITLE"
         case authResetPasswordDescription = "AUTH_RESET_PASSWORD_DESCRIPTOIN"
         case authResetPasswordButton = "AUTH_RESET_PASSWORD_BUTTON"
-        
         // Verification View
         case authSendVerificationCodeTitle = "AUTH_SEND_VERIFICATION_CODE_TITLE"
         case authSendVerificationCodeDescription = "AUTH_SEND_VERIFICATION_CODE_DESCRIPTION"
         case authVerifactionButton = "AUTH_VERIFICATION_BUTTON"
-        
         // Change password view
         case authChangePasswordTitle = "AUTH_CHANGE_PASSWORD_TITLE"
         case authChangePasswordDescription = "AUTH_CHANGE_PASSWORD_DESCRIPTION"
-        
         // Placeholder
         case authMailTextFieldPlaceholder = "AUTH_MAIL_TEXTFIELD_PLACEHOLDER"
         case authPasswordTextfieldPlaceholder = "AUTH_PASSWORD_TEXTFIELD_PLACEHOLDER"
@@ -75,5 +70,33 @@ struct TextHelper {
         case deviceFinderSearchHelpSectionThree = "DEVICE_FINDER_SEARCH_HELP_SECTION_THREE"
         case deviceFinderSearchHelpSectionFour = "DEVICE_FINDER_SEARCH_HELP_SECTION_FOUR"
     }
+    
+    enum main: String {
+        case mainBrowseTitle = "MAIN_BROWSE_TITLE"
+        case mainBrowseMusicService = "MAIN_BROwSE_MUSIC_SERVICE"
+        case mainBrowseMyLibrary = "MAIN_BROWSE_MY_LIBRARY"
+        case mainBrowseMyMusic = "MAIN_BROWSE_MY_MUSICS"
+        
+        case mainDeviceTitle = "MAIN_DEVICE_TITLE"
+        case mainDevicePlaying = "MAIN_DEVICE_PLAYING"
+        case mainDeviceNotPlaying = "MAIN_DEVICE_NOT_PLAYING"
+        case mainDeviceAddNewdevice = "MAIN_DEVICE_ADD_NEW_DEVICE"
+        
+        case mainSearchSearchBar = "MAIN_SEARCH_SEARCHBAR"
+        case mainSearchArtists = "MAIN_SEARCH_ARTISTS"
+        case mainSearchSongs = "MAIN_SEARCH_SONGS"
+        case mainSearchAlbums = "MAIN_SEARCH_ALBUMS"
+        case mainSearchPlaylist = "MAIN_SEARCH_PLAYLIST"
+        
+        case mainSettingsTitle = "MAIN_SETTINGS_TITLE"
+        case mainSettingsAccTitle = "MAIN_SETTINGS_ACC_TITLE"
+        case mainSettingsAccButton = "MAIN_SETTINGS_ACC_BUTTON"
+        case mainSettingsSubTitle = "MAIN_SETTINGS_SUB_TITLE"
+        case mainSettingsSubDescription = "MAIN_SETTINGS_SUB_DESCRIPTION"
+        case mainSettingsSubMailTitle = "MAIN_SETTINGS_SUB_MAIL_TITLE"
+        case mainSettingsSubMailExample = "MAIN_SETTINGS_SUB_MAIL_EXAMPLE"
+        case mainSettingsSubPhoneTitle = "MAIN_SETTINGS_SUB_PHONE_TITLE"
+        case mainSettingsSubPhoneExample = "MAIN_SETTINGS_SUB_PHONE_EXAMPLE"
+        case mainSettingsLogout = "MAIN_SETTINGS_LOGOUT"
+    }
 }
-

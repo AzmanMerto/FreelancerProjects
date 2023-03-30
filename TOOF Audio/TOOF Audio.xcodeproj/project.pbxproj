@@ -45,6 +45,18 @@
 		3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770229D320E4006803A1 /* CustomBackButton.swift */; };
 		3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770429D353A3006803A1 /* DeviceFinderNearView.swift */; };
 		3481770829D3A34F006803A1 /* DeviceFinderHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770729D3A34F006803A1 /* DeviceFinderHeader.swift */; };
+		3481770B29D3BAF0006803A1 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770A29D3BAF0006803A1 /* MainTabView.swift */; };
+		3481771329D3BB9C006803A1 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771229D3BB9C006803A1 /* BrowseView.swift */; };
+		3481771629D3BC5B006803A1 /* MainTitleAndBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771529D3BC5B006803A1 /* MainTitleAndBack.swift */; };
+		3481771829D3BDCB006803A1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771729D3BDCB006803A1 /* MainViewModel.swift */; };
+		3481771A29D3CB33006803A1 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771929D3CB33006803A1 /* DeviceView.swift */; };
+		3481771C29D3CB3E006803A1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771B29D3CB3D006803A1 /* SearchView.swift */; };
+		3481771E29D3CB48006803A1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481771D29D3CB48006803A1 /* SettingsView.swift */; };
+		3481772229D4A48A006803A1 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772129D4A48A006803A1 /* DeviceModel.swift */; };
+		3481772429D4E143006803A1 /* DeviceShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772329D4E143006803A1 /* DeviceShowcase.swift */; };
+		3481772629D4FF9B006803A1 /* ConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772529D4FF9B006803A1 /* ConnectModel.swift */; };
+		34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */; };
+		34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193C29D5151C001B6C8E /* MyMusicView.swift */; };
 		34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */; };
 		34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */; };
 		34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */; };
@@ -88,6 +100,18 @@
 		3481770229D320E4006803A1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		3481770429D353A3006803A1 /* DeviceFinderNearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNearView.swift; sourceTree = "<group>"; };
 		3481770729D3A34F006803A1 /* DeviceFinderHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderHeader.swift; sourceTree = "<group>"; };
+		3481770A29D3BAF0006803A1 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		3481771229D3BB9C006803A1 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		3481771529D3BC5B006803A1 /* MainTitleAndBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleAndBack.swift; sourceTree = "<group>"; };
+		3481771729D3BDCB006803A1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3481771929D3CB33006803A1 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		3481771B29D3CB3D006803A1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3481771D29D3CB48006803A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3481772129D4A48A006803A1 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		3481772329D4E143006803A1 /* DeviceShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShowcase.swift; sourceTree = "<group>"; };
+		3481772529D4FF9B006803A1 /* ConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectModel.swift; sourceTree = "<group>"; };
+		34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServicesModel.swift; sourceTree = "<group>"; };
+		34E0193C29D5151C001B6C8E /* MyMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicView.swift; sourceTree = "<group>"; };
 		34ECC13A29A80E76006ACA3B /* SplashUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUISubView.swift; sourceTree = "<group>"; };
 		34ECC13D29A80ED1006ACA3B /* OnboardingUISubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUISubView.swift; sourceTree = "<group>"; };
 		34ECC13F29A820AF006ACA3B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -145,6 +169,7 @@
 		340F92F129B7BAA600B3127E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				3481770229D320E4006803A1 /* CustomBackButton.swift */,
 				340F92F529B7BB8F00B3127E /* EntryHeader.swift */,
 				348176FF29D3121C006803A1 /* AuthBackground.swift */,
 			);
@@ -236,6 +261,7 @@
 		3426EFB429A4403500CA1F0F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3481771F29D43756006803A1 /* Firebase */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -275,6 +301,7 @@
 				3426EFC029A4403500CA1F0F /* Start */,
 				340F92D729B7B86100B3127E /* Auth */,
 				340F92E629B7B9C000B3127E /* DeviceFinder */,
+				3481770929D3B7F3006803A1 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +348,9 @@
 		3481770129D312F0006803A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3481772129D4A48A006803A1 /* DeviceModel.swift */,
+				3481772529D4FF9B006803A1 /* ConnectModel.swift */,
+				34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,14 +363,76 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		3481770929D3B7F3006803A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3481770A29D3BAF0006803A1 /* MainTabView.swift */,
+				3481771729D3BDCB006803A1 /* MainViewModel.swift */,
+				3481770F29D3BB7E006803A1 /* Browse */,
+				3481770E29D3BB69006803A1 /* Device */,
+				3481770D29D3BB65006803A1 /* Search */,
+				3481770C29D3BB4E006803A1 /* Settings */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3481770C29D3BB4E006803A1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3481771D29D3CB48006803A1 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3481770D29D3BB65006803A1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3481771B29D3CB3D006803A1 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3481770E29D3BB69006803A1 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				3481771929D3CB33006803A1 /* DeviceView.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		3481770F29D3BB7E006803A1 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				3481771229D3BB9C006803A1 /* BrowseView.swift */,
+				34E0193C29D5151C001B6C8E /* MyMusicView.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		3481771429D3BBFD006803A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3481771529D3BC5B006803A1 /* MainTitleAndBack.swift */,
+				3481772329D4E143006803A1 /* DeviceShowcase.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3481771F29D43756006803A1 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		34ECC13729A80E27006ACA3B /* UISub */ = {
 			isa = PBXGroup;
 			children = (
-				3481770229D320E4006803A1 /* CustomBackButton.swift */,
 				34ECC13929A80E43006ACA3B /* Splash */,
 				34ECC13C29A80EA9006ACA3B /* Onboarding */,
 				340F92F129B7BAA600B3127E /* Auth */,
 				3481770629D3A334006803A1 /* Device */,
+				3481771429D3BBFD006803A1 /* Main */,
 			);
 			path = UISub;
 			sourceTree = "<group>";
@@ -460,6 +552,9 @@
 			files = (
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
 				3481770029D3121C006803A1 /* AuthBackground.swift in Sources */,
+				3481772229D4A48A006803A1 /* DeviceModel.swift in Sources */,
+				3481771329D3BB9C006803A1 /* BrowseView.swift in Sources */,
+				3481772429D4E143006803A1 /* DeviceShowcase.swift in Sources */,
 				340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */,
 				340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */,
 				340F92DF29B7B8BB00B3127E /* AuthRegisterView.swift in Sources */,
@@ -467,27 +562,36 @@
 				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
 				340F92E529B7B96B00B3127E /* AuthChangePasswordView.swift in Sources */,
 				3481770829D3A34F006803A1 /* DeviceFinderHeader.swift in Sources */,
+				3481770B29D3BAF0006803A1 /* MainTabView.swift in Sources */,
 				34ECC13B29A80E76006ACA3B /* SplashUISubView.swift in Sources */,
 				340F92EE29B7BA4400B3127E /* DeviceFinderConnectView.swift in Sources */,
 				3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */,
 				340F92EA29B7BA0D00B3127E /* DeviceFinderViewModel.swift in Sources */,
 				34ECC14029A820AF006ACA3B /* PrimaryButton.swift in Sources */,
+				3481771A29D3CB33006803A1 /* DeviceView.swift in Sources */,
+				34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */,
 				3426EFD029A4403500CA1F0F /* StartOnboardingView.swift in Sources */,
 				3412416429D222EF001B9D3B /* StartViewModel.swift in Sources */,
 				3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */,
+				3481771829D3BDCB006803A1 /* MainViewModel.swift in Sources */,
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
 				3412416629D22327001B9D3B /* StartSplashView.swift in Sources */,
 				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
 				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
+				3481771E29D3CB48006803A1 /* SettingsView.swift in Sources */,
 				340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */,
+				34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */,
 				3412414E29D116C4001B9D3B /* AppDelegate.swift in Sources */,
 				3412415B29D192C1001B9D3B /* TextHandler.swift in Sources */,
 				340F92EC29B7BA1F00B3127E /* DeviceFinderAddView.swift in Sources */,
 				3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */,
+				3481772629D4FF9B006803A1 /* ConnectModel.swift in Sources */,
 				3426EFBF29A4403500CA1F0F /* ImageHandler.swift in Sources */,
 				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
 				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
+				3481771C29D3CB3E006803A1 /* SearchView.swift in Sources */,
+				3481771629D3BC5B006803A1 /* MainTitleAndBack.swift in Sources */,
 				3412415829D19210001B9D3B /* String+Extension.swift in Sources */,
 				3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */,
 				340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */,
