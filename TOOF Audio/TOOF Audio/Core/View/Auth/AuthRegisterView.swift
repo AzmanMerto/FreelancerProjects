@@ -40,7 +40,7 @@ struct AuthRegisterView: View {
                     Text(TextHelper.auth.authPrivacyAndPolicy.rawValue.locale())
                         .foregroundColor(.ToofPlaceholder)
                         .font(.boldRounded14)
-                        .padding(.top)
+                        .padding(EdgeInsets(top: 20, leading: 10, bottom: 0, trailing: 10))
                 }
                 .padding(.vertical)
                 PrimaryButton(text: TextHelper.auth.authRegisterButton.rawValue,

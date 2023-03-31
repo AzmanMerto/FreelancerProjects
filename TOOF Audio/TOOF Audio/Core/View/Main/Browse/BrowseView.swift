@@ -38,24 +38,38 @@ struct BrowseView: View {
                         }
                     }
                     .padding(.horizontal)
-                    Divider()
+                    Rectangle()
+                        .frame(height: 1)
+                        .padding(.horizontal)
+                        .foregroundColor(.ToofTextColor)
                         .foregroundColor(.ToofTextColor)
                     //MARK: BrowseView - Music Service
-                    Text(TextHelper.main.mainBrowseMusicService.rawValue.locale())
-                        .font(.semiDefault20)
-                        .foregroundColor(.ToofTextColor)
-                    ScrollView(.vertical, showsIndicators: false) {
-                        ForEach(viewModel.musicServicesModelItems, id: \.imageString) { services in
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.ToofTextSoftColor)
-                                Image(services.imageString)
+                    VStack {
+                        Text(TextHelper.main.mainBrowseMusicService.rawValue.locale())
+                            .font(.semiDefault20)
+                            .foregroundColor(.ToofTextColor)
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(viewModel.musicServicesModelItems, id: \.imageString) { services in
+                                    ZStack {
+                                        //TODO: Clickable and opening
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .foregroundColor(.ToofTextSoftColor)
+                                            .scaledToFit()
+                                            .frame(width: 70)
+                                        Image(services.imageString)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50)
+                                    }
+                                }
                             }
-                            .scaledToFit()
-                            .frame(width: 70)
                         }
+                        .padding(.leading)
                     }
-                    Divider()
+                    Rectangle()
+                        .frame(height: 1)
+                        .padding(.horizontal)
                         .foregroundColor(.ToofTextColor)
                     //MARK: BrowseView - My Library
                     Text(TextHelper.main.mainBrowseMyLibrary.rawValue.locale())

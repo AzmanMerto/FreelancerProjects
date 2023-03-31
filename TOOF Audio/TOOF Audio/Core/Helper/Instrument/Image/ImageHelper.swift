@@ -53,5 +53,14 @@ struct ImageHelper {
         case supportIcon = "supportIcon"
         case sliderValue = "sliderValue"
         
+        case deviceIcon = "deviceIcon"
+        case deviceIconFilled = "deviceIconFilled"
+        case musicIcon = "musicIcon"
+        case musicIconFilled = "musicIconFilled"
+        case searchIcon = "searchIcon"
+        case searchIconFilled = "searchIconFilled"
+        case settingsIcon = "settingsIcon"
+        case settingsIconFilled = "settingsIconFilled"
+        
     }
 }
