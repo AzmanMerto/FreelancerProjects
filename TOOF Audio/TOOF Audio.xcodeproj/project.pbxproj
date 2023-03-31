@@ -64,6 +64,8 @@
 		34A9AD5C29D65DA400324948 /* DeviceInfoInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5B29D65DA400324948 /* DeviceInfoInRow.swift */; };
 		34A9AD5E29D6D63100324948 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5D29D6D63100324948 /* SliderValue.swift */; };
 		34BEB9E829D7159B00C0D73C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEB9E729D7159B00C0D73C /* AudioPlayer.swift */; };
+		34BEB9EA29D71A1800C0D73C /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEB9E929D71A1800C0D73C /* AccountSettingsView.swift */; };
+		34BEB9EC29D71A2900C0D73C /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEB9EB29D71A2800C0D73C /* SupportView.swift */; };
 		34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */; };
 		34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193C29D5151C001B6C8E /* MyMusicView.swift */; };
 		34E0194129D5DAD3001B6C8E /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */; };
@@ -131,6 +133,8 @@
 		34A9AD5B29D65DA400324948 /* DeviceInfoInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoInRow.swift; sourceTree = "<group>"; };
 		34A9AD5D29D6D63100324948 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
 		34BEB9E729D7159B00C0D73C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		34BEB9E929D71A1800C0D73C /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
+		34BEB9EB29D71A2800C0D73C /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
 		34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServicesModel.swift; sourceTree = "<group>"; };
 		34E0193C29D5151C001B6C8E /* MyMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicView.swift; sourceTree = "<group>"; };
 		34E0193E29D5BED1001B6C8E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -408,6 +412,8 @@
 			isa = PBXGroup;
 			children = (
 				3481771D29D3CB48006803A1 /* SettingsView.swift */,
+				34BEB9E929D71A1800C0D73C /* AccountSettingsView.swift */,
+				34BEB9EB29D71A2800C0D73C /* SupportView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -639,9 +645,11 @@
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
 				34A9AD5629D6581500324948 /* EQView.swift in Sources */,
 				3412416629D22327001B9D3B /* StartSplashView.swift in Sources */,
+				34BEB9EA29D71A1800C0D73C /* AccountSettingsView.swift in Sources */,
 				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
 				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
 				3481771E29D3CB48006803A1 /* SettingsView.swift in Sources */,
+				34BEB9EC29D71A2900C0D73C /* SupportView.swift in Sources */,
 				340F92E329B7B95300B3127E /* AuthCodeView.swift in Sources */,
 				34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */,
 				3412414E29D116C4001B9D3B /* AppDelegate.swift in Sources */,
