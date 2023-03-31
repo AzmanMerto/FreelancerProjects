@@ -7,6 +7,7 @@
 
 import SwiftUI
 
-struct DeviceModel {
+struct DeviceModel: Identifiable {
     let deviceGivenName: String
+    var id: UUID = UUID()
 }

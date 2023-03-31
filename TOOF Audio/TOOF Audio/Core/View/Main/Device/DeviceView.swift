@@ -10,6 +10,7 @@ import SwiftUI
 struct DeviceView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
+    @State var device : MainViewModel = .init()
     
     var body: some View {
         ZStack {
@@ -21,15 +22,17 @@ struct DeviceView: View {
                     .padding(.vertical,30)
                 //MARK: DeviceView - Devices
                 ForEach(viewModel.deviceModelItems ,id: \.deviceGivenName) { device in
-                    Rectangle()
-                        .foregroundColor(.ToofTextColor)
-                        .frame(height: 1)
-                        .padding(.horizontal)
-                    DeviceShowcase(isPlaying: $viewModel.isPlaying,
-                                   deviceVolume: $viewModel.deviceVolume,
-                                   deviceTitle: device.deviceGivenName,
-                                   musicName: viewModel.atNowPlayingItem) {
-                        
+                    VStack {
+                        Rectangle()
+                            .foregroundColor(.ToofTextColor)
+                            .frame(height: 1)
+                            .padding(.horizontal)
+                        DeviceShowcase(isPlaying: $viewModel.isPlaying,
+                                       deviceVolume: $viewModel.deviceVolume,
+                                       deviceTitle: device.deviceGivenName,
+                                       musicName: viewModel.atNowPlayingItem) {
+                            //TODO: navigate to setting per list
+                        }
                     }
                 }
                 //MARK: DeviceView - Button

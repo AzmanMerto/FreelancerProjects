@@ -55,6 +55,11 @@
 		3481772229D4A48A006803A1 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772129D4A48A006803A1 /* DeviceModel.swift */; };
 		3481772429D4E143006803A1 /* DeviceShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772329D4E143006803A1 /* DeviceShowcase.swift */; };
 		3481772629D4FF9B006803A1 /* ConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481772529D4FF9B006803A1 /* ConnectModel.swift */; };
+		34A9AD5029D657D100324948 /* RenameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD4F29D657D100324948 /* RenameView.swift */; };
+		34A9AD5229D657E500324948 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5129D657E500324948 /* InformationView.swift */; };
+		34A9AD5429D6580000324948 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5329D6580000324948 /* AlarmView.swift */; };
+		34A9AD5629D6581500324948 /* EQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5529D6581500324948 /* EQView.swift */; };
+		34A9AD5829D6582100324948 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5729D6582100324948 /* ContentView.swift */; };
 		34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */; };
 		34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193C29D5151C001B6C8E /* MyMusicView.swift */; };
 		34E0194129D5DAD3001B6C8E /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */; };
@@ -113,6 +118,11 @@
 		3481772129D4A48A006803A1 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		3481772329D4E143006803A1 /* DeviceShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShowcase.swift; sourceTree = "<group>"; };
 		3481772529D4FF9B006803A1 /* ConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectModel.swift; sourceTree = "<group>"; };
+		34A9AD4F29D657D100324948 /* RenameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameView.swift; sourceTree = "<group>"; };
+		34A9AD5129D657E500324948 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		34A9AD5329D6580000324948 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		34A9AD5529D6581500324948 /* EQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQView.swift; sourceTree = "<group>"; };
+		34A9AD5729D6582100324948 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServicesModel.swift; sourceTree = "<group>"; };
 		34E0193C29D5151C001B6C8E /* MyMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicView.swift; sourceTree = "<group>"; };
 		34E0193E29D5BED1001B6C8E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -404,6 +414,7 @@
 		3481770E29D3BB69006803A1 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				34A9AD4E29D657B800324948 /* Settings */,
 				3481771929D3CB33006803A1 /* DeviceView.swift */,
 				34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */,
 			);
@@ -434,6 +445,18 @@
 			children = (
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		34A9AD4E29D657B800324948 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				34A9AD4F29D657D100324948 /* RenameView.swift */,
+				34A9AD5129D657E500324948 /* InformationView.swift */,
+				34A9AD5329D6580000324948 /* AlarmView.swift */,
+				34A9AD5529D6581500324948 /* EQView.swift */,
+				34A9AD5729D6582100324948 /* ContentView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		34ECC13729A80E27006ACA3B /* UISub */ = {
@@ -566,10 +589,12 @@
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
 				3481770029D3121C006803A1 /* AuthBackground.swift in Sources */,
 				3481772229D4A48A006803A1 /* DeviceModel.swift in Sources */,
+				34A9AD5829D6582100324948 /* ContentView.swift in Sources */,
 				3481771329D3BB9C006803A1 /* BrowseView.swift in Sources */,
 				3481772429D4E143006803A1 /* DeviceShowcase.swift in Sources */,
 				340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */,
 				340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */,
+				34A9AD5429D6580000324948 /* AlarmView.swift in Sources */,
 				340F92DF29B7B8BB00B3127E /* AuthRegisterView.swift in Sources */,
 				340F92E129B7B8C900B3127E /* AuthResetPasswordView.swift in Sources */,
 				340F92DD29B7B8B400B3127E /* AuthLoginView.swift in Sources */,
@@ -590,6 +615,7 @@
 				3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */,
 				3481771829D3BDCB006803A1 /* MainViewModel.swift in Sources */,
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
+				34A9AD5629D6581500324948 /* EQView.swift in Sources */,
 				3412416629D22327001B9D3B /* StartSplashView.swift in Sources */,
 				340F92DB29B7B8A600B3127E /* AuthViewModel.swift in Sources */,
 				340F92D429B7B4BC00B3127E /* FontHelper.swift in Sources */,
@@ -608,8 +634,10 @@
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
 				3481771C29D3CB3E006803A1 /* SearchView.swift in Sources */,
 				3481771629D3BC5B006803A1 /* MainTitleAndBack.swift in Sources */,
+				34A9AD5229D657E500324948 /* InformationView.swift in Sources */,
 				3412415829D19210001B9D3B /* String+Extension.swift in Sources */,
 				3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */,
+				34A9AD5029D657D100324948 /* RenameView.swift in Sources */,
 				340F92F629B7BB8F00B3127E /* EntryHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
