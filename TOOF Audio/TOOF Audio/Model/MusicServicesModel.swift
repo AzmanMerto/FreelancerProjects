@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct MusicServicesModel {
+struct MusicServicesModel: Equatable {
     var imageString: String
 }
