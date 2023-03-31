@@ -29,8 +29,8 @@ struct MainTitleAndBack: View {
                 
                 Spacer()
             }
-            .padding(.top)
         }
+        .padding(.top,30)
     }
 }
 
