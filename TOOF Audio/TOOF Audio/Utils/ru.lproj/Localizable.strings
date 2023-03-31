@@ -104,7 +104,9 @@
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "Доступ к вашей любимой музыке с помощью соответствующих кнопок на пульте дистанционного управления или динамике.";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Установить ключи";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Регулируемый ключ";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_NOT_SET_CONTENT" = "Не установлено";
 //Поиск
+"MAIN_SEARCH_TITLE" = "Поиск";
 "MAIN_SEARCH_SEARCHBAR" = "Найдите свою песню в моей музыке...";
 "MAIN_SEARCH_ARTISTS" = "Исполнители";
 "MAIN_SEARCH_SONGS" = "Песни";

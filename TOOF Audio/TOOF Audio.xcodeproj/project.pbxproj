@@ -63,6 +63,7 @@
 		34A9AD5A29D65C4A00324948 /* DeviceInfoInTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5929D65C4A00324948 /* DeviceInfoInTitle.swift */; };
 		34A9AD5C29D65DA400324948 /* DeviceInfoInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5B29D65DA400324948 /* DeviceInfoInRow.swift */; };
 		34A9AD5E29D6D63100324948 /* SliderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A9AD5D29D6D63100324948 /* SliderValue.swift */; };
+		34BEB9E829D7159B00C0D73C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEB9E729D7159B00C0D73C /* AudioPlayer.swift */; };
 		34E0193B29D50D3E001B6C8E /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */; };
 		34E0193D29D5151C001B6C8E /* MyMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0193C29D5151C001B6C8E /* MyMusicView.swift */; };
 		34E0194129D5DAD3001B6C8E /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0194029D5DAD3001B6C8E /* DeviceSettingsView.swift */; };
@@ -129,6 +130,7 @@
 		34A9AD5929D65C4A00324948 /* DeviceInfoInTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoInTitle.swift; sourceTree = "<group>"; };
 		34A9AD5B29D65DA400324948 /* DeviceInfoInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoInRow.swift; sourceTree = "<group>"; };
 		34A9AD5D29D6D63100324948 /* SliderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValue.swift; sourceTree = "<group>"; };
+		34BEB9E729D7159B00C0D73C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		34E0193A29D50D3E001B6C8E /* MusicServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServicesModel.swift; sourceTree = "<group>"; };
 		34E0193C29D5151C001B6C8E /* MyMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicView.swift; sourceTree = "<group>"; };
 		34E0193E29D5BED1001B6C8E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		3426EFB429A4403500CA1F0F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				34BEB9E629D7158000C0D73C /* Local */,
 				3481771F29D43756006803A1 /* Firebase */,
 			);
 			path = Service;
@@ -468,6 +471,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		34BEB9E629D7158000C0D73C /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				34BEB9E729D7159B00C0D73C /* AudioPlayer.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		34ECC13729A80E27006ACA3B /* UISub */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +656,7 @@
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
 				3481771C29D3CB3E006803A1 /* SearchView.swift in Sources */,
 				3481771629D3BC5B006803A1 /* MainTitleAndBack.swift in Sources */,
+				34BEB9E829D7159B00C0D73C /* AudioPlayer.swift in Sources */,
 				34A9AD5C29D65DA400324948 /* DeviceInfoInRow.swift in Sources */,
 				34A9AD5229D657E500324948 /* InformationView.swift in Sources */,
 				3412415829D19210001B9D3B /* String+Extension.swift in Sources */,
@@ -797,6 +809,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TOOF Audio/Utils/TOOF-Audio-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -829,6 +843,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "TOOF Audio/Utils/TOOF-Audio-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

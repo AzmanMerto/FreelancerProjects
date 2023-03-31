@@ -16,7 +16,9 @@ struct ContentView: View {
             Color.ToofBackgroundColor
                 .ignoresSafeArea()
             VStack {
+                //MARK: ContentView - Title
                 MainTitleAndBack(isBackButtonShowing: true, title: TextHelper.main.mainDeviceSettingsCustomContent.rawValue)
+                    .padding(.bottom)
                 Spacer()
                 //MARK: ContentView - Header
                 VStack(alignment: .leading, spacing: 5) {
@@ -58,7 +60,7 @@ struct ContentView: View {
                                     .foregroundColor(.ToofTextColor)
                                 }
                                 
-                                Text(TextHelper.main.mainDeviceSettingsCustomContentSetContent.rawValue.locale())
+                                Text(TextHelper.main.mainDeviceSettingsCustomContentNotSetContent.rawValue.locale())
                                     .font(.boldRounded14)
                                     .foregroundColor(.ToofPlaceholder)
                             }

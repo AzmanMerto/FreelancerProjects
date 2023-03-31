@@ -19,6 +19,7 @@ struct EQView: View {
                 //TODO: Connect values to device
                 MainTitleAndBack(isBackButtonShowing: true, title: TextHelper.main.mainDeviceSettingsEQ.rawValue)
                 Spacer()
+                //MARK: EQView - Sliders
                 VStack(spacing: 40) {
                     SliderValue(text: TextHelper.main.mainDeviceSettingsEqTrable.rawValue, value: viewModel.trableValue)
                     

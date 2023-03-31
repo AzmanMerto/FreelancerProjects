@@ -105,8 +105,10 @@
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "En sevdiğiniz müziğe uzaktan kumandadaki veya hoparlördeki ilgili düğmelerden erişin.";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Tuşları ayarla";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Ayarlanabilir Tuş";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_NOT_SET_CONTENT" = "Ayarlanmamış";
 
 //Search
+"MAIN_SEARCH_TITLE" = "Ara";
 "MAIN_SEARCH_SEARCHBAR" = "Müziklerimden şarkınız arayın...";
 "MAIN_SEARCH_ARTISTS" = "Sanatçılar";
 "MAIN_SEARCH_SONGS" = "Şarkılar";

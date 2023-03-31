@@ -27,25 +27,29 @@ struct DeviceSettingsView: View {
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
                 
-                MainTitleAndBack(title: deviceName)
+                MainTitleAndBack(isBackButtonShowing: true, title: deviceName)
                 Spacer()
-                VStack {
+                VStack(spacing: 0) {
                     DeviceSettingsList(image: ImageHelper.main.renameIcon.rawValue,
                                        text: TextHelper.main.mainDeviceSettingsRenameDevice.rawValue){
                         viewkey = .rename
                     }
+                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
                     DeviceSettingsList(image: ImageHelper.main.infoIcon.rawValue,
                                        text: TextHelper.main.mainDeviceSettingsInfoDevice.rawValue){
                         viewkey = .info
                     }
+                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
                     DeviceSettingsList(image: ImageHelper.main.alarmIcon.rawValue,
                                        text: TextHelper.main.mainDeviceSettingsAlarm.rawValue){
                         viewkey = .alarm
                     }
+                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
                     DeviceSettingsList(image: ImageHelper.main.equalizerIcon.rawValue,
                                        text: TextHelper.main.mainDeviceSettingsEQ.rawValue){
                         viewkey = .equalizer
                     }
+                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
                     DeviceSettingsList(image: ImageHelper.main.contentIcon.rawValue,
                                        text: TextHelper.main.mainDeviceSettingsCustomContent.rawValue){
                         viewkey = .content
@@ -60,13 +64,13 @@ struct DeviceSettingsView: View {
             case .rename:
                 RenameView(deviceName: deviceName)
             case .info:
-                EmptyView()
+                InformationView()
             case .alarm:
-                EmptyView()
+                AlarmView()
             case .equalizer:
-                EmptyView()
+                EQView()
             case .content:
-                EmptyView()
+                ContentView(deviceName: deviceName)
             }
         })
     }

@@ -19,7 +19,7 @@ struct DeviceView: View {
             VStack {
                 //MARK: DeviceView - Title
                 MainTitleAndBack(title: TextHelper.main.mainDeviceTitle.rawValue)
-                    .padding(.vertical,30)
+                    .padding(.bottom,30)
                 //MARK: DeviceView - Devices
                 ForEach(viewModel.deviceModelItems ,id: \.deviceGivenName) { device in
                     VStack {

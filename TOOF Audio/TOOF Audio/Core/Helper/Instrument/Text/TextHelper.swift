@@ -102,6 +102,7 @@ struct TextHelper {
         case mainDeviceSettingsInfoDeviceHotspotStatusDeviceLanguage = "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_DEVICE_LANGUAGE"
         case mainDeviceSettingsInfoDeviceHotspotStatusResetDevice = "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_RESET_DEVICE"
         
+        case mainSearchTitle = "MAIN_SEARCH_TITLE"
         case mainSearchSearchBar = "MAIN_SEARCH_SEARCHBAR"
         case mainSearchArtists = "MAIN_SEARCH_ARTISTS"
         case mainSearchSongs = "MAIN_SEARCH_SONGS"
@@ -127,5 +128,6 @@ struct TextHelper {
         case mainDeviceSettingsCustomContentDescription = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION"
         case mainDeviceSettingsCustomContentButton = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON"
         case mainDeviceSettingsCustomContentSetContent = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT"
+        case mainDeviceSettingsCustomContentNotSetContent = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_NOT_SET_CONTENT"
     }
 }

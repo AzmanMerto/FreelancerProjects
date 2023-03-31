@@ -41,7 +41,6 @@ struct DeviceSettingsList: View {
                 }
                 .padding(.horizontal,30)
             })
-            Rectangle().frame(height: 1).foregroundColor(.ToofTextColor)
         }
     }
 }

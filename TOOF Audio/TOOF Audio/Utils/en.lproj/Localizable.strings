@@ -105,7 +105,9 @@
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "Access your favorite music from the corresponding buttons on the remote or speaker.";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Set keys";
 "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Adjustable Key";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_NOT_SET_CONTENT" = "Not Set";
 //Search
+"MAIN_SEARCH_TITLE" = "Search";
 "MAIN_SEARCH_SEARCHBAR" = "Search for your song from my music...";
 "MAIN_SEARCH_ARTISTS" = "Artists";
 "MAIN_SEARCH_SONGS" = "Songs";
