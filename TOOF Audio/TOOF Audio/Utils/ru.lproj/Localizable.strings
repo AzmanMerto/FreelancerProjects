@@ -96,6 +96,14 @@
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_UUID" = "UUID";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_DEVICE_LANGUAGE" = "Язык устройства";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_RESET_DEVICE" = "Сброс к заводским настройкам";
+"MAIN_DEVICE_SETTINGS_ALARM_NOTYET_ALARM" = "Вы еще не установили будильник";
+"MAIN_DEVICE_SETTINGS_ALARM_ADD_ALARM" = "Чтобы добавить еще один, нажмите кнопку + в правом верхнем углу. Автоматическое воспроизведение музыки в определенное время.";
+"MAIN_DEVICE_SETTINGS_EQ_TRABLE" = "Таблица";
+"MAIN_DEVICE_SETTINGS_EQ_BASS" = "Бас";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SPECIFY" = "Предустановка избранного плейлиста для быстрого доступа.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "Доступ к вашей любимой музыке с помощью соответствующих кнопок на пульте дистанционного управления или динамике.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Установить ключи";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Регулируемый ключ";
 //Поиск
 "MAIN_SEARCH_SEARCHBAR" = "Найдите свою песню в моей музыке...";
 "MAIN_SEARCH_ARTISTS" = "Исполнители";

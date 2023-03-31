@@ -97,6 +97,14 @@
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_UUID" = "UUID";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_DEVICE_LANGUAGE" = "Lingua dispositivo";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_RESET_DEVICE" = "Ripristino impostazioni di fabbrica";
+"MAIN_DEVICE_SETTINGS_ALARM_NOTYET_ALARM" = "Non hai ancora impostato una sveglia";
+"MAIN_DEVICE_SETTINGS_ALARM_ADD_ALARM" = "Per aggiungerne un altro, fai clic sul pulsante + in alto a destra. Riproduci musica automaticamente a un'ora specifica.";
+"MAIN_DEVICE_SETTINGS_EQ_TRAABLE" = "Trable";
+"MAIN_DEVICE_SETTINGS_EQ_BASS" = "Bassi";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SPECIFY" = "Playlist preferita preimpostata per un facile accesso.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "Accedi alla tua musica preferita dai pulsanti corrispondenti sul telecomando o sull'altoparlante.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Imposta chiavi";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Tasto regolabile";
 //Ricerca
 "MAIN_SEARCH_SEARCHBAR" = "Cerca il tuo brano dalla mia musica...";
 "MAIN_SEARCH_ARTISTS" = "Artisti";

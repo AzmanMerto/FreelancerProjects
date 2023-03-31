@@ -118,5 +118,14 @@ struct TextHelper {
         case mainSettingsSubPhoneTitle = "MAIN_SETTINGS_SUB_PHONE_TITLE"
         case mainSettingsSubPhoneExample = "MAIN_SETTINGS_SUB_PHONE_EXAMPLE"
         case mainSettingsLogout = "MAIN_SETTINGS_LOGOUT"
+        
+        case mainDeviceSettingsAlarmNotyetAlarm = "MAIN_DEVICE_SETTINGS_ALARM_NOTYET_ALARM"
+        case mainDeviceSettingsAlarmAddAlarm = "MAIN_DEVICE_SETTINGS_ALARM_ADD_ALARM"
+        case mainDeviceSettingsEqTrable = "MAIN_DEVICE_SETTINGS_EQ_TRABLE"
+        case mainDeviceSettingsEqBass = "MAIN_DEVICE_SETTINGS_EQ_BASS"
+        case mainDeviceSettingsCustomContentSpecify = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SPECIFY"
+        case mainDeviceSettingsCustomContentDescription = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION"
+        case mainDeviceSettingsCustomContentButton = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON"
+        case mainDeviceSettingsCustomContentSetContent = "MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT"
     }
 }

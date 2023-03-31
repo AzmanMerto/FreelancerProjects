@@ -12,6 +12,9 @@ extension Font {
     //MARK: Font Default - Semibold
     static let semiDefault20 : Font = .system(.title3, design: .default, weight: .semibold)
     
+    //MARK: Font Default - Bold
+    static let boldDefault25 : Font = .system(.title2,design: .default, weight: .bold)
+    
     //MARK: Font Rounded - Regular
     
     //MARK: - Regular

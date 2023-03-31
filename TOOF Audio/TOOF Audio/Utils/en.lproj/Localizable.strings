@@ -97,6 +97,14 @@
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_UUID" = "UUID";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_DEVICE_LANGUAGE" = "Device language";
 "MAIN_DEVICE_SETTINGS_INFO_DEVICE_HOTSPOT_STATUS_RESET_DEVICE" = "Factory reset";
+"MAIN_DEVICE_SETTINGS_ALARM_NOTYET_ALARM" = "You have not set an alarm yet";
+"MAIN_DEVICE_SETTINGS_ALARM_ADD_ALARM" = "To add another one, please click the + button in the top right. Play music automatically at a specific time.";
+"MAIN_DEVICE_SETTINGS_EQ_TRABLE" = "Trable";
+"MAIN_DEVICE_SETTINGS_EQ_BASS" = "Bass";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SPECIFY" = "Favorite playlist preset for easy access.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_DESCRIPTION" = "Access your favorite music from the corresponding buttons on the remote or speaker.";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_BUTTON" = "Set keys";
+"MAIN_DEVICE_SETTINGS_CUSTOM_CONTENT_SET_CONTENT" = "Adjustable Key";
 //Search
 "MAIN_SEARCH_SEARCHBAR" = "Search for your song from my music...";
 "MAIN_SEARCH_ARTISTS" = "Artists";

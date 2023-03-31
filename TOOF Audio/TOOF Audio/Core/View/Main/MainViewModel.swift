@@ -15,7 +15,8 @@ class MainViewModel: ObservableObject {
     //Device
     @Published var isNavigateToDetails: Bool
     @Published var isPlaying: Bool
-    @Published var atNowPlayingItem : String
+    @Published var isUserSetUpAlarm: Bool
+    @Published var atNowPlayingItem: String
     @Published var deviceVolume: Float
     
     
@@ -24,6 +25,7 @@ class MainViewModel: ObservableObject {
          
          isNavigateToDetails: Bool = false,
          isPlaying : Bool = false,
+         isUserSetUpAlarm: Bool = false,
          atNowPlayingItem : String = "",
          deviceVolume: Float = 50) {
         //Browse
@@ -32,6 +34,7 @@ class MainViewModel: ObservableObject {
         //Device
         self.isNavigateToDetails = isNavigateToDetails
         self.isPlaying = isPlaying
+        self.isUserSetUpAlarm = isUserSetUpAlarm
         self.atNowPlayingItem = atNowPlayingItem
         self.deviceVolume = deviceVolume
     }
