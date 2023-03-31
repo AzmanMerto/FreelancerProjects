@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct EQView: View {
+    
+    @ObservedObject var viewModel: MainViewModel = .init()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.ToofBackgroundColor
+                .ignoresSafeArea()
+            VStack {
+                MainTitleAndBack(isBackButtonShowing: true, title: TextHelper.main.mainDeviceSettingsEQ.rawValue)
+                Spacer()
+                VStack(spacing: 40) {
+                    SliderValue(text: TextHelper.main.mainDeviceSettingsEqTrable.rawValue, value: viewModel.trableValue)
+                    
+                    SliderValue(text: TextHelper.main.mainDeviceSettingsEqBass.rawValue, value: viewModel.bassValue)
+                }
+                Spacer()
+                Spacer()
+            }
+        }
     }
 }
 
@@ -18,3 +35,5 @@ struct EQView_Previews: PreviewProvider {
         EQView()
     }
 }
+
+

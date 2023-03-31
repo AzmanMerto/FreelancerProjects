@@ -18,6 +18,8 @@ class MainViewModel: ObservableObject {
     @Published var isUserSetUpAlarm: Bool
     @Published var atNowPlayingItem: String
     @Published var deviceVolume: Float
+    @Published var trableValue: Float
+    @Published var bassValue: Float
     
     
     init(isPressedToConnectSection: Bool = false,
@@ -27,7 +29,9 @@ class MainViewModel: ObservableObject {
          isPlaying : Bool = false,
          isUserSetUpAlarm: Bool = false,
          atNowPlayingItem : String = "",
-         deviceVolume: Float = 50) {
+         deviceVolume: Float = 50,
+         trableValue: Float = 0,
+         bassValue: Float = 0) {
         //Browse
         self.isPressedToConnectSection = isPressedToConnectSection
         self.connectInt = connectInt
@@ -37,6 +41,8 @@ class MainViewModel: ObservableObject {
         self.isUserSetUpAlarm = isUserSetUpAlarm
         self.atNowPlayingItem = atNowPlayingItem
         self.deviceVolume = deviceVolume
+        self.trableValue = trableValue
+        self.bassValue = bassValue
     }
     
     let deviceModelItems: [DeviceModel] = [

@@ -47,5 +47,6 @@ struct ImageHelper {
         case infoIcon = "infoIcon"
         case renameIcon = "renameIcon"
         case rightArrow = "rightArrow"
+        case sliderValue = "sliderValue"
     }
 }
