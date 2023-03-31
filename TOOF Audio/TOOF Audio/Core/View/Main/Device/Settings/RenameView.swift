@@ -10,7 +10,7 @@ import SwiftUI
 struct RenameView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
-    @Binding var placeholder: String
+    var deviceName: String
     
     var body: some View {
         ZStack {
@@ -21,7 +21,7 @@ struct RenameView: View {
                 
                 Spacer()
                 
-                EntryTextField(isSecure: false, isActive: false, placeholderText: placeholder, bindingText: .constant(""))
+                EntryTextField(isSecure: false, isActive: false, placeholderText: deviceName, bindingText: .constant(""))
                     .padding(.horizontal,40)
                     .overlay {
                         Text(TextHelper.main.mainDeviceSettingsRenameRenamed.rawValue.locale())
@@ -43,6 +43,6 @@ struct RenameView: View {
 
 struct RenameView_Previews: PreviewProvider {
     static var previews: some View {
-        RenameView(placeholder: .constant(""))
+        RenameView(deviceName: "")
     }
 }

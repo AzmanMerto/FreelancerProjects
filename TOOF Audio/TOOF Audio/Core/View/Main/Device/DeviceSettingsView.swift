@@ -19,7 +19,7 @@ struct DeviceSettingsView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
     @State var viewkey: viewKey? = nil
-    var title: String
+    var deviceName: String
     
     var body: some View {
         ZStack {
@@ -27,7 +27,7 @@ struct DeviceSettingsView: View {
                 .ignoresSafeArea()
             VStack(alignment: .leading) {
                 
-                MainTitleAndBack(title: title)
+                MainTitleAndBack(title: deviceName)
                 Spacer()
                 VStack {
                     DeviceSettingsList(image: ImageHelper.main.renameIcon.rawValue,
@@ -58,7 +58,7 @@ struct DeviceSettingsView: View {
         .fullScreenCover(item: $viewkey, content: { viewKey in
             switch viewKey {
             case .rename:
-                EmptyView()
+                RenameView(deviceName: deviceName)
             case .info:
                 EmptyView()
             case .alarm:
@@ -74,7 +74,7 @@ struct DeviceSettingsView: View {
 
 struct DeviceSettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceSettingsView(title: "")
+        DeviceSettingsView(deviceName: "")
     }
 }
 

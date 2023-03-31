@@ -16,6 +16,7 @@ struct EQView: View {
             Color.ToofBackgroundColor
                 .ignoresSafeArea()
             VStack {
+                //TODO: Connect values to device
                 MainTitleAndBack(isBackButtonShowing: true, title: TextHelper.main.mainDeviceSettingsEQ.rawValue)
                 Spacer()
                 VStack(spacing: 40) {
