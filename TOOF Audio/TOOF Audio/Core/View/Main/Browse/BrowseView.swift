@@ -19,7 +19,7 @@ struct BrowseView: View {
                 VStack {
                     //MARK: BrowseView - Header
                     MainTitleAndBack(title: TextHelper.main.mainBrowseTitle.rawValue)
-                        .padding(.vertical,30)
+                        .padding(.bottom,30)
                     //MARK: BrowseView - Connect Sections
                     HStack {
                         ForEach(viewModel.connectModelItems, id: \.connectInt) { connect in

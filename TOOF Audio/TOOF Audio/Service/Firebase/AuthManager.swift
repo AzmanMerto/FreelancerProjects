@@ -12,9 +12,7 @@ import FirebaseFirestore
 @MainActor class AuthManager: ObservableObject {
     
     static let shared = AuthManager()
-    
     @Published var currentUser: FirebaseAuth.User?
-    @Published var isResetPassword: Bool = false
     
     init() {
         self.currentUser = Auth.auth().currentUser
@@ -56,10 +54,13 @@ import FirebaseFirestore
         }
     }
 
-    func resetPasswordWithMail(email: String){
+    func resetPasswordWithMail(email: String, completion: @escaping () -> Void){
         Auth.auth().sendPasswordReset(withEmail: email) { error in
-            guard error != nil else {print("FIXto reset: \(String(describing: error?.localizedDescription))"); return }
-            self.isResetPassword = true
+            if let error = error {
+                print("Error reset mail user data: \(error.localizedDescription)")
+                return
+            }
+            completion()
         }
     }
 }

@@ -78,6 +78,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(deviceName: "Mutfak")
+        ContentView(deviceName: "Device")
     }
 }

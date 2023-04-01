@@ -9,6 +9,8 @@ import SwiftUI
 
 class MainViewModel: ObservableObject {
     
+    //Player
+    @Published var isRandomActive: Bool
     //Browse
     @Published var isPressedToConnectSection: Bool
     @Published var connectInt: Int
@@ -22,7 +24,9 @@ class MainViewModel: ObservableObject {
     @Published var bassValue: Float
     
     
-    init(isPressedToConnectSection: Bool = false,
+    init(isRandomActive: Bool = false,
+        
+        isPressedToConnectSection: Bool = false,
          connectInt: Int = 0,
          
          isNavigateToDetails: Bool = false,
@@ -32,6 +36,8 @@ class MainViewModel: ObservableObject {
          deviceVolume: Float = 50,
          trableValue: Float = 0,
          bassValue: Float = 0) {
+        //Player
+        self.isRandomActive = isRandomActive
         //Browse
         self.isPressedToConnectSection = isPressedToConnectSection
         self.connectInt = connectInt
@@ -46,7 +52,7 @@ class MainViewModel: ObservableObject {
     }
     
     let deviceModelItems: [DeviceModel] = [
-        DeviceModel(deviceGivenName: "Mutfak")
+        DeviceModel(deviceGivenName: "Device")
     ]
     
     let connectModelItems: [ConnectModel] = [

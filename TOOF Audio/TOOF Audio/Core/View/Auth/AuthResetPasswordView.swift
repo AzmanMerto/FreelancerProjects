@@ -31,8 +31,7 @@ struct AuthResetPasswordView: View {
                 Spacer()
                 PrimaryButton(text: TextHelper.auth.authResetPasswordButton.rawValue, size: CGSize(width: 280, height: 48)) {
                     if viewModel.mail.isValidEmail() {
-                        AuthManager.shared.resetPasswordWithMail(email: viewModel.mail)
-                        if AuthManager.shared.isResetPassword {
+                        AuthManager.shared.resetPasswordWithMail(email: viewModel.mail){
                             dismiss()
                         }
                     }

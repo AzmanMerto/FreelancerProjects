@@ -61,6 +61,19 @@ struct ImageHelper {
         case searchIconFilled = "searchIconFilled"
         case settingsIcon = "settingsIcon"
         case settingsIconFilled = "settingsIconFilled"
-        
+    }
+    
+    enum player: String {
+        case playButton = "playButton"
+        case pauseButton = "pauseButton"
+        case forwardButton = "forwardButton"
+        case backButton = "backButton"
+        case randomIcon = "randomIcon"
+        case randomIconFilled = "randomIconFilled"
+        case Rotate1 = "Rotate1"
+        case Rotate2 = "Rotate2"
+        case Rotate3 = "Rotate3"
+        case playerSpearkerHigh = "playerSpearkerHigh"
+        case playerSpearkerLow = "playerSpearkerLow"
     }
 }

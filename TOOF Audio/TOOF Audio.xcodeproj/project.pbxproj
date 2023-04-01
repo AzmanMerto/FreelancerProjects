@@ -43,6 +43,7 @@
 		3426EFD029A4403500CA1F0F /* StartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */; };
 		345146FB29D783A20071D5FB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345146FA29D783A20071D5FB /* AuthManager.swift */; };
 		345146FD29D78C5E0071D5FB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345146FC29D78C5E0071D5FB /* Constant.swift */; };
+		3451470029D870610071D5FB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345146FF29D870610071D5FB /* PlayerView.swift */; };
 		3481770029D3121C006803A1 /* AuthBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348176FF29D3121C006803A1 /* AuthBackground.swift */; };
 		3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770229D320E4006803A1 /* CustomBackButton.swift */; };
 		3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770429D353A3006803A1 /* DeviceFinderNearView.swift */; };
@@ -114,6 +115,7 @@
 		3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOnboardingView.swift; sourceTree = "<group>"; };
 		345146FA29D783A20071D5FB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		345146FC29D78C5E0071D5FB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		345146FF29D870610071D5FB /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		348176FF29D3121C006803A1 /* AuthBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackground.swift; sourceTree = "<group>"; };
 		3481770229D320E4006803A1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		3481770429D353A3006803A1 /* DeviceFinderNearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNearView.swift; sourceTree = "<group>"; };
@@ -390,6 +392,14 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
+		345146FE29D8704B0071D5FB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				345146FF29D870610071D5FB /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		3481770129D312F0006803A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +424,7 @@
 			children = (
 				3481770A29D3BAF0006803A1 /* MainTabView.swift */,
 				3481771729D3BDCB006803A1 /* MainViewModel.swift */,
+				345146FE29D8704B0071D5FB /* Player */,
 				3481770F29D3BB7E006803A1 /* Browse */,
 				3481770E29D3BB69006803A1 /* Device */,
 				3481770D29D3BB65006803A1 /* Search */,
@@ -628,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */,
+				3451470029D870610071D5FB /* PlayerView.swift in Sources */,
 				3481770029D3121C006803A1 /* AuthBackground.swift in Sources */,
 				3481772229D4A48A006803A1 /* DeviceModel.swift in Sources */,
 				34A9AD5829D6582100324948 /* ContentView.swift in Sources */,

@@ -48,8 +48,10 @@ struct AuthRegisterView: View {
                     //MARK: AuthLoginView - Button
                     PrimaryButton(text: TextHelper.auth.authRegisterButton.rawValue,
                                   size: CGSize(width: 280, height: 48)) {
-                        AuthManager.shared.register(name: viewModel.name, email: viewModel.mail, password: viewModel.password){
-                            viewModel.isUserSuccessPassToMain = true
+                        if viewModel.mail.isValidEmail() {
+                            AuthManager.shared.register(name: viewModel.name, email: viewModel.mail, password: viewModel.password){
+                                viewModel.isUserSuccessPassToMain = true
+                            }
                         }
                     }.padding(.vertical)
                     Spacer()
