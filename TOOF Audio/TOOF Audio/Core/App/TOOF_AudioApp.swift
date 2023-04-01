@@ -16,7 +16,7 @@ struct TOOF_AudioApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            StartSplashView()
         }
     }
 }

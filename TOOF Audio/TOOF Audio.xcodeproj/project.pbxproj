@@ -41,6 +41,8 @@
 		3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCA29A4403500CA1F0F /* ColorHelper.swift */; };
 		3426EFCD29A4403500CA1F0F /* ColorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCC29A4403500CA1F0F /* ColorHandler.swift */; };
 		3426EFD029A4403500CA1F0F /* StartOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */; };
+		345146FB29D783A20071D5FB /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345146FA29D783A20071D5FB /* AuthManager.swift */; };
+		345146FD29D78C5E0071D5FB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345146FC29D78C5E0071D5FB /* Constant.swift */; };
 		3481770029D3121C006803A1 /* AuthBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348176FF29D3121C006803A1 /* AuthBackground.swift */; };
 		3481770329D320E4006803A1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770229D320E4006803A1 /* CustomBackButton.swift */; };
 		3481770529D353A3006803A1 /* DeviceFinderNearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481770429D353A3006803A1 /* DeviceFinderNearView.swift */; };
@@ -110,6 +112,8 @@
 		3426EFCA29A4403500CA1F0F /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		3426EFCC29A4403500CA1F0F /* ColorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHandler.swift; sourceTree = "<group>"; };
 		3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOnboardingView.swift; sourceTree = "<group>"; };
+		345146FA29D783A20071D5FB /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		345146FC29D78C5E0071D5FB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		348176FF29D3121C006803A1 /* AuthBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackground.swift; sourceTree = "<group>"; };
 		3481770229D320E4006803A1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		3481770429D353A3006803A1 /* DeviceFinderNearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderNearView.swift; sourceTree = "<group>"; };
@@ -291,6 +295,7 @@
 		3426EFB429A4403500CA1F0F /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				345146F929D783820071D5FB /* Firebase */,
 				34BEB9E629D7158000C0D73C /* Local */,
 				3481771F29D43756006803A1 /* Firebase */,
 			);
@@ -304,6 +309,7 @@
 				3412414F29D12170001B9D3B /* GoogleService-Info.plist */,
 				3426EFA929A4403500CA1F0F /* Assets.xcassets */,
 				3412416929D22745001B9D3B /* Localizable.strings */,
+				345146FC29D78C5E0071D5FB /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -374,6 +380,14 @@
 				3426EFCF29A4403500CA1F0F /* StartOnboardingView.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		345146F929D783820071D5FB /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				345146FA29D783A20071D5FB /* AuthManager.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		3481770129D312F0006803A1 /* Model */ = {
@@ -563,7 +577,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					3426EFA129A4403200CA1F0F = {
 						CreatedOnToolsVersion = 14.2;
@@ -579,6 +593,7 @@
 				tr,
 				it,
 				ru,
+				Base,
 			);
 			mainGroup = 3426EF9929A4403200CA1F0F;
 			packageReferences = (
@@ -641,6 +656,7 @@
 				3426EFD029A4403500CA1F0F /* StartOnboardingView.swift in Sources */,
 				3412416429D222EF001B9D3B /* StartViewModel.swift in Sources */,
 				3412415D29D192CA001B9D3B /* TextHelper.swift in Sources */,
+				345146FD29D78C5E0071D5FB /* Constant.swift in Sources */,
 				3481771829D3BDCB006803A1 /* MainViewModel.swift in Sources */,
 				340F92F029B7BA7500B3127E /* DeviceFinderNotFoundView.swift in Sources */,
 				34A9AD5629D6581500324948 /* EQView.swift in Sources */,
@@ -661,6 +677,7 @@
 				3426EFCB29A4403500CA1F0F /* ColorHelper.swift in Sources */,
 				34ECC13E29A80ED1006ACA3B /* OnboardingUISubView.swift in Sources */,
 				34E0194129D5DAD3001B6C8E /* DeviceSettingsView.swift in Sources */,
+				345146FB29D783A20071D5FB /* AuthManager.swift in Sources */,
 				3426EFBD29A4403500CA1F0F /* ImageHelper.swift in Sources */,
 				3481771C29D3CB3E006803A1 /* SearchView.swift in Sources */,
 				3481771629D3BC5B006803A1 /* MainTitleAndBack.swift in Sources */,
@@ -687,6 +704,7 @@
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 /* End PBXVariantGroup section */
 
@@ -695,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -755,6 +774,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

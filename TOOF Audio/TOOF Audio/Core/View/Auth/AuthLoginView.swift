@@ -23,17 +23,15 @@ struct AuthLoginView: View {
                     .padding(.all)
                     //MARK: AuthLoginView - Textfields & reset password
                     VStack {
-                        let mailStatus = (viewModel.mail.count > 0)
                         EntryTextField(isSecure: false,
-                                       isActive: mailStatus,
+                                       isActive: (viewModel.mail.count > 0),
                                        placeholderText: TextHelper.auth.authMailTextFieldPlaceholder.rawValue,
                                        bindingText: $viewModel.mail)
                         .padding(.bottom)
-                        let passwordStatus = (viewModel.password.count > 0)
                         EntryTextField(isSecure: true,
-                                       isActive: passwordStatus,
+                                       isActive: (viewModel.password.count > 0),
                                        placeholderText: TextHelper.auth.authPasswordTextfieldPlaceholder.rawValue,
-                                       bindingText: $viewModel.mail)
+                                       bindingText: $viewModel.password)
                         HStack {
                             Spacer()
                             Text(TextHelper.auth.authResetPassword.rawValue.locale())
@@ -49,7 +47,11 @@ struct AuthLoginView: View {
                     //MARK: AuthLoginView - Buttons
                     PrimaryButton(text: TextHelper.auth.authLoginButton.rawValue,
                                   size: CGSize(width: 280, height: 48)) {
-                        //Action Login User
+                        if viewModel.mail.isValidEmail() {
+                            AuthManager.shared.login(email: viewModel.mail, password: viewModel.password){
+                                viewModel.isUserSuccessPassToMain.toggle()
+                            }
+                        }
                     }.padding(.vertical)
                     Spacer()
                     //MARK: AuthLoginView - Roll to RegisterView
@@ -59,7 +61,6 @@ struct AuthLoginView: View {
                         Text(TextHelper.auth.authLetsRegisterClick.rawValue.locale())
                             .foregroundColor(.ToofButtonColor)
                             .onTapGesture {
-                                print("RESPONSE: Navigate to Register")
                                 viewModel.isPressedForRegister.toggle()
                             }
                     }
@@ -72,6 +73,10 @@ struct AuthLoginView: View {
                 }
                 .navigationDestination(isPresented: $viewModel.isPressedForRegister) {
                     AuthRegisterView()
+                        .navigationBarBackButtonHidden(true)
+                }
+                .navigationDestination(isPresented: $viewModel.isUserSuccessPassToMain) {
+                    MainTabView()
                         .navigationBarBackButtonHidden(true)
                 }
             }

@@ -45,9 +45,6 @@ struct MainTabView: View {
         }
         .onAppear() {
             UITabBar.appearance().backgroundColor = UIColor(Color.ToofPlaceholder).withAlphaComponent(0.2)
-            
-            
-            
             UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor(Color.red)], for: .normal)
             UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor(Color.ToofTextColor)], for: .selected)
         }

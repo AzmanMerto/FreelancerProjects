@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AuthResetPasswordView: View {
     
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel : AuthViewModel = .init()
     
     var body: some View {
@@ -23,13 +24,18 @@ struct AuthResetPasswordView: View {
                             description: TextHelper.auth.authResetPasswordDescription.rawValue)
                 //MARK: AuthResetPasswordView - Textfield
                 EntryTextField(isSecure: false,
-                               isActive: false,
+                               isActive: (viewModel.mail.count > 0),
                                placeholderText: TextHelper.auth.authMailTextFieldPlaceholder.rawValue,
                                bindingText: $viewModel.mail)
                 .padding(.vertical)
                 Spacer()
                 PrimaryButton(text: TextHelper.auth.authResetPasswordButton.rawValue, size: CGSize(width: 280, height: 48)) {
-                    
+                    if viewModel.mail.isValidEmail() {
+                        AuthManager.shared.resetPasswordWithMail(email: viewModel.mail)
+                        if AuthManager.shared.isResetPassword {
+                            dismiss()
+                        }
+                    }
                 }
                 Spacer()
             }

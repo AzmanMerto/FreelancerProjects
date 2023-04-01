@@ -12,7 +12,9 @@ struct AuthBackground: View {
         ZStack {
             Image(ImageHelper.auth.authBackground.rawValue)
                 .ignoresSafeArea()
-                .frame(width: UIScreen.main.bounds.width * 1)
+                .scaledToFit()
+                .frame(width: UIScreen.main.bounds.width * 1,
+                       height: UIScreen.main.bounds.height * 1)
         }
     }
 }

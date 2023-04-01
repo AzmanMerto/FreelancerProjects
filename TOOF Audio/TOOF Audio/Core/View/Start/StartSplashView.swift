@@ -13,7 +13,11 @@ struct StartSplashView: View {
     
     var body: some View {
         if viewModel.isAppActive {
-            StartOnboardingView()
+            if AuthManager.shared.currentUser != nil {
+                MainTabView()
+            } else {
+                StartOnboardingView()
+            }
         } else {
             SplashUISubView()
         }

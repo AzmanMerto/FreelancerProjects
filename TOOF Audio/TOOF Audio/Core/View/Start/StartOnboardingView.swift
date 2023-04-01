@@ -34,9 +34,9 @@ struct StartOnboardingView: View {
                             .font(.system(.headline, weight: .black))
                             .multilineTextAlignment(.center)
                             .padding(EdgeInsets.init(top: 30,
-                                                     leading: 120,
+                                                     leading: 80,
                                                      bottom: 0,
-                                                     trailing: 120))
+                                                     trailing: 80))
                             .foregroundColor(.white)
                     }
                     Spacer()
@@ -44,8 +44,17 @@ struct StartOnboardingView: View {
                         AuthLoginView()
                             .navigationBarBackButtonHidden(true)
                     } label: {
-                        Text("asdasdas")
+                        Text(TextHelper.onboarding.onboardingStartButton.rawValue.locale())
+                            .foregroundColor(.ToofTextColor)
+                            .font(.boldRounded14)
                     }
+                    .background {
+                        RoundedRectangle(cornerRadius: 12)
+                            .foregroundColor(.ToofButtonColor)
+                            .frame(height: 50)
+                            .padding(.horizontal,-10)
+                    }
+                    .padding(.bottom,40)
                 }
             }
         }
