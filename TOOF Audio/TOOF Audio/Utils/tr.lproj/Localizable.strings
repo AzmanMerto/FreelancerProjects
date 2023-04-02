@@ -5,6 +5,8 @@
   Created by NomoteteS on 27.03.2023.
   
 */
+//MARK: System
+"Downloads" = "İndirilenler";
 
 //MARK: Turkish String - Onboarding
 "APP_SLOGAN" = "Evinizi Kontrol Etmenin En İyi Yolu";

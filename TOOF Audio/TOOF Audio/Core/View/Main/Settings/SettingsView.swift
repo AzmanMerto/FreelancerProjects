@@ -17,44 +17,53 @@ enum SettingViewKey: String,Identifiable {
 
 struct SettingsView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @StateObject var viewModel: MainViewModel = .init()
     @State var settingViewKey: SettingViewKey? = nil
 
     var body: some View {
-        ZStack {
-            Color.ToofBackgroundColor
-                .ignoresSafeArea()
-            VStack(alignment: .leading) {
-                MainTitleAndBack(title: TextHelper.main.mainSettingsTitle.rawValue)
-                    .padding(.bottom,30)
-                //MARK: SettingsView - Sections
-                VStack {
-                    DeviceSettingsList(image: ImageHelper.main.personIcon.rawValue,
-                                       text: TextHelper.main.mainSettingsAccTitle.rawValue){
-                        settingViewKey = .accSettings
+        NavigationStack {
+            ZStack {
+                Color.ToofBackgroundColor
+                    .ignoresSafeArea()
+                VStack(alignment: .leading) {
+                    MainTitleAndBack(title: TextHelper.main.mainSettingsTitle.rawValue)
+                        .padding(.bottom,30)
+                    //MARK: SettingsView - Sections
+                    VStack {
+                        DeviceSettingsList(image: ImageHelper.main.personIcon.rawValue,
+                                           text: TextHelper.main.mainSettingsAccTitle.rawValue){
+                            settingViewKey = .accSettings
+                        }
+                        Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
+                        DeviceSettingsList(image: ImageHelper.main.supportIcon.rawValue,
+                                           text: TextHelper.main.mainSettingsSubTitle.rawValue){
+                            settingViewKey = .help
+                        }
+                        Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
+                        DeviceSettingsList(image: ImageHelper.main.logoutIcon.rawValue,
+                                           text: TextHelper.main.mainSettingsLogout.rawValue){
+                            AuthManager.shared.logout()
+                            viewModel.isLogout = true
+                            //TODO: Player Opacity ayarla
+                        }
                     }
-                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
-                    DeviceSettingsList(image: ImageHelper.main.supportIcon.rawValue,
-                                       text: TextHelper.main.mainSettingsSubTitle.rawValue){
-                        settingViewKey = .help
-                    }
-                    Rectangle().frame(height: 1).foregroundColor(.ToofTextColor).padding(.vertical)
-                    DeviceSettingsList(image: ImageHelper.main.logoutIcon.rawValue,
-                                       text: TextHelper.main.mainSettingsLogout.rawValue){
-                        //TODO: Logout
-                    }
+                    .padding(.horizontal)
+                    Spacer()
                 }
-                .padding(.horizontal)
-                Spacer()
+                .navigationDestination(isPresented: $viewModel.isLogout, destination: {
+                    StartOnboardingView()
+                        .toolbar(.hidden, for: .tabBar)
+                        .navigationBarBackButtonHidden(true)
+                })
+                .fullScreenCover(item: $settingViewKey, content: { settingViewKey in
+                    switch settingViewKey {
+                    case .accSettings:
+                        AccountSettingsView()
+                    case .help:
+                        SupportView()
+                    }
+                })
             }
-            .fullScreenCover(item: $settingViewKey, content: { settingViewKey in
-                switch settingViewKey {
-                case .accSettings:
-                    AccountSettingsView()
-                case .help:
-                    SupportView()
-                }
-            })
         }
     }
 }

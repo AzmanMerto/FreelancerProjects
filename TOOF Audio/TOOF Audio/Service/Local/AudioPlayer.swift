@@ -9,17 +9,26 @@ import Foundation
 import AVFoundation
 import MediaPlayer
 
+//class AudioPlayer: ObservableObject {
+//    let player = AVPlayer()
+//    
+//    func play(song: MPMediaItem) {
+//        guard let url = song.assetURL else { return }
+//        let playerItem = AVPlayerItem(url: url)
+//        player.replaceCurrentItem(with: playerItem)
+//        player.play()
+//    }
+//    
+//    func pause() {
+//        player.pause()
+//    }
+//}
+
 class AudioPlayer: ObservableObject {
-    let player = AVPlayer()
+    private var player: AVPlayer?
     
-    func play(song: MPMediaItem) {
-        guard let url = song.assetURL else { return }
-        let playerItem = AVPlayerItem(url: url)
-        player.replaceCurrentItem(with: playerItem)
-        player.play()
-    }
-    
-    func pause() {
-        player.pause()
+    func play(url: URL) {
+        player = AVPlayer(url: url)
+        player?.play()
     }
 }

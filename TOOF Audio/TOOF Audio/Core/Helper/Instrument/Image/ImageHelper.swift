@@ -58,6 +58,7 @@ struct ImageHelper {
         case musicIcon = "musicIcon"
         case musicIconFilled = "musicIconFilled"
         case searchIcon = "searchIcon"
+        case searchIconRed = "searchIconRed"
         case searchIconFilled = "searchIconFilled"
         case settingsIcon = "settingsIcon"
         case settingsIconFilled = "settingsIconFilled"

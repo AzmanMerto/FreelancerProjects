@@ -7,36 +7,11 @@
 
 import SwiftUI
 import MediaPlayer
-import AVKit
-
+import AVFoundation
 
 struct SearchView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
-    
-    func fetchSongs() -> [MPMediaItem] {
-        let query = MPMediaQuery.songs()
-        let predicate = MPMediaPropertyPredicate(value: false, forProperty: MPMediaItemPropertyIsCloudItem)
-        query.addFilterPredicate(predicate)
-        
-        return query.items ?? []
-    }
-    
-    @StateObject private var audioPlayer = AudioPlayer()
-    @State private var searchText = ""
-    
-    private var songs: [MPMediaItem] {
-        let allSongs = fetchSongs()
-        
-        if searchText.isEmpty {
-            return allSongs
-        } else {
-            return allSongs.filter { song in
-                (song.title ?? "").localizedCaseInsensitiveContains(searchText)
-            }
-        }
-    }
-    
     
     var body: some View {
         ZStack {
@@ -44,29 +19,16 @@ struct SearchView: View {
                 .ignoresSafeArea()
             VStack {
                 MainTitleAndBack(title: TextHelper.main.mainSearchTitle.rawValue)
-                
-                VStack {
-                    TextField("Ara...", text: $searchText)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal)
-                    
-                    ForEach(songs, id: \.persistentID) { song in
-                        HStack {
-                            Text(song.title ?? "Bilinmeyen Şarkı")
-                            Spacer()
-                            Button(action: {
-                                audioPlayer.play(song: song)
-                            }) {
-                                Image(systemName: "play.fill")
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                        }
-                    }
-                }
+                    .padding(.bottom,30)
+                SearchBar(searchText: $viewModel.searchBar)
+                    //MARK: TEST -
+ 
+                    //MARK: TEST -
+                Spacer()
             }
+            .onAppear(perform: {
+                FetchSong.shared.requestPermission()
+            })
         }
     }
 }

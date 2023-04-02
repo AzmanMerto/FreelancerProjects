@@ -22,13 +22,13 @@ struct BrowseView: View {
                         .padding(.bottom,30)
                     //MARK: BrowseView - Connect Sections
                     HStack {
+                        //TODO: Change connect ID 
                         ForEach(viewModel.connectModelItems, id: \.connectInt) { connect in
                             let connectStatus = (connect.connectInt == viewModel.connectInt)
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(connectStatus ? Color.ToofTextColor : Color.ToofTextSoftColor)
                                     .frame(height: 40)
-                                
                                 Text(connect.connectName)
                                     .foregroundColor(connectStatus ? .ToofTextColor : .ToofTextSoftColor)
                             }

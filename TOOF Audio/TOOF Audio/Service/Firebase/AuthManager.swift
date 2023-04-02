@@ -13,9 +13,11 @@ import FirebaseFirestore
     
     static let shared = AuthManager()
     @Published var currentUser: FirebaseAuth.User?
+    @Published var userData: UserData?
     
     init() {
         self.currentUser = Auth.auth().currentUser
+        fetchUserData()
     }
     
     func login(email: String, password: String, completion: @escaping () -> Void) {
@@ -51,6 +53,32 @@ import FirebaseFirestore
                 self.currentUser = user
                 completion()
             }
+        }
+    }
+    
+    func fetchUserData(){
+        guard let uid = currentUser?.uid else { return }
+        COLLECTION_USER.document(uid).getDocument { snapshot, error in
+            if let error = error {
+                print("Error fetch data \(error.localizedDescription)")
+                return
+            }
+            
+            guard let data = snapshot?.data() else { return }
+            
+            let id = data["id"] as? String ?? ""
+            let name = data["name"] as? String ?? ""
+            let email = data["email"] as? String ?? ""
+            
+            self.userData = UserData(name: name, email: email, id: id)
+        }
+    }
+    
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            print("Failed logout")
         }
     }
 

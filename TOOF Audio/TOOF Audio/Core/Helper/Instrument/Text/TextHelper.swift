@@ -8,6 +8,11 @@
 import Foundation
 
 struct TextHelper {
+    
+    enum system: String {
+        case downloads = "Downloads"
+    }
+    
     enum onboarding: String {
         case appSlogan = "APP_SLOGAN"
         case onboardingStartButton = "ONBOARDING_START_BUTTON"

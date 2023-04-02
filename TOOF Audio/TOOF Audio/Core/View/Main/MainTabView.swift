@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     
+    @ObservedObject var viewModel: MainViewModel = .init()
     @State var selectedTab = 0
     @State var isOpenedPlayerView = false
     
@@ -19,7 +20,6 @@ struct MainTabView: View {
                     .tabItem {
                         Image(selectedTab == 0 ? ImageHelper.main.musicIconFilled.rawValue : ImageHelper.main.musicIcon.rawValue)
                             .resizable()
-                        
                         Text(TextHelper.main.mainBrowseTitle.rawValue.locale())
                             .foregroundColor(.ToofButtonColor)
                     }
@@ -49,43 +49,48 @@ struct MainTabView: View {
                 UITabBar.appearance().backgroundColor = UIColor(Color.ToofPlaceholder).withAlphaComponent(0.2)
                 UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor(Color.red)], for: .normal)
                 UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor(Color.ToofTextColor)], for: .selected)
+                AuthManager.shared.fetchUserData()
             }
-            
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(Color.ToofTextColor)
-                .overlay(content: {
-                    //TODO: Fetch music
-                    Color.ToofBackgroundPlayerColor
-                        .cornerRadius(12)
-                    HStack {
-                        Image(ImageHelper.main.myMusic.rawValue)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 54)
-                        Text("Music Title")
-                            .font(.boldRounded14)
-                            .foregroundColor(.ToofTextColor)
-                        Spacer()
-                        Button {
-                            //TODO: Play music
-                        } label: {
-                            Image(ImageHelper.player.playButton.rawValue)
+            .overlay {
+                Group {
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.ToofTextColor)
+                        .overlay(content: {
+                            //TODO: Fetch music
+                            Color.ToofBackgroundPlayerColor
+                                .cornerRadius(12)
+                            HStack {
+                                Image(ImageHelper.main.myMusic.rawValue)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 54)
+                                Text("Music Title")
+                                    .font(.boldRounded14)
+                                    .foregroundColor(.ToofTextColor)
+                                Spacer()
+                                Button {
+                                    //TODO: Play music
+                                } label: {
+                                    Image(ImageHelper.player.playButton.rawValue)
+                                }
+                                .padding(.trailing)
+                                Button {
+                                    //TODO: Next music
+                                } label: {
+                                    Image(ImageHelper.player.forwardButton.rawValue)
+                                }
+                            }
+                            .padding(.horizontal)
+                        })
+                        .frame(height: 67)
+                        .padding(.horizontal,40)
+                        .offset(CGSize(width: 0,height: UIScreen.main.bounds.height * 0.34))
+                        .onTapGesture {
+                            isOpenedPlayerView.toggle()
                         }
-                        .padding(.trailing)
-                        Button {
-                            //TODO: Next music
-                        } label: {
-                            Image(ImageHelper.player.forwardButton.rawValue)
-                        }
-                    }
-                    .padding(.horizontal)
-                })
-                .frame(height: 67)
-                .padding(.horizontal,40)
-                .offset(CGSize(width: 0,height: UIScreen.main.bounds.height * 0.34))
-                .onTapGesture {
-                    isOpenedPlayerView.toggle()
                 }
+                .opacity(viewModel.isLogout ? 0 : 1)
+            }
         }
         .sheet(isPresented: $isOpenedPlayerView) {
             PlayerView()

@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountSettingsView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
+    let user = AuthManager.shared.userData
     
     var body: some View {
         ZStack {
@@ -20,11 +21,12 @@ struct AccountSettingsView: View {
                     .padding(.bottom,30)
                 VStack(spacing: 40) {
                     //TODO: Firebase fetch data
-                    EntryTextField(isSecure: false, isActive: false, placeholderText: "", bindingText: .constant(""))
-                    EntryTextField(isSecure: false, isActive: false, placeholderText: "", bindingText: .constant(""))
+                    EntryTextField(isSecure: false, isActive: false, placeholderText: user?.name ?? "", bindingText: .constant(""))
+                    EntryTextField(isSecure: false, isActive: false, placeholderText: user?.email ?? "", bindingText: .constant(""))
                     EntryTextField(isSecure: false, isActive: false, placeholderText: TextHelper.auth.authPasswordTextfieldPlaceholder.rawValue, bindingText: .constant(""))
                 }
                 .padding(.horizontal)
+                .tint(.ToofPlaceholder)
                 .foregroundColor(.ToofTextColor)
                 .multilineTextAlignment(.center)
                 

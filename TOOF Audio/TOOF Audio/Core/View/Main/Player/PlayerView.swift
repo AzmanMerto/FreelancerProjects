@@ -23,7 +23,7 @@ struct PlayerView: View {
                     Image(ImageHelper.main.myMusic.rawValue)
                         .resizable()
                         .scaledToFit()
-                        .padding(EdgeInsets(top: 50, leading: 50, bottom: 0, trailing: 50))
+                        .padding(EdgeInsets(top: 50, leading: 50, bottom: 50, trailing: 50))
                         .cornerRadius(20)
                     //MARK: PlayerView - Header
                     VStack {
@@ -80,11 +80,12 @@ struct PlayerView: View {
                                 .tint(.ToofButtonColor)
                             HStack {
                                 Text("0.00")
-                                    .font(.reguDefault12)
                                 Spacer()
                                 Text("1.00")
-                                    .font(.reguDefault12)
                             }
+                            .foregroundColor(.ToofTextSoftColor)
+                            .font(.reguDefault12)
+
                             .padding(.horizontal,-15)
                         }
                     }

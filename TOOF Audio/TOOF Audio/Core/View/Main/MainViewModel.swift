@@ -22,7 +22,10 @@ class MainViewModel: ObservableObject {
     @Published var deviceVolume: Float
     @Published var trableValue: Float
     @Published var bassValue: Float
-    
+    //Search
+    @Published var searchBar: String
+    //Setting
+    @Published var isLogout: Bool
     
     init(isRandomActive: Bool = false,
         
@@ -35,7 +38,11 @@ class MainViewModel: ObservableObject {
          atNowPlayingItem : String = "",
          deviceVolume: Float = 50,
          trableValue: Float = 0,
-         bassValue: Float = 0) {
+         bassValue: Float = 0,
+         
+         searchBar:String = "",
+         
+         isLogout: Bool = false) {
         //Player
         self.isRandomActive = isRandomActive
         //Browse
@@ -49,6 +56,10 @@ class MainViewModel: ObservableObject {
         self.deviceVolume = deviceVolume
         self.trableValue = trableValue
         self.bassValue = bassValue
+        //Search
+        self.searchBar = searchBar
+        //Settings
+        self.isLogout = isLogout
     }
     
     let deviceModelItems: [DeviceModel] = [

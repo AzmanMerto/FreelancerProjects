@@ -10,7 +10,7 @@ import SwiftUI
 struct StartOnboardingView: View {
     
     @ObservedObject var viewModel: StartViewModel = .init()
-    
+
     var body: some View {
         NavigationView {
             ZStack {
