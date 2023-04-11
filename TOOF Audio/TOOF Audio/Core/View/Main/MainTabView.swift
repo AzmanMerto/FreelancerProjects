@@ -15,7 +15,7 @@ struct MainTabView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {
-                BrowseView()
+                BrowseView(viewModel: viewModel)
                     .tabItem {
                         Image(selectedTab == 0 ? ImageHelper.main.musicIconFilled.rawValue : ImageHelper.main.musicIcon.rawValue)
                             .resizable()
@@ -23,21 +23,24 @@ struct MainTabView: View {
                             .foregroundColor(.ToofButtonColor)
                     }
                     .tag(0)
-                DeviceView()
+                DeviceView(viewModel: viewModel)
                     .tabItem {
                         Image(selectedTab == 1 ? ImageHelper.main.deviceIconFilled.rawValue : ImageHelper.main.deviceIcon.rawValue)
                             .resizable()
                         Text(TextHelper.main.mainDeviceTitle.rawValue.locale())
                     }
                     .tag(1)
-                SearchView()
+                SearchView(viewModel: viewModel)
                     .tabItem {
                         Image(selectedTab == 2 ? ImageHelper.main.searchIconFilled.rawValue : ImageHelper.main.searchIcon.rawValue)
                             .resizable()
                         Text(TextHelper.main.mainSearchTitle.rawValue.locale())
                     }
                     .tag(2)
-                SettingsView()
+                    .onAppear{
+                        viewModel.musicFiles = viewModel.fetchMusicFilesFromDocuments()
+                    }
+                SettingsView(viewModel: viewModel)
                     .tabItem {Image(selectedTab == 3 ? ImageHelper.main.settingsIconFilled.rawValue : ImageHelper.main.settingsIcon.rawValue)
                             .resizable()
                         Text(TextHelper.main.mainSettingsTitle.rawValue.locale())

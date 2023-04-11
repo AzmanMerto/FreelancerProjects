@@ -17,7 +17,7 @@ enum SettingViewKey: String,Identifiable {
 
 struct SettingsView: View {
     
-    @StateObject var viewModel: MainViewModel = .init()
+    @StateObject var viewModel: MainViewModel
     @State var settingViewKey: SettingViewKey? = nil
 
     var body: some View {
@@ -69,6 +69,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(viewModel: .init())
     }
 }

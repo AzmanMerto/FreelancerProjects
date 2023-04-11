@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BrowseView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @ObservedObject var viewModel: MainViewModel
     
     var body: some View {
         NavigationView {
@@ -130,7 +130,7 @@ struct BrowseView: View {
 
 struct BrowseView_Previews: PreviewProvider {
     static var previews: some View {
-        BrowseView()
+        BrowseView(viewModel: .init())
     }
 }
 

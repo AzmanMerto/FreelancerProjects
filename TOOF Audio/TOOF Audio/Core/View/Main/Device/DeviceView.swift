@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DeviceView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @ObservedObject var viewModel: MainViewModel
     @State var device : MainViewModel = .init()
     
     var body: some View {
@@ -50,6 +50,6 @@ struct DeviceView: View {
 
 struct DeviceView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceView()
+        DeviceView(viewModel: .init())
     }
 }

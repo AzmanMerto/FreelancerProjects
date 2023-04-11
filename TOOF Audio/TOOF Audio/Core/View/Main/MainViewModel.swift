@@ -25,8 +25,8 @@ class MainViewModel: ObservableObject {
     @Published var bassValue: Float
     //Search
     @Published var searchBar: String
-    @State var musicFiles: [URL] = []
-    @State var showDocumentPicker: Bool = false
+    @Published var musicFiles: [URL] = []
+    @Published var showDocumentPicker: Bool = false
     //Setting
     @Published var isLogout: Bool
     
@@ -134,5 +134,6 @@ class MainViewModel: ObservableObject {
         }
         musicFiles.remove(atOffsets: offsets)
     }
+    
     
 }
