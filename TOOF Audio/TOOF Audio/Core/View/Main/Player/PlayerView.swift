@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @ObservedObject var viewModel: MainViewModel
     @State var section = 1
     
     var body: some View {
@@ -18,7 +18,6 @@ struct PlayerView: View {
                 .ignoresSafeArea()
             VStack {
                 VStack(alignment: .center, spacing: 50) {
-                    //TODO: Music image fetch here
                     //MARK: PlayerView - Music Image
                     Image(ImageHelper.main.myMusic.rawValue)
                         .resizable()
@@ -63,42 +62,18 @@ struct PlayerView: View {
                                 }
                         }
                         //TODO: Fetch music values
-                        VStack(spacing: 0) {
-                            //MARK: PlayerView - Music Info
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text("Music Title")
-                                        .font(.boldDefault25)
-                                        .foregroundColor(.ToofTextColor)
-                                    Text("Music Artist")
-                                        .font(.boldRounded14)
-                                        .foregroundColor(.ToofTextSoftColor)
-                                }
-                                Spacer()
-                            }
-                            Slider(value: .constant(50), in: 0...100)
-                                .tint(.ToofButtonColor)
-                            HStack {
-                                Text("0.00")
-                                Spacer()
-                                Text("1.00")
-                            }
-                            .foregroundColor(.ToofTextSoftColor)
-                            .font(.reguDefault12)
-
-                            .padding(.horizontal,-15)
-                        }
+                        PayerViewMusicInformation(viewModel: viewModel)
+                            .disabled(viewModel.music.audioPlayer == nil)
                     }
                     //MARK: PlayerView - Buttons
-                    HStack(spacing: 60) {
-                        Image(ImageHelper.player.backButton.rawValue)
-                        Image(ImageHelper.player.playButton.rawValue)
-                        Image(ImageHelper.player.forwardButton.rawValue)
-                    }
+                    PayerViewButtons(viewModel: viewModel)
+                        .disabled(viewModel.music.audioPlayer == nil)
                     //MARK: PlayerView - Volume
                     HStack {
                         Image(ImageHelper.player.playerSpearkerLow.rawValue)
-                        Slider(value: .constant(50), in: 0...100)
+                        Slider(value: $viewModel.music.volume, in: 0...1){ _ in
+                            viewModel.music.audioPlayer?.volume = viewModel.music.volume
+                        }
                         Image(ImageHelper.player.playerSpearkerHigh.rawValue)
                     }
                 }
@@ -113,6 +88,86 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView()
+        PlayerView(viewModel: .init())
+    }
+}
+
+struct PayerViewMusicInformation: View {
+    
+    @ObservedObject var viewModel: MainViewModel
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            //MARK: PlayerView - Music Info
+            HStack {
+                if let musicDetail = viewModel.music.currentlyPlayingURL {
+                    VStack(alignment: .leading) {
+                        Text(musicDetail.lastPathComponent)
+                            .font(.boldDefault25)
+                            .foregroundColor(.ToofTextColor)
+                        Text("")
+                            .font(.boldRounded14)
+                            .foregroundColor(.ToofTextSoftColor)
+                    }
+                }else {
+                    VStack(alignment: .leading) {
+                        Text("Music Title")
+                            .font(.boldDefault25)
+                            .foregroundColor(.ToofTextColor)
+                        Text("Music Artist")
+                            .font(.boldRounded14)
+                            .foregroundColor(.ToofTextSoftColor)
+                    }
+                }
+                Spacer()
+            }
+            
+            Slider(value: $viewModel.currentTime, in: 0...viewModel.music.duration) { _ in
+
+            }
+                .tint(.ToofButtonColor)
+            HStack {
+                Text("\(viewModel.music.timeString(from: viewModel.music.audioPlayer?.currentTime ?? 0))")
+                Spacer()
+                Text("\(viewModel.music.timeString(from: viewModel.music.duration))")
+            }
+            .foregroundColor(.ToofTextSoftColor)
+            .font(.reguDefault12)
+            
+            .padding(.horizontal,-15)
+        }
+    }
+}
+
+struct PayerViewButtons: View {
+    
+    @ObservedObject var viewModel: MainViewModel
+    @State var isPlaying = false
+    
+    var body: some View {
+        
+        HStack(spacing: 60) {
+            // Previous
+            Button {
+                viewModel.music.previous(musicFiles: viewModel.musicFiles)
+            } label: {
+                Image(ImageHelper.player.backButton.rawValue)
+            }
+            // Play/Pause
+            Button {
+                withAnimation {
+                    self.isPlaying.toggle()
+                    viewModel.music.playPause(isPlaying: self.isPlaying)
+                }
+            } label: {
+                Image(self.isPlaying ? ImageHelper.player.playButton.rawValue : ImageHelper.player.pauseButton.rawValue)
+            }
+            // Next
+            Button {
+                viewModel.music.next(musicFiles: viewModel.musicFiles)
+            } label: {
+                Image(ImageHelper.player.forwardButton.rawValue)
+            }
+        }
     }
 }

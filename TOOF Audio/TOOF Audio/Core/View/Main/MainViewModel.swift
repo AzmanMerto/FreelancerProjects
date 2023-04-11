@@ -6,71 +6,99 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 class MainViewModel: ObservableObject {
     
-    //Player
+    var music = MusicPlayer.shared
+    
+    //MARK: - Player
     @Published var isRandomActive: Bool
     @Published var isOpenedPlayerView: Bool
-    //Browse
+    @Published var currentTime: TimeInterval
+    //MARK: - BrowseView
     @Published var isPressedToConnectSection: Bool
     @Published var connectInt: Int
-    //Device
+    //MARK: - Device
     @Published var isNavigateToDetails: Bool
-    @Published var isPlaying: Bool
     @Published var isUserSetUpAlarm: Bool
     @Published var atNowPlayingItem: String
     @Published var deviceVolume: Float
     @Published var trableValue: Float
     @Published var bassValue: Float
-    //Search
-    @Published var searchBar: String
+    //MARK: - Search
+    @Published var searchText: String
     @Published var musicFiles: [URL] = []
-    @Published var showDocumentPicker: Bool = false
-    //Setting
+    @Published var isShowDocumentPicker: Bool = false
+    //MARK: - Settings
     @Published var isLogout: Bool
     
-    init(isRandomActive: Bool = false,
-         isOpenedPlayerView: Bool = false,
+    var filteredMusicFiles: [String: [URL]] {
+        var files: [URL]
         
-         isPressedToConnectSection: Bool = false,
-         connectInt: Int = 0,
-         
-         isNavigateToDetails: Bool = false,
-         isPlaying : Bool = false,
-         isUserSetUpAlarm: Bool = false,
-         atNowPlayingItem : String = "",
-         deviceVolume: Float = 50,
-         trableValue: Float = 0,
-         bassValue: Float = 0,
-         
-         searchBar:String = "",
-         
-         isLogout: Bool = false) {
-        //Player
-        self.isRandomActive = isRandomActive
-        self.isOpenedPlayerView = isOpenedPlayerView
-        //Browse
-        self.isPressedToConnectSection = isPressedToConnectSection
-        self.connectInt = connectInt
-        //Device
-        self.isNavigateToDetails = isNavigateToDetails
-        self.isPlaying = isPlaying
-        self.isUserSetUpAlarm = isUserSetUpAlarm
-        self.atNowPlayingItem = atNowPlayingItem
-        self.deviceVolume = deviceVolume
-        self.trableValue = trableValue
-        self.bassValue = bassValue
-        //Search
-        self.searchBar = searchBar
-        //Settings
-        self.isLogout = isLogout
+        if searchText.isEmpty {
+            files = musicFiles
+        } else {
+            files = musicFiles.filter { $0.lastPathComponent.localizedStandardContains(searchText) }
+        }
+        
+        let sortedFiles = files.sorted { $0.lastPathComponent.localizedStandardCompare($1.lastPathComponent) == .orderedAscending }
+        
+        var groupedFiles: [String: [URL]] = [:]
+        
+        for file in sortedFiles {
+            let firstLetter = String(file.lastPathComponent.prefix(1)).uppercased()
+            if var sectionFiles = groupedFiles[firstLetter] {
+                sectionFiles.append(file)
+                groupedFiles[firstLetter] = sectionFiles
+            } else {
+                groupedFiles[firstLetter] = [file]
+            }
+        }
+        
+        return groupedFiles
     }
     
-    let deviceModelItems: [DeviceModel] = [
-        DeviceModel(deviceGivenName: "Device")
-    ]
     
+    init(//Player
+        isRandomActive: Bool = false,
+        isOpenedPlayerView: Bool = false,
+        currentTime: TimeInterval = 0,
+        //BrowseView
+        isPressedToConnectSection: Bool = false,
+        connectInt: Int = 0,
+        //Device
+        isNavigateToDetails: Bool = false,
+        isUserSetUpAlarm: Bool = false,
+        atNowPlayingItem : String = "",
+        deviceVolume: Float = 50,
+        trableValue: Float = 0,
+        bassValue: Float = 0,
+        //Search
+        searchText:String = "",
+        //Settings
+        isLogout: Bool = false) {
+            //MARK: Player
+            self.isRandomActive = isRandomActive
+            self.isOpenedPlayerView = isOpenedPlayerView
+            self.currentTime = currentTime
+            //MARK: BrowseView
+            self.isPressedToConnectSection = isPressedToConnectSection
+            self.connectInt = connectInt
+            //MARK: Device
+            self.isNavigateToDetails = isNavigateToDetails
+            self.isUserSetUpAlarm = isUserSetUpAlarm
+            self.atNowPlayingItem = atNowPlayingItem
+            self.deviceVolume = deviceVolume
+            self.trableValue = trableValue
+            self.bassValue = bassValue
+            //MARK: Search
+            self.searchText = searchText
+            //MARK: Settings
+            self.isLogout = isLogout
+        }
+    //MARK: - BrowseView
+    //BrowseView Settings
     let connectModelItems: [ConnectModel] = [
         ConnectModel(connectName: "Wi-fi",connectInt: 0),
         ConnectModel(connectName: "Bluetooth",connectInt: 1),
@@ -78,13 +106,15 @@ class MainViewModel: ObservableObject {
         ConnectModel(connectName: "USBDAC",connectInt: 3)
     ]
     
+    //BrowseView Music List
     let musicServicesModelItems: [MusicServicesModel] = [
         MusicServicesModel(imageString:ImageHelper.main.serviceAmazon.rawValue),
         MusicServicesModel(imageString:ImageHelper.main.serviceDeezer.rawValue),
         MusicServicesModel(imageString:ImageHelper.main.serviceSpotify.rawValue),
         MusicServicesModel(imageString:ImageHelper.main.serviceTidal.rawValue)
     ]
-    
+    //MARK: - DeviceView
+    //DeviceView Settings List
     let DetailServiceButtonItems: [DetailServiceButton] = [
         DetailServiceButton(id: "Renamed", image: ImageHelper.main.renameIcon.rawValue , text: TextHelper.main.mainDeviceSettingsRenameDevice.rawValue),
         DetailServiceButton(id: "Info", image: ImageHelper.main.infoIcon.rawValue , text: TextHelper.main.mainDeviceSettingsInfoDevice.rawValue),
@@ -92,7 +122,13 @@ class MainViewModel: ObservableObject {
         DetailServiceButton(id: "EQ", image: ImageHelper.main.equalizerIcon.rawValue , text: TextHelper.main.mainDeviceSettingsEQ.rawValue),
         DetailServiceButton(id: "Custom", image: ImageHelper.main.contentIcon.rawValue , text: TextHelper.main.mainDeviceSettingsCustomContent.rawValue)
     ]
-    //MARK: MainViewModel - Fetch Music
+    
+    //DeviceView Devices
+    let deviceModelItems: [DeviceModel] = [
+        DeviceModel(deviceGivenName: "Device")
+    ]
+    //MARK: - SearchView
+    //SearchView Fetch Music
     func fetchMusicFilesFromDocuments() -> [URL] {
         let fileManager = FileManager.default
         guard let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else { return [] }
@@ -107,7 +143,7 @@ class MainViewModel: ObservableObject {
         return musicFiles
     }
     
-    //MARK: MainViewModel - Delete
+    //SearchView Delete
     func deleteMusicFile(at url: URL) {
         let fileManager = FileManager.default
         
@@ -117,16 +153,17 @@ class MainViewModel: ObservableObject {
                 musicFiles.remove(at: index)
             }
             
-            // Müzik çalıyorsa ve silinen dosya şu anda çalan dosya ise, müziği durdur
             if let currentURL = MusicPlayer.shared.currentlyPlayingURL, currentURL == url {
-                MusicPlayer.shared.stop()
+                music.audioPlayer?.stop()
+                music.audioPlayer = nil
+                music.currentlyPlayingURL = nil
             }
         } catch {
             print("Dosya silinirken hata: \(error.localizedDescription)")
         }
     }
-
-    //MARK: MainViewModel - Delete Line
+    
+    //SearchView Delete Line
     func deleteMusicFiles(at offsets: IndexSet) {
         for index in offsets {
             let url = musicFiles[index]
@@ -134,6 +171,6 @@ class MainViewModel: ObservableObject {
         }
         musicFiles.remove(atOffsets: offsets)
     }
-    
-    
+    //MARK: - PlayerView
+
 }

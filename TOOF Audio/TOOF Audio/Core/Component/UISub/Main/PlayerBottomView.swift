@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayerBottomView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @ObservedObject var viewModel: MainViewModel
 
     var body: some View {
         ZStack {
@@ -51,7 +51,7 @@ struct PlayerBottomView: View {
         }
         .opacity(viewModel.isLogout ? 0 : 1)
         .sheet(isPresented: $viewModel.isOpenedPlayerView) {
-            PlayerView()
+            PlayerView(viewModel: viewModel)
                 .presentationDetents([.large])
         }
     }
@@ -62,7 +62,7 @@ struct PlayerBottomView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            PlayerBottomView()
+            PlayerBottomView(viewModel: .init())
         }
     }
 }

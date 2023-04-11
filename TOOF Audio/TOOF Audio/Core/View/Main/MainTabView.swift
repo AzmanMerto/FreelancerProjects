@@ -38,6 +38,7 @@ struct MainTabView: View {
                     }
                     .tag(2)
                     .onAppear{
+                        // Get saved/added musics
                         viewModel.musicFiles = viewModel.fetchMusicFilesFromDocuments()
                     }
                 SettingsView(viewModel: viewModel)
@@ -55,7 +56,7 @@ struct MainTabView: View {
                 viewModel.isLogout = false
             }
             .overlay {
-                PlayerBottomView()
+                PlayerBottomView(viewModel: viewModel)
             }
         }
     }

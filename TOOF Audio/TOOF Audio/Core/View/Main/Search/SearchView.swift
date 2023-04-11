@@ -34,13 +34,13 @@ struct SearchView: View {
                         Spacer()
                         //MARK: SearchView - Add Music Button
                         Button {
-                            viewModel.showDocumentPicker.toggle()
+                            viewModel.isShowDocumentPicker.toggle()
                         } label: {
                             Text("+")
                                 .font(.boldDefault25)
                                 .foregroundColor(.ToofButtonColor)
                         }
-                        .sheet(isPresented: $viewModel.showDocumentPicker) {
+                        .sheet(isPresented: $viewModel.isShowDocumentPicker) {
                             DocumentPicker { urls in
                                 viewModel.musicFiles.append(contentsOf: urls)
                             }
@@ -48,19 +48,30 @@ struct SearchView: View {
                     }
                     .padding(.horizontal)
                 }
-                SearchBar(searchText: $viewModel.searchBar)
+                //MARK: SearchView - SearchBar
+                SearchBar(searchText: $viewModel.searchText)
+                //MARK: SearchView - List
                 List {
-                    ForEach(viewModel.musicFiles, id: \.self) { musicFile in
-                        HStack {
-                            Button(action: {
-                                MusicPlayer.shared.play(url: musicFile)
-                            }) {
-                                Text(musicFile.lastPathComponent)
+                    ForEach(viewModel.filteredMusicFiles.keys.sorted(), id: \.self) { key in
+                        Section(header: Text(key)) {
+                            ForEach(viewModel.filteredMusicFiles[key]!, id: \.self) { musicFile in
+                                Button(action: {
+                                    MusicPlayer.shared.startAudioPlayer(url: musicFile)
+                                }) {
+                                    Text(musicFile.lastPathComponent)
+                                }
                             }
                         }
                     }
-                    .onDelete(perform: viewModel.deleteMusicFiles)
+                    .onDelete(perform:viewModel.deleteMusicFiles)
+                    .listRowBackground(Color.clear)
+                    .tint(Color.ToofButtonColor)
                 }
+                .opacity( viewModel.musicFiles.count > 0 ? 1 : 0 )
+                .listRowBackground(Color.clear)
+                .scrollContentBackground(.hidden)
+                .background(Color.ToofBackgroundColor)
+                .padding(.vertical)
                 Spacer()
             }
         }

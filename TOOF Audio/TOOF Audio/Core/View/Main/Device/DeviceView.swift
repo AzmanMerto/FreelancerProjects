@@ -27,12 +27,13 @@ struct DeviceView: View {
                             .foregroundColor(.ToofTextColor)
                             .frame(height: 1)
                             .padding(.horizontal)
-                        DeviceShowcase(isPlaying: $viewModel.isPlaying,
-                                       deviceVolume: $viewModel.deviceVolume,
-                                       deviceTitle: device.deviceGivenName,
-                                       musicName: viewModel.atNowPlayingItem) {
-                            //TODO: navigate to setting per list
-                        }
+                        //TODO: Device View
+//                        DeviceShowcase(isPlaying: $viewModel.isPlaying,
+//                                       deviceVolume: $viewModel.deviceVolume,
+//                                       deviceTitle: device.deviceGivenName,
+//                                       musicName: viewModel.atNowPlayingItem) {
+//                            //TODO: navigate to setting per list
+//                        }
                     }
                 }
                 //MARK: DeviceView - Button

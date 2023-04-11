@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccountSettingsView: View {
     
-    @ObservedObject var viewModel: MainViewModel = .init()
+    @ObservedObject var viewModel: MainViewModel
     let user = AuthManager.shared.userData
     
     var body: some View {
@@ -42,6 +42,6 @@ struct AccountSettingsView: View {
 
 struct AccountSettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountSettingsView()
+        AccountSettingsView(viewModel: .init())
     }
 }

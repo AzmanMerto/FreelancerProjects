@@ -105,7 +105,7 @@ struct BrowseView: View {
                         .font(.semiDefault20)
                         .foregroundColor(.ToofTextColor)
                     NavigationLink {
-                        MyMusicView()
+                        MyMusicView(viewModel: viewModel)
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         HStack(spacing: 20) {
