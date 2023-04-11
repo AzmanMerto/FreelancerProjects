@@ -44,13 +44,12 @@ struct SettingsView: View {
                                            text: TextHelper.main.mainSettingsLogout.rawValue){
                             AuthManager.shared.logout()
                             viewModel.isLogout = true
-                            //TODO: Player Opacity ayarla
                         }
                     }
                     .padding(.horizontal)
                     Spacer()
                 }
-                .navigationDestination(isPresented: $viewModel.isLogout, destination: {
+                .fullScreenCover(isPresented: $viewModel.isLogout, content: {
                     StartOnboardingView()
                         .toolbar(.hidden, for: .tabBar)
                         .navigationBarBackButtonHidden(true)

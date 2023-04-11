@@ -11,6 +11,7 @@ class MainViewModel: ObservableObject {
     
     //Player
     @Published var isRandomActive: Bool
+    @Published var isOpenedPlayerView: Bool
     //Browse
     @Published var isPressedToConnectSection: Bool
     @Published var connectInt: Int
@@ -24,12 +25,15 @@ class MainViewModel: ObservableObject {
     @Published var bassValue: Float
     //Search
     @Published var searchBar: String
+    @State var musicFiles: [URL] = []
+    @State var showDocumentPicker: Bool = false
     //Setting
     @Published var isLogout: Bool
     
     init(isRandomActive: Bool = false,
+         isOpenedPlayerView: Bool = false,
         
-        isPressedToConnectSection: Bool = false,
+         isPressedToConnectSection: Bool = false,
          connectInt: Int = 0,
          
          isNavigateToDetails: Bool = false,
@@ -45,6 +49,7 @@ class MainViewModel: ObservableObject {
          isLogout: Bool = false) {
         //Player
         self.isRandomActive = isRandomActive
+        self.isOpenedPlayerView = isOpenedPlayerView
         //Browse
         self.isPressedToConnectSection = isPressedToConnectSection
         self.connectInt = connectInt
@@ -87,4 +92,47 @@ class MainViewModel: ObservableObject {
         DetailServiceButton(id: "EQ", image: ImageHelper.main.equalizerIcon.rawValue , text: TextHelper.main.mainDeviceSettingsEQ.rawValue),
         DetailServiceButton(id: "Custom", image: ImageHelper.main.contentIcon.rawValue , text: TextHelper.main.mainDeviceSettingsCustomContent.rawValue)
     ]
+    //MARK: MainViewModel - Fetch Music
+    func fetchMusicFilesFromDocuments() -> [URL] {
+        let fileManager = FileManager.default
+        guard let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else { return [] }
+        
+        var musicFiles: [URL] = []
+        do {
+            let contents = try fileManager.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil)
+            musicFiles = contents.filter { $0.pathExtension.lowercased() == "mp3" || $0.pathExtension.lowercased() == "wav" || $0.pathExtension.lowercased() == "m4a" }
+        } catch {
+            print("Belge dizinindeki dosyalar alınırken hata: \(error.localizedDescription)")
+        }
+        return musicFiles
+    }
+    
+    //MARK: MainViewModel - Delete
+    func deleteMusicFile(at url: URL) {
+        let fileManager = FileManager.default
+        
+        do {
+            try fileManager.removeItem(at: url)
+            if let index = musicFiles.firstIndex(of: url) {
+                musicFiles.remove(at: index)
+            }
+            
+            // Müzik çalıyorsa ve silinen dosya şu anda çalan dosya ise, müziği durdur
+            if let currentURL = MusicPlayer.shared.currentlyPlayingURL, currentURL == url {
+                MusicPlayer.shared.stop()
+            }
+        } catch {
+            print("Dosya silinirken hata: \(error.localizedDescription)")
+        }
+    }
+
+    //MARK: MainViewModel - Delete Line
+    func deleteMusicFiles(at offsets: IndexSet) {
+        for index in offsets {
+            let url = musicFiles[index]
+            deleteMusicFile(at: url)
+        }
+        musicFiles.remove(atOffsets: offsets)
+    }
+    
 }

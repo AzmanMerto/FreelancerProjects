@@ -30,7 +30,7 @@ import SwiftUI
 //                .padding(.vertical)
 //                //MARK: AuthCodeView - Button
 //                PrimaryButton(text: TextHelper.auth.authVerifactionButton.rawValue) {
-//                    //TODO: Get code 
+//                    //Action: Get code 
 //                }
 //                .padding(.top)
 //                Spacer()

@@ -23,12 +23,14 @@ struct SearchView: View {
                 SearchBar(searchText: $viewModel.searchBar)
                     //MARK: TEST -
  
+                
+                
                     //MARK: TEST -
                 Spacer()
             }
-            .onAppear(perform: {
-                FetchSong.shared.requestPermission()
-            })
+            .onAppear{
+
+            }
         }
     }
 }

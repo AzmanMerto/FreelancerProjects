@@ -13,6 +13,9 @@ struct AuthRegisterView: View {
     @ObservedObject var viewModel: AuthViewModel = .init()
     
     var body: some View {
+        
+        let userValueStatus = (((viewModel.name.count == 0) || (viewModel.password.count == 0) || (viewModel.mail.count == 0)) != true)
+        
         NavigationStack {
             ZStack {
                 AuthBackground()
@@ -48,12 +51,18 @@ struct AuthRegisterView: View {
                     //MARK: AuthLoginView - Button
                     PrimaryButton(text: TextHelper.auth.authRegisterButton.rawValue,
                                   size: CGSize(width: 280, height: 48)) {
-                        if viewModel.mail.isValidEmail() {
-                            AuthManager.shared.register(name: viewModel.name, email: viewModel.mail, password: viewModel.password){
-                                viewModel.isUserSuccessPassToMain = true
+                        if userValueStatus {
+                            if viewModel.mail.isValidEmail() {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    AuthManager.shared.register(name: viewModel.name, email: viewModel.mail, password: viewModel.password){
+                                        viewModel.isUserSuccessPassToMain = true
+                                    }
+                                }
                             }
                         }
-                    }.padding(.vertical)
+                    }
+                                  .opacity(userValueStatus ? 1 : 0.7)
+                                  .padding(.vertical)
                     Spacer()
                     //MARK: AuthLoginView - Roll to LoginView
                     HStack {

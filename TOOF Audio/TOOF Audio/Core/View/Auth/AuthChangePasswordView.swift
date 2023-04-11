@@ -38,7 +38,7 @@ import SwiftUI
 //                let passwordCorrect = (viewModel.password == viewModel.againPassword)
 //                PrimaryButton(text: TextHelper.auth.authEntryCodeTextfieldPlaceholder.rawValue) {
 //                    if passwordCorrect {
-//                        //TODO: Update password
+//                        //Action: Update password
 //                    }
 //                }
 //                .padding(.top,30)

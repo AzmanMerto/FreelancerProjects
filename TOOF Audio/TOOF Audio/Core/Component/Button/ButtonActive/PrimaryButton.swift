@@ -13,18 +13,32 @@ struct PrimaryButton: View {
     @State var size: CGSize?
     @State var textColor: Color?
     @State var backgroundColor: Color?
+    @State var isLoading : Bool = false
     var action : () -> ()
     
     var body: some View {
         Button {
             action()
+            self.isLoeaded()
         } label: {
-            Text(text.locale())
+            if isLoading {
+                ProgressView()
+            }else {
+                Text(text.locale())
+            }
         }
         .frame(height: 48)
         .buttonStyle(PrimaryButtonStyle(size: size ?? CGSize(width: 280,height: 50),
                                         textColor: textColor ?? .ToofTextColor,
-                                        buttonColor: backgroundColor ?? .ToofButtonColor))
+                                        buttonColor: backgroundColor ?? .ToofButtonColor))      
+    }
+    func isLoeaded() {
+        isLoading = true
+        if isLoading {
+            DispatchQueue.main.asyncAfter(deadline: .now() + LOADING_TIME_MED) {
+                isLoading = false
+            }
+        }
     }
 }
 
@@ -32,7 +46,7 @@ struct PrimaryButton: View {
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
         PrimaryButton(text: "Custom Button", size: CGSize(width: 156,
-                                             height: 48)) {
+                                                          height: 48)) {
             
         }
     }

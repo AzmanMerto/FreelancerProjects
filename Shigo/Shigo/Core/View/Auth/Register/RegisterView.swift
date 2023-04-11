@@ -83,7 +83,6 @@ struct RegisterView: View {
                                               .padding(.horizontal)
                                               .padding(.all)
                         }
-                        
                     }
                     .padding(EdgeInsets.init(top: 30, leading: 20, bottom: 90, trailing: 20))
                     //MARK: RegisterView - Switch View Button

@@ -18,6 +18,7 @@ class AuthViewModel: ObservableObject {
     @Published var name: String
     @Published var code: String
     
+    
     init(isPressedForRegister: Bool = false,
          isUserSuccessPassToMain: Bool = false,
          isResetPassword: Bool = false,

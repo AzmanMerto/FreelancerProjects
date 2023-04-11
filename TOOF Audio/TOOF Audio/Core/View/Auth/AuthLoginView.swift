@@ -47,12 +47,15 @@ struct AuthLoginView: View {
                     //MARK: AuthLoginView - Buttons
                     PrimaryButton(text: TextHelper.auth.authLoginButton.rawValue,
                                   size: CGSize(width: 280, height: 48)) {
-                        if viewModel.mail.isValidEmail() {
-                            AuthManager.shared.login(email: viewModel.mail, password: viewModel.password){
-                                viewModel.isUserSuccessPassToMain.toggle()
+                        if viewModel.mail.isValidEmail() && viewModel.password.count > 5 {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + LOADING_TIME_MED) {
+                                AuthManager.shared.login(email: viewModel.mail, password: viewModel.password){
+                                    viewModel.isUserSuccessPassToMain.toggle()
+                                }
                             }
                         }
-                    }.padding(.vertical)
+                    }
+                                  .padding(.vertical)
                     Spacer()
                     //MARK: AuthLoginView - Roll to RegisterView
                     HStack {
@@ -61,7 +64,9 @@ struct AuthLoginView: View {
                         Text(TextHelper.auth.authLetsRegisterClick.rawValue.locale())
                             .foregroundColor(.ToofButtonColor)
                             .onTapGesture {
-                                viewModel.isPressedForRegister.toggle()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + LOADING_TIME_MIN) {
+                                    viewModel.isPressedForRegister.toggle()
+                                }
                             }
                     }
                     .font(.boldRounded14.bold())

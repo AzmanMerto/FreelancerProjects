@@ -29,7 +29,8 @@ struct AuthResetPasswordView: View {
                                bindingText: $viewModel.mail)
                 .padding(.vertical)
                 Spacer()
-                PrimaryButton(text: TextHelper.auth.authResetPasswordButton.rawValue, size: CGSize(width: 280, height: 48)) {
+                PrimaryButton(text: TextHelper.auth.authResetPasswordButton.rawValue,
+                              size: CGSize(width: 280, height: 48)) {
                     if viewModel.mail.isValidEmail() {
                         AuthManager.shared.resetPasswordWithMail(email: viewModel.mail){
                             dismiss()
