@@ -12,11 +12,13 @@ struct AdminViewHeader: View {
         VStack {
             Image("Logo")
                 .resizable()
+                .scaledToFit()
                 .frame(height: 150)
                 .padding(.horizontal)
-            Text("Aşağıdaki buttonlar sayesinde uygulamanıza \nsunucu listesi ekleyebilirsiniz.")
-                .font(.title3.bold())
+            Text("Aşağıdaki buttonlar sayesinde uygulamanıza sunucu listesi ekleyebilirsiniz.")
+                .font(.title3)
                 .foregroundColor(.MetinYellow)
+                .padding(.horizontal)
                 .multilineTextAlignment(.center)
         }
         .padding(.bottom)

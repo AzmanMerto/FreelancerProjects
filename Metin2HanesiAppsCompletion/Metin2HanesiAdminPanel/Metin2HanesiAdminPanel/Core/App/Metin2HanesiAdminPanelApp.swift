@@ -18,6 +18,7 @@ struct Metin2HanesiAdminPanelApp: App {
     var body: some Scene {
         WindowGroup {
             AdminView()
+                .preferredColorScheme(.dark)
         }
     }
 }

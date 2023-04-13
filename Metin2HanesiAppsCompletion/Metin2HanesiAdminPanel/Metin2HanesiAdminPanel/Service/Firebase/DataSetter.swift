@@ -11,9 +11,11 @@ import Firebase
 class DataSetter: ObservableObject {
     static let shared = DataSetter()
     
+    private init() {}
+    
     //MARK: DataSetter - This Week Server Data Uploader
-    func uploaderThisWeekServerData(image: UIImage,name: String,date: String, url: String){
-        
+    func uploaderThisWeekServerData(image: UIImage ,name: String,date: String, url: String){
+                
         ImageUploader.uploadImage(image: image){ urlImage in
             let data = ["name": name,
                         "date": date,

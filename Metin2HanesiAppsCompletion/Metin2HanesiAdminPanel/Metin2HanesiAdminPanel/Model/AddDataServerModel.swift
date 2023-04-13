@@ -7,10 +7,7 @@
 
 import Foundation
 
-struct AddDataServerModel: Equatable {
-    static func == (lhs: AddDataServerModel, rhs: AddDataServerModel) -> Bool {
-        true
-    }
+struct AddDataServerModel {
     let buttonTitle: String
-    let funcAction: () -> Void
+    let viewOpenCode: ViewState?
 }
