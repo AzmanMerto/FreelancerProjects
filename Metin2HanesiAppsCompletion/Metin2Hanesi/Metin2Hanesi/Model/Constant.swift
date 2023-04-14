@@ -14,4 +14,3 @@ let COLLECTION_55_120Server = Firestore.firestore().collection("55-120Server")
 let COLLECTION_1_99Server = Firestore.firestore().collection("1-99Server")
 let COLLECTION_1_120Server = Firestore.firestore().collection("1-120Server")
 let COLLECTION_1_105Server = Firestore.firestore().collection("1-105Server")
-

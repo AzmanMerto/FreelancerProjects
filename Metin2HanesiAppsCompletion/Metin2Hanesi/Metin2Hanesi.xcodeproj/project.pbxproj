@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3420943529C24D02009AF8BC /* Metin2AddServerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420943429C24D02009AF8BC /* Metin2AddServerAppApp.swift */; };
+		3420943529C24D02009AF8BC /* Metin2Hanesi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420943429C24D02009AF8BC /* Metin2Hanesi.swift */; };
 		3420943929C24D04009AF8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3420943829C24D04009AF8BC /* Assets.xcassets */; };
 		3420943C29C24D04009AF8BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3420943B29C24D04009AF8BC /* Preview Assets.xcassets */; };
 		3420944B29C2EA5B009AF8BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420944A29C2EA5B009AF8BC /* MainView.swift */; };
 		3420944E29C2EA66009AF8BC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420944D29C2EA66009AF8BC /* MainViewModel.swift */; };
-		3420945229C2EAE8009AF8BC /* Colorments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945129C2EAE8009AF8BC /* Colorments.swift */; };
+		3420945229C2EAE8009AF8BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945129C2EAE8009AF8BC /* Color.swift */; };
 		3420945829C2EBC5009AF8BC /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945729C2EBC5009AF8BC /* RegularButton.swift */; };
 		3420945A29C2FC6E009AF8BC /* SlideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945929C2FC6E009AF8BC /* SlideButton.swift */; };
 		3420945C29C2FEB0009AF8BC /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420945B29C2FEB0009AF8BC /* ChatButton.swift */; };
 		3420946729C32C94009AF8BC /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420946629C32C94009AF8BC /* DataModel.swift */; };
 		3420947229C341F7009AF8BC /* PresentedSheetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420947129C341F7009AF8BC /* PresentedSheetsView.swift */; };
+		343DD88129E88C730078876B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD88029E88C730078876B /* Image.swift */; };
+		343DD88329E8B2EE0078876B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD88229E8B2EE0078876B /* AuthManager.swift */; };
+		343DD88529E8B3240078876B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343DD88429E8B3240078876B /* User.swift */; };
+		343DD88929E8B35A0078876B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 343DD88829E8B35A0078876B /* FirebaseAuth */; };
 		3465595B29C6123F005A3C17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3465595A29C6123F005A3C17 /* FirebaseFirestore */; };
 		3465595D29C6123F005A3C17 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3465595C29C6123F005A3C17 /* FirebaseFirestoreSwift */; };
 		3465595F29C705B2005A3C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465595E29C705B2005A3C17 /* AppDelegate.swift */; };
@@ -30,17 +34,20 @@
 
 /* Begin PBXFileReference section */
 		3420943129C24D02009AF8BC /* Metin2Hanesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metin2Hanesi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3420943429C24D02009AF8BC /* Metin2AddServerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metin2AddServerAppApp.swift; sourceTree = "<group>"; };
+		3420943429C24D02009AF8BC /* Metin2Hanesi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metin2Hanesi.swift; sourceTree = "<group>"; };
 		3420943829C24D04009AF8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3420943B29C24D04009AF8BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3420944A29C2EA5B009AF8BC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3420944D29C2EA66009AF8BC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		3420945129C2EAE8009AF8BC /* Colorments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorments.swift; sourceTree = "<group>"; };
+		3420945129C2EAE8009AF8BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3420945729C2EBC5009AF8BC /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
 		3420945929C2FC6E009AF8BC /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
 		3420945B29C2FEB0009AF8BC /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		3420946629C32C94009AF8BC /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3420947129C341F7009AF8BC /* PresentedSheetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheetsView.swift; sourceTree = "<group>"; };
+		343DD88029E88C730078876B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		343DD88229E8B2EE0078876B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		343DD88429E8B3240078876B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3465595E29C705B2005A3C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3465596029C707D1005A3C17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3465596729C71C06005A3C17 /* FireStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreManager.swift; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3465596429C70A87005A3C17 /* Kingfisher in Frameworks */,
+				343DD88929E8B35A0078876B /* FirebaseAuth in Frameworks */,
 				3465596F29C722C7005A3C17 /* FirebaseStorage in Frameworks */,
 				3465595B29C6123F005A3C17 /* FirebaseFirestore in Frameworks */,
 				3465595D29C6123F005A3C17 /* FirebaseFirestoreSwift in Frameworks */,
@@ -138,7 +146,7 @@
 		3420944829C2EA2A009AF8BC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				3420943429C24D02009AF8BC /* Metin2AddServerAppApp.swift */,
+				3420943429C24D02009AF8BC /* Metin2Hanesi.swift */,
 				3465595E29C705B2005A3C17 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -156,32 +164,17 @@
 		3420944F29C2EAC6009AF8BC /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				3420945329C2EB64009AF8BC /* Imagements */,
-				3420945029C2EAD2009AF8BC /* Colorments */,
+				343DD88029E88C730078876B /* Image.swift */,
+				3420945129C2EAE8009AF8BC /* Color.swift */,
 			);
 			path = Instruments;
-			sourceTree = "<group>";
-		};
-		3420945029C2EAD2009AF8BC /* Colorments */ = {
-			isa = PBXGroup;
-			children = (
-				3420945129C2EAE8009AF8BC /* Colorments.swift */,
-			);
-			path = Colorments;
-			sourceTree = "<group>";
-		};
-		3420945329C2EB64009AF8BC /* Imagements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Imagements;
 			sourceTree = "<group>";
 		};
 		3420945429C2EB92009AF8BC /* ViewSub */ = {
 			isa = PBXGroup;
 			children = (
 				3420945629C2EBB2009AF8BC /* Button */,
-				3420947029C341C7009AF8BC /* view */,
+				3420947029C341C7009AF8BC /* View */,
 			);
 			path = ViewSub;
 			sourceTree = "<group>";
@@ -209,16 +202,17 @@
 			children = (
 				3420946629C32C94009AF8BC /* DataModel.swift */,
 				3465596929C71C41005A3C17 /* Constant.swift */,
+				343DD88429E8B3240078876B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3420947029C341C7009AF8BC /* view */ = {
+		3420947029C341C7009AF8BC /* View */ = {
 			isa = PBXGroup;
 			children = (
 				3420945529C2EBA5009AF8BC /* Main */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3465596529C71BEC005A3C17 /* Service */ = {
@@ -233,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				3465596729C71C06005A3C17 /* FireStoreManager.swift */,
+				343DD88229E8B2EE0078876B /* AuthManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -265,6 +260,7 @@
 				3465595C29C6123F005A3C17 /* FirebaseFirestoreSwift */,
 				3465596329C70A87005A3C17 /* Kingfisher */,
 				3465596E29C722C7005A3C17 /* FirebaseStorage */,
+				343DD88829E8B35A0078876B /* FirebaseAuth */,
 			);
 			productName = Metin2AddServerApp;
 			productReference = 3420943129C24D02009AF8BC /* Metin2Hanesi.app */;
@@ -326,11 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3420945A29C2FC6E009AF8BC /* SlideButton.swift in Sources */,
+				343DD88329E8B2EE0078876B /* AuthManager.swift in Sources */,
 				3420944B29C2EA5B009AF8BC /* MainView.swift in Sources */,
+				343DD88129E88C730078876B /* Image.swift in Sources */,
 				3420946729C32C94009AF8BC /* DataModel.swift in Sources */,
-				3420945229C2EAE8009AF8BC /* Colorments.swift in Sources */,
+				3420945229C2EAE8009AF8BC /* Color.swift in Sources */,
 				3465596829C71C06005A3C17 /* FireStoreManager.swift in Sources */,
-				3420943529C24D02009AF8BC /* Metin2AddServerAppApp.swift in Sources */,
+				3420943529C24D02009AF8BC /* Metin2Hanesi.swift in Sources */,
+				343DD88529E8B3240078876B /* User.swift in Sources */,
 				3420945829C2EBC5009AF8BC /* RegularButton.swift in Sources */,
 				3420947229C341F7009AF8BC /* PresentedSheetsView.swift in Sources */,
 				3420944E29C2EA66009AF8BC /* MainViewModel.swift in Sources */,
@@ -564,6 +563,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		343DD88829E8B35A0078876B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		3465595A29C6123F005A3C17 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3465595929C6123F005A3C17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

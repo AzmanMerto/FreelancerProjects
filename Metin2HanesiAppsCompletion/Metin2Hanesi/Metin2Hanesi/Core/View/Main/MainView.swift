@@ -10,15 +10,6 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var viewModel: MainViewModel = .init()
-    @State var presentedSheet: sheetType? = nil
-    
-    enum sheetType: Identifiable{
-        case sheet1,sheet2,sheet3,sheet4,sheet5,sheet6
-        
-        var id: sheetType {
-            return self
-        }
-    }
     
     var body: some View {
         ZStack {
@@ -27,13 +18,14 @@ struct MainView: View {
             VStack {
                 //MARK: MainView - Header
                 HStack {
-                    Image("AppLogoIcon")
+                    Image(ImageHelper.mainView.appLogo.rawValue)
                         .resizable()
-                        .frame(width: 180,
-                               height: 36)
+                        .scaledToFit()
                     Spacer()
-                    ChatButton()
-                        .padding(.horizontal)
+                    ChatButton{
+                        viewModel.isChatViewOpened.toggle()
+                    }
+                    .padding(.horizontal)
                     SlideButton(isActived: false)
                 }
                 .frame(height: 40)
@@ -48,33 +40,33 @@ struct MainView: View {
                 //MARK: MainView - Buttons
                 VStack {
                     RegularButton(buttonText: "Bu hafta açılacak pvp serverler"){
-                        presentedSheet = .sheet1
+                        viewModel.presentedSheet = .sheet1
                     }
                     .padding(.vertical,20)
                     RegularButton(buttonText: "1-99 PVP Serverler"){
-                        presentedSheet = .sheet2
+                        viewModel.presentedSheet = .sheet2
                     }
                     .padding(.vertical,20)
                     RegularButton(buttonText: "1-105 PVP Serverler"){
-                        presentedSheet = .sheet3
+                        viewModel.presentedSheet = .sheet3
                     }
                     .padding(.vertical,20)
                     RegularButton(buttonText: "1-120 PVP Serverler"){
-                        presentedSheet = .sheet4
+                        viewModel.presentedSheet = .sheet4
                     }
                     .padding(.vertical,20)
                     RegularButton(buttonText: "55-120 PVP Serverler"){
-                        presentedSheet = .sheet5
+                        viewModel.presentedSheet = .sheet5
                     }
                     .padding(.vertical,20)
                     RegularButton(buttonText: "Vs’lik Serverler"){
-                        presentedSheet = .sheet6
+                        viewModel.presentedSheet = .sheet6
                     }
                     .padding(.vertical,20)
                 }
                 Spacer()
             }
-            .sheet(item: $presentedSheet) { sheetType in
+            .sheet(item: $viewModel.presentedSheet) { sheetType in
                 VStack {
                     switch sheetType {
                     case .sheet1:
@@ -91,8 +83,10 @@ struct MainView: View {
                         sheet6()
                     }
                 }
-                .presentationDetents([.medium])
+                .presentationDetents([.medium,.large])
             }
+            ChatView(isShowing: $viewModel.isChatViewOpened,
+                     text: $viewModel.chatText)
         }
     }
 }
@@ -100,5 +94,88 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+    }
+}
+
+struct ChatView: View {
+    
+    @Binding var isShowing: Bool
+    @Binding var text: String
+    
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.3)
+                .ignoresSafeArea()
+                .onTapGesture {
+                    isShowing.toggle()
+                }
+            VStack {
+                //MARK: ChatView - Header
+                HStack {
+                    Text("Chat Ekranı")
+                        .foregroundColor(.MetinYellow)
+                        .font(.title3.bold())
+                    Spacer()
+                    Button {
+                        isShowing.toggle()
+                    } label: {
+                        Image(ImageHelper.mainView.dismissYellowButton.rawValue)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                    }
+                }
+                .background {
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(.MetinBackground)
+                        .padding(.all,-10)
+                }
+                //MARK: ChatView - ChatPlace
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.MetinBackground)
+                            .padding(.all,-10)
+                    }
+                }
+                .padding(.vertical)
+                //MARK: ChatView - ChatPlace
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(.MetinBackground)
+                    HStack {
+                        ZStack {
+                            Text("Mesaj Gönder")
+                                .opacity(text.isEmpty ? 1 : 0)
+                            TextField("", text: $text)
+                        }
+                        .font(.caption.bold())
+                        .foregroundColor(.MetinYellow)
+                        Spacer()
+                        Button {
+                            
+                        } label: {
+                            
+                            Text("Gönder")
+                                .foregroundColor(.MetinBackground)
+                                .font(.callout)
+                                .fontWeight(.heavy)
+                            
+                        }
+                        .background(content: {
+                            RoundedRectangle(cornerRadius: 5)
+                                .foregroundColor(.MetinYellow)
+                                .padding(.all,-5)
+                        })
+                        .padding(.vertical,5)
+                    }
+                    .padding(.horizontal)
+                }
+                .frame(height: 40)
+                Spacer()
+            }
+            .padding(.horizontal)
+        }
+        .opacity(isShowing ? 1 : 0)
     }
 }

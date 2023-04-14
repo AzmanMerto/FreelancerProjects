@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ChatButton: View {
+    
+    var action: () -> ()
+    
     var body: some View {
         Button {
-            
+            action()
         } label: {
             Image("chatButton")
                 .resizable()
@@ -21,6 +24,8 @@ struct ChatButton: View {
 
 struct ChatButton_Previews: PreviewProvider {
     static var previews: some View {
-        ChatButton()
+        ChatButton{
+            
+        }
     }
 }
