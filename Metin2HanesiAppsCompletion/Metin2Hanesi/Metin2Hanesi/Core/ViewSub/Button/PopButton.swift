@@ -1,5 +1,5 @@
 //
-//  SlideButton.swift
+//  PopButton.swift
 //  Metin2AddServerApp
 //
 //  Created by NomoteteS on 16.03.2023.
@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct SlideButton: View {
+struct PopButton: View {
     
-    var isActived: Bool
+    var action: () -> ()
     
     var body: some View {
         Button {
-            
+            action()
         } label: {
             
         }
-        .buttonStyle(SliderButtonStyle(isActive: isActived))
+        .buttonStyle(SliderButtonStyle())
     }
 }
 
 struct SlideButton_Previews: PreviewProvider {
     static var previews: some View {
-        SlideButton(isActived: false)
+        PopButton{
+            
+        }
     }
 }
 
 struct SliderButtonStyle: ButtonStyle {
-    
-    var isActive: Bool
-    
+        
     func makeBody(configuration: Configuration) -> some View {
         VStack {
             RoundedRectangle(cornerRadius: 12)

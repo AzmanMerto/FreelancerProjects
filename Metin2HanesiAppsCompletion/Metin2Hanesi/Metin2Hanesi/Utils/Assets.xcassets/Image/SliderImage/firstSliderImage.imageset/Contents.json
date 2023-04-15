@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "announcement_metin2_de_a64a88f7c50583536cddbecb5ad9e32b.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
