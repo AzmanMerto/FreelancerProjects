@@ -17,11 +17,11 @@ struct PopButton: View {
         } label: {
             
         }
-        .buttonStyle(SliderButtonStyle())
+        .buttonStyle(PopButtonStyle())
     }
 }
 
-struct SlideButton_Previews: PreviewProvider {
+struct PopButton_Previews: PreviewProvider {
     static var previews: some View {
         PopButton{
             
@@ -29,7 +29,7 @@ struct SlideButton_Previews: PreviewProvider {
     }
 }
 
-struct SliderButtonStyle: ButtonStyle {
+struct PopButtonStyle: ButtonStyle {
         
     func makeBody(configuration: Configuration) -> some View {
         VStack {

@@ -26,7 +26,7 @@ struct MyMusicView: View {
                             ForEach(viewModel.filteredMusicFiles[key]!, id: \.self) { musicFile in
                                 HStack {
                                     Button(action: {
-                                        MusicPlayer.shared.startAudioPlayer(url: musicFile)
+                                        MusicPlayer.shared.startMusicPlayer(url: musicFile)
                                     }) {
                                         Text(musicFile.lastPathComponent)
                                     }

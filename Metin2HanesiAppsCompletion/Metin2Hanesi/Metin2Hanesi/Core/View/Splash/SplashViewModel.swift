@@ -13,10 +13,11 @@ class SplashViewModel: ObservableObject {
     
     init(isStartedApp: Bool = false) {
         self.isStartedApp = isStartedApp
+        self.startApp()
     }
     
     func startApp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.1) {
             self.isStartedApp.toggle()
         }
     }

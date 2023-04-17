@@ -40,6 +40,7 @@ struct ImageHelper {
         case serviceTidal = "serviceTidal"
         case myMusic = "myMusic"
         case supportImage = "supportImage"
+        case listImages = "listImages"
         
         case alarmIcon = "alarmIcon"
         case alarmObject = "alarmObject"

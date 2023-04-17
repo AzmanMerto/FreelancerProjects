@@ -57,7 +57,7 @@ struct SettingsView: View {
                 .fullScreenCover(item: $settingViewKey, content: { settingViewKey in
                     switch settingViewKey {
                     case .accSettings:
-                        AccountSettingsView()
+                        AccountSettingsView(viewModel: viewModel)
                     case .help:
                         SupportView()
                     }

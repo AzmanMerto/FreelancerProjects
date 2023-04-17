@@ -56,19 +56,22 @@ struct SearchView: View {
                         Section(header: Text(key)) {
                             ForEach(viewModel.filteredMusicFiles[key]!, id: \.self) { musicFile in
                                 Button(action: {
-                                    MusicPlayer.shared.startAudioPlayer(url: musicFile)
+                                    MusicPlayer.shared.startMusicPlayer(url: musicFile)
                                 }) {
-                                    Text(musicFile.lastPathComponent)
+                                    HStack {
+                                        Image(ImageHelper.main.listImages.rawValue)
+                                        Text(musicFile.lastPathComponent)
+                                        Spacer()
+                                    }
                                 }
+                                .tint(Color(ColorHelper.textColor.rawValue))
                             }
+                            .listRowBackground(Color.ToofBackgroundColor)
                         }
                     }
                     .onDelete(perform:viewModel.deleteMusicFiles)
-                    .listRowBackground(Color.clear)
-                    .tint(Color.ToofButtonColor)
                 }
-                .opacity( viewModel.musicFiles.count > 0 ? 1 : 0 )
-                .listRowBackground(Color.clear)
+                .opacity( (viewModel.musicFiles.count > 0 && viewModel.filteredMusicFiles.keys.sorted().count > 0) ? 1 : 0 )
                 .scrollContentBackground(.hidden)
                 .background(Color.ToofBackgroundColor)
                 .padding(.vertical)

@@ -10,6 +10,8 @@ import SwiftUI
 struct RegularButton: View {
     
     var buttonText: String
+    var colorText: Color?
+    var colorBackground: Color?
     var action: () -> ()
     
     var body: some View {
@@ -18,9 +20,9 @@ struct RegularButton: View {
         } label: {
             Text(buttonText)
                 .font(.system(.callout, design: .default, weight: .black))
-                .foregroundColor(.MetinBackground)
+                .foregroundColor(colorText ?? .MetinBackground)
         }
-        .buttonStyle(RegularButtonStyle())
+        .buttonStyle(RegularButtonStyle(colorBackground: colorBackground))
     }
 }
 
@@ -34,13 +36,17 @@ struct RegularButton_Previews: PreviewProvider {
 
 
 private struct RegularButtonStyle: ButtonStyle {
+    
+    var colorBackground: Color?
+    var colorStroke: Color?
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .background {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: UIScreen.main.bounds.width * 0.85,
                            height: 40)
-                    .foregroundColor(.MetinYellow)                
+                    .foregroundColor(colorBackground ?? .MetinYellow)
             }
     }
 }

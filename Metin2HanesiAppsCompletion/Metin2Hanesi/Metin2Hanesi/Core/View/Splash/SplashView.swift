@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct SplashView: View {
+    
+    @ObservedObject var viewModel = SplashViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if viewModel.isStartedApp {
+            MainView()
+        }else {
+            //MARK: SplashView - View
+            SplashIconView()
+        }
     }
 }
 
@@ -18,3 +26,5 @@ struct SplashView_Previews: PreviewProvider {
         SplashView()
     }
 }
+
+

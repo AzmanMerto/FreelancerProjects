@@ -7,83 +7,64 @@
 
 import SwiftUI
 
-struct sheet1: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
 
-struct sheet2: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
-
-struct sheet3: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
-
-struct sheet4: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
-
-struct sheet5: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
-
-struct sheet6: View {
-    var body: some View {
-        CustomPresentedSheetsView(buttonText: "", data: Data())
-    }
-}
-
-
-struct CustomPresentedSheetsView: View {
+struct PresentedSheetsView: View {
     
-    @Environment(\.dismiss) var Dismiss
+    @Environment(\.dismiss) var dismiss
     var buttonText: String
-    var data : Data
+    var posts: [Post]
+    var action: () -> ()
     
     var body: some View {
         ZStack {
-            Color.MetinBackground
-                .ignoresSafeArea()
-            LazyVStack {
-                Section {
-                    ForEach(data, id: \.self) { server in
-                        
-                    }
-                } header: {
-                    RegularButton(buttonText: buttonText) {
-                        Dismiss()
+            Color.MetinBackground.ignoresSafeArea()
+            VStack {
+                RegularButton(buttonText: buttonText) {
+                    dismiss()
+                }
+                .padding(EdgeInsets(top: 50, leading: 20, bottom: 30, trailing: 20))
+                
+                Rectangle()
+                    .foregroundColor(.MetinYellow).opacity(0.5)
+                    .frame(height: 0.5)
+                    .padding(.horizontal)
+                
+                ScrollView(.vertical, showsIndicators: true) {
+                    ForEach(posts, id: \.id) { server in
+                        DataRowView(image: server.image,
+                                    titleText: server.name,
+                                    dateText: server.date,
+                                    url: server.url)
+                        .padding(.vertical)
                     }
                 }
+                
+                Rectangle()
+                    .foregroundColor(.MetinYellow).opacity(0.5)
+                    .frame(height: 0.5)
+                    .padding(.horizontal)
             }
+        }
+        .onAppear{
+            action()
         }
     }
 }
 
 struct CustomPresentedSheetsView_Previews: PreviewProvider {
     static var previews: some View {
-//        CustomPresentedSheetsView(buttonText: "asdasdasdsaasd",data: Data())
-        
-        DataRowView(image: Image("testImage"),
+        DataRowView(image: "testImage",
                     titleText: "Avedon2",
-                    dateText: "10 Mart 2023")
+                    dateText: "10 Mart 2023",
+                    url: "")
     }
 }
 
 private struct DataRowView: View {
-    
-    var image: Image
+    var image: String
     var titleText: String
     var dateText: String
+    var url: String
     
     var body: some View {
         ZStack {
@@ -91,26 +72,43 @@ private struct DataRowView: View {
                 .stroke(Color.MetinYellow,
                         lineWidth: 2)
             Color.MetinBlack
+                .cornerRadius(12)
                 .padding(.all,1)
             HStack {
-                image
-                    .resizable()
-                    .clipShape(Circle())
-                    .frame(width: 54,
-                           height: 54)
+                //MARK: DataRowView - Image
+                if let url = URL(string: image) {
+                    AsyncImage(url: url)
+                        .clipShape(Circle())                        
+                }
+                //MARK: DataRowView - Title &  Date
                 VStack(alignment: .leading) {
-                    Text("Sunucu ismi: \(titleText)")
-                        .font(.system(.caption,weight: .medium))
-                    Text("Açılış Tarihi: \(dateText)")
-                        .font(.system(size: 8,weight: .light))
+                    // title
+                    if titleText == "" {
+                        Text("İsmi Belli Değil")
+                            .font(.system(.callout,weight: .medium))
+                    }else {
+                        Text(titleText)
+                            .font(.system(.callout,weight: .medium))
+                    }
+                    // date
+                    if dateText == "" {
+                        Text("Açılış Tarihi: Yakında")
+                            .font(.system(.caption2,weight: .light))
+                    } else {
+                        Text("Açılış Tarihi: \(dateText)")
+                            .font(.system(.caption2,weight: .light))
+                    }
                 }
                 .foregroundColor(.MetinYellow)
-                
                 Spacer()
-                
+                //MARK: DataRowView - URL
                 Button {
-                    if let url = URL(string: "https://chat.openai.com/chat") {
-                        UIApplication.shared.open(url)
+                    if let url = URL(string: url) {
+                        if self.url == "" {
+                            UIApplication.shared.open(URL(string: "https://www.m2hanesi.com")!)
+                        } else {
+                            UIApplication.shared.open(url)
+                        }
                     }
                 } label: {
                     Text("Sunucuya Git")

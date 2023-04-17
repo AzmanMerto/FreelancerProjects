@@ -1,5 +1,5 @@
 //
-//  AuthManager.swift
+//  AuthService.swift
 //  Metin2Hanesi
 //
 //  Created by NomoteteS on 14.04.2023.

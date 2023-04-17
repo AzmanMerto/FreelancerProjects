@@ -33,6 +33,7 @@
 		3412416429D222EF001B9D3B /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412416329D222EF001B9D3B /* StartViewModel.swift */; };
 		3412416629D22327001B9D3B /* StartSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3412416529D22327001B9D3B /* StartSplashView.swift */; };
 		3412416729D22745001B9D3B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3412416929D22745001B9D3B /* Localizable.strings */; };
+		3424193429E759F000E80266 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424193329E759F000E80266 /* PlayerViewModel.swift */; };
 		3426EFA629A4403200CA1F0F /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */; };
 		3426EFAA29A4403500CA1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFA929A4403500CA1F0F /* Assets.xcassets */; };
 		3426EFAD29A4403500CA1F0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3426EFAC29A4403500CA1F0F /* Preview Assets.xcassets */; };
@@ -108,6 +109,7 @@
 		3412416529D22327001B9D3B /* StartSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashView.swift; sourceTree = "<group>"; };
 		3412416829D22745001B9D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3412416A29D22749001B9D3B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3424193329E759F000E80266 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		3426EFA229A4403200CA1F0F /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3426EFA529A4403200CA1F0F /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
 		3426EFA929A4403500CA1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 			children = (
 				3481770A29D3BAF0006803A1 /* MainTabView.swift */,
 				3481771729D3BDCB006803A1 /* MainViewModel.swift */,
+				3424193329E759F000E80266 /* PlayerViewModel.swift */,
 				345146FE29D8704B0071D5FB /* Player */,
 				3481770F29D3BB7E006803A1 /* Browse */,
 				3481770E29D3BB69006803A1 /* Device */,
@@ -650,6 +653,7 @@
 				34A9AD5829D6582100324948 /* ContentView.swift in Sources */,
 				3481771329D3BB9C006803A1 /* BrowseView.swift in Sources */,
 				3481772429D4E143006803A1 /* DeviceShowcase.swift in Sources */,
+				3424193429E759F000E80266 /* PlayerViewModel.swift in Sources */,
 				340F92D629B7B4C200B3127E /* FontHandler.swift in Sources */,
 				340F92F429B7BB3F00B3127E /* EntryTextField.swift in Sources */,
 				34A9AD5429D6580000324948 /* AlarmView.swift in Sources */,
@@ -869,7 +873,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NomoSiOS.TOOF-Audio";
+				PRODUCT_BUNDLE_IDENTIFIER = "NomoSiOS.TOOF-Audi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -904,7 +908,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "NomoSiOS.TOOF-Audio";
+				PRODUCT_BUNDLE_IDENTIFIER = "NomoSiOS.TOOF-Audi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -15,7 +15,7 @@ struct Metin2Hanesi: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            SplashView()
                 .preferredColorScheme(.dark)
         }
     }

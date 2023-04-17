@@ -51,7 +51,7 @@ struct PlayerBottomView: View {
         }
         .opacity(viewModel.isLogout ? 0 : 1)
         .sheet(isPresented: $viewModel.isOpenedPlayerView) {
-            PlayerView(viewModel: viewModel)
+            PlayerView(viewModel: PlayerViewModel(musicFiles: viewModel.musicFiles))
                 .presentationDetents([.large])
         }
     }
