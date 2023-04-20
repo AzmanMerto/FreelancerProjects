@@ -7,12 +7,18 @@
 
 import SwiftUI
 
-extension Font {    
-    static let semiDefault20 : Font = .system(.title3, design: .default, weight: .semibold)
-    static let reguDefault14 : Font = .system(.callout, design: .default, weight: .regular)
-    static let reguDefault12 : Font = .system(.caption2, design: .default, weight: .regular)
-    static let boldDefault25 : Font = .system(.title2,design: .default, weight: .bold)
-    static let boldDefault18 : Font = .system(.body, design: .default, weight: .bold)
-    static let reRounded16 : Font = .system(.callout, design: .rounded, weight: .regular)
-    static let boldRounded14 : Font = .system(.footnote, design: .rounded, weight: .bold)
+extension Font {
+    static let default34 : Font = .system(.largeTitle, design: .default)
+    static let default28 : Font = .system(.title, design: .default)
+    static let default22 : Font = .system(.title2,design: .default)
+    static let default20 : Font = .system(.title3, design: .default)
+    static let default17 : Font = .system(.body, design: .default)
+    static let default16 : Font = .system(.callout, design: .default)
+    static let default15 : Font = .system(.subheadline, design: .default)
+    static let default13 : Font = .system(.footnote, design: .default)
+    static let default12 : Font = .system(.caption, design: .default)
+    static let default11 : Font = .system(.caption2, design: .default)
+   
+    static let rounded16 : Font = .system(.callout, design: .rounded)
+    static let rounded14 : Font = .system(.footnote, design: .rounded)
 }

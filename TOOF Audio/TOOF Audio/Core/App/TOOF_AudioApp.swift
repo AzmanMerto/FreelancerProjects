@@ -2,7 +2,7 @@
 //  TOOF_AudioApp.swift
 //  TOOF Audio
 //
-//  Created by NomoteteS on 21.02.2023.
+//  Created by NomoteteS on 18.04.2023.
 //
 
 import SwiftUI
@@ -15,8 +15,12 @@ struct TOOF_AudioApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
+                
         WindowGroup {
-            StartSplashView()
+            NavigationView {
+                SplashView()
+                    .preferredColorScheme(.dark)
+            }
         }
     }
 }
