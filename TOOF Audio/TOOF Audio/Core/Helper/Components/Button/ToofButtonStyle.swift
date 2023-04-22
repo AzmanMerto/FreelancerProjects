@@ -23,9 +23,10 @@ struct ToofButtonStyle: ButtonStyle {
                     
                     .padding(.vertical,-15)
                     .background {
-                        colorStroke?.ignoresSafeArea()
-                            .padding(.all,-1.5)
+                        colorStroke?
                             .cornerRadius(20)
+                            .padding(.vertical,-16.5)
+                            .padding(.horizontal, -1)
                     }
             }
     }

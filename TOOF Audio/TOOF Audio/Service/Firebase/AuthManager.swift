@@ -67,10 +67,33 @@ class AuthManager: ObservableObject {
     }
     
     //MARK: AuthManager - signOut
-    
+    func signOut(){
+        
+        do {
+            try auth.signOut()
+            currentUser = nil
+        } catch {
+            print("FIXto authManager signOut: \(error.localizedDescription)")
+        }
+        
+    }
     
     //MARK: AuthManager - fetchUser
     func fetchUser() {
-        
+        guard let uid = currentUser?.uid else { print("FIXto: AuthManager fetchUser: No User "); return }
+        COLLECTION_USER.document(uid).getDocument { result, error in
+            if let error = error {
+                print("FIXto: AuthManager fetchUser: cant fetch \(error.localizedDescription)")
+                return
+            }
+            
+            guard let data = result?.data() else { return }
+            
+            let id = data["id"] as? String ?? ""
+            let mail = data["mail"] as? String ?? ""
+            let name = data["name"] as? String ?? ""
+            
+            self.user = User(id: id, mail: mail, name: name)
+        }
     }
 }

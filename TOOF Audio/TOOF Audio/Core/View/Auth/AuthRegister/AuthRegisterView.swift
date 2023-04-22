@@ -47,6 +47,7 @@ struct AuthRegisterView: View {
                 authSwitchAuthButton(text: TextHelper.auth.authLetsLogin.rawValue, altText: TextHelper.auth.authLetsLoginClick.rawValue) {
                     dismiss()
                 }
+                .padding(.bottom)
             }
             .fullScreenCover(isPresented: $viewModel.isUserRegistered) {
                 MainTabView()

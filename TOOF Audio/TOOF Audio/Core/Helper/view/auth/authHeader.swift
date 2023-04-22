@@ -9,7 +9,6 @@ import SwiftUI
 
 struct authHeader: View {
     
-    @Environment(\.dismiss) var dismiss
     var isShowBackButton: Bool?
     var title: String
     var description: String
@@ -19,13 +18,7 @@ struct authHeader: View {
             HStack {
             if isShowBackButton ?? false {
                     //MARK: authHeader - Back Button
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(ImageHelper.auth.customBack.rawValue)
-                            .resizable()
-                            .scaledToFit()
-                    }
+                ToofBackButton()
                 }
                 Spacer()
             }
@@ -58,7 +51,8 @@ struct authHeader_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             authBackground()
-            authHeader(isShowBackButton: false, title: "Title", description: "Description")
+            authHeader(isShowBackButton: true, title: "Title", description: "Description")
         }
     }
 }
+

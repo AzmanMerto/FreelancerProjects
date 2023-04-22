@@ -12,14 +12,18 @@ struct SplashView: View {
     @ObservedObject var viewModel = SplashViewModel()
     
     var body: some View {
-        if viewModel.isAppReady {
-            if AuthManager.shared.currentUser != nil {
-                MainTabView()
-            } else {
-                OnboardingView()
+        NavigationView {
+            if viewModel.isAppReady {
+                if AuthManager.shared.currentUser != nil {
+                    MainTabView()
+                        .hideNavigationBar()
+                } else {
+                    OnboardingView()
+                        .hideNavigationBar()
+                }
+            }else {
+                splashFastView()
             }
-        }else {
-            splashFastView()
         }
     }
 }

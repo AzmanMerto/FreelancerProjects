@@ -49,6 +49,7 @@ struct AuthLoginView: View {
                         viewModel.isNavigateToRegister.toggle()
                     }
                 }
+                .padding(.bottom)
             }
             .fullScreenCover(isPresented: $viewModel.isNavigateToMain) {
                 MainTabView()

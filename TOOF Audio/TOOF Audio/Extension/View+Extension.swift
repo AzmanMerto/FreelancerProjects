@@ -30,5 +30,12 @@ extension View {
             .disabled(Bool)
             .opacity(Bool ? 0 : 1)
     }
+    
+    func line() -> some View {
+        Rectangle()
+            .frame(height: 1)
+            .foregroundColor(.ToofTextColor).opacity(0.7)
+            .padding(.vertical)
+    }
 }
 

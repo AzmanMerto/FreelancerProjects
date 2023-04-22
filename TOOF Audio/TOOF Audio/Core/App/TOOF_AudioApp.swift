@@ -19,6 +19,7 @@ struct TOOF_AudioApp: App {
         WindowGroup {
             NavigationView {
                 SplashView()
+                    .hideNavigationBar()
                     .preferredColorScheme(.dark)
             }
         }

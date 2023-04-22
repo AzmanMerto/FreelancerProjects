@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3403825F29F248DF00E673BD /* SettingAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403825E29F248DF00E673BD /* SettingAccountViewModel.swift */; };
+		3403826229F24B8500E673BD /* SettingsHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403826129F24B8500E673BD /* SettingsHelpView.swift */; };
+		3403826429F24B9500E673BD /* SettingsHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403826329F24B9500E673BD /* SettingsHelpViewModel.swift */; };
 		3450F30E29EEF98300B68DD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F30D29EEF98300B68DD4 /* User.swift */; };
 		3450F31029EEF9E900B68DD4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F30F29EEF9E900B68DD4 /* AuthManager.swift */; };
 		3450F31229EEFD5700B68DD4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F31129EEFD5700B68DD4 /* constant.swift */; };
@@ -17,6 +20,24 @@
 		345936F729F0BE7C0000B1DD /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345936F629F0BE7C0000B1DD /* DeviceInfo.swift */; };
 		345936F929F0C2640000B1DD /* ToofButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345936F829F0C2640000B1DD /* ToofButtonStyle.swift */; };
 		345936FB29F0C2750000B1DD /* ToofAltButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345936FA29F0C2750000B1DD /* ToofAltButton.swift */; };
+		345936FE29F0D8360000B1DD /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345936FD29F0D8360000B1DD /* MainTabViewModel.swift */; };
+		3459370429F0D8AC0000B1DD /* MainDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370329F0D8AC0000B1DD /* MainDeviceViewModel.swift */; };
+		3459370629F0D8B60000B1DD /* MainDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370529F0D8B60000B1DD /* MainDeviceView.swift */; };
+		3459370829F0D8CA0000B1DD /* MainBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370729F0D8CA0000B1DD /* MainBrowseView.swift */; };
+		3459370A29F0D8D50000B1DD /* MainBrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370929F0D8D50000B1DD /* MainBrowseViewModel.swift */; };
+		3459370C29F0D8E10000B1DD /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370B29F0D8E10000B1DD /* MainSearchView.swift */; };
+		3459370E29F0D8EC0000B1DD /* MainSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370D29F0D8EC0000B1DD /* MainSearchViewModel.swift */; };
+		3459371029F0D8F70000B1DD /* MainSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459370F29F0D8F70000B1DD /* MainSettingsView.swift */; };
+		3459371229F0D9020000B1DD /* MainSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459371129F0D9020000B1DD /* MainSettingsViewModel.swift */; };
+		3459371E29F1BF650000B1DD /* mainHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459371D29F1BF650000B1DD /* mainHeader.swift */; };
+		3459372029F1BFDC0000B1DD /* ToofBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459371F29F1BFDC0000B1DD /* ToofBackButton.swift */; };
+		3459372229F1CAAD0000B1DD /* ConnectSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372129F1CAAD0000B1DD /* ConnectSection.swift */; };
+		3459372429F1CC640000B1DD /* connectSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372329F1CC640000B1DD /* connectSelections.swift */; };
+		3459372629F1F2760000B1DD /* MusicServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372529F1F2760000B1DD /* MusicServicesModel.swift */; };
+		3459372829F1F3850000B1DD /* musicServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372729F1F3850000B1DD /* musicServiceList.swift */; };
+		3459372A29F1FD080000B1DD /* ToofList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372929F1FD080000B1DD /* ToofList.swift */; };
+		3459372E29F21B5F0000B1DD /* SettingsAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372D29F21B5F0000B1DD /* SettingsAccountView.swift */; };
+		3459373029F21BBD0000B1DD /* CustomListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372F29F21BBD0000B1DD /* CustomListModel.swift */; };
 		349FA0D829EE02EA00E725B2 /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FA0D729EE02EA00E725B2 /* TOOF_AudioApp.swift */; };
 		349FA0DC29EE02EC00E725B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349FA0DB29EE02EC00E725B2 /* Assets.xcassets */; };
 		349FA0DF29EE02EC00E725B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349FA0DE29EE02EC00E725B2 /* Preview Assets.xcassets */; };
@@ -39,12 +60,12 @@
 		349FA15729EEEF7400E725B2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FA15629EEEF7400E725B2 /* View+Extension.swift */; };
 		34AFC0D529EF8730002BEDE2 /* authSwitchAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0D429EF8730002BEDE2 /* authSwitchAuthButton.swift */; };
 		34AFC0D729EFAEE9002BEDE2 /* AuthResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0D629EFAEE8002BEDE2 /* AuthResetViewModel.swift */; };
-		34AFC0DF29EFB367002BEDE2 /* DeviceSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0DE29EFB367002BEDE2 /* DeviceSearchViewModel.swift */; };
+		34AFC0DF29EFB367002BEDE2 /* DeviceFinderSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0DE29EFB367002BEDE2 /* DeviceFinderSearchViewModel.swift */; };
 		34AFC0E229EFB38E002BEDE2 /* DeviceFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E129EFB38E002BEDE2 /* DeviceFinderViewModel.swift */; };
-		34AFC0E429EFB398002BEDE2 /* DeviceFinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E329EFB398002BEDE2 /* DeviceFinderView.swift */; };
-		34AFC0E629EFB3C0002BEDE2 /* DeviceSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E529EFB3C0002BEDE2 /* DeviceSearchView.swift */; };
-		34AFC0E929EFB406002BEDE2 /* DeviceHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E829EFB406002BEDE2 /* DeviceHelpView.swift */; };
-		34AFC0EB29EFB413002BEDE2 /* DeviceHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0EA29EFB413002BEDE2 /* DeviceHelpViewModel.swift */; };
+		34AFC0E429EFB398002BEDE2 /* DeviceFinderFindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E329EFB398002BEDE2 /* DeviceFinderFindView.swift */; };
+		34AFC0E629EFB3C0002BEDE2 /* DeviceFinderSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E529EFB3C0002BEDE2 /* DeviceFinderSearchView.swift */; };
+		34AFC0E929EFB406002BEDE2 /* DeviceFinderHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0E829EFB406002BEDE2 /* DeviceFinderHelpView.swift */; };
+		34AFC0EB29EFB413002BEDE2 /* DeviceFinderHelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFC0EA29EFB413002BEDE2 /* DeviceFinderHelpViewModel.swift */; };
 		34D1CCC929EF2DC500886305 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34D1CCC829EF2DC500886305 /* GoogleService-Info.plist */; };
 		34D1CCCD29EF334E00886305 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1CCCC29EF334E00886305 /* MainTabView.swift */; };
 		34D1CCD029EF39E600886305 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 34D1CCCF29EF39E600886305 /* FirebaseAnalytics */; };
@@ -61,6 +82,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3403825E29F248DF00E673BD /* SettingAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAccountViewModel.swift; sourceTree = "<group>"; };
+		3403826129F24B8500E673BD /* SettingsHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHelpView.swift; sourceTree = "<group>"; };
+		3403826329F24B9500E673BD /* SettingsHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHelpViewModel.swift; sourceTree = "<group>"; };
 		3450F30D29EEF98300B68DD4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3450F30F29EEF9E900B68DD4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		3450F31129EEFD5700B68DD4 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
@@ -71,6 +95,24 @@
 		345936F629F0BE7C0000B1DD /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		345936F829F0C2640000B1DD /* ToofButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToofButtonStyle.swift; sourceTree = "<group>"; };
 		345936FA29F0C2750000B1DD /* ToofAltButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToofAltButton.swift; sourceTree = "<group>"; };
+		345936FD29F0D8360000B1DD /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		3459370329F0D8AC0000B1DD /* MainDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDeviceViewModel.swift; sourceTree = "<group>"; };
+		3459370529F0D8B60000B1DD /* MainDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDeviceView.swift; sourceTree = "<group>"; };
+		3459370729F0D8CA0000B1DD /* MainBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBrowseView.swift; sourceTree = "<group>"; };
+		3459370929F0D8D50000B1DD /* MainBrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBrowseViewModel.swift; sourceTree = "<group>"; };
+		3459370B29F0D8E10000B1DD /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
+		3459370D29F0D8EC0000B1DD /* MainSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewModel.swift; sourceTree = "<group>"; };
+		3459370F29F0D8F70000B1DD /* MainSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsView.swift; sourceTree = "<group>"; };
+		3459371129F0D9020000B1DD /* MainSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewModel.swift; sourceTree = "<group>"; };
+		3459371D29F1BF650000B1DD /* mainHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainHeader.swift; sourceTree = "<group>"; };
+		3459371F29F1BFDC0000B1DD /* ToofBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToofBackButton.swift; sourceTree = "<group>"; };
+		3459372129F1CAAD0000B1DD /* ConnectSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectSection.swift; sourceTree = "<group>"; };
+		3459372329F1CC640000B1DD /* connectSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectSelections.swift; sourceTree = "<group>"; };
+		3459372529F1F2760000B1DD /* MusicServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServicesModel.swift; sourceTree = "<group>"; };
+		3459372729F1F3850000B1DD /* musicServiceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicServiceList.swift; sourceTree = "<group>"; };
+		3459372929F1FD080000B1DD /* ToofList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToofList.swift; sourceTree = "<group>"; };
+		3459372D29F21B5F0000B1DD /* SettingsAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccountView.swift; sourceTree = "<group>"; };
+		3459372F29F21BBD0000B1DD /* CustomListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListModel.swift; sourceTree = "<group>"; };
 		349FA0D429EE02EA00E725B2 /* TOOF Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TOOF Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		349FA0D729EE02EA00E725B2 /* TOOF_AudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOOF_AudioApp.swift; sourceTree = "<group>"; };
 		349FA0DB29EE02EC00E725B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,12 +139,12 @@
 		349FA15629EEEF7400E725B2 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		34AFC0D429EF8730002BEDE2 /* authSwitchAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authSwitchAuthButton.swift; sourceTree = "<group>"; };
 		34AFC0D629EFAEE8002BEDE2 /* AuthResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResetViewModel.swift; sourceTree = "<group>"; };
-		34AFC0DE29EFB367002BEDE2 /* DeviceSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSearchViewModel.swift; sourceTree = "<group>"; };
+		34AFC0DE29EFB367002BEDE2 /* DeviceFinderSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderSearchViewModel.swift; sourceTree = "<group>"; };
 		34AFC0E129EFB38E002BEDE2 /* DeviceFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderViewModel.swift; sourceTree = "<group>"; };
-		34AFC0E329EFB398002BEDE2 /* DeviceFinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderView.swift; sourceTree = "<group>"; };
-		34AFC0E529EFB3C0002BEDE2 /* DeviceSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSearchView.swift; sourceTree = "<group>"; };
-		34AFC0E829EFB406002BEDE2 /* DeviceHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelpView.swift; sourceTree = "<group>"; };
-		34AFC0EA29EFB413002BEDE2 /* DeviceHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelpViewModel.swift; sourceTree = "<group>"; };
+		34AFC0E329EFB398002BEDE2 /* DeviceFinderFindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderFindView.swift; sourceTree = "<group>"; };
+		34AFC0E529EFB3C0002BEDE2 /* DeviceFinderSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderSearchView.swift; sourceTree = "<group>"; };
+		34AFC0E829EFB406002BEDE2 /* DeviceFinderHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderHelpView.swift; sourceTree = "<group>"; };
+		34AFC0EA29EFB413002BEDE2 /* DeviceFinderHelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderHelpViewModel.swift; sourceTree = "<group>"; };
 		34D1CCC829EF2DC500886305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34D1CCCC29EF334E00886305 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		34FDC37E29EF4B0100F4308D /* AuthLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginViewModel.swift; sourceTree = "<group>"; };
@@ -129,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3403826029F24B5B00E673BD /* SettingsHelp */ = {
+			isa = PBXGroup;
+			children = (
+				3403826129F24B8500E673BD /* SettingsHelpView.swift */,
+				3403826329F24B9500E673BD /* SettingsHelpViewModel.swift */,
+			);
+			path = SettingsHelp;
+			sourceTree = "<group>";
+		};
 		3450F31329EF0B0900B68DD4 /* AuthLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +234,119 @@
 			children = (
 			);
 			path = Device;
+			sourceTree = "<group>";
+		};
+		345936FF29F0D83F0000B1DD /* MainSearch */ = {
+			isa = PBXGroup;
+			children = (
+				3459370B29F0D8E10000B1DD /* MainSearchView.swift */,
+				3459370D29F0D8EC0000B1DD /* MainSearchViewModel.swift */,
+			);
+			path = MainSearch;
+			sourceTree = "<group>";
+		};
+		3459370029F0D84A0000B1DD /* MainBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				3459370729F0D8CA0000B1DD /* MainBrowseView.swift */,
+				3459370929F0D8D50000B1DD /* MainBrowseViewModel.swift */,
+			);
+			path = MainBrowse;
+			sourceTree = "<group>";
+		};
+		3459370129F0D8600000B1DD /* MainSettings */ = {
+			isa = PBXGroup;
+			children = (
+				3459370F29F0D8F70000B1DD /* MainSettingsView.swift */,
+				3459371129F0D9020000B1DD /* MainSettingsViewModel.swift */,
+				3459371329F0DA200000B1DD /* Settings'sSettings */,
+			);
+			path = MainSettings;
+			sourceTree = "<group>";
+		};
+		3459370229F0D8770000B1DD /* MainDevice */ = {
+			isa = PBXGroup;
+			children = (
+				3459370529F0D8B60000B1DD /* MainDeviceView.swift */,
+				3459370329F0D8AC0000B1DD /* MainDeviceViewModel.swift */,
+				3459372B29F21A930000B1DD /* Device'sSettings */,
+			);
+			path = MainDevice;
+			sourceTree = "<group>";
+		};
+		3459371329F0DA200000B1DD /* Settings'sSettings */ = {
+			isa = PBXGroup;
+			children = (
+				3459372C29F21AEE0000B1DD /* SettingsAccount */,
+				3403826029F24B5B00E673BD /* SettingsHelp */,
+			);
+			path = "Settings'sSettings";
+			sourceTree = "<group>";
+		};
+		3459371429F0DBC80000B1DD /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3459371529F0DBCF0000B1DD /* tabview */,
+				3459371D29F1BF650000B1DD /* mainHeader.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3459371529F0DBCF0000B1DD /* tabview */ = {
+			isa = PBXGroup;
+			children = (
+				3459371B29F0E16C0000B1DD /* device */,
+				3459371C29F0E1840000B1DD /* search */,
+				3459371829F0DBEB0000B1DD /* browse */,
+				3459371729F0DBE00000B1DD /* settings */,
+			);
+			path = tabview;
+			sourceTree = "<group>";
+		};
+		3459371729F0DBE00000B1DD /* settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		3459371829F0DBEB0000B1DD /* browse */ = {
+			isa = PBXGroup;
+			children = (
+				3459372329F1CC640000B1DD /* connectSelections.swift */,
+				3459372729F1F3850000B1DD /* musicServiceList.swift */,
+			);
+			path = browse;
+			sourceTree = "<group>";
+		};
+		3459371B29F0E16C0000B1DD /* device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		3459371C29F0E1840000B1DD /* search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		3459372B29F21A930000B1DD /* Device'sSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Device'sSettings";
+			sourceTree = "<group>";
+		};
+		3459372C29F21AEE0000B1DD /* SettingsAccount */ = {
+			isa = PBXGroup;
+			children = (
+				3459372D29F21B5F0000B1DD /* SettingsAccountView.swift */,
+				3403825E29F248DF00E673BD /* SettingAccountViewModel.swift */,
+			);
+			path = SettingsAccount;
 			sourceTree = "<group>";
 		};
 		349FA0CB29EE02EA00E725B2 = {
@@ -247,7 +411,7 @@
 				349FA0F429EEDECC00E725B2 /* Splash */,
 				349FA0FB29EEDFFB00E725B2 /* Onboarding */,
 				3450F31929EF0B6000B68DD4 /* Auth */,
-				34AFC0D829EFB284002BEDE2 /* Device */,
+				34AFC0D829EFB284002BEDE2 /* DeviceFinder */,
 				34D1CCCA29EF333000886305 /* Main */,
 			);
 			path = View;
@@ -296,6 +460,9 @@
 				3450F30D29EEF98300B68DD4 /* User.swift */,
 				345936F629F0BE7C0000B1DD /* DeviceInfo.swift */,
 				345936F429F0B13B0000B1DD /* DeviceView.swift */,
+				3459372129F1CAAD0000B1DD /* ConnectSection.swift */,
+				3459372529F1F2760000B1DD /* MusicServicesModel.swift */,
+				3459372F29F21BBD0000B1DD /* CustomListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +510,7 @@
 				34FDC39129EF68D700F4308D /* ToofButton.swift */,
 				345936FA29F0C2750000B1DD /* ToofAltButton.swift */,
 				345936F829F0C2640000B1DD /* ToofButtonStyle.swift */,
+				3459371F29F1BFDC0000B1DD /* ToofBackButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -361,7 +529,8 @@
 				349FA10F29EEE49F00E725B2 /* splash */,
 				34FDC38229EF4BE400F4308D /* onboarding */,
 				34FDC38329EF4BE700F4308D /* auth */,
-				34F660A529F0735100336715 /* device */,
+				34F660A529F0735100336715 /* deviceFinder */,
+				3459371429F0DBC80000B1DD /* main */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -413,41 +582,41 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		34AFC0D829EFB284002BEDE2 /* Device */ = {
+		34AFC0D829EFB284002BEDE2 /* DeviceFinder */ = {
 			isa = PBXGroup;
 			children = (
-				34AFC0DA29EFB2F4002BEDE2 /* DeviceSearch */,
-				34AFC0E029EFB37B002BEDE2 /* DeviceFinder */,
-				34AFC0E729EFB3ED002BEDE2 /* DeviceHelp */,
-			);
-			path = Device;
-			sourceTree = "<group>";
-		};
-		34AFC0DA29EFB2F4002BEDE2 /* DeviceSearch */ = {
-			isa = PBXGroup;
-			children = (
-				34AFC0E529EFB3C0002BEDE2 /* DeviceSearchView.swift */,
-				34AFC0DE29EFB367002BEDE2 /* DeviceSearchViewModel.swift */,
-			);
-			path = DeviceSearch;
-			sourceTree = "<group>";
-		};
-		34AFC0E029EFB37B002BEDE2 /* DeviceFinder */ = {
-			isa = PBXGroup;
-			children = (
-				34AFC0E329EFB398002BEDE2 /* DeviceFinderView.swift */,
-				34AFC0E129EFB38E002BEDE2 /* DeviceFinderViewModel.swift */,
+				34AFC0DA29EFB2F4002BEDE2 /* DeviceFinderSearch */,
+				34AFC0E029EFB37B002BEDE2 /* DeviceFindFinder */,
+				34AFC0E729EFB3ED002BEDE2 /* DeviceFinderHelp */,
 			);
 			path = DeviceFinder;
 			sourceTree = "<group>";
 		};
-		34AFC0E729EFB3ED002BEDE2 /* DeviceHelp */ = {
+		34AFC0DA29EFB2F4002BEDE2 /* DeviceFinderSearch */ = {
 			isa = PBXGroup;
 			children = (
-				34AFC0E829EFB406002BEDE2 /* DeviceHelpView.swift */,
-				34AFC0EA29EFB413002BEDE2 /* DeviceHelpViewModel.swift */,
+				34AFC0E529EFB3C0002BEDE2 /* DeviceFinderSearchView.swift */,
+				34AFC0DE29EFB367002BEDE2 /* DeviceFinderSearchViewModel.swift */,
 			);
-			path = DeviceHelp;
+			path = DeviceFinderSearch;
+			sourceTree = "<group>";
+		};
+		34AFC0E029EFB37B002BEDE2 /* DeviceFindFinder */ = {
+			isa = PBXGroup;
+			children = (
+				34AFC0E329EFB398002BEDE2 /* DeviceFinderFindView.swift */,
+				34AFC0E129EFB38E002BEDE2 /* DeviceFinderViewModel.swift */,
+			);
+			path = DeviceFindFinder;
+			sourceTree = "<group>";
+		};
+		34AFC0E729EFB3ED002BEDE2 /* DeviceFinderHelp */ = {
+			isa = PBXGroup;
+			children = (
+				34AFC0E829EFB406002BEDE2 /* DeviceFinderHelpView.swift */,
+				34AFC0EA29EFB413002BEDE2 /* DeviceFinderHelpViewModel.swift */,
+			);
+			path = DeviceFinderHelp;
 			sourceTree = "<group>";
 		};
 		34D1CCCA29EF333000886305 /* Main */ = {
@@ -462,11 +631,17 @@
 			isa = PBXGroup;
 			children = (
 				34D1CCCC29EF334E00886305 /* MainTabView.swift */,
+				345936FD29F0D8360000B1DD /* MainTabViewModel.swift */,
+				3459370229F0D8770000B1DD /* MainDevice */,
+				345936FF29F0D83F0000B1DD /* MainSearch */,
+				3459370029F0D84A0000B1DD /* MainBrowse */,
+				3459370129F0D8600000B1DD /* MainSettings */,
+				3459372929F1FD080000B1DD /* ToofList.swift */,
 			);
 			path = MainTabView;
 			sourceTree = "<group>";
 		};
-		34F660A529F0735100336715 /* device */ = {
+		34F660A529F0735100336715 /* deviceFinder */ = {
 			isa = PBXGroup;
 			children = (
 				345936EF29F0ADF50000B1DD /* search */,
@@ -474,7 +649,7 @@
 				345936F129F0AE000000B1DD /* help */,
 				345936F229F0AE390000B1DD /* deviceHeader.swift */,
 			);
-			path = device;
+			path = deviceFinder;
 			sourceTree = "<group>";
 		};
 		34FDC38229EF4BE400F4308D /* onboarding */ = {
@@ -610,47 +785,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3459373029F21BBD0000B1DD /* CustomListModel.swift in Sources */,
 				349FA15229EEEEEB00E725B2 /* TextHelper.swift in Sources */,
 				34AFC0D529EF8730002BEDE2 /* authSwitchAuthButton.swift in Sources */,
 				349FA14F29EEEEEB00E725B2 /* ColorHandler.swift in Sources */,
 				34FDC37F29EF4B0100F4308D /* AuthLoginViewModel.swift in Sources */,
+				3459371229F0D9020000B1DD /* MainSettingsViewModel.swift in Sources */,
 				34FDC39029EF67D600F4308D /* AuthResetView.swift in Sources */,
+				3403826229F24B8500E673BD /* SettingsHelpView.swift in Sources */,
 				34FDC38C29EF585800F4308D /* ToofTextField.swift in Sources */,
 				349FA15529EEEEEB00E725B2 /* FontHelper.swift in Sources */,
 				349FA15729EEEF7400E725B2 /* View+Extension.swift in Sources */,
 				349FA12829EEE76600E725B2 /* String+Extension.swift in Sources */,
 				349FA0E829EED40B00E725B2 /* AppDelegate.swift in Sources */,
-				34AFC0E929EFB406002BEDE2 /* DeviceHelpView.swift in Sources */,
+				34AFC0E929EFB406002BEDE2 /* DeviceFinderHelpView.swift in Sources */,
 				345936F929F0C2640000B1DD /* ToofButtonStyle.swift in Sources */,
 				349FA0F629EEDEE800E725B2 /* SplashView.swift in Sources */,
+				3403825F29F248DF00E673BD /* SettingAccountViewModel.swift in Sources */,
 				3450F31229EEFD5700B68DD4 /* constant.swift in Sources */,
+				3459372629F1F2760000B1DD /* MusicServicesModel.swift in Sources */,
+				3459372829F1F3850000B1DD /* musicServiceList.swift in Sources */,
+				3459372E29F21B5F0000B1DD /* SettingsAccountView.swift in Sources */,
+				3459371E29F1BF650000B1DD /* mainHeader.swift in Sources */,
 				34FDC38929EF4E0D00F4308D /* authHeader.swift in Sources */,
+				3459370E29F0D8EC0000B1DD /* MainSearchViewModel.swift in Sources */,
 				349FA0D829EE02EA00E725B2 /* TOOF_AudioApp.swift in Sources */,
 				34D1CCCD29EF334E00886305 /* MainTabView.swift in Sources */,
 				345936FB29F0C2750000B1DD /* ToofAltButton.swift in Sources */,
-				34AFC0DF29EFB367002BEDE2 /* DeviceSearchViewModel.swift in Sources */,
+				3459372429F1CC640000B1DD /* connectSelections.swift in Sources */,
+				3403826429F24B9500E673BD /* SettingsHelpViewModel.swift in Sources */,
+				34AFC0DF29EFB367002BEDE2 /* DeviceFinderSearchViewModel.swift in Sources */,
 				34AFC0E229EFB38E002BEDE2 /* DeviceFinderViewModel.swift in Sources */,
 				349FA14E29EEEEEB00E725B2 /* ColorHelper.swift in Sources */,
+				3459372A29F1FD080000B1DD /* ToofList.swift in Sources */,
+				345936FE29F0D8360000B1DD /* MainTabViewModel.swift in Sources */,
 				349FA10129EEE0DD00E725B2 /* OnboardingView.swift in Sources */,
+				3459372029F1BFDC0000B1DD /* ToofBackButton.swift in Sources */,
+				3459370A29F0D8D50000B1DD /* MainBrowseViewModel.swift in Sources */,
 				349FA0FF29EEE0CE00E725B2 /* OnboardingViewModel.swift in Sources */,
+				3459371029F0D8F70000B1DD /* MainSettingsView.swift in Sources */,
 				349FA0FD29EEE04900E725B2 /* SplashViewModel.swift in Sources */,
 				345936F529F0B13B0000B1DD /* DeviceView.swift in Sources */,
 				34FDC38129EF4B0B00F4308D /* AuthRegisterViewModel.swift in Sources */,
+				3459370C29F0D8E10000B1DD /* MainSearchView.swift in Sources */,
+				3459370429F0D8AC0000B1DD /* MainDeviceViewModel.swift in Sources */,
 				34AFC0D729EFAEE9002BEDE2 /* AuthResetViewModel.swift in Sources */,
 				349FA11129EEE4C800E725B2 /* splashFastView.swift in Sources */,
-				34AFC0EB29EFB413002BEDE2 /* DeviceHelpViewModel.swift in Sources */,
+				34AFC0EB29EFB413002BEDE2 /* DeviceFinderHelpViewModel.swift in Sources */,
 				349FA15129EEEEEB00E725B2 /* ImageHandler.swift in Sources */,
+				3459370829F0D8CA0000B1DD /* MainBrowseView.swift in Sources */,
 				3450F31029EEF9E900B68DD4 /* AuthManager.swift in Sources */,
+				3459372229F1CAAD0000B1DD /* ConnectSection.swift in Sources */,
+				3459370629F0D8B60000B1DD /* MainDeviceView.swift in Sources */,
 				3450F31829EF0B2E00B68DD4 /* AuthRegisterView.swift in Sources */,
 				3450F30E29EEF98300B68DD4 /* User.swift in Sources */,
 				3450F31B29EF0C0100B68DD4 /* AuthLoginView.swift in Sources */,
 				34FDC39229EF68D700F4308D /* ToofButton.swift in Sources */,
 				349FA15029EEEEEB00E725B2 /* ImageHelper.swift in Sources */,
 				349FA15329EEEEEB00E725B2 /* TextHandler.swift in Sources */,
-				34AFC0E429EFB398002BEDE2 /* DeviceFinderView.swift in Sources */,
+				34AFC0E429EFB398002BEDE2 /* DeviceFinderFindView.swift in Sources */,
 				345936F329F0AE390000B1DD /* deviceHeader.swift in Sources */,
 				349FA15429EEEEEB00E725B2 /* FontHandler.swift in Sources */,
-				34AFC0E629EFB3C0002BEDE2 /* DeviceSearchView.swift in Sources */,
+				34AFC0E629EFB3C0002BEDE2 /* DeviceFinderSearchView.swift in Sources */,
 				345936F729F0BE7C0000B1DD /* DeviceInfo.swift in Sources */,
 				34FDC38729EF4C3200F4308D /* authBackground.swift in Sources */,
 			);
