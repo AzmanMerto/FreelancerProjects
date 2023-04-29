@@ -21,14 +21,13 @@ struct connectSelections: View {
             ZStack {
                 Text(connect.connectString)
                     .foregroundColor(isSelected ? .ToofTextColor : .ToofPlaceholder)
-                    .font(.default15).fontWeight(.semibold)
+                    .font(.default13 ).fontWeight(.semibold)
                     .minimumScaleFactor(0.7)
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(isSelected ? Color.ToofTextColor : Color.ToofPlaceholder)
-                    .frame(height: dw(0.15))
+                    .frame(height: dh(0.07))
             }
         }
-
     }
 }
 

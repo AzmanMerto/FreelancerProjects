@@ -8,7 +8,8 @@
 import Foundation
 
 class MainDeviceViewModel: ObservableObject {
-    
-    
-
+    @Published var isAddDevice: Bool
+    init(isAddDevice: Bool = false) {
+        self.isAddDevice = isAddDevice
+    }
 }

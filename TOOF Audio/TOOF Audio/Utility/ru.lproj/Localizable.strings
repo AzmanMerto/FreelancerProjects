@@ -46,6 +46,20 @@
 "DEVICE_FINDER_ADD_DEVICE_TITLE" = "Поиск устройства...";
 "DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Убедитесь, что ваше устройство включено и подключено к той же сети, что и смартфон. Если вы еще не настроили его, нажмите кнопку ниже, чтобы начать";
 "DEVICE_FINDER_ADD_DEVICE_BUTTON" = "ДОБАВИТЬ УСТРОЙСТВО";
+
+//permision
+"DEVICE_FINDER_PERMISSION_TITLE" = "ВКЛЮЧИТЕ РАЗРЕШЕНИЯ ДЛЯ ПОДКЛЮЧЕНИЯ К УСТРОЙСТВУ";
+"DEVICE_FINDER_PERMISSION_LOCAL_NETWORK" = "Предоставьте разрешение на доступ и использование устройств рядом с вами.";
+"DEVICE_FINDER_PERMISSION_WIFI" = "Позвольте нам видеть устройства в вашей сети по телефону.";
+"DEVICE_FINDER_PERMISSION_BLUETOOTH" = "Разрешить нам подключаться к устройству через Bluetooth.";
+"DEVICE_FINDER_PERMISSION_GPS" = "Предоставьте устройству разрешение GPS на просмотр его местоположения.";
+"DEVICE_FINDER_PERMISSION_ANNOUNCED_BUTTON" = "Включить разрешения для устройства";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_LOCAL_NETWORK_BUTTON" = "Разрешение на открытие локальной сети";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_WIFI_BUTTON" = "Включить разрешение Wi-Fi";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BLUETOOTH_BUTTON" = "Включить разрешение Bluetooth";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_GPS_BUTTON" = "Разрешение на открытие местоположения";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BUTTON" = "Мы можем добавлять устройства";
+
 //Соединять
 "DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "Мигает ли индикатор вашего устройства?";
 "DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION" = "Убедитесь, что индикатор датчика освещенности на вашем устройстве медленно мигает, как индикатор подключенного устройства";
@@ -68,6 +82,7 @@
 "MAIN_BROWSE_MY_LIBRARY" = "Моя библиотека";
 "MAIN_BROWSE_MY_MUSICS" = "Моя музыка";
 //устройство
+
 "MAIN_DEVICE_TITLE" = "Устройства";
 "MAIN_DEVICE_PLAYING" = "Воспроизведение:";
 "MAIN_DEVICE_NOT_PLAYING" = "Нет звука";

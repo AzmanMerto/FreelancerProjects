@@ -74,6 +74,18 @@ struct TextHelper {
         case deviceFinderSearchHelpSectionTwo = "DEVICE_FINDER_SEARCH_HELP_SECTION_TWO"
         case deviceFinderSearchHelpSectionThree = "DEVICE_FINDER_SEARCH_HELP_SECTION_THREE"
         case deviceFinderSearchHelpSectionFour = "DEVICE_FINDER_SEARCH_HELP_SECTION_FOUR"
+        
+        case deviceFinderPermissionTitle = "DEVICE_FINDER_PERMISSION_TITLE"
+        case deviceFinderPermissionLocalNetwork = "DEVICE_FINDER_PERMISSION_LOCAL_NETWORK"
+        case deviceFinderPermissionWifi = "DEVICE_FINDER_PERMISSION_WIFI"
+        case deviceFinderPermissionBluetooth = "DEVICE_FINDER_PERMISSION_BLUETOOTH"
+        case deviceFinderPermissionGPS = "DEVICE_FINDER_PERMISSION_GPS"
+        case deviceFinderPermissionAnnouncedButton = "DEVICE_FINDER_PERMISSION_ANNOUNCED_BUTTON"
+        case deviceFinderPermissionIsItOkeyLocalNetworkButton = "DEVICE_FINDER_PERMISSION_IS_IT_OKEY_LOCAL_NETWORK_BUTTON"
+        case deviceFinderPermissionIsItOkeyWifiButton = "DEVICE_FINDER_PERMISSION_IS_IT_OKEY_WIFI_BUTTON"
+        case deviceFinderPermissionIsItOkeyBluetoothButton = "DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BLUETOOTH_BUTTON"
+        case deviceFinderPermissionIsItOkeyGPSButton = "DEVICE_FINDER_PERMISSION_IS_IT_OKEY_GPS_BUTTON"
+        case deviceFinderPermissionIsItOkeyButton = "DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BUTTON"
     }
     
     enum main: String {

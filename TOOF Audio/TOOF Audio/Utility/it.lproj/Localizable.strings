@@ -47,6 +47,18 @@
 "DEVICE_FINDER_ADD_DEVICE_TITLE" = "Ricerca dispositivo...";
 "DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Assicurati che il tuo dispositivo sia acceso e connesso alla stessa rete del tuo smartphone. se non l'hai ancora configurato, tocca il pulsante in basso per iniziare";
 "DEVICE_FINDER_ADD_DEVICE_BUTTON" = "AGGIUNGI DISPOSITIVO";
+//permision
+"DEVICE_FINDER_PERMISSION_TITLE" = "ATTIVA PERMESSI PER CONNESSIONE AL DISPOSITIVO";
+"DEVICE_FINDER_PERMISSION_LOCAL_NETWORK" = "Concedi l'autorizzazione per accedere e utilizzare i dispositivi vicino a te.";
+"DEVICE_FINDER_PERMISSION_WIFI" = "Consentici di vedere i dispositivi sulla tua rete tramite telefono.";
+"DEVICE_FINDER_PERMISSION_BLUETOOTH" = "Consentici di connetterci al dispositivo tramite Bluetooth.";
+"DEVICE_FINDER_PERMISSION_GPS" = "Concedi al dispositivo l'autorizzazione GPS per vedere la sua posizione.";
+"DEVICE_FINDER_PERMISSION_ANNOUNCED_BUTTON" = "Attiva le autorizzazioni per il dispositivo";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_LOCAL_NETWORK_BUTTON" = "Apri permesso LAN";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_WIFI_BUTTON" = "Attiva l'autorizzazione Wi-Fi";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BLUETOOTH_BUTTON" = "Attiva autorizzazione Bluetooth";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_GPS_BUTTON" = "Apri autorizzazione posizione";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BUTTON" = "Possiamo aggiungere dispositivi";
 
 //Collegare
 "DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "L'indicatore del tuo dispositivo lampeggia?";

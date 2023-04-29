@@ -24,7 +24,7 @@ struct mainHeader: View {
                 Spacer()
             }
         }
-        .padding(EdgeInsets(top: dw(0.05), leading: dw(0.05), bottom: dw(0.1), trailing: dw(0.05)))
+        .padding(EdgeInsets(top: dw(0.1), leading: dw(0.05), bottom: dw(0.1), trailing: dw(0.05)))
     }
 }
 

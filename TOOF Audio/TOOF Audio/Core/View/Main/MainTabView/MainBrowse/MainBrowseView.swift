@@ -17,6 +17,7 @@ struct MainBrowseView: View {
             Color.ToofBackgroundColor.ignoresSafeArea()
             VStack {
                 mainHeader(title: TextHelper.main.mainBrowseTitle.rawValue)
+                    .padding(.top)
                 //MARK: MainBrowseView - Connect Sections
                 HStack {
                     ForEach(viewModel.connectItems, id:\.connectString) { connect in

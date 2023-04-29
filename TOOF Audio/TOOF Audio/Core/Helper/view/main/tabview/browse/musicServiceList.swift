@@ -15,9 +15,9 @@ struct musicServiceList: View {
         VStack(alignment: .leading) {
             line()
             Text(TextHelper.main.mainBrowseMusicService.rawValue.locale())
-                .font(.default20.bold())
+                .font(.default34).bold()
                 .foregroundColor(.ToofTextColor)
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 //TODO: Play with do on service
                 HStack {
                     ForEach(viewModel.musicServicesModelItems, id: \.imageString) { services in
@@ -49,22 +49,25 @@ struct musicServiceList: View {
                                 }
                             default:
                                 break
-                            }   } label: {
-                                ZStack {
+                            }   }
+                    label: {
+                            Image(services.imageString)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: dh(0.15),
+                                       height: dh(0.15),
+                                       alignment: .center)
+                                .background{
                                     RoundedRectangle(cornerRadius: 10)
-                                        .foregroundColor(.ToofTextSoftColor)
-                                        .scaledToFit()
-                                        .frame(width: 70)
-                                    Image(services.imageString)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50)
+                                        .foregroundColor(.ToofTextSoftColor).opacity(0.4)
+                                        .padding(.all,-10)
                                 }
-                            }
+                                .padding()
+                    }
                     }
                 }
+                .padding(.top)
             }
-            line()
         }
     }
 }

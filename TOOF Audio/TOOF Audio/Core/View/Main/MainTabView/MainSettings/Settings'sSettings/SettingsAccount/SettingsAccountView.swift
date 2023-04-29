@@ -18,9 +18,9 @@ struct SettingsAccountView: View {
                 mainHeader(title: TextHelper.main.mainSettingsAccTitle.rawValue,
                            isShowButton: true)
                 
-                ToofTextField(textField: .constant(""), placeholder: viewModel.user.name!)
+                ToofTextField(textField: .constant(""), placeholder: viewModel.user.name ?? "Error")
                 
-                ToofTextField(textField: .constant(""), placeholder: viewModel.user.mail!)
+                ToofTextField(textField: .constant(""), placeholder: viewModel.user.mail ?? "Error")
                 
                 ToofTextField(textField: .constant(""), placeholder: TextHelper.auth.authPasswordTextfieldPlaceholder.rawValue)
 

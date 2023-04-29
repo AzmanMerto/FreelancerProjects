@@ -21,9 +21,9 @@ class MainSettingsViewModel: ObservableObject {
     
     
     func signOut() {
-        print("\(authManaer.currentUser)")
+        print("USER ID before signOut: \(String(describing: authManaer.currentUser))")
         authManaer.signOut()
-        print("\(authManaer.currentUser)")
+        print("USER ID then signOut: \(String(describing: authManaer.currentUser))")
     }
     
     let settingsListItems: [CustomListModel] = [

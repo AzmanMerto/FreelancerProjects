@@ -47,6 +47,19 @@
 "DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Make sure your device is powered on and connected to the same network as your smartphone. if you haven't set it up yet, tap the button below to get started";
 "DEVICE_FINDER_ADD_DEVICE_BUTTON" = "ADD DEVICE";
 
+//permision 
+"DEVICE_FINDER_PERMISSION_TITLE" = "TURN PERMISSIONS ON TO CONNECT TO DEVICE";
+"DEVICE_FINDER_PERMISSION_LOCAL_NETWORK" = "Grant permission to access and use devices near you.";
+"DEVICE_FINDER_PERMISSION_WIFI" = "Allow us to see the devices on your network by phone.";
+"DEVICE_FINDER_PERMISSION_BLUETOOTH" = "Allow us to connect to the device via Bluetooth.";
+"DEVICE_FINDER_PERMISSION_GPS" = "Grant the device GPS permission to see its location.";
+"DEVICE_FINDER_PERMISSION_ANNOUNCED_BUTTON" = "Turn on permissions for the device";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_LOCAL_NETWORK_BUTTON" = "Open LAN permission";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_WIFI_BUTTON" = "Turn on wifi permission";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BLUETOOTH_BUTTON" = "Turn on Bluetooth permission";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_GPS_BUTTON" = "Open location permission";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BUTTON" = "We can add devices";
+
 //Connect
 "DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "Is your device indicator flashing?";
 "DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION" = "Check that the light on the light sensor on your device is blinking slowly as a connected indicator";
@@ -69,6 +82,7 @@
 "MAIN_BROWSE_MY_LIBRARY" = "My Library";
 "MAIN_BROWSE_MY_MUSICS" = "My Music";
 //device
+
 "MAIN_DEVICE_TITLE" = "Devices";
 "MAIN_DEVICE_PLAYING" = "Playing :";
 "MAIN_DEVICE_NOT_PLAYING" = "No sound";

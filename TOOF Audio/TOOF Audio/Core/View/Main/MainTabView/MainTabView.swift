@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @ObservedObject var viewModel = MainTabViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CustomTabBarContainer(selection: $viewModel.selection) {
+            MainBrowseView()
+                .tabBarItem(item: .browse, selection: $viewModel.selection)
+            
+            MainDeviceView(viewModel: .init())
+                .tabBarItem(item: .device, selection: $viewModel.selection)
+
+            MainSearchView(viewModel: .init(musicFiles: viewModel.musicFiles, currentPlayURL: viewModel.currentPlayURL))
+                .tabBarItem(item: .search, selection: $viewModel.selection)
+
+            MainSettingsView(viewModel: .init(user: viewModel.user))
+                .tabBarItem(item: .settings, selection: $viewModel.selection)
+        }
+        .onAppear{
+            viewModel.authManager.fetchUser()
+            print("USER ID MainTabView: \(String(describing: AuthManager.shared.user?.id))")
+        }
     }
 }
 

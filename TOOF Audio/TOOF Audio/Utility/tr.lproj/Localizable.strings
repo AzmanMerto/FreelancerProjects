@@ -48,6 +48,19 @@
 "DEVICE_FINDER_ADD_DEVICE_TITLE" = "Cihaz aranıyor...";
 "DEVICE_FINDER_ADD_DEVICE_DESCRIPTION" = "Cihazınızın açık olduğundan ve akıllı telefonunuzla aynı ağa bağlı olduğundan emin olun. henüz ayarlamadıysanız, başlamak için aşağıdaki düğmeye dokunun";
 "DEVICE_FINDER_ADD_DEVICE_BUTTON" = "CİHAZ EKLE";
+//permision
+"DEVICE_FINDER_PERMISSION_TITLE" = "CİHAZA BAĞLANABİLMEK İÇİN İZİNLERİ AÇINIZ";
+"DEVICE_FINDER_PERMISSION_LOCAL_NETWORK" = "Yakınınızdaki cihazlarına erişimi ve kullanımı için izni veriniz.";
+"DEVICE_FINDER_PERMISSION_WIFI" = "Ağınızdaki cihazlarına telefon ile görebilmemiz için izni veriniz.";
+"DEVICE_FINDER_PERMISSION_BLUETOOTH" = "Bluetooth ile cihaza bağlantımız için izni veriniz.";
+"DEVICE_FINDER_PERMISSION_GPS" = "Cihaza yerini görebilemke için GPS izni veriniz.";
+"DEVICE_FINDER_PERMISSION_ANNOUNCED_BUTTON" = "Cihaz için izinleri açın";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_LOCAL_NETWORK_BUTTON" = "Yerel ağ izni açın";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_WIFI_BUTTON" = "Wifi izni açın";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BLUETOOTH_BUTTON" = "Bluetooth izni açın";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_GPS_BUTTON" = "Lokasyon izni açınız";
+"DEVICE_FINDER_PERMISSION_IS_IT_OKEY_BUTTON" = "Cihaz ekleyebilriiz";
+
 //Connect
 "DEVICE_FINDER_CONNECT_DEVICE_TITLE" = "Cihazınızın göstergesi yanıp sönüyor mu ?";
 "DEVICE_FINDER_CONNECT_DEVICE_DESCRIPTION" = "Cihazınızın üzerinde bulunun ışık sensöründe bağlandıya göstergesi olarak ışığın yavaşca yanıp söndüğünü kontrol ediniz";

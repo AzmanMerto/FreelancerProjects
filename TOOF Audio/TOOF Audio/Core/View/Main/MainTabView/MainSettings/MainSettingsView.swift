@@ -16,6 +16,7 @@ struct MainSettingsView: View {
             Color.ToofBackgroundColor.ignoresSafeArea()
             VStack {
                 mainHeader(title: TextHelper.main.mainSettingsTitle.rawValue)
+                    .padding(.top)
                 
                 ForEach(viewModel.settingsListItems , id: \.id) { data in
                     ToofList(customList: data) {
@@ -31,6 +32,7 @@ struct MainSettingsView: View {
                 }
                 Spacer()
             }
+            .padding(.vertical)
             .fullScreenCover(item: $viewModel.settingsViewSection) { view in
                 switch view {
                 case .account:

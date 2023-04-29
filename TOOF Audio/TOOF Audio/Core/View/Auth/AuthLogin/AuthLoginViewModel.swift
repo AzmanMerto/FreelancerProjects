@@ -37,7 +37,7 @@ class AuthLoginViewModel: ObservableObject {
     //MARK: AuthLoginViewModel - Login
     func login() {
         if user.mail?.isValidEmail() != nil {
-            AuthManager.shared.signIn(userMail: user.mail!, password: user.name ?? "") {
+            AuthManager.shared.signIn(userMail: user.mail!, password: user.password ?? "") {
                 self.isNavigateToMain.toggle()
             }
         }

@@ -14,7 +14,8 @@ class MainBrowseViewModel: ObservableObject {
     let connectItems: [ConnectSection] = [ ConnectSection(connectString: "Wi-Fi",tag: 0),
                                            ConnectSection(connectString: "Bluetooth",tag: 1),
                                            ConnectSection(connectString: "Line In", tag: 2),
-                                           ConnectSection(connectString: "USBDAC", tag: 3) ]
+                                           ConnectSection(connectString: "USBDAC", tag: 3),
+                                           ConnectSection(connectString: "OTP", tag: 4)]
     
     let musicServicesModelItems: [MusicServicesModel] = [ MusicServicesModel(imageString:ImageHelper.main.serviceAmazon.rawValue),
                                                           MusicServicesModel(imageString:ImageHelper.main.serviceDeezer.rawValue),

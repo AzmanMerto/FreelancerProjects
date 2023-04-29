@@ -23,6 +23,7 @@ extension View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+            .navigationViewStyle(StackNavigationViewStyle())
     }
     
     func hideAndDisableButton(_ Bool: Bool) -> some View {
@@ -36,6 +37,11 @@ extension View {
             .frame(height: 1)
             .foregroundColor(.ToofTextColor).opacity(0.7)
             .padding(.vertical)
+    }
+    
+    func tabBarItem(item: ToofTabBar,selection: Binding<ToofTabBar>) -> some View {
+        self
+            .modifier(TabBarItemViewModifier(tab: item, selection: selection))
     }
 }
 

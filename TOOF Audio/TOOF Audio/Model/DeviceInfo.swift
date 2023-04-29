@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct ApiResponse: Codable {
+    let res: Int
+    let aplist: [AccessPoint]
+    let status: String
+}
+
+struct AccessPoint: Codable {
+    let auth: String
+    let bssid: String
+    let channel: Int
+    let extch: String
+    let rssi: Int
+    let ssid: String
+}
