@@ -18,10 +18,12 @@ struct TOOF_AudioApp: App {
                 
         WindowGroup {
             NavigationView {
-                DeviceFinderOpenAccessView()
-                    .hideNavigationBar()
-                    .preferredColorScheme(.dark)
+                VStack {
+                    SplashView()
+                        .preferredColorScheme(.dark)
+                }
             }
+            .hideNavigationBar()
             .navigationViewStyle(StackNavigationViewStyle())
         }
     }

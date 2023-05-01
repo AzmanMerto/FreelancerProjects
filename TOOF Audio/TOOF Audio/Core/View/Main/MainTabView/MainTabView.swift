@@ -25,6 +25,7 @@ struct MainTabView: View {
             MainSettingsView(viewModel: .init(user: viewModel.user))
                 .tabBarItem(item: .settings, selection: $viewModel.selection)
         }
+        .hideNavigationBar()
         .onAppear{
             viewModel.authManager.fetchUser()
             print("USER ID MainTabView: \(String(describing: AuthManager.shared.user?.id))")

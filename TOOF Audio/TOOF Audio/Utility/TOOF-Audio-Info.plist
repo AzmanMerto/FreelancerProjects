@@ -2,19 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		<key>NSAllowsLocalNetworking</key>
-		<true/>
-	</dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>NomoSiOS.TOOF-Audio.bluetoothDiscovery</string>
+		<string>NomoSiOS.TOOF-Audio.audioPlayback</string>
+		<string>NomoSiOS.TOOF-Audio.airplayDiscovery</string>
+		<string>NomoSiOS.TOOF-Audio.p2pDiscovery</string>
+		<string>NomoSiOS.TOOF-Audio.backgroundDatabaseSync</string>
+		<string>NomoSiOS.TOOF-Audio.backgroundDataCleanup</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
 		<string>fetch</string>
 		<string>processing</string>
-		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>

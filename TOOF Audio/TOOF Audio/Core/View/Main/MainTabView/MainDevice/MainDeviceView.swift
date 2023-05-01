@@ -24,8 +24,8 @@ struct MainDeviceView: View {
                Spacer()
             }
             .padding(.vertical)
-            .sheet(isPresented: $viewModel.isAddDevice) {
-                //TODO: Device add your phone
+            .fullScreenCover(isPresented: $viewModel.isAddDevice) {
+                DeviceFinderOpenAccessView()
             }
         }
     }

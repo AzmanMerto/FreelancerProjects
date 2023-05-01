@@ -22,19 +22,21 @@ struct MusicList: View {
                             HStack {
                                 Image(ImageHelper.main.listImages.rawValue)
                                 Text(musicFile.lastPathComponent)
-                                Spacer()
                             }
                         }
-                        .tint(Color(ColorHelper.textColor.rawValue))
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.ToofBackgroundColor)
+                        .cornerRadius(10)
                     }
-                    .listRowBackground(Color.ToofBackgroundColor)
                 }
+                .listRowBackground(Color.ToofBackgroundColor)
             }
             .onDelete(perform:viewModel.deleteMusicFiles)
         }
-        .opacity( (viewModel.musicFiles.count > 0 && viewModel.filteredMusicFiles.keys.sorted().count > 0) ? 1 : 0 )
+        .listStyle(.plain)
         .background(Color.ToofBackgroundColor)
-//        .frame(height: dh(0.5))
+        .ignoresSafeArea()
         .padding(.vertical)
     }
 }
@@ -44,4 +46,5 @@ struct MusicList_Previews: PreviewProvider {
         MusicList(viewModel: .init(musicFiles: [], currentPlayURL: URL(string: "")!))
     }
 }
+
 

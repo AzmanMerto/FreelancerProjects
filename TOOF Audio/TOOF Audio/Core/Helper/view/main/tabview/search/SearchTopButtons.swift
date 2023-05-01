@@ -8,56 +8,56 @@
 import SwiftUI
 
 struct SearchTopButtons: View {
-    
+
+    @Binding var isUserHaveAppleMusicSubs: Bool
     var refreshButton: () -> ()
     var appleButton: () -> ()
     var addButton: () -> ()
     
     var body: some View {
-        HStack {
-            //MARK: SearchView - Refresh button
-            Button {
-                print("Press to Refresh")
-                refreshButton()
-            } label: {
-                Image(systemName: "arrow.clockwise")
-                    .font(.default22)
-                    .foregroundColor(.ToofButtonColor)
-            }
-            Spacer()
-            //MARK: SearchView - Apple Sync Button
-            Button {
-                print("Press to ShowDocumentPicker")
-                appleButton()
-            } label: {
-                Image(systemName: "applelogo")
-                    .font(.default22)
-                    .foregroundColor(.ToofButtonColor)
+        ZStack {
+            mainHeader(title: TextHelper.main.mainSearchTitle.rawValue)
+            HStack {
+                Button {
+                    refreshButton()
+                } label: {
+                    Image(systemName: "gobackward")
+                }
+                Spacer()
+                Button {
+                    appleButton()
+                } label: {
+                    Image(systemName: "applelogo")
+                }
+                .hideAndDisableButton(isUserHaveAppleMusicSubs)
+                .padding(.horizontal)
+                Button {
+                    addButton()
+                } label: {
+                    Image(systemName: "plus.rectangle.fill.on.rectangle.fill")
+                }
             }
             .padding(.horizontal)
-            
-            //MARK: SearchView - Add Music Button
-            Button {
-                print("Press to ShowDocumentPicker")
-                addButton()
-            } label: {
-                Image(systemName: "plus.rectangle.on.rectangle.fill")
-                    .font(.default22)
-                    .foregroundColor(.ToofButtonColor)
-            }
+            .font(.default20)
+            .foregroundColor(.ToofButtonColor)
         }
-        .padding(.horizontal)
+        .padding(.top)
     }
 }
 
 struct SearchTopButtons_Previews: PreviewProvider {
     static var previews: some View {
-        SearchTopButtons {
-            
-        } appleButton: {
-            
-        } addButton: {
-            
+        ZStack {
+            Color.ToofBackgroundColor.ignoresSafeArea()
+            SearchTopButtons(isUserHaveAppleMusicSubs: .constant(false)) {
+                
+            } appleButton: {
+                
+            } addButton: {
+                
+            }
+
         }
     }
 }
+

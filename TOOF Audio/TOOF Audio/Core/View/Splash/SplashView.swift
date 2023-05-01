@@ -25,6 +25,7 @@ struct SplashView: View {
                 splashFastView()
             }
         }
+        .hideNavigationBar()
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear{
             print("User info: \(String(describing: AuthManager.shared.currentUser))")

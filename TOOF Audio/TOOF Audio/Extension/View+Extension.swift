@@ -43,5 +43,12 @@ extension View {
         self
             .modifier(TabBarItemViewModifier(tab: item, selection: selection))
     }
+    
+    func openSettings() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let settingsURL = URL(string: UIApplication.openSettingsURLString)
+            UIApplication.shared.open(settingsURL!)
+        }
+    }
 }
 

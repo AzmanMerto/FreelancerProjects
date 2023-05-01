@@ -12,16 +12,17 @@ struct DeviceFinderOpenAccessView: View {
     
     @ObservedObject var viewModel = DeviceFinderOpenAccessViewModel()
     
-    
     var body: some View {
         ZStack {
             Color.ToofBackgroundColor.ignoresSafeArea()
             VStack {
                 Spacer()
                 Text(TextHelper.deviceFinder.deviceFinderPermissionTitle.rawValue.locale())
-                    .font(.default22).bold()
+                    .font(.default17).bold()
                     .padding(.vertical)
+                    .padding(.horizontal)
                     .foregroundColor(.ToofTextColor)
+                    .multilineTextAlignment(.center)
                 PermissionDescription(image: Image(systemName: "globe"),
                                       text: TextHelper.deviceFinder.deviceFinderPermissionLocalNetwork.rawValue)
                 PermissionDescription(image: Image("bluetooth"),
@@ -29,24 +30,19 @@ struct DeviceFinderOpenAccessView: View {
                 .padding(.vertical)
                 PermissionDescription(image: Image(systemName: "wifi"),
                                       text: TextHelper.deviceFinder.deviceFinderPermissionBluetooth.rawValue)
-                
-                
                 PermissionDescription(image: Image(systemName: "mappin.circle.fill"), text:TextHelper.deviceFinder.deviceFinderPermissionGPS.rawValue)
                     .padding(.vertical)
-                
-                Text(viewModel.localNetworkManager.localNetworkPermissionGranted.description)
-                
                 Spacer()
-                
-                PermisionCheckButton
                 
                 ToofAltButton(buttonText: "BACK") {
                     viewModel.dismiss()
                 }
                 .padding(.vertical)
+                Spacer()
             }
-            .onAppear{
-                
+            .onAppear {
+                if !viewModel.locationManager.locationPermissionGranted { viewModel.localNetworkManager.triggerLocalNetworkPrivacyAlert() }
+                if !viewModel.locationManager.locationPermissionGranted {    viewModel.locationManager.requestLocationPermission()  }
             }
         }
     }
@@ -60,26 +56,33 @@ struct DeviceFinderOpenAccessView_Previews: PreviewProvider {
 
 extension DeviceFinderOpenAccessView {
     var PermisionCheckButton: some View {
-        ToofButton(buttonText: viewModel.buttonText) {
-            if viewModel.locationManager.locationPermissionGranted {
-                    print("locationPermissionGranted")
-                if viewModel.bluetoothManager.bluetoothPermissionGranted {
-                    print("bluetoothPermissionGranted")
-                    viewModel.localNetworkManager.checkLocalNetworkPermission()
-                    if viewModel.localNetworkManager.localNetworkPermissionGranted {
-                        print("localNetworkPermissionGranted")
-                        viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyButton.rawValue
+        ZStack {
+            NavigationLink(isActive: $viewModel.isNavigateToFinder) {
+                DeviceFinderFindView()
+                    .hideNavigationBar()
+            } label: {}
+            
+            ToofButton(buttonText: viewModel.buttonText) {
+                if viewModel.locationManager.locationPermissionGranted {
+                        print("locationPermissionGranted")
+                    if viewModel.bluetoothManager.bluetoothPermissionGranted {
+                        print("bluetoothPermissionGranted")
+                        if viewModel.localNetworkManager.localNetworkPermissionGranted {
+                            print("localNetworkPermissionGranted")
+                            viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyButton.rawValue
+                            viewModel.navigateToDestination()
+                        } else {
+                            viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyLocalNetworkButton.rawValue
+                            openSettings()
+                        }
                     } else {
-                        viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyLocalNetworkButton.rawValue
-                        viewModel.openSettings()
+                        viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyBluetoothButton.rawValue
+                        openSettings()
                     }
                 } else {
-                    viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyBluetoothButton.rawValue
-                    viewModel.openSettings()
+                    viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyGPSButton.rawValue
+                    openSettings()
                 }
-            } else {
-                viewModel.buttonText = TextHelper.deviceFinder.deviceFinderPermissionIsItOkeyGPSButton.rawValue
-                viewModel.openSettings()
             }
         }
         .padding(.vertical)
