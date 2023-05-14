@@ -128,9 +128,7 @@
 "MAIN_SETTINGS_ACC_TITLE" = "Account Settings";
 "MAIN_SETTINGS_ACC_BUTTON" = "SAVE";
 "MAIN_SETTINGS_SUB_TITLE" = "Support";
-"MAIN_SETTINGS_SUB_DESCRIPTION" = "If you are experiencing a problem with the application or device. Please contact us";
+"MAIN_SETTINGS_SUB_DESCRIPTION" = "If you think there is a problem with your application or device, you can contact us.";
 "MAIN_SETTINGS_SUB_MAIL_TITLE" = "Our Mail Address";
-"MAIN_SETTINGS_SUB_MAIL_EXAMPLE" = "nomotetes.onetrue@icloud.com";
-"MAIN_SETTINGS_SUB_PHONE_TITLE" = "Our Phone Number";
-"MAIN_SETTINGS_SUB_PHONE_EXAMPLE" = "+90 539 246 95 51";
+"MAIN_SETTINGS_SUB_MAIL_EXAMPLE" = "support@toofaudio.com";
 "MAIN_SETTINGS_LOGOUT" = "Logout";

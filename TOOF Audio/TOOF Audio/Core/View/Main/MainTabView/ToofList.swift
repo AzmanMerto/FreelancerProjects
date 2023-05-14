@@ -17,10 +17,11 @@ struct ToofList: View {
             Button {
                 action()
             } label: {
-                VStack(spacing: 0) {
+                LazyVStack(alignment: .leading,spacing: 0) {
                     HStack {
                         Circle()
                             .foregroundColor(.ToofTextColor)
+                            .scaledToFit()
                             .overlay {
                                 //MARK: ToofList - Image
                                 Image(customList.imageString)
@@ -40,7 +41,8 @@ struct ToofList: View {
                             .scaledToFit()
                             .frame(width: dw(0.035))
                     }
-                    .frame(height: dh(0.066))
+                    .frame(maxHeight: dh(0.066))
+                    .scaledToFit()
                     .padding(.horizontal)
                     line()
                 }
@@ -52,7 +54,6 @@ struct ToofList: View {
 
 struct ToofList_Previews: PreviewProvider {
     static var previews: some View {
-        
         let customListModelItems: CustomListModel = CustomListModel(id: 0,
                                                                     imageString: ImageHelper.main.renameIcon.rawValue,
                                                                     buttonText: TextHelper.main.mainDeviceSettingsEQ.rawValue)

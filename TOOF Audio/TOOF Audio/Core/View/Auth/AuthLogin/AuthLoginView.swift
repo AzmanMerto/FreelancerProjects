@@ -38,7 +38,6 @@ struct AuthLoginView: View {
                 Spacer()
                 //MARK: AuthLoginView - Navigate
                 ZStack {
-                    
                     NavigationLink(isActive: $viewModel.isNavigateToRegister) {
                         AuthRegisterView()
                             .hideNavigationBar()

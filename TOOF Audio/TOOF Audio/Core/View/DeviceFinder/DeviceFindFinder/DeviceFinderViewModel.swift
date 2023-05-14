@@ -17,6 +17,7 @@ class DeviceFinderViewModel: ObservableObject {
     {
         self.isFoundDevice = isFoundDevice
         self.isNavigateToHelp = isNavigateToHelp
+        
     }
     
 }

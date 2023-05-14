@@ -14,17 +14,19 @@ struct TOOF_AudioApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    
     var body: some Scene {
                 
         WindowGroup {
-            NavigationView {
-                VStack {
-                    SplashView()
-                        .preferredColorScheme(.dark)
-                }
-            }
-            .hideNavigationBar()
-            .navigationViewStyle(StackNavigationViewStyle())
+            ContentView()
+//            NavigationView {
+//                VStack {
+//                    SplashView()
+//                        .preferredColorScheme(.dark)
+//                }
+//            }
+//            .hideNavigationBar()
+//            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

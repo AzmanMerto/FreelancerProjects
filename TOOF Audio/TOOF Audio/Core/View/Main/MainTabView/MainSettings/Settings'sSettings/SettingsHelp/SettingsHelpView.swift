@@ -29,9 +29,8 @@ struct SettingsHelpView: View {
                 
                 settingsExemple(title: TextHelper.main.mainSettingsSubMailTitle.rawValue,
                                 exemple: TextHelper.main.mainSettingsSubMailExample.rawValue)
+                .tint(.ToofButtonColor)
                 .padding(.vertical)
-                settingsExemple(title: TextHelper.main.mainSettingsSubPhoneTitle.rawValue,
-                                exemple: TextHelper.main.mainSettingsSubPhoneExample.rawValue)
                 Spacer()
                 
             }
@@ -54,6 +53,7 @@ extension SettingsHelpView {
             Text(title.locale())
                 .foregroundColor(.ToofTextColor)
                 .font(.default17).bold()
+                .padding(.vertical)
             Text(exemple.locale())
                 .foregroundColor(.ToofPlaceholder)
                 .font(.default16).bold()

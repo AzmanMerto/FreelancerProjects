@@ -10,6 +10,7 @@ import SwiftUI
 struct DeviceFinderSearchView: View {
     
     @ObservedObject var viewModel = DeviceFinderSearchViewModel()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -26,7 +27,7 @@ struct DeviceFinderSearchView: View {
                             //MARK: DeviceSearchView - Button
                             ZStack {
                                 NavigationLink(isActive: $viewModel.isNavigateToFinder) {
-                                    DeviceFinderFindView()
+                                    DeviceFinderFindView(backToBack: $viewModel.backToBack)
                                         .hideNavigationBar()
                                 } label: {  }
                                 ToofButton(buttonText: data.button ) {
@@ -48,6 +49,11 @@ struct DeviceFinderSearchView: View {
                 .tabViewStyle(.page(indexDisplayMode: .never))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
                 .padding(.vertical)
+            }
+            .onAppear {
+                if viewModel.backToBack {
+                    dismiss()
+                }
             }
         }
     }

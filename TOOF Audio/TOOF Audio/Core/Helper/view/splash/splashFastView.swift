@@ -10,7 +10,7 @@ import SwiftUI
 struct splashFastView: View {
     var body: some View {
         ZStack {
-            Color.ToofPrimaryColorAlt
+            Color.ToofButtonColor
                 .ignoresSafeArea()
             Image(ImageHelper.app.appLogo.rawValue)
                 .resizable()

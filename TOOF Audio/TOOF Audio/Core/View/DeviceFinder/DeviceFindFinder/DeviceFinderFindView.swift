@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DeviceFinderFindView: View {
     
-    @ObservedObject var viewModel = DeviceFinderViewModel()
+    @StateObject var viewModel = DeviceFinderViewModel()
+    @Binding var backToBack : Bool
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -25,17 +26,19 @@ struct DeviceFinderFindView: View {
                 Spacer()
                 //MARK: DeviceFinderView - Buttons
                 VStack {
+                    //Navigate to Helper View button
                     ZStack {
                         NavigationLink(isActive: $viewModel.isNavigateToHelp) {  DeviceFinderHelpView() } label: {}
 
                         ToofButton(buttonText: TextHelper.deviceFinder.deviceFinderNearDeviceSearch.rawValue) {
-                            viewModel.isNavigateToHelp.toggle()
+                            viewModel.isNavigateToHelp = true
                         }
                     }
                     .padding(.vertical,dw(0.1))
+                    //Back button
                     ToofAltButton(buttonText: TextHelper.deviceFinder.deviceFinderNearDeviceCancel.rawValue) {
+                        backToBack.toggle()
                         dismiss()
-                        //TODO: Go to device section
                     }
                 }
                 .hideAndDisableButton(viewModel.isFoundDevice)
@@ -43,8 +46,7 @@ struct DeviceFinderFindView: View {
             }
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    viewModel.isFoundDevice.toggle()
-                    //TODO: Find Device if find go to device
+                    viewModel.isFoundDevice = false
                 }
             }
         }
@@ -53,6 +55,6 @@ struct DeviceFinderFindView: View {
 
 struct DeviceFinderFindView_Previews: PreviewProvider {
     static var previews: some View {
-        DeviceFinderFindView()
+        DeviceFinderFindView(backToBack: .constant(false))
     }
 }

@@ -10,7 +10,6 @@ import SwiftUI
 class DeviceFinderOpenAccessViewModel: ObservableObject {
     
     let settings = URL(string: UIApplication.openSettingsURLString)
-    @Environment(\.dismiss) var dismiss
     @Published var locationManager = LocationPermissionManager()
     @Published var bluetoothManager = BluetoothPermissionManager()
     @Published var localNetworkManager = LocalNetworkPermissionManager()
@@ -30,9 +29,8 @@ class DeviceFinderOpenAccessViewModel: ObservableObject {
     }
     
     func navigateToDestination() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            self.isNavigateToFinder = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.isNavigateToFinder.toggle()
         }
     }
-    
 }

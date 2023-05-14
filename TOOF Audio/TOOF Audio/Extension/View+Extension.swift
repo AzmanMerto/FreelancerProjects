@@ -32,6 +32,14 @@ extension View {
             .opacity(Bool ? 0 : 1)
     }
     
+    func dismiss() {
+        @Environment(\.dismiss) var dismiss
+        
+        do {
+            try dismiss()
+        } catch { }
+    }
+    
     func line() -> some View {
         Rectangle()
             .frame(height: 1)

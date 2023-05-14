@@ -29,6 +29,7 @@
 		3415709729FE1A2B00292C06 /* AppleMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415709629FE1A2B00292C06 /* AppleMusic.swift */; };
 		3415709929FE668E00292C06 /* MusicPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415709829FE668E00292C06 /* MusicPicker.swift */; };
 		34345E9D29F8A12B000F7363 /* SearchTopButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34345E9C29F8A12B000F7363 /* SearchTopButtons.swift */; };
+		343B3CF42A05785F00E0A536 /* PermissionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B3CF32A05785F00E0A536 /* PermissionDescription.swift */; };
 		3450F30E29EEF98300B68DD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F30D29EEF98300B68DD4 /* User.swift */; };
 		3450F31029EEF9E900B68DD4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F30F29EEF9E900B68DD4 /* AuthManager.swift */; };
 		3450F31229EEFD5700B68DD4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3450F31129EEFD5700B68DD4 /* constant.swift */; };
@@ -56,6 +57,7 @@
 		3459372A29F1FD080000B1DD /* ToofList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372929F1FD080000B1DD /* ToofList.swift */; };
 		3459372E29F21B5F0000B1DD /* SettingsAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372D29F21B5F0000B1DD /* SettingsAccountView.swift */; };
 		3459373029F21BBD0000B1DD /* CustomListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459372F29F21BBD0000B1DD /* CustomListModel.swift */; };
+		348907582A0DF31C005998D0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 348907572A0DF31C005998D0 /* Alamofire */; };
 		349FA0D829EE02EA00E725B2 /* TOOF_AudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FA0D729EE02EA00E725B2 /* TOOF_AudioApp.swift */; };
 		349FA0DF29EE02EC00E725B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349FA0DE29EE02EC00E725B2 /* Preview Assets.xcassets */; };
 		349FA0E829EED40B00E725B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349FA0E729EED40B00E725B2 /* AppDelegate.swift */; };
@@ -129,6 +131,7 @@
 		3415709629FE1A2B00292C06 /* AppleMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic.swift; sourceTree = "<group>"; };
 		3415709829FE668E00292C06 /* MusicPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPicker.swift; sourceTree = "<group>"; };
 		34345E9C29F8A12B000F7363 /* SearchTopButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTopButtons.swift; sourceTree = "<group>"; };
+		343B3CF32A05785F00E0A536 /* PermissionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDescription.swift; sourceTree = "<group>"; };
 		3450F30D29EEF98300B68DD4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3450F30F29EEF9E900B68DD4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		3450F31129EEFD5700B68DD4 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348907582A0DF31C005998D0 /* Alamofire in Frameworks */,
 				34D1CCD029EF39E600886305 /* FirebaseAnalytics in Frameworks */,
 				34D1CCD229EF39E600886305 /* FirebaseAuth in Frameworks */,
 				34D1CCD429EF39E600886305 /* FirebaseFirestore in Frameworks */,
@@ -267,6 +271,14 @@
 				34C55D6329FB90070073927F /* LocalNetworkAccessManager.swift */,
 			);
 			path = PermissionManager;
+			sourceTree = "<group>";
+		};
+		343B3CF22A05784B00E0A536 /* DeviceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				343B3CF32A05785F00E0A536 /* PermissionDescription.swift */,
+			);
+			path = DeviceFinder;
 			sourceTree = "<group>";
 		};
 		3450F31329EF0B0900B68DD4 /* AuthLogin */ = {
@@ -363,6 +375,7 @@
 			children = (
 				3459370529F0D8B60000B1DD /* MainDeviceView.swift */,
 				3459370329F0D8AC0000B1DD /* MainDeviceViewModel.swift */,
+				343B3CF22A05784B00E0A536 /* DeviceFinder */,
 				3459372B29F21A930000B1DD /* Device'sSettings */,
 			);
 			path = MainDevice;
@@ -848,6 +861,7 @@
 				34D1CCD129EF39E600886305 /* FirebaseAuth */,
 				34D1CCD329EF39E600886305 /* FirebaseFirestore */,
 				34D1CCD529EF39E600886305 /* FirebaseFirestoreSwift */,
+				348907572A0DF31C005998D0 /* Alamofire */,
 			);
 			productName = "TOOF Audio";
 			productReference = 349FA0D429EE02EA00E725B2 /* TOOF Audio.app */;
@@ -881,6 +895,7 @@
 			mainGroup = 349FA0CB29EE02EA00E725B2;
 			packageReferences = (
 				34D1CCCE29EF39E600886305 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				348907562A0DF31C005998D0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 349FA0D529EE02EA00E725B2 /* Products */;
 			projectDirPath = "";
@@ -991,6 +1006,7 @@
 				3450F31B29EF0C0100B68DD4 /* AuthLoginView.swift in Sources */,
 				34FDC39229EF68D700F4308D /* ToofButton.swift in Sources */,
 				349FA15029EEEEEB00E725B2 /* ImageHelper.swift in Sources */,
+				343B3CF42A05785F00E0A536 /* PermissionDescription.swift in Sources */,
 				349FA15329EEEEEB00E725B2 /* TextHandler.swift in Sources */,
 				34AFC0E429EFB398002BEDE2 /* DeviceFinderFindView.swift in Sources */,
 				345936F329F0AE390000B1DD /* deviceHeader.swift in Sources */,
@@ -1148,10 +1164,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "TOOF Audio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For device connection";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For device connection";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1189,10 +1201,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "TOOF Audio";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For device connection";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For device connection";
-				INFOPLIST_KEY_NSUserTrackingUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1239,6 +1247,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		348907562A0DF31C005998D0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		34D1CCCE29EF39E600886305 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1250,6 +1266,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		348907572A0DF31C005998D0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 348907562A0DF31C005998D0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		34D1CCCF29EF39E600886305 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 34D1CCCE29EF39E600886305 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

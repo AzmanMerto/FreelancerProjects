@@ -25,7 +25,10 @@ struct MainDeviceView: View {
             }
             .padding(.vertical)
             .fullScreenCover(isPresented: $viewModel.isAddDevice) {
-                DeviceFinderOpenAccessView()
+                NavigationView {
+                    DeviceFinderOpenAccessView()
+                        .hideNavigationBar()
+                }
             }
         }
     }

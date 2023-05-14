@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>If we want to connect device. Give to us access permission.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>If we want to connect device. Give to us access permission.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string></string>
+	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>If we want to connect device. Give to us access permission.</string>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
 		<string>NomoSiOS.TOOF-Audio.bluetoothDiscovery</string>
@@ -11,11 +21,20 @@
 		<string>NomoSiOS.TOOF-Audio.backgroundDatabaseSync</string>
 		<string>NomoSiOS.TOOF-Audio.backgroundDataCleanup</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
+		<string>bluetooth-central</string>
 		<string>fetch</string>
+		<string>location</string>
+		<string>nearby-interaction</string>
 		<string>processing</string>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>

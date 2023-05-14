@@ -11,13 +11,16 @@ class DeviceFinderSearchViewModel: ObservableObject {
     
     @Published var isStartSearch: Bool
     @Published var isNavigateToFinder: Bool
+    @Published var backToBack: Bool
     @Published var selected: Int
     
     init(isStartSearch: Bool = false,
          isNavigateToFinder: Bool = false,
+         backToBack: Bool = false,
          selected: Int = 0) {
         self.isStartSearch = isStartSearch
         self.isNavigateToFinder = isNavigateToFinder
+        self.backToBack = backToBack
         self.selected = selected
     }
     

@@ -133,8 +133,6 @@ struct TextHelper {
         case mainSettingsSubDescription = "MAIN_SETTINGS_SUB_DESCRIPTION"
         case mainSettingsSubMailTitle = "MAIN_SETTINGS_SUB_MAIL_TITLE"
         case mainSettingsSubMailExample = "MAIN_SETTINGS_SUB_MAIL_EXAMPLE"
-        case mainSettingsSubPhoneTitle = "MAIN_SETTINGS_SUB_PHONE_TITLE"
-        case mainSettingsSubPhoneExample = "MAIN_SETTINGS_SUB_PHONE_EXAMPLE"
         case mainSettingsLogout = "MAIN_SETTINGS_LOGOUT"
         
         case mainDeviceSettingsAlarmNotyetAlarm = "MAIN_DEVICE_SETTINGS_ALARM_NOTYET_ALARM"

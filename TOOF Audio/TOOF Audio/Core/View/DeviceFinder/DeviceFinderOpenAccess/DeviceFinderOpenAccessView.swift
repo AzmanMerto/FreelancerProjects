@@ -11,6 +11,7 @@ import Network
 struct DeviceFinderOpenAccessView: View {
     
     @ObservedObject var viewModel = DeviceFinderOpenAccessViewModel()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -33,15 +34,16 @@ struct DeviceFinderOpenAccessView: View {
                 PermissionDescription(image: Image(systemName: "mappin.circle.fill"), text:TextHelper.deviceFinder.deviceFinderPermissionGPS.rawValue)
                     .padding(.vertical)
                 Spacer()
-                
+                PermisionCheckButton
+                    .padding(.vertical)
                 ToofAltButton(buttonText: "BACK") {
-                    viewModel.dismiss()
+                    dismiss()
                 }
-                .padding(.vertical)
                 Spacer()
             }
+            .padding(.vertical)
             .onAppear {
-                if !viewModel.locationManager.locationPermissionGranted { viewModel.localNetworkManager.triggerLocalNetworkPrivacyAlert() }
+                viewModel.localNetworkManager.triggerLocalNetworkPrivacyAlert()
                 if !viewModel.locationManager.locationPermissionGranted {    viewModel.locationManager.requestLocationPermission()  }
             }
         }
@@ -58,13 +60,12 @@ extension DeviceFinderOpenAccessView {
     var PermisionCheckButton: some View {
         ZStack {
             NavigationLink(isActive: $viewModel.isNavigateToFinder) {
-                DeviceFinderFindView()
+                DeviceFinderSearchView()
                     .hideNavigationBar()
             } label: {}
-            
             ToofButton(buttonText: viewModel.buttonText) {
                 if viewModel.locationManager.locationPermissionGranted {
-                        print("locationPermissionGranted")
+                    print("locationPermissionGranted")
                     if viewModel.bluetoothManager.bluetoothPermissionGranted {
                         print("bluetoothPermissionGranted")
                         if viewModel.localNetworkManager.localNetworkPermissionGranted {
@@ -90,26 +91,3 @@ extension DeviceFinderOpenAccessView {
 }
 
 
-struct PermissionDescription: View {
-    
-    var image: Image
-    var text: String
-    
-    var body: some View {
-        LazyVStack(alignment: .leading) {
-            HStack {
-                image
-                    .resizable()
-                    .foregroundColor(.ToofButtonColor)
-                    .scaledToFit()
-                    .frame(width: dh(0.06), height: dh(0.06))
-                Text(text.locale())
-                    .foregroundColor(.ToofTextColor)
-                Spacer()
-            }
-            .padding(.leading)
-            .frame(maxWidth: .infinity)
-        .padding(.vertical)
-        }
-    }
-}
