@@ -13,7 +13,7 @@ struct MainTabView: View {
     
     var body: some View {
         CustomTabBarContainer(selection: $viewModel.selection) {
-            MainBrowseView()
+            MainBrowseView()T
                 .tabBarItem(item: .browse, selection: $viewModel.selection)
             
             MainDeviceView(viewModel: .init())
