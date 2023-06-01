@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AED435185E7D68EACFD8415 /* libPods-Shigo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798C1F1093B43FC464E815C1 /* libPods-Shigo.a */; };
 		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
 		341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */; };
 		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
@@ -17,11 +16,9 @@
 		341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2729B423AB0035E77A /* RegisterViewModel.swift */; };
 		341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2929B424BE0035E77A /* AuthChangeButton.swift */; };
 		341ECA2D29B426390035E77A /* AuthCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2C29B426390035E77A /* AuthCoordinatorView.swift */; };
-		3429D01B29BF374B00E88684 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3429D01A29BF374B00E88684 /* Kingfisher */; };
 		3429D01E29C02B6600E88684 /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3429D01D29C02B6600E88684 /* ProductList.plist */; };
 		34932C3129BD18B200C113B8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3029BD18B200C113B8 /* ImagePicker.swift */; };
 		34932C3329BD281900C113B8 /* ShiMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3229BD281900C113B8 /* ShiMoney.swift */; };
-		34932C3829BD39E500C113B8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */; };
 		349CF610299614ED005B9150 /* ShigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF60F299614ED005B9150 /* ShigoApp.swift */; };
 		349CF612299614ED005B9150 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF611299614ED005B9150 /* SplashView.swift */; };
 		349CF614299614F0005B9150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349CF613299614F0005B9150 /* Assets.xcassets */; };
@@ -45,12 +42,16 @@
 		34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5B29BCA4650020DC1E /* Constant.swift */; };
 		34A42E5F29BCA56B0020DC1E /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E5E29BCA56B0020DC1E /* ImageUploader.swift */; };
 		34A42E6129BCAF790020DC1E /* LoginWithApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A42E6029BCAF790020DC1E /* LoginWithApp.swift */; };
-		34AACD9729B284AE006E29FE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9629B284AE006E29FE /* FirebaseAuth */; };
-		34AACD9929B284AE006E29FE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9829B284AE006E29FE /* FirebaseFirestore */; };
-		34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 34AACD9A29B284AE006E29FE /* FirebaseStorage */; };
 		34AACDBB29B3220B006E29FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBA29B3220B006E29FE /* CustomTextField.swift */; };
 		34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AACDBC29B324DD006E29FE /* LoginView.swift */; };
 		34AACDC029B32F74006E29FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */; };
+		34B52D502A28165A00630F35 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 34B52D4F2A28165A00630F35 /* FirebaseAuth */; };
+		34B52D522A28165A00630F35 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 34B52D512A28165A00630F35 /* FirebaseFirestore */; };
+		34B52D542A28165A00630F35 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 34B52D532A28165A00630F35 /* FirebaseFirestoreSwift */; };
+		34B52D562A28165A00630F35 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 34B52D552A28165A00630F35 /* FirebaseStorage */; };
+		34B52D592A28188600630F35 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 34B52D582A28188600630F35 /* Kingfisher */; };
+		34B52D5C2A28C2C900630F35 /* SubsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B52D5B2A28C2C900630F35 /* SubsViewModel.swift */; };
+		34B52D5E2A28C2D000630F35 /* SubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B52D5D2A28C2D000630F35 /* SubsView.swift */; };
 		34B6A57B29BD936700975EF3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6A57A29BD936700975EF3 /* UserData.swift */; };
 		34DF82AB29BDF48B00BF7ADD /* SecureCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */; };
 		34DF82AD29BE341B00BF7ADD /* UserAppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */; };
@@ -100,13 +101,12 @@
 		34AACDBC29B324DD006E29FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		34AACDBF29B32F74006E29FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34AACDC129B32F83006E29FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		34B52D5B2A28C2C900630F35 /* SubsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsViewModel.swift; sourceTree = "<group>"; };
+		34B52D5D2A28C2D000630F35 /* SubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsView.swift; sourceTree = "<group>"; };
 		34B6A57A29BD936700975EF3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		34DF82AA29BDF48B00BF7ADD /* SecureCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCustomTextField.swift; sourceTree = "<group>"; };
 		34DF82AC29BE341B00BF7ADD /* UserAppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAppStates.swift; sourceTree = "<group>"; };
 		34DF82AF29BE4A2000BF7ADD /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
-		46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shigo.debug.xcconfig"; path = "Target Support Files/Pods-Shigo/Pods-Shigo.debug.xcconfig"; sourceTree = "<group>"; };
-		798C1F1093B43FC464E815C1 /* libPods-Shigo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shigo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shigo.release.xcconfig"; path = "Target Support Files/Pods-Shigo/Pods-Shigo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34AACD9729B284AE006E29FE /* FirebaseAuth in Frameworks */,
-				34AACD9929B284AE006E29FE /* FirebaseFirestore in Frameworks */,
-				34AACD9B29B284AE006E29FE /* FirebaseStorage in Frameworks */,
-				34932C3829BD39E500C113B8 /* FirebaseFirestoreSwift in Frameworks */,
-				3429D01B29BF374B00E88684 /* Kingfisher in Frameworks */,
-				0AED435185E7D68EACFD8415 /* libPods-Shigo.a in Frameworks */,
+				34B52D502A28165A00630F35 /* FirebaseAuth in Frameworks */,
+				34B52D562A28165A00630F35 /* FirebaseStorage in Frameworks */,
+				34B52D522A28165A00630F35 /* FirebaseFirestore in Frameworks */,
+				34B52D542A28165A00630F35 /* FirebaseFirestoreSwift in Frameworks */,
+				34B52D592A28188600630F35 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,10 +128,7 @@
 		283BBC7E529DCE2D8B398B3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */,
-				8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,18 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */,
-				341ECA1829B41D330035E77A /* SplashSub */,
 				34A42E4C29BBB0180020DC1E /* AuthSub */,
 				34A42E4D29BBB0280020DC1E /* MainSub */,
 			);
 			path = ViewSub;
-			sourceTree = "<group>";
-		};
-		341ECA1829B41D330035E77A /* SplashSub */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SplashSub;
 			sourceTree = "<group>";
 		};
 		341ECA1929B41D370035E77A /* LoginSub */ = {
@@ -202,7 +190,6 @@
 				349CF60E299614ED005B9150 /* Shigo */,
 				349CF60D299614ED005B9150 /* Products */,
 				283BBC7E529DCE2D8B398B3E /* Pods */,
-				EBE17DCE9E2F7C6BBA9636A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,6 +310,7 @@
 				341ECA2C29B426390035E77A /* AuthCoordinatorView.swift */,
 				34AACD9C29B29B45006E29FE /* Login */,
 				341ECA2429B423570035E77A /* Register */,
+				34B52D5A2A28C2B100630F35 /* Subs */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -486,20 +474,21 @@
 			path = Resoruce;
 			sourceTree = "<group>";
 		};
+		34B52D5A2A28C2B100630F35 /* Subs */ = {
+			isa = PBXGroup;
+			children = (
+				34B52D5B2A28C2C900630F35 /* SubsViewModel.swift */,
+				34B52D5D2A28C2D000630F35 /* SubsView.swift */,
+			);
+			path = Subs;
+			sourceTree = "<group>";
+		};
 		34DF82AE29BE4A0500BF7ADD /* Apple */ = {
 			isa = PBXGroup;
 			children = (
 				34DF82AF29BE4A2000BF7ADD /* StoreKitManager.swift */,
 			);
 			path = Apple;
-			sourceTree = "<group>";
-		};
-		EBE17DCE9E2F7C6BBA9636A6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				798C1F1093B43FC464E815C1 /* libPods-Shigo.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,12 +498,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 349CF61A299614F0005B9150 /* Build configuration list for PBXNativeTarget "Shigo" */;
 			buildPhases = (
-				9C76A2B691E14D91B50330FD /* [CP] Check Pods Manifest.lock */,
 				349CF608299614ED005B9150 /* Sources */,
 				349CF609299614ED005B9150 /* Frameworks */,
 				349CF60A299614ED005B9150 /* Resources */,
-				0A7932FA047626DDC5E289A3 /* [CP] Embed Pods Frameworks */,
-				8390B5A68587FF2398263BE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -522,11 +508,11 @@
 			);
 			name = Shigo;
 			packageProductDependencies = (
-				34AACD9629B284AE006E29FE /* FirebaseAuth */,
-				34AACD9829B284AE006E29FE /* FirebaseFirestore */,
-				34AACD9A29B284AE006E29FE /* FirebaseStorage */,
-				34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */,
-				3429D01A29BF374B00E88684 /* Kingfisher */,
+				34B52D4F2A28165A00630F35 /* FirebaseAuth */,
+				34B52D512A28165A00630F35 /* FirebaseFirestore */,
+				34B52D532A28165A00630F35 /* FirebaseFirestoreSwift */,
+				34B52D552A28165A00630F35 /* FirebaseStorage */,
+				34B52D582A28188600630F35 /* Kingfisher */,
 			);
 			productName = Shigo;
 			productReference = 349CF60C299614ED005B9150 /* Shigo.app */;
@@ -557,8 +543,8 @@
 			);
 			mainGroup = 349CF603299614ED005B9150;
 			packageReferences = (
-				34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				3429D01929BF374B00E88684 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				34B52D572A28188600630F35 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 349CF60D299614ED005B9150 /* Products */;
 			projectDirPath = "";
@@ -583,65 +569,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0A7932FA047626DDC5E289A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8390B5A68587FF2398263BE4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shigo/Pods-Shigo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C76A2B691E14D91B50330FD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shigo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		349CF608299614ED005B9150 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -656,6 +583,7 @@
 				34DF82B029BE4A2000BF7ADD /* StoreKitManager.swift in Sources */,
 				34A42E4929BBAF2A0020DC1E /* ProfileViewModel.swift in Sources */,
 				34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */,
+				34B52D5C2A28C2C900630F35 /* SubsViewModel.swift in Sources */,
 				341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */,
 				341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */,
 				34A42E5529BBB0800020DC1E /* MainTabBar.swift in Sources */,
@@ -671,6 +599,7 @@
 				34A42E5F29BCA56B0020DC1E /* ImageUploader.swift in Sources */,
 				34932C3129BD18B200C113B8 /* ImagePicker.swift in Sources */,
 				34932C3329BD281900C113B8 /* ShiMoney.swift in Sources */,
+				34B52D5E2A28C2D000630F35 /* SubsView.swift in Sources */,
 				341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */,
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				34A42E4329BBAF0E0020DC1E /* SearchView.swift in Sources */,
@@ -807,7 +736,6 @@
 		};
 		349CF61B299614F0005B9150 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46255B6A9233A6D87CC96B0E /* Pods-Shigo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -841,7 +769,6 @@
 		};
 		349CF61C299614F0005B9150 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8357214994674FF5F31E9AE2 /* Pods-Shigo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -897,7 +824,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3429D01929BF374B00E88684 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		34B52D572A28188600630F35 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -905,41 +840,33 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3429D01A29BF374B00E88684 /* Kingfisher */ = {
+		34B52D4F2A28165A00630F35 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3429D01929BF374B00E88684 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		34932C3729BD39E500C113B8 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		34AACD9629B284AE006E29FE /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		34AACD9829B284AE006E29FE /* FirebaseFirestore */ = {
+		34B52D512A28165A00630F35 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		34AACD9A29B284AE006E29FE /* FirebaseStorage */ = {
+		34B52D532A28165A00630F35 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 34AACD9529B284AE006E29FE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		34B52D552A28165A00630F35 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B52D4E2A28165A00630F35 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		34B52D582A28188600630F35 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B52D572A28188600630F35 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

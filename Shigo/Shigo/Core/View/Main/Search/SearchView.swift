@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    @ObservedObject var viewModel = SearchViewModel()
+    
     var body: some View {
         ZStack {
             Image(Imagements.Main.searchView.rawValue)

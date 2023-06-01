@@ -10,13 +10,10 @@ import Foundation
 class LoginViewModel: ObservableObject {
     @Published var email : String
     @Published var password : String
-    @Published var isLoggedIn: Bool
     
     init(email: String = "",
-         password: String = "",
-         isLoggedIn: Bool = false) {
+         password: String = "") {
         self.email = email
         self.password = password
-        self.isLoggedIn = isLoggedIn
     }
 }

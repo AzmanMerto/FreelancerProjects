@@ -38,8 +38,8 @@ struct SplashView: View {
 
                     Image(Imagements.Splash.Logo.rawValue)
                         .resizable()
-                        .frame(width: UIScreen.main.bounds.width * 0.7,
-                               height: UIScreen.main.bounds.height * 0.4)
+                        .scaledToFit()
+                        .frame(width: UIScreen.main.bounds.width * 0.8)
                         .padding(.vertical)
      
                     Spacer() // Spacer

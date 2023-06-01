@@ -13,7 +13,6 @@ struct LoginView: View {
     @EnvironmentObject var coordinator : AuthCoordinator
     
     var body: some View {
-        NavigationView {
             ZStack {
                 //MARK: LoginView - Background Color
                 PrimaryBackground()
@@ -28,10 +27,9 @@ struct LoginView: View {
                                                  password: viewModel.password)
                         print("Login Button is Workin & ID: \(String(describing: AuthManager.shared.userCheck))")
                         if AuthManager.shared.userCheck != nil{
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3){
-                                viewModel.isLoggedIn = true
-                            }
+                            coordinator.push(.subsView)
                         }
+                        
                     }
                     Spacer()
                     //MARK: LoginView - With Normal Login
@@ -41,12 +39,6 @@ struct LoginView: View {
                     Spacer()
                 }
             }
-            
-        }
-        .navigationDestination(isPresented: $viewModel.isLoggedIn) {
-            MainTabBar()
-                .navigationBarBackButtonHidden(true)
-        }
     }
 }
 

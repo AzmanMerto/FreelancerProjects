@@ -24,7 +24,7 @@ struct AuthCoordinatorView: View {
 }
 
 enum AuthPages: String, Identifiable {
-    case loginView,registerView
+    case loginView,registerView, subsView
     
     var id: String {
         self.rawValue
@@ -53,6 +53,8 @@ class AuthCoordinator: ObservableObject {
             LoginView()
         case .registerView:
             RegisterView()
+        case .subsView:
+            SubsView()
         }
     }
 }
