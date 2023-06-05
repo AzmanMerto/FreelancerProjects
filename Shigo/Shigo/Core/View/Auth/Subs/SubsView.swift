@@ -13,44 +13,57 @@ struct SubsView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                PrimaryBackground()
-                VStack {
-                    FlagAndCountryName()
-                        .padding(.top)
+            if viewModel.isSubs {
+                ZStack {
                     
-                    
-                    Spacer()
-                    
-                    Text("Uygulama Devamı için abone olmanız gerekiyor.")
-                        .font(.body)
-                        .foregroundColor(.white)
-                        .padding(.vertical)
-                    Button {
-                        if viewModel.isSubs {
-                            viewModel.navigateToMain.toggle()
-                        } else {
-                            
-                        }
-                    } label: {
-                        Text(viewModel.isSubs ? "Uygulamaya geçiş yap" : "Abone Ol" )
-                    }
-                    .foregroundColor(.black)
-                    .font(.largeTitle)
-                    .background {
-                        RoundedRectangle(cornerRadius: 20)
-                            .padding(-10)
+                }
+                .onAppear {
+                    viewModel.navigateToMain.toggle()
+                }
+            }else {
+                ZStack {
+                    PrimaryBackground()
+                    VStack {
+                        FlagAndCountryName()
+                            .padding(.top)
+                        
+                        Text("Uygulama Devamı için abone olmanız gerekiyor.")
+                            .font(.body)
                             .foregroundColor(.white)
-                    }
+                            .padding(.vertical)
+                            .background {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(.black)
+                                    .padding(.horizontal,-10)
+                            }
+                        Spacer()
+                        Button {
+                            if viewModel.isSubs {
+//                                viewModel.navigateToMain.toggle()
+                            } else {
+                                viewModel.isSubs.toggle()
+                            }
+                        } label: {
+                            Text(viewModel.isSubs ? "Uygulamaya geçiş yap" : "Abone Ol" )
+                        }
+                        .foregroundColor(.black)
+                        .font(.largeTitle)
+                        .background {
+                            RoundedRectangle(cornerRadius: 20)
+                                .padding(-10)
+                                .foregroundColor(.white)
+                        }
 
-                    
-                    Spacer()
+                        
+                        Spacer()
+                    }
                 }
             }
         }
         .navigationDestination(isPresented: $viewModel.navigateToMain) {
             MainTabBar()
         }
+        .manageSubscriptionsSheet(isPresented: .constant(false))
     }
 }
 

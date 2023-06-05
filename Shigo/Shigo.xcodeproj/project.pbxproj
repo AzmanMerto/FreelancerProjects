@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34102E592A2D32F700FF5E3A /* ProductDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34102E582A2D32F700FF5E3A /* ProductDetailModel.swift */; };
 		341ECA1329B419CB0035E77A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1229B419CB0035E77A /* LoginViewModel.swift */; };
 		341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */; };
 		341ECA1D29B41D650035E77A /* FlagAndCountryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */; };
@@ -17,6 +18,10 @@
 		341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2929B424BE0035E77A /* AuthChangeButton.swift */; };
 		341ECA2D29B426390035E77A /* AuthCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341ECA2C29B426390035E77A /* AuthCoordinatorView.swift */; };
 		3429D01E29C02B6600E88684 /* ProductList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3429D01D29C02B6600E88684 /* ProductList.plist */; };
+		343A02792A2CEA7300996F25 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343A02782A2CEA7300996F25 /* StoreKit.framework */; };
+		343A027B2A2CF25600996F25 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A027A2A2CF25600996F25 /* Products.swift */; };
+		343A027F2A2CF93800996F25 /* UserNotSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A027E2A2CF93800996F25 /* UserNotSubView.swift */; };
+		343A02832A2CF99F00996F25 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343A02822A2CF99F00996F25 /* ProductDetail.swift */; };
 		34932C3129BD18B200C113B8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3029BD18B200C113B8 /* ImagePicker.swift */; };
 		34932C3329BD281900C113B8 /* ShiMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34932C3229BD281900C113B8 /* ShiMoney.swift */; };
 		349CF610299614ED005B9150 /* ShigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349CF60F299614ED005B9150 /* ShigoApp.swift */; };
@@ -59,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34102E582A2D32F700FF5E3A /* ProductDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailModel.swift; sourceTree = "<group>"; };
 		341ECA1229B419CB0035E77A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		341ECA1A29B41D4E0035E77A /* PrimaryBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryBackground.swift; sourceTree = "<group>"; };
 		341ECA1C29B41D650035E77A /* FlagAndCountryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagAndCountryName.swift; sourceTree = "<group>"; };
@@ -71,6 +77,10 @@
 		3429D01C29C01A2300E88684 /* Product.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Product.storekit; sourceTree = "<group>"; };
 		3429D01D29C02B6600E88684 /* ProductList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
 		3436859529BD4A5900582B33 /* Shigo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shigo.entitlements; sourceTree = "<group>"; };
+		343A02782A2CEA7300996F25 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		343A027A2A2CF25600996F25 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		343A027E2A2CF93800996F25 /* UserNotSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotSubView.swift; sourceTree = "<group>"; };
+		343A02822A2CF99F00996F25 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		34932C3029BD18B200C113B8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		34932C3229BD281900C113B8 /* ShiMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiMoney.swift; sourceTree = "<group>"; };
 		349CF60C299614ED005B9150 /* Shigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +127,7 @@
 				34B52D502A28165A00630F35 /* FirebaseAuth in Frameworks */,
 				34B52D562A28165A00630F35 /* FirebaseStorage in Frameworks */,
 				34B52D522A28165A00630F35 /* FirebaseFirestore in Frameworks */,
+				343A02792A2CEA7300996F25 /* StoreKit.framework in Frameworks */,
 				34B52D542A28165A00630F35 /* FirebaseFirestoreSwift in Frameworks */,
 				34B52D592A28188600630F35 /* Kingfisher in Frameworks */,
 			);
@@ -125,17 +136,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		283BBC7E529DCE2D8B398B3E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		341ECA1429B41A0A0035E77A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				34B6A57A29BD936700975EF3 /* UserData.swift */,
+				343A027A2A2CF25600996F25 /* Products.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,12 +189,37 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		343A02772A2CEA7300996F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343A02782A2CEA7300996F25 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		343A027C2A2CF90A00996F25 /* OrderSub */ = {
+			isa = PBXGroup;
+			children = (
+				343A02822A2CF99F00996F25 /* ProductDetail.swift */,
+				34102E582A2D32F700FF5E3A /* ProductDetailModel.swift */,
+			);
+			path = OrderSub;
+			sourceTree = "<group>";
+		};
+		343A027D2A2CF91300996F25 /* SubSub */ = {
+			isa = PBXGroup;
+			children = (
+				343A027E2A2CF93800996F25 /* UserNotSubView.swift */,
+			);
+			path = SubSub;
+			sourceTree = "<group>";
+		};
 		349CF603299614ED005B9150 = {
 			isa = PBXGroup;
 			children = (
 				349CF60E299614ED005B9150 /* Shigo */,
 				349CF60D299614ED005B9150 /* Products */,
-				283BBC7E529DCE2D8B398B3E /* Pods */,
+				343A02772A2CEA7300996F25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -366,6 +396,7 @@
 				341ECA2929B424BE0035E77A /* AuthChangeButton.swift */,
 				341ECA1929B41D370035E77A /* LoginSub */,
 				341ECA2329B423150035E77A /* RegisterSub */,
+				343A027D2A2CF91300996F25 /* SubSub */,
 			);
 			path = AuthSub;
 			sourceTree = "<group>";
@@ -374,7 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				34A42E4E29BBB03A0020DC1E /* HomeSub */,
-				34A42E5229BBB0570020DC1E /* OrderSub */,
+				343A027C2A2CF90A00996F25 /* OrderSub */,
 				34A42E5129BBB04E0020DC1E /* SearchSub */,
 				34A42E5029BBB0490020DC1E /* BuyShiSub */,
 				34A42E4F29BBB03F0020DC1E /* ProfileSub */,
@@ -410,13 +441,6 @@
 			children = (
 			);
 			path = SearchSub;
-			sourceTree = "<group>";
-		};
-		34A42E5229BBB0570020DC1E /* OrderSub */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OrderSub;
 			sourceTree = "<group>";
 		};
 		34A42E5829BCA3A70020DC1E /* Firebase */ = {
@@ -580,11 +604,13 @@
 				349CF612299614ED005B9150 /* SplashView.swift in Sources */,
 				341ECA1B29B41D4E0035E77A /* PrimaryBackground.swift in Sources */,
 				34A42E3929BBAEE10020DC1E /* HomeViewModel.swift in Sources */,
+				343A027B2A2CF25600996F25 /* Products.swift in Sources */,
 				34DF82B029BE4A2000BF7ADD /* StoreKitManager.swift in Sources */,
 				34A42E4929BBAF2A0020DC1E /* ProfileViewModel.swift in Sources */,
 				34A42E5C29BCA4650020DC1E /* Constant.swift in Sources */,
 				34B52D5C2A28C2C900630F35 /* SubsViewModel.swift in Sources */,
 				341ECA2829B423AB0035E77A /* RegisterViewModel.swift in Sources */,
+				343A02832A2CF99F00996F25 /* ProductDetail.swift in Sources */,
 				341ECA2A29B424BE0035E77A /* AuthChangeButton.swift in Sources */,
 				34A42E5529BBB0800020DC1E /* MainTabBar.swift in Sources */,
 				349CF62E29962B53005B9150 /* Image+Extensions.swift in Sources */,
@@ -604,9 +630,11 @@
 				349CF63029962CB6005B9150 /* SplashViewModel.swift in Sources */,
 				34A42E4329BBAF0E0020DC1E /* SearchView.swift in Sources */,
 				349CF610299614ED005B9150 /* ShigoApp.swift in Sources */,
+				34102E592A2D32F700FF5E3A /* ProductDetailModel.swift in Sources */,
 				34AACDBD29B324DD006E29FE /* LoginView.swift in Sources */,
 				34A42E3B29BBAEE70020DC1E /* HomeView.swift in Sources */,
 				34A42E4129BBAF070020DC1E /* SearchViewModel.swift in Sources */,
+				343A027F2A2CF93800996F25 /* UserNotSubView.swift in Sources */,
 				34A42E5A29BCA3C30020DC1E /* AuthManager.swift in Sources */,
 				34B6A57B29BD936700975EF3 /* UserData.swift in Sources */,
 				349CF6222996246F005B9150 /* Colorments.swift in Sources */,

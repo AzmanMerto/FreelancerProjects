@@ -27,7 +27,6 @@ struct Imagements {
     enum Main: String {
         case mainTab = "mainTab"
         case homeView = "homeView"
-        case orderView = "orderView"
         case searchView = "searchView"
     }
 }

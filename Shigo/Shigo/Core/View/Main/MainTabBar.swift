@@ -18,7 +18,7 @@ struct MainTabBar : View {
     @StateObject var authManager = AuthManager()
     
     var body: some View {
-        
+        ZStack {
             TabView(selection: $selectionTab) {
                 HomeView()
                     .tag(tabs.home)
@@ -47,10 +47,7 @@ struct MainTabBar : View {
                     }
             }
             .environmentObject(authManager)
-            .background{
-                
-            }
         .tint(.shigoOrange)
+        }
     }
 }
-

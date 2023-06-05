@@ -4,137 +4,50 @@
 
   ],
   "products" : [
-    {
-      "displayPrice" : "0.50",
-      "familyShareable" : false,
-      "internalID" : "3CC44C99",
-      "localizations" : [
-        {
-          "description" : "50 Shi",
-          "displayName" : "50 Shi",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "50 Shi",
-          "displayName" : "50 Shi",
-          "locale" : "tr"
-        },
-        {
-          "description" : "50 Shi",
-          "displayName" : "50 Shi",
-          "locale" : "de"
-        }
-      ],
-      "productID" : "com.temporary.50Shi",
-      "referenceName" : "50 Shi",
-      "type" : "Consumable"
-    },
-    {
-      "displayPrice" : "1.00",
-      "familyShareable" : false,
-      "internalID" : "498D3322",
-      "localizations" : [
-        {
-          "description" : "100 Shi",
-          "displayName" : "100 Shi",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "100 Shi",
-          "displayName" : "100 Shi",
-          "locale" : "tr"
-        },
-        {
-          "description" : "100 Shi",
-          "displayName" : "100 Shi",
-          "locale" : "de"
-        }
-      ],
-      "productID" : "com.temporary.100Shi",
-      "referenceName" : "100 Shi",
-      "type" : "Consumable"
-    },
-    {
-      "displayPrice" : "2.00",
-      "familyShareable" : false,
-      "internalID" : "94120C1D",
-      "localizations" : [
-        {
-          "description" : "200 Shi",
-          "displayName" : "200 Shi",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "200 Shi",
-          "displayName" : "200 Shi",
-          "locale" : "de"
-        },
-        {
-          "description" : "200 Shi",
-          "displayName" : "200 Shi",
-          "locale" : "tr"
-        }
-      ],
-      "productID" : "com.temporary.200Shi",
-      "referenceName" : "200 Shi",
-      "type" : "Consumable"
-    },
-    {
-      "displayPrice" : "5.00",
-      "familyShareable" : false,
-      "internalID" : "4ABADF42",
-      "localizations" : [
-        {
-          "description" : "500 Shi",
-          "displayName" : "500 Shi",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "500 Shi",
-          "displayName" : "500 Shi",
-          "locale" : "tr"
-        },
-        {
-          "description" : "500 Shi",
-          "displayName" : "500 Shi",
-          "locale" : "de"
-        }
-      ],
-      "productID" : "com.temporary.500Shi",
-      "referenceName" : "500 Shi",
-      "type" : "Consumable"
-    },
-    {
-      "displayPrice" : "10.00",
-      "familyShareable" : false,
-      "internalID" : "0BB4556E",
-      "localizations" : [
-        {
-          "description" : "1000 Shi",
-          "displayName" : "1000 Shi",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "1000 Shi",
-          "displayName" : "1000 Shi",
-          "locale" : "tr"
-        },
-        {
-          "description" : "1000 Shi",
-          "displayName" : "1000 Shi",
-          "locale" : "de"
-        }
-      ],
-      "productID" : "com.temporary.1000Shi",
-      "referenceName" : "1000 Shi",
-      "type" : "Consumable"
-    }
+
   ],
   "settings" : {
 
   },
   "subscriptionGroups" : [
+    {
+      "id" : "52DD0594",
+      "localizations" : [
 
+      ],
+      "name" : "Shigo Sub",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "5.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "B965052D",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "B25970A1",
+            "paymentMode" : "none"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "ShigoSub",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "ShigoSub",
+          "subscriptionGroupID" : "52DD0594",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 2,

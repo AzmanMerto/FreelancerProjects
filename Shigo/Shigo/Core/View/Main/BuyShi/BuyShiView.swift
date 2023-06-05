@@ -37,7 +37,7 @@ struct BuyShiView: View {
             
             Text("Bakım aşamasında 🚧")
                 .font(.largeTitle.bold())
-                .foregroundColor(.white)
+                .foregroundColor(.black)
             
             Spacer()
         }

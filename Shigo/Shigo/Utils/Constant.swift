@@ -8,3 +8,6 @@
 import Firebase
 
 let COLLECTION_USERS = Firestore.firestore().collection("users")
+let COLLECTION_ORDERS = Firestore.firestore().collection("orders")
+
+

@@ -12,7 +12,7 @@ class SubsViewModel: ObservableObject {
     @Published var isSubs: Bool
     @Published var navigateToMain: Bool = false
     
-    init(isSubs: Bool = false) {
+    init(isSubs: Bool = true) {
         self.isSubs = isSubs
     }
     
