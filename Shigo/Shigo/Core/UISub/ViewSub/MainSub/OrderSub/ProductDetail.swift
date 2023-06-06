@@ -39,14 +39,14 @@ struct ProductDetail: View {
                 }
             HStack(spacing: 40) {
                 Button {
-                    viewModel.followNumber = true
+                    viewModel.fallowNumber = true
                 } label: {
                     Text("Evet")
                 }
                 .buttonStyle(.bordered)
                 
                 Button {
-                    viewModel.followNumber = false
+                    viewModel.fallowNumber = false
                 } label: {
                     Text("Hayır")
                 }
@@ -129,7 +129,7 @@ extension ProductDetail {
                             .font(.title)
                             .bold()
                     }
-                Text(viewModel.followNumber ? String(format: "%.2f EUR", viewModel.products.productPrice + 1.10) : String(format: "%.2f EUR", viewModel.products.productPrice))
+                Text(viewModel.fallowNumber ? String(format: "%.2f EUR", viewModel.products.productPrice + 1.10) : String(format: "%.2f EUR", viewModel.products.productPrice))
                     .font(.largeTitle)
                     .bold()
             }

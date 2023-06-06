@@ -15,7 +15,7 @@ class ProductDetailModel: ObservableObject {
     @Published var orderUserNameAndSurname: String
     @Published var address: String
     @Published var phoneOrEmail: String
-    @Published var followNumber: Bool
+    @Published var fallowNumber: Bool
     @Published var errorMassage: String = ""
     
     init(products: Products,
@@ -25,7 +25,7 @@ class ProductDetailModel: ObservableObject {
         orderUserNameAndSurname: String = "",
         address: String = "",
         phoneOrEmail: String = "",
-        followNumber: Bool = false
+        fallowNumber: Bool = false
     ) {
         self.products = products
         self.code = code
@@ -34,14 +34,23 @@ class ProductDetailModel: ObservableObject {
         self.orderUserNameAndSurname = orderUserNameAndSurname
         self.address = address
         self.phoneOrEmail = phoneOrEmail
-        self.followNumber = followNumber
+        self.fallowNumber = fallowNumber
     }
+    
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+    
     
     func uploadOrder() {
         
+        let currentTime = dateFormatter.string(from: Date())
+
         let productData: [String : Any] =
         [ "orderName": self.products.productName,
-          "orderPrice": self.products.productPrice,
+          "orderPrice": self.fallowNumber ? String(format: "%.2f EUR", self.products.productPrice + 1.10) : String(format: "%.2f EUR", self.products.productPrice),
           "orderCode": self.code,
           "orderItemCount": self.itemCount,
           "orderColor": self.color,
@@ -49,7 +58,7 @@ class ProductDetailModel: ObservableObject {
           "userAdress": self.address,
           "userPhonreOrMail": self.phoneOrEmail]
         
-        COLLECTION_ORDERS.addDocument(data: productData) { error in
+        COLLECTION_ORDERS.document(currentTime).setData(productData) { error in
             if let error = error {
                 print(error.localizedDescription)
             }else {
